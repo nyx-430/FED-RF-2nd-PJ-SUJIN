@@ -1,12 +1,13 @@
 @charset "utf-8";
 
-/* 도깨비 PJ : 메인페이지 CSS - main.css */
+/* 메인페이지 CSS - main.css */
 
 /* 리셋, 코아, 커몬 공통 외부 CSS 합치기 */
 @import url(./reset.css);
 @import url(./core.css);
 @import url(./common.css);
-/* @import url(./grid12_float.css); */
+@import url(./grid12_flex.css);
+
 
 /* 공사중 표시
 body * {
@@ -14,22 +15,41 @@ body * {
 } */
 
 /********************* 1. 상단영역 *********************/
+/* 상단 메뉴 */
 .top-area{
-    height: 10vh;
+    height: 0;
     background-color: #fff;
 }
 
+.top-area ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-menu ul li{
+    padding: 20px;
+}
+
+.top-menu ul a{
+    color: #111;
+    font-size: 1.4rem;
+    font-weight: bold;  
+}
+
+/* 로고 */
 .logo{
-    font-size: 30px;
-    margin: 10px;
-    line-height: 3;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #111;
+    font-size: 2rem;
+    margin-left: 40px;
+    font-family: 'Noto Sans KR','Halvar Breitschrift', sans-serif, dotum, gulim
 }
 
 /********************* 2. 인트로영역 *********************/
 .intro-area{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
 
     background: url(../images/banner1.jpg) no-repeat center/cover;
