@@ -9,10 +9,10 @@
 @import url(./grid12_flex.css);
 
 
-/* 공사중 표시
+/* 공사중 표시 */
 body * {
     outline: 2px dashed #ccc;
-} */
+}
 
 /********************* 1. 상단영역 *********************/
 /* 상단 메뉴 */
@@ -51,13 +51,34 @@ body * {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-
-    background: url(../images/banner1.jpg) no-repeat center/cover;
+    color: #ccc;
+    
 }
 
 /********************* 3. 슬라이드 배너영역 *********************/
 .slide-area{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    transition: 1s linear;
+}
 
+.slide img{
+    width: 100vw;
+    height: auto;
+}
+
+.slide{
+    position: absolute;
+    animation: slide-ani 1s ease-in-out 2s forwards;
+}
+
+@keyframes slide-ani {
+    to{
+        
+    }
 }
 
 /********************* 4. 스크롤 배너영역 *********************/
