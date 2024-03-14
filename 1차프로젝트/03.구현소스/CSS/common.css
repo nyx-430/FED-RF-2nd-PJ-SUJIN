@@ -3,14 +3,71 @@
 /* 공통 모듈 CSS - common.css */
 /* 공유 기능 요소 셋팅 */
 
+body * {
+    outline: 2px dashed #ccc;
+}
+
 /********************** 1. 상단영역 **********************/
-/* header .top-area{
+/* 상단 메뉴 */
+.top-area{
+    height: 100px;
+    background-color: #f1eee9;
+}
+
+.top-area ul{
     display: flex;
-    height: 80px;
-    width: 100px;
-    padding: 10px;
-    margin: 0;
-} */
+    justify-content: flex-end;
+}
+
+.top-menu ul li{
+    padding: 20px;
+}
+
+.top-menu ul a{
+    color: #111;
+    font-size: 16px;
+}
+
+/* 로고 */
+.logo{
+    display: flex;
+    justify-content: center;
+    color: #111;
+    font-size: 2rem;
+    margin: 14px;
+    margin-left: 16px;
+    font-family: 'Noto Sans KR','Halvar Breitschrift', sans-serif, dotum, gulim
+}
 
 /********************* 2. 메인영역 *********************/
+/* 인트로 동영상 */
+.intro-area{
+    width: 100vw;
+    height: 900px;
+    background-color: #f1eee9;
+}
+
+/* 슬라이드 배너 */
+.ban-area{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1eee9;
+}
+
+/* 스크롤 배너 */
+.scroll-area{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1eee9;
+}
+
+.clip-video-area{
+    width: 100vw;
+    height: 100vh;
+}
+
 /********************** 3. 하단영역 **********************/
+.footer-area{
+    width: 100vw;
+    height: 350px;
+}
