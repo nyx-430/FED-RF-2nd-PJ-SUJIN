@@ -10,13 +10,15 @@ body * {
 /********************** 1. 상단영역 **********************/
 /* 상단 메뉴 */
 .top-area{
-    height: 100px;
+    height: 80px;
     background-color: #f1eee9;
 }
 
 .top-area ul{
     display: flex;
     justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 100px;
 }
 
 .top-menu ul li{
@@ -36,6 +38,7 @@ body * {
     font-size: 2rem;
     margin: 14px;
     margin-left: 16px;
+    margin-top: 20px;
     font-family: 'Noto Sans KR','Halvar Breitschrift', sans-serif, dotum, gulim;
 }
 
