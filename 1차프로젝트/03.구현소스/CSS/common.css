@@ -83,21 +83,21 @@ body * {
 /********************* 2. 메인영역 *********************/
 /* 인트로 동영상 */
 .intro-area{
-    width: 100vw;
+    width: 100%;
     height: 900px;
     background-color: #f1eee9;
 }
 
 /* 슬라이드 배너 */
 .ban-area{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #f1eee9;
 }
 
 /* 스크롤 배너 */
 .scroll-area{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #f1eee9;
 }
@@ -107,7 +107,7 @@ body * {
 /* 동영상 */
 .clip-video-area{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #f1eee9;
 }

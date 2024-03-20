@@ -33,3 +33,9 @@
     /* 블록박스 중앙정렬 */
     margin: 0 auto;
 }
+
+/* 스티키 적용박스 */
+.stk-page{
+    position: sticky;
+    top: 100px;
+}
