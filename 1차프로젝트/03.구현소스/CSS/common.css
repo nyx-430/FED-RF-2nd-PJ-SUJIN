@@ -11,16 +11,13 @@ body * {
 /* 상단 메뉴 */
 .top-area{
     height: 80px;
-    background-color: #f1eee9;
+    background-color: #ffffff;
 }
 
+/* 햄버거 버튼 */
 .hambtn{
     position: relative;
-    /* 부모자격: span */
-    width: 400px;
-    height: 250px;
-    margin: 50px auto;
-    outline: 5px dotted lightpink;
+    width: 350px;
 
     /* 손가락 커서 보이기 */
     cursor: pointer;
@@ -30,7 +27,7 @@ body * {
 .hambtn span{
     position: absolute;
     width: 100%;
-    height: 50px;
+    height: 35px;
     background-color: #333;
     border-radius: 25px;
 }
@@ -38,65 +35,21 @@ body * {
 /* 1번 바 */
 .hambtn span:nth-child(1){
     top: 0px;
-    /* 트랜지션 개별설정 : 햄버거 복귀 */
-transition: top 0.3s 0.3s, transform 0.3s;
-/* top값은 0.3초대기후 0.3초애니,
-    transfrom은 바로 0.3초 애니 
-    회전후 중앙이동함! */
 }
 /* 2번 바 */
 .hambtn span:nth-child(2){
-    top: 100px;
-    left: 0;
-    /* left 초기값 있어야 애니메이션 됨(기본값 auto) */
-    transition: .1s .3s;
+    top: 90px;
 }
 /* 3번 바 */
 .hambtn span:nth-child(3){
-    top: 200px;
-    transition: top .3s .3s, transform .3s;
-    /* top값은 0.초 대기 후 0.3초 애니,
-    transform은 0.3초 애니
-    회전 후 중앙으로 이동함 */
+    top: 190px;
 }
 
-
-/* 상위 메뉴에 클래스 on */
-/* 1번 바 */
-.hambtn.on span:nth-child(1){
-    top: 100px;
-    transform: rotate(45deg);
-    transition: top .3s, transform .3s .3s;
-    /* top값은 0.초 대기 후 0.3초 애니,
-    transform은 0.3초 애니
-    회전 후 중앙으로 이동함 */
-}
-/* 2번 바 */
-.hambtn.on span:nth-child(2){
-    top: 100px;
-    width: 0%;
-    left: 50%;
-    /* 0.3초 후 0.1초 애니 */
-    transition: .1s .3s;
-}
-/* 3번 바 */
-.hambtn.on span:nth-child(3){
-    top: 100px;
-    transform: rotate(-45deg);
-    transition: top .3s, transform .3s .3s;
-    /* top값은 0.초 대기 후 0.3초 애니,
-    transform은 0.3초 애니
-    회전 후 중앙으로 이동함 */
-}
-
-
-/* 두 번째 햄버거버튼 크기, 위치 이동 */
-.hambtn2{
-    transform: scale(.1);
-    transform-origin: right top;
-    position: absolute;
-    top: 2vw;
-    right: 3vw;
+.mbtn{
+    display: flex;
+    transform: scale(0.09);
+    margin-top: 4.5%;
+    margin-left: 80%;
 }
 
 .top-area dl{
@@ -122,9 +75,8 @@ transition: top 0.3s 0.3s, transform 0.3s;
     justify-content: center;
     color: #111;
     font-size: 2rem;
-    margin: 14px;
-    margin-left: 16px;
-    margin-top: 20px;
+    margin-left: 10%;
+    margin-top: 10%;
     font-family: 'Noto Sans KR','Halvar Breitschrift', sans-serif, dotum, gulim;
 }
 
