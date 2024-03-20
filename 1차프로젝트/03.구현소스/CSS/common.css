@@ -11,7 +11,7 @@ body * {
 /* 상단 메뉴 */
 .top-area{
     height: 80px;
-    background-color: #ffffff;
+    background-color: #f1eee9;
 }
 
 /* 햄버거 버튼 */
@@ -26,7 +26,6 @@ body * {
 /* 햄버거바 공통 */
 .hambtn span{
     position: absolute;
-    width: 100%;
     height: 35px;
     background-color: #333;
     border-radius: 25px;
@@ -34,23 +33,33 @@ body * {
 
 /* 1번 바 */
 .hambtn span:nth-child(1){
+    width: 100%;
     top: 0px;
 }
 /* 2번 바 */
 .hambtn span:nth-child(2){
+    width: 60%;
     top: 90px;
+    left: 35%;
 }
 /* 3번 바 */
 .hambtn span:nth-child(3){
+    width: 100%;
     top: 190px;
 }
 
 .mbtn{
     display: flex;
-    transform: scale(0.09);
-    margin-top: 4.5%;
-    margin-left: 80%;
+    transform: scale(0.08);
+    margin-top: 4%;
+    margin-left: 85%;
 }
+
+/* .mbtn::after{
+    content: 'Menu';
+    display: block;
+    font-size: 10px;
+} */
 
 .top-area dl{
     display: none;
