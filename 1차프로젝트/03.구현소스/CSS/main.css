@@ -54,9 +54,13 @@
 
 /* 스크롤 배너 - 아래 위로 넘어가는 셋팅 */
 .scroll-box{
-    width: 100%;
+    position: relative;
+    width: 95%;
     height: 100%;
+    left: 45px;
+    border-radius: 30px;
     overflow: hidden;
+    
 }
 
 .scroll{
