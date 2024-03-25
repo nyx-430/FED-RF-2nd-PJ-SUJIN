@@ -96,6 +96,31 @@
     background-image: url(../images/main4.jpg);
 }
 
+/* 슬라이드 텍스트 */
+.textArea{
+    position: relative;
+    z-index: 1;
+}
+
+.textWarp>p{
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Archivo Black", sans-serif;
+    top: 360px;
+    left: 55px;
+    color: #fff;
+}
+
+.textWarp>span{
+    position: absolute;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
+    top: 460px;
+    left: 55px;
+    color: #fff;
+}
 
 /* 동영상 파트 */
 .video-box video{

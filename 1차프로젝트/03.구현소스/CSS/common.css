@@ -8,26 +8,15 @@
 } */
 
 /********************** 1. 상단영역 **********************/
-/* 상단 메뉴 */
+/* 1. 상단 바 */
 .top-area{
     height: 100px;
     background-color: #fff;
 }
 
+/* 사이드 메뉴 - 나중에 셋팅하기 */
 .top-area dl{
     display: none;
-    justify-content: flex-end;
-    margin-top: 20px;
-    margin-right: 100px;
-}
-
-.top-menu dl dt{
-    padding: 20px;
-}
-
-.top-menu dl a{
-    color: #111;
-    font-size: 16px;
 }
 
 /* 상단 메인 로고 */
@@ -36,17 +25,15 @@
     justify-content: center;
     color: #111;
     font-size: 2rem;
+    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
     margin-left: 10%;
-    margin-top: 10%;
-    font-family: 'Noto Sans KR','Halvar Breitschrift', sans-serif, dotum, gulim;
+    margin-top: 8%;
 }
 
 /* 햄버거 버튼 */
 .hambtn{
     position: relative;
     width: 350px;
-
-    /* 손가락 커서 보이기 */
     cursor: pointer;
 }
 
@@ -84,16 +71,12 @@
     top: 100px;
     transform: rotate(45deg);
     transition: top .3s, transform .3s .3s;
-    /* top값은 0초 대기 후 0.3초 애니,
-    transform은 0.3초 애니
-    회전 후 중앙으로 이동함 */
 }
 /* 2번 바 */
 .hambtn.on span:nth-child(2){
     top: 100px;
     width: 0%;
     left: 50%;
-    /* 0.3초 후 0.1초 애니 */
     transition: .1s .3s;
 }
 /* 3번 바 */
@@ -101,15 +84,12 @@
     top: 100px;
     transform: rotate(-45deg);
     transition: top .3s, transform .3s .3s;
-    /* top값은 0초 대기 후 0.3초 애니,
-    transform은 0.3초 애니
-    회전 후 중앙으로 이동함 */
 }
 
 .mbtn{
     display: flex;
     transform: scale(0.07);
-    margin-top: 4%;
+    margin-top: 3%;
     margin-left: 83%;
 }
 
@@ -120,6 +100,7 @@
 } */
 
 /********************* 2. 메인영역 *********************/
+/* 2. 인트로 파트 */
 .intro-area{
     width: 100%;
     height: 900px;
@@ -131,48 +112,22 @@
     width: 100%;
 }
 
-/* 슬라이드 배너 */
+/* 3. 슬라이드 배너 파트 */
 .ban-area{
     width: 100%;
     height: 100vh;
     background-color: #f1eee9;
 }
 
-
-.textArea{
-    position: relative;
-    z-index: 1;
-}
-
-.textWarp>p{
-    position: absolute;
-    font-size: 70px;
-    font-weight: bold;
-    font-family: "Archivo Black", sans-serif;
-    top: 360px;
-    left: 50px;
-    color: #fff;
-}
-
-.textWarp>span{
-    position: absolute;
-    font-size: 18px;
-    font-weight: normal;
-    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
-    top: 480px;
-    left: 50px;
-    color: #fff;
-}
-
-/* 스크롤 배너 */
+/* 4. 스크롤 배너 파트 */
 .scroll-area{
     width: 100%;
     height: 100vh;
 }
 
-/* 동영상 파트 */
+/* 5. 동영상 파트 */
 
-/* 동영상 */
+/* 클립 동영상 */
 .clip-video-area{
     position: relative;
     width: 100%;
@@ -211,5 +166,5 @@
     color: #111;
     font-size: 2rem;
     margin-top: 30px;
-    font-family: 'Noto Sans KR','Halvar Breitschrift', sans-serif, dotum, gulim;
+    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
 }

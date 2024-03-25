@@ -1,10 +1,6 @@
 // Beanpole 메인 JS //
 
-document.addEventListener('DOMContentLoaded', loadFn);
-
-function loadFn(){
-    console.log('로딩 완료!');
-
-
-
-} /////////////// loadFn 함수 ///////////////
+document.querySelector('html').style.scrollBehavior = 'smooth';
+      setTimeout(() => {
+        window.scrollTo(0,document.querySelector('#ban-area').offsetTop);
+      }, 8000);

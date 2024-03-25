@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- 외부 JS -->
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
     <title>BEANPOLE</title>
   </head>
   <body>
@@ -58,7 +58,7 @@
       <section class="intro-area">
         <!-- <h2>2. 인트로영역: 동영상 들어가는 파트</h2> -->
         <div class="intro">
-          <video src="./images/intro.mp4" autoplay="1">Intro</video>
+          <video src="./images/intro.mp4">Intro</video>
         </div>
       </section>
     </div>
@@ -185,11 +185,11 @@
         <p>Copyright (C) 2023 Samsung C&T Corporation. All rights reserved</p>
       </footer>
     </div>
-    <script>
+<!--     <script>
       document.querySelector('html').style.scrollBehavior = 'smooth';
       setTimeout(() => {
         window.scrollTo(0,document.querySelector('#ban-area').offsetTop);
       }, 8000);
-    </script>
+    </script> -->
   </body>
 </html>
