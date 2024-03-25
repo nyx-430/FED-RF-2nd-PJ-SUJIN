@@ -51,6 +51,10 @@
     background-image: url(../images/banner4.jpg);
 }
 
+/* 슬라이드 배너 버튼 */
+.arrow-btn{
+    top: 50%;
+}
 
 /* 스크롤 배너 - 아래 위로 넘어가는 셋팅 */
 .scroll-box{

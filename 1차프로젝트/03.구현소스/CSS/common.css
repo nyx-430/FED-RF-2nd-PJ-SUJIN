@@ -3,9 +3,9 @@
 /* 공통 모듈 CSS - common.css */
 /* 공유 기능 요소 셋팅 */
 
-/* body * {
+body * {
     outline: 2px dashed #ccc;
-} */
+}
 
 /********************** 1. 상단영역 **********************/
 /* 상단 메뉴 */
@@ -132,6 +132,32 @@
     width: 100%;
     height: 100vh;
     background-color: #f1eee9;
+}
+
+
+.textArea{
+    position: relative;
+    z-index: 1;
+}
+
+.textWarp>p{
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Archivo Black", sans-serif;
+    top: 360px;
+    left: 50px;
+    color: #fff;
+}
+
+.textWarp>span{
+    position: absolute;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
+    top: 480px;
+    left: 50px;
+    color: #fff;
 }
 
 /* 스크롤 배너 */
