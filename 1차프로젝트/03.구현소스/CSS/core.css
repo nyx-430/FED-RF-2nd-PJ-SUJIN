@@ -16,11 +16,12 @@
 */
 
 /**************** 공통 클래스 ****************/
-/* 중앙속박스 */
-.inbox{
-    /* 최대 가로 크기 */
-    /* max-width: 1360px; */
+html{
+    scroll-behavior: smooth;
+}
 
+/* 중앙 속 박스 */
+.inbox{
     /* 블록박스 중앙정렬 */
     margin: 0 auto;
 }
@@ -30,3 +31,95 @@
     position: sticky;
     top: 100px;
 }
+
+/* 상단영역 - 고정 */
+#header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.top-area{
+    height: 100px;
+}
+
+/* 상단 메인 로고 */
+.main-logo{
+    display: flex;
+    justify-content: center;
+    color: #111;
+    font-size: 2rem;
+    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+/* 햄버거 버튼 */
+.hambtn{
+    position: relative;
+    width: 350px;
+    cursor: pointer;
+}
+
+/* 햄버거바 공통 */
+.hambtn span{
+    position: absolute;
+    height: 35px;
+    background-color: #333;
+    border-radius: 25px;
+}
+
+/* 1번 바 */
+.hambtn span:nth-child(1){
+    width: 100%;
+    top: 0px;
+    transition: top .3s .3s, transform .3s;
+}
+/* 2번 바 */
+.hambtn span:nth-child(2){
+    width: 60%;
+    top: 90px;
+    left: 35%;
+    transition: .1s .3s;
+}
+/* 3번 바 */
+.hambtn span:nth-child(3){
+    width: 100%;
+    top: 190px;
+    transition: top .3s .3s, transform .3s;
+}
+
+/* 햄버거 버튼에 클래스 on */
+/* 1번 바 */
+.hambtn.on span:nth-child(1){
+    top: 100px;
+    transform: rotate(45deg);
+    transition: top .3s, transform .3s .3s;
+}
+/* 2번 바 */
+.hambtn.on span:nth-child(2){
+    top: 100px;
+    width: 0%;
+    left: 50%;
+    transition: .1s .3s;
+}
+/* 3번 바 */
+.hambtn.on span:nth-child(3){
+    top: 100px;
+    transform: rotate(-45deg);
+    transition: top .3s, transform .3s .3s;
+}
+
+.mbtn{
+    display: flex;
+    transform: scale(0.07);
+    margin-top: 3%;
+    margin-left: 83%;
+}
+
+/* .mbtn::before{
+    content: 'Menu';
+    display: block;
+    font-size: px;
+} */
