@@ -16,10 +16,10 @@
   <body>
     <!-- 1. 상단영역 -->
     <div id="header">
-      <header class="top-area inbox">
+      <header class="top-area">
         <div class="cont-box">
-          <!-- 1-1. 로고 -->
           <div class="col-2">
+            <!-- 1-1. 로고 -->
             <h1>
               <a href="#">
                 <span class="main-logo">BEANPOLE</span>
@@ -40,17 +40,16 @@
       </header>
     </div>
     <!-- 2. 인트로영역 -->
-    <div id="intro-area">
-      <section class="intro-area">
-        <!-- <h2>2. 인트로영역: 동영상 들어가는 파트</h2> -->
+    <div id="intro">
+      <section id="intro-area" class="page">
         <div class="intro-box">
           <video src="./images/intro.mp4" autoplay="1">동영상을 재생할 수 없습니다.</video>
         </div>
       </section>
     </div>
     <!-- 3. 슬라이드 배너영역 -->
-    <div id="ban-area">
-      <section class="ban-area">
+    <div id="ban">
+      <section id="ban-area" class="page">
         <div class="cont-box">
           <div class="col-12">
             <!-- 타이틀 -->
@@ -75,7 +74,7 @@
       </section>
     </div>
     <!-- 4. 스크롤 배너영역1 -->
-    <div id="scroll-area1" class="stk-page">
+    <div id="scroll1" class="stk-page">
       <section class="scroll-area">
         <div class="cont-box">
           <div class="col-12">
@@ -89,7 +88,7 @@
       </section>
     </div>
     <!-- 4-1. 스크롤 배너영역2 -->
-    <div id="scroll-area2" class="stk-page">
+    <div id="scroll2" class="stk-page">
       <section class="scroll-area">
         <div class="cont-box">
           <div class="col-12">
@@ -103,7 +102,7 @@
       </section>
     </div>
     <!-- 4-2. 스크롤 배너영역3 -->
-    <div id="scroll-area3" class="stk-page">
+    <div id="scroll3" class="stk-page">
       <section class="scroll-area">
         <div class="cont-box">
           <div class="col-12">
@@ -117,7 +116,7 @@
       </section>
     </div>
     <!-- 4-3. 스크롤 배너영역4 -->
-    <div id="scroll-area4" class="stk-page">
+    <div id="scroll4" class="stk-page">
       <section class="scroll-area">
         <div class="cont-box">
           <div class="col-12">
@@ -131,9 +130,8 @@
       </section>
     </div>
     <!-- 5. 동영상 영역 -->
-    <div id="clip-video-area" class="stk-page">
-      <section class="clip-video-area">
-        <h2 class="temp-tit">5. 동영상영역</h2>
+    <div id="video" class="stk-page">
+      <section class="video-area">
         <div class="video-box">
           <video src="./images/video_2023cont.mp4" controls>동영상을 재생할 수 없습니다.</video>
         </div>
@@ -141,8 +139,7 @@
     </div>
     <!-- 6. 하단 영역 -->
     <div id="footer" class="stk-page">
-      <h2 class="temp-tit">6. 하단영역</h2>
-      <footer class="footer-area">
+      <footer id="footer-area" class="page">
         <h3>STORE</h3>
         <ul>
           <li>
@@ -171,11 +168,5 @@
         <p>Copyright (C) 2023 Samsung C&T Corporation. All rights reserved</p>
       </footer>
     </div>
-<!--     <script>
-      document.querySelector('html').style.scrollBehavior = 'smooth';
-      setTimeout(() => {
-        window.scrollTo(0,document.querySelector('#ban-area').offsetTop);
-      }, 8000);
-    </script> -->
   </body>
 </html>
