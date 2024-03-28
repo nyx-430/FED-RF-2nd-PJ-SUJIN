@@ -51,6 +51,34 @@
     background-image: url(../images/banner4.jpg);
 }
 
+/* textArea 공통 */
+.textArea{
+    position: relative;
+    z-index: 1;
+}
+
+/* 슬라이드 배너 타이틀 */
+#ban-area .textWarp>p{
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Archivo Black", sans-serif;
+    top: 360px;
+    left: 55px;
+    color: #fff;
+}
+
+/* 슬라이드 배너 span */
+#ban-area .textWarp>span{
+    position: absolute;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
+    top: 460px;
+    left: 55px;
+    color: #fff;
+}
+
 /********************* 3. 스크롤 배너 영역 *********************/
 /* 스크롤 배너 - 아래 위로 넘어가는 셋팅 */
 .scroll-box{
@@ -92,29 +120,36 @@
     background-image: url(../images/main4.jpg);
 }
 
-/* 슬라이드 텍스트 */
-.textArea{
-    position: relative;
-    z-index: 1;
-}
-
-.textWarp>p{
+/* 스크롤 배너 타이틀 */
+.scroll-area .textWarp>p{
     position: absolute;
     font-size: 70px;
     font-weight: bold;
     font-family: "Archivo Black", sans-serif;
     top: 360px;
-    left: 55px;
+    left: 150px;
     color: #fff;
 }
 
-.textWarp>span{
+/* 스크롤 배너 span */
+.scroll-area .textWarp>span{
     position: absolute;
     font-size: 18px;
     font-weight: normal;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
     top: 460px;
-    left: 55px;
+    left: 150px;
+    color: #fff;
+}
+
+/* 스크롤 배너 링크 */
+.scroll-area ul li a{
+    position: absolute;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
+    top: 550px;
+    left: 150px;
     color: #fff;
 }
 
