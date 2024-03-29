@@ -3,35 +3,48 @@
 // 8초 후 아래로 이동
 document.querySelector("html").style.scrollBehavior = "smooth";
 setTimeout(() => {
-  window.scrollTo(0, document.querySelector("#ban-area").offsetTop);
+  console.log('여기요');
+  window.scrollTo(0, document.querySelector("#ban").offsetTop);
+  
+  // 자동넘김호출함수 최초호출하기
+  autoSlide();
 }, 8000);
 
-// 휠 이벤트 - x
-// 페이지 변수
-let pgNum=0;
+// 슬라이드 대상 : .slider
+const slide = document.querySelector(".slider");
+console.log(slide.querySelectorAll("li"));
 
-// 휠 상태 변수
-let stsWheels=false;
+/****************************************** 
+   함수명: goSlide
+    기능: 슬라이드 이동
+******************************************/
+function goSlide() {
+  // (1)먼저 왼쪽으로 이동하기
+  slide.style.left = "-100%";
+  slide.style.transition = ".6s ease-in-out";
 
-// .page 클래스 요소
-// const elePage=document.querySelector('.page');
+  // (2)이동하는 시간 0.6초간 기다림!
+  setTimeout(() => {
+    // (2-1) 맨앞 li 맨뒤로 이동
+    slide.appendChild(slide.querySelectorAll("li")[0]);
+    // 슬라이드 left 값이 -100% 이므로
+    // (2-2) left값을 0으로 변경
+    slide.style.left = "0";
+    // (2-3) left 트랜지션 없애기
+    slide.style.transition = "none";
+  }, 600);
 
-// 전체 페이지수
-const totalCnt=elePage.length;
-
-console.log('대상:',elePage,totalCnt);
-
-// 이벤트 등록
-window.addEventListener("wheel",wheelFn,{passive:false});
-
-function wheelFn(e){
-  console.log('휠이 안 됨!');
-
-  e.preventDefault();
-
-}; //////////// wheelFn ////////////
-///////////////////////////////////
+  // 맨 앞li 맨뒤로 이동하기
+  // appendChild(요소)
+  // -> 원래 뒤에 요소추가기능임
+  // -> 기존있는 요소를 선택시
+  // 맨뒤로 이동함
+  // 맨앞요소를 선택하여 맨뒤로 보냄
+} ///////////// goSlide 함수 ////////////////
+/////////////////////////////////////////////
 
 
-
-
+// [ 자동넘김호출함수 ] /////
+function autoSlide() {
+  setInterval(goSlide, 3000);
+} /////// autoSlide 함수 /////////////
