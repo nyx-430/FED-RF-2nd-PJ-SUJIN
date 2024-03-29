@@ -3,6 +3,12 @@
 /* 리셋 CSS - reset.css */
 /* 기본 초기화 셋팅 */
 
+/* 글자 크기 Root */
+html{
+    font-size: 10px;
+    /* rem 단위 계산 편의 위해 */
+}
+
 /* 기본 초기화 */
 html,
 body,
