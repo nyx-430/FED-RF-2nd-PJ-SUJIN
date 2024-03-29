@@ -61,8 +61,15 @@
 #footer{
     height: 351px;
     padding: 40px;
+    background: #EBEBE6;
 }
 
+#footer-area{
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* STORE 타이틀 */
 #footer-area h3{
     font-size: 1.6rem;
 }
@@ -73,7 +80,8 @@
     font-size: 1.7rem;
 }
 
-#footer-area ul li{
+#footer-area ul li a{
+    color: #888;
     margin-right: 30px;
 }
 
