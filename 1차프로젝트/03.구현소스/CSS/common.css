@@ -58,14 +58,19 @@
 }
 
 /********************** 6. 하단 영역 **********************/
-#footer-area{
+#footer{
     height: 351px;
     padding: 40px;
+}
+
+#footer-area h3{
+    font-size: 1.6rem;
 }
 
 #footer-area ul,ol{
     display: flex;
     color: #111;
+    font-size: 1.7rem;
 }
 
 #footer-area ul li{
@@ -80,13 +85,14 @@
 #footer-area p{
     margin-top: 30px;
     color: #888;
+    font-size: 1.5rem;
 }
 
 /* 하단 로고 */
 .footer-logo{
     display: flex;
     color: #111;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 30px;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
 }

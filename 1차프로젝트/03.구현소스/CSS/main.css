@@ -51,7 +51,7 @@
     background-image: url(../images/banner4.jpg);
 }
 
-/* textArea 공통 */
+/* 전체 textArea 공통 */
 .textArea{
     position: relative;
     z-index: 1;
@@ -60,7 +60,7 @@
 /* 슬라이드 배너 타이틀 */
 #ban-area .textWarp>p{
     position: absolute;
-    font-size: 70px;
+    font-size: 7rem;
     font-weight: bold;
     font-family: "Archivo Black", sans-serif;
     top: 360px;
@@ -71,7 +71,7 @@
 /* 슬라이드 배너 span */
 #ban-area .textWarp>span{
     position: absolute;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: normal;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
     top: 460px;
@@ -88,7 +88,6 @@
     left: 45px;
     border-radius: 30px;
     overflow: hidden;
-    
 }
 
 .scroll{
@@ -120,10 +119,10 @@
     background-image: url(../images/main4.jpg);
 }
 
-/* 스크롤 배너 타이틀 */
-.scroll-area .textWarp>p{
+/* 스크롤 배너1 타이틀 */
+#scroll1 .textWarp>p{
     position: absolute;
-    font-size: 70px;
+    font-size: 7rem;
     font-weight: bold;
     font-family: "Archivo Black", sans-serif;
     top: 360px;
@@ -131,10 +130,10 @@
     color: #fff;
 }
 
-/* 스크롤 배너 span */
+/* 스크롤 배너1 span */
 .scroll-area .textWarp>span{
     position: absolute;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: normal;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
     top: 460px;
@@ -142,15 +141,15 @@
     color: #fff;
 }
 
-/* 스크롤 배너 링크 */
-.scroll-area ul li a{
+/* 스크롤 배너1 링크 */
+.scroll-area .textWarp ul li a{
     position: absolute;
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: normal;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
+    color: #fff;
     top: 550px;
     left: 150px;
-    color: #fff;
 }
 
 /********************* 4. 동영상 영역 *********************/
