@@ -47,6 +47,10 @@
     height: 100vh;
 }
 
+#scroll1{
+    background-color: #f1eee9;
+}
+
 /********************* 5. 동영상 영역 *********************/
 
 /* 클립 동영상 */
@@ -59,9 +63,10 @@
 
 /********************** 6. 하단 영역 **********************/
 #footer{
+    position: relative;
     height: 351px;
     padding: 40px;
-    background: #EBEBE6;
+    background: #183c26;
 }
 
 #footer-area{
@@ -72,16 +77,17 @@
 /* STORE 타이틀 */
 #footer-area h3{
     font-size: 1.6rem;
+    color: #fff;
 }
 
 #footer-area ul,ol{
     display: flex;
-    color: #111;
+    color: #fff;
     font-size: 1.7rem;
 }
 
 #footer-area ul li a{
-    color: #888;
+    color: #fff;
     margin-right: 30px;
 }
 
@@ -92,14 +98,14 @@
 
 #footer-area p{
     margin-top: 30px;
-    color: #888;
+    color: #fff;
     font-size: 1.5rem;
 }
 
 /* 하단 로고 */
 .footer-logo{
     display: flex;
-    color: #111;
+    color: #fff;
     font-size: 3rem;
     margin-top: 30px;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
