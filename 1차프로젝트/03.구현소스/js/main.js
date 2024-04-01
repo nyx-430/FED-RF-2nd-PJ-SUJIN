@@ -1,29 +1,26 @@
-// Beanpole 메인 JS //
+// Beanpole 메인 JS - main.js //
 
-// 8초 후 아래로 이동
 document.querySelector("html").style.scrollBehavior = "smooth";
+
+// 8초 후 아래로 이동 //////
 setTimeout(() => {
-  console.log('여기요');
+  console.log('8초 후 이동함');
   window.scrollTo(0, document.querySelector("#ban").offsetTop);
   
-  // 자동넘김호출함수 최초호출하기
+  // 자동 넘김 호출 함수 최초 호출하기
   autoSlide();
 }, 8000);
 
-// 슬라이드 대상 : .slider
+// 슬라이드 배너 이벤트 //////
 const slide = document.querySelector(".slider");
 console.log(slide.querySelectorAll("li"));
 
-/****************************************** 
-   함수명: goSlide
-    기능: 슬라이드 이동
-******************************************/
 function goSlide() {
-  // (1)먼저 왼쪽으로 이동하기
+  // (1) 먼저 왼쪽으로 이동하기
   slide.style.left = "-100%";
   slide.style.transition = ".6s ease-in-out";
 
-  // (2)이동하는 시간 0.6초간 기다림!
+  // (2) 이동하는 시간 0.6초간 기다림!
   setTimeout(() => {
     // (2-1) 맨앞 li 맨뒤로 이동
     slide.appendChild(slide.querySelectorAll("li")[0]);
@@ -33,18 +30,21 @@ function goSlide() {
     // (2-3) left 트랜지션 없애기
     slide.style.transition = "none";
   }, 600);
-
-  // 맨 앞li 맨뒤로 이동하기
-  // appendChild(요소)
-  // -> 원래 뒤에 요소추가기능임
-  // -> 기존있는 요소를 선택시
-  // 맨뒤로 이동함
-  // 맨앞요소를 선택하여 맨뒤로 보냄
 } ///////////// goSlide 함수 ////////////////
 /////////////////////////////////////////////
 
-
-// [ 자동넘김호출함수 ] /////
+// 배너 자동 넘김 호출 함수 /////
 function autoSlide() {
   setInterval(goSlide, 3000);
-} /////// autoSlide 함수 /////////////
+} //////////////// autoSlide 함수 ////////////////
+
+
+// 마우스커서 이벤트 //////
+const cursor=document.querySelector('.cursor');
+const myBody=document.body;
+
+myBody.onmousemove=(e)=>{
+  cursor.style.top=e.pageY+'px';
+  cursor.style.left=e.pageX+'px';
+}; /// mousemove ///
+
