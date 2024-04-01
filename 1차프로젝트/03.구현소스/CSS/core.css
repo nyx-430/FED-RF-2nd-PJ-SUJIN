@@ -121,7 +121,7 @@ html{
     width: 100px;
     height: 100px;
     /* background-color: #144835; */
-    background: url(../images/img_check5.jpg) no-repeat top/cover;
+    background: url(../images/check1.jpg) no-repeat top/cover;
     transition: .4s ease-out;
     z-index: 999;
 }

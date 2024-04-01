@@ -48,3 +48,11 @@ myBody.onmousemove=(e)=>{
   cursor.style.left=e.pageX+'px';
 }; /// mousemove ///
 
+const introPage=document.querySelector('#intro');
+const banPage=document.querySelector('#ban');
+const scbPage=document.querySelector('.scroll-area');
+const footPage=document.querySelector('#footer');
+
+for (let x of cursor){
+  
+}
