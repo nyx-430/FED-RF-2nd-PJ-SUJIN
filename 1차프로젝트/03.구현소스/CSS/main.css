@@ -58,7 +58,7 @@
 }
 
 /* 슬라이드 배너 타이틀 */
-#ban-area .textWarp>p{
+#ban-area .textWarp .title{
     position: absolute;
     font-size: 7rem;
     font-weight: bold;
@@ -69,13 +69,13 @@
 }
 
 /* 슬라이드 배너 span */
-#ban-area .textWarp>span{
+#ban-area .textWarp span{
     position: absolute;
     font-size: 1.8rem;
     font-weight: normal;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
     top: 500px;
-    left: 110px;
+    left: 115px;
     color: #fff;
 }
 
@@ -120,7 +120,7 @@
 }
 
 /* 스크롤 배너1 타이틀 */
-#scroll1 .textWarp>p{
+.scroll-area .textWarp .title{
     position: absolute;
     font-size: 7rem;
     font-weight: bold;
@@ -131,7 +131,7 @@
 }
 
 /* 스크롤 배너1 span */
-.scroll-area .textWarp>span{
+.scroll-area .textWarp span{
     position: absolute;
     font-size: 1.8rem;
     font-weight: normal;
@@ -142,14 +142,14 @@
 }
 
 /* 스크롤 배너1 링크 */
-.scroll-area .textWarp ul li a{
+.scroll-area .textWarp ul{
     position: absolute;
     font-size: 2rem;
     font-weight: normal;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
-    color: #fff;
     top: 550px;
     left: 150px;
+    gap: 0 20px;
 }
 
 /********************* 4. 동영상 영역 *********************/

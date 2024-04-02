@@ -22,7 +22,7 @@ function goSlide() {
 
   // (2) 이동하는 시간 0.6초간 기다림!
   setTimeout(() => {
-    // (2-1) 맨앞 li 맨뒤로 이동
+    // (2-1) 맨 앞 li 맨 뒤로 이동
     slide.appendChild(slide.querySelectorAll("li")[0]);
     // 슬라이드 left 값이 -100% 이므로
     // (2-2) left값을 0으로 변경
@@ -47,12 +47,3 @@ myBody.onmousemove=(e)=>{
   cursor.style.top=e.pageY+'px';
   cursor.style.left=e.pageX+'px';
 }; /// mousemove ///
-
-const introPage=document.querySelector('#intro');
-const banPage=document.querySelector('#ban');
-const scbPage=document.querySelector('.scroll-area');
-const footPage=document.querySelector('#footer');
-
-for (let x of cursor){
-  
-}
