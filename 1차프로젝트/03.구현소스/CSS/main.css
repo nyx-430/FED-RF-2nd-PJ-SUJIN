@@ -119,37 +119,78 @@
     background-image: url(../images/main4.jpg);
 }
 
-/* 스크롤 배너1 타이틀 */
+/* 스크롤 배너 title 공통 */
 .scroll-area .textWarp .title{
     position: absolute;
-    font-size: 7rem;
-    font-weight: bold;
+    font-size: 8rem;
     font-family: "Archivo Black", sans-serif;
-    top: 360px;
-    left: 150px;
-    color: #fff;
+    top: 280px;
+    left: 200px;
 }
 
-/* 스크롤 배너1 span */
+/* 스크롤 배너 span 공통  */
 .scroll-area .textWarp span{
     position: absolute;
     font-size: 1.8rem;
     font-weight: normal;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
-    top: 460px;
-    left: 150px;
-    color: #fff;
+    top: 410px;
+    left: 200px;
 }
 
-/* 스크롤 배너1 링크 */
+/* 스크롤 배너 cat 공통  */
 .scroll-area .textWarp ul{
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 2rem;
     font-weight: normal;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
-    top: 550px;
-    left: 150px;
-    gap: 0 20px;
+    top: 520px;
+    left: 200px;
+    /* top: 550px; */
+    /* left: 150px; */
+    gap: 40px;
+}
+
+/* 스크롤 배너 ul li 가상요소 구분선 */
+/* .scroll-area .textWarp ul li::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    top: 20%;
+    background-color: #fff;
+} */
+
+/* 배너1 title */
+#scroll1 .textWarp .title{
+    color: #fff;
+}
+
+/* 배너1 span */
+#scroll1 .textWarp span{
+    color: #fff;
+}
+
+/* 배너1 cat */
+#scroll1 .textWarp .cat{
+    color: #fff;
+}
+
+/* 배너2 title */
+#scroll2 .textWarp .title{
+    color: #144835;
+}
+
+/* 배너2 span */
+#scroll2 .textWarp span{
+    color: #111;
+}
+
+/* 배너2 cat */
+#scroll2 .textWarp .cat{
+    color: #144835;
 }
 
 /********************* 4. 동영상 영역 *********************/
