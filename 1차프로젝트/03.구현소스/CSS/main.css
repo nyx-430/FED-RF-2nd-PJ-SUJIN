@@ -79,6 +79,21 @@
     color: #fff;
 }
 
+/*이동 버튼*/
+.abtn{
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+}
+
+.ab1{
+    left: 90px;
+}
+
+.ab2{
+    left: 200px;
+}
+
 /********************* 3. 스크롤 배너 영역 *********************/
 /* 스크롤 배너 - 아래 위로 넘어가는 셋팅 */
 .scroll-box{

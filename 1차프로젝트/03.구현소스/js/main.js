@@ -20,7 +20,7 @@ function goSlide() {
   slide.style.left = "-100%";
   slide.style.transition = ".6s ease-in-out";
 
-  // (2) 이동하는 시간 0.6초간 기다림!
+  // (2) 이동하는 시간 0.7초간 기다림!
   setTimeout(() => {
     // (2-1) 맨 앞 li 맨 뒤로 이동
     slide.appendChild(slide.querySelectorAll("li")[0]);
@@ -29,7 +29,7 @@ function goSlide() {
     slide.style.left = "0";
     // (2-3) left 트랜지션 없애기
     slide.style.transition = "none";
-  }, 600);
+  }, 700);
 } ///////////// goSlide 함수 ////////////////
 /////////////////////////////////////////////
 
@@ -37,6 +37,9 @@ function goSlide() {
 function autoSlide() {
   setInterval(goSlide, 3000);
 } //////////////// autoSlide 함수 ////////////////
+
+// 배너 넘김 버튼
+
 
 
 // 마우스커서 이벤트 //////
