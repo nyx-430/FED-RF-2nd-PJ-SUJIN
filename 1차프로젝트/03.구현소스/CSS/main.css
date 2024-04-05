@@ -84,6 +84,8 @@
     position: absolute;
     top: 70%;
     transform: translateY(-50%);
+    font-size: 40px;
+    color: #fff;
 }
 
 .ab1{

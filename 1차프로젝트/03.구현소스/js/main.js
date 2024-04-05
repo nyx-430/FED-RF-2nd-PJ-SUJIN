@@ -39,8 +39,8 @@ function autoSlide() {
 } //////////////// autoSlide 함수 ////////////////
 
 // 슬라이드 배너 버튼 //////
-const abtn=querySelectorAll(".abtn");
-const slide=querySelectorAll(".slider");
+//const abtn=querySelectorAll(".abtn");
+//const slide=querySelectorAll(".slider");
 
 
 // 마우스커서 이벤트 //////
@@ -48,6 +48,23 @@ const cursor=document.querySelector('.cursor');
 const myBody=document.body;
 
 myBody.onmousemove=(e)=>{
-  cursor.style.top=e.pageY+'px';
-  cursor.style.left=e.pageX+'px';
+  cursor.style.top=e.clientY+'px';
+  cursor.style.left=e.clientX+'px';
 }; /// mousemove ///
+
+// 영역별 마우스 오버 체크 커서 변경하기
+// 이벤트 대상 : #ban-area
+// 대상: cursor
+const cursorSet = document.querySelectorAll('.cursor-set');
+
+cursorSet.forEach(ele=>{
+  ele.onmouseenter = ()=>{
+    cursor.classList.add(
+      ele.getAttribute('data-cursor'));
+  };
+  ele.onmouseleave = ()=>{
+    cursor.classList.remove(
+      ele.getAttribute('data-cursor'));
+  };
+
+}); ///// forEach /////////
