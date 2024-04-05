@@ -38,8 +38,9 @@ function autoSlide() {
   setInterval(goSlide, 3000);
 } //////////////// autoSlide 함수 ////////////////
 
-// 배너 넘김 버튼
-
+// 슬라이드 배너 버튼 //////
+const abtn=querySelectorAll(".abtn");
+const slide=querySelectorAll(".slider");
 
 
 // 마우스커서 이벤트 //////
