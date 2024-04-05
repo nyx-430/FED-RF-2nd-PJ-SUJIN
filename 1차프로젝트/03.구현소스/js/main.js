@@ -38,7 +38,7 @@ function autoSlide() {
   setInterval(goSlide, 3000);
 } //////////////// autoSlide 함수 ////////////////
 
-// 슬라이드 배너 버튼 //////
+// 슬라이드 배너 버튼 - 수정중 //////
 //const abtn=querySelectorAll(".abtn");
 //const slide=querySelectorAll(".slider");
 

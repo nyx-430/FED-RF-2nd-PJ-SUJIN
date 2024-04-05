@@ -103,7 +103,7 @@
     width: 95%;
     height: 100%;
     left: 45px;
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -136,6 +136,16 @@
     background-image: url(../images/main4.jpg);
 }
 
+#scroll2 .cont-box{
+    padding-top: 10px;
+}
+#scroll3 .cont-box{
+    padding-top: 20px;
+}
+#scroll4 .cont-box{
+    padding-top: 30px;
+}
+
 /* 스크롤 배너 title 공통 */
 .scroll-area .textWarp .title{
     position: absolute;
@@ -155,18 +165,20 @@
     left: 200px;
 }
 
-/* 스크롤 배너 cat 공통  */
+.scroll-area .textWarp{
+    position: relative;
+}
+
+/* 스크롤 배너 ul 공통  */
 .scroll-area .textWarp ul{
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     font-size: 2rem;
-    font-weight: normal;
-    font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
+    font-weight: bold;
+    font-family: "Titillium Web", sans-serif, dotum, gulim;
     top: 520px;
     left: 200px;
-    /* top: 550px; */
-    /* left: 150px; */
     gap: 40px;
 }
 
@@ -179,6 +191,8 @@
     top: 20%;
     background-color: #fff;
 } */
+
+
 
 /* 배너1 title */
 #scroll1 .textWarp .title{
@@ -208,6 +222,21 @@
 /* 배너2 cat */
 #scroll2 .textWarp .cat{
     color: #144835;
+}
+
+/* 배너3 title */
+#scroll3 .textWarp .title{
+    color: #fff;
+}
+
+/* 배너3 span */
+#scroll3 .textWarp span{
+    color: #fff;
+}
+
+/* 배너3 cat */
+#scroll3 .textWarp .cat{
+    color: #fff;
 }
 
 /********************* 4. 동영상 영역 *********************/
