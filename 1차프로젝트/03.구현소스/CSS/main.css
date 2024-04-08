@@ -136,6 +136,8 @@
     background-image: url(../images/main4.jpg);
 }
 
+
+/* 페이지 상단 패딩 */
 #scroll2 .cont-box{
     padding-top: 10px;
 }
@@ -182,18 +184,6 @@
     gap: 40px;
 }
 
-/* 스크롤 배너 ul li 가상요소 구분선 */
-/* .scroll-area .textWarp ul li::after{
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 20px;
-    top: 20%;
-    background-color: #fff;
-} */
-
-
-
 /* 배너1 title */
 #scroll1 .textWarp .title{
     color: #fff;
@@ -227,17 +217,48 @@
 /* 배너3 title */
 #scroll3 .textWarp .title{
     color: #fff;
+    left: 1200px;
 }
 
 /* 배너3 span */
 #scroll3 .textWarp span{
     color: #fff;
+    left: 1200px;
 }
 
 /* 배너3 cat */
 #scroll3 .textWarp .cat{
     color: #fff;
 }
+
+#scroll3 .textWarp ul{
+    left: 1200px;
+    line-height: 1.2;
+}
+
+/* 배너4 title */
+#scroll4 .textWarp .title{
+    color: #fff;
+    left: 1200px;
+    top: 170px;
+}
+
+/* 배너4 span */
+#scroll4 .textWarp span{
+    color: #fff;
+    left: 1200px;
+}
+
+/* 배너4 cat */
+#scroll4 .textWarp .cat{
+    color: #fff;
+}
+
+#scroll4 .textWarp ul{
+    left: 1200px;
+    line-height: 1.2;
+}
+
 
 /********************* 4. 동영상 영역 *********************/
 /* 동영상 셋팅 */

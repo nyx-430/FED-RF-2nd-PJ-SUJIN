@@ -2,7 +2,7 @@
 
 document.querySelector("html").style.scrollBehavior = "smooth";
 
-// 8초 후 아래로 이동 //////
+// 8초 후 아래로 이동 ////////////
 setTimeout(() => {
   console.log('8초 후 이동함');
   window.scrollTo(0, document.querySelector("#ban").offsetTop);
@@ -11,9 +11,9 @@ setTimeout(() => {
   autoSlide();
 }, 8000);
 
-// 슬라이드 배너 이벤트 //////
+// 슬라이드 배너 이벤트 ////////////
 const slide = document.querySelector(".slider");
-console.log(slide.querySelectorAll("li"));
+// console.log(slide.querySelectorAll("li"));
 
 function goSlide() {
   // (1) 먼저 왼쪽으로 이동하기
@@ -30,31 +30,29 @@ function goSlide() {
     // (2-3) left 트랜지션 없애기
     slide.style.transition = "none";
   }, 700);
+
 } ///////////// goSlide 함수 ////////////////
 /////////////////////////////////////////////
 
-// 배너 자동 넘김 호출 함수 /////
+// 배너 자동 넘김 호출 함수
 function autoSlide() {
   setInterval(goSlide, 3000);
 } //////////////// autoSlide 함수 ////////////////
-
-// 슬라이드 배너 버튼 - 수정중 //////
-//const abtn=querySelectorAll(".abtn");
-//const slide=querySelectorAll(".slider");
+/////////////////////////////////////////////////
 
 
-// 마우스커서 이벤트 //////
+// 마우스커서 이벤트 ////////////
 const cursor=document.querySelector('.cursor');
 const myBody=document.body;
 
 myBody.onmousemove=(e)=>{
   cursor.style.top=e.clientY+'px';
   cursor.style.left=e.clientX+'px';
-}; /// mousemove ///
+}; /////////// mousemove ///////////
 
 // 영역별 마우스 오버 체크 커서 변경하기
 // 이벤트 대상 : #ban-area
-// 대상: cursor
+// 대상 : cursor
 const cursorSet = document.querySelectorAll('.cursor-set');
 
 cursorSet.forEach(ele=>{
@@ -67,4 +65,4 @@ cursorSet.forEach(ele=>{
       ele.getAttribute('data-cursor'));
   };
 
-}); ///// forEach /////////
+}); /// forEach ///
