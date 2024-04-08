@@ -1,5 +1,8 @@
 // Beanpole 메인 JS - main.js //
 
+// 부드러운 스크롤 불러오기
+import { startSS, setScrollPos } from "./smoothScroll23.js";
+
 document.querySelector("html").style.scrollBehavior = "smooth";
 
 // 8초 후 아래로 이동 ////////////
