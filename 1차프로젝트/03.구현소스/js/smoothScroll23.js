@@ -23,7 +23,7 @@ function setScrollPos(val) {
 }
 
 function SmoothScroll(scrollTarget, speed, smooth) {
-  // scrollTarget - 대상요소, speed - 스크롤애니속도, smooth - 부드러운정도
+  // scrollTarget - 대상요소, speed - 스크롤 애니 속도, smooth - 부드러운 정도
   if (scrollTarget === document)
     scrollTarget =
       document.scrollingElement ||

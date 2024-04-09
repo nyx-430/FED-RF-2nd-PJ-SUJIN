@@ -64,7 +64,7 @@
     font-weight: bold;
     font-family: "Archivo Black", sans-serif;
     top: 400px;
-    left: 110px;
+    left: 85px;
     color: #fff;
 }
 
@@ -75,7 +75,7 @@
     font-weight: normal;
     font-family: 'Noto Sans KR', sans-serif, dotum, gulim;
     top: 500px;
-    left: 115px;
+    left: 85px;
     color: #fff;
 }
 
@@ -84,7 +84,7 @@
     position: absolute;
     top: 70%;
     transform: translateY(-50%);
-    font-size: 40px;
+    font-size: 35px;
     color: #fff;
 }
 
@@ -120,6 +120,7 @@
 
     /* 공통 배경 설정 */
     background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
 }
 
