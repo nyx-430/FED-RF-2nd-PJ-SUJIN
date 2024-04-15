@@ -12,7 +12,7 @@ setTimeout(() => {
   
   // 자동 넘김 호출 함수 최초 호출하기
   autoSlide();
-}, 9000);
+}, 8000);
 
 // 슬라이드 배너 이벤트 ////////////
 const slide = document.querySelector(".slider");
@@ -42,7 +42,7 @@ function goSlide() {
 
 // 배너 자동 넘김 호출 함수
 function autoSlide() {
-  setInterval(goSlide, 3000);
+  setInterval(goSlide, 4000);
 } //////////////// autoSlide 함수 ////////////////
 /////////////////////////////////////////////////
 

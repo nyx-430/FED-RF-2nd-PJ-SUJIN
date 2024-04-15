@@ -54,6 +54,7 @@
 /* 전체 textArea 공통 */
 .textArea{
     position: relative;
+    text-shadow: 10px 20px blur #000;
     z-index: 1;
 }
 
@@ -118,23 +119,22 @@
     flex-basis: 100%;
     flex-shrink: 0;
 
-    /* 공통 배경 설정 */
-    /* background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover; */
+    background-repeat: no-repeat;
+    background-image: center cover;
+
 }
 
 .scban-01{
-    background-image: url(../images/main1.jpg) no-repeat center/cover;
+    background-image: url(../images/main1.jpg);
 }
 .scban-02{
-    background-image: url(../images/main2.jpg) no-repeat center/cover;
+    background-image: url(../images/main2.jpg);
 }
 .scban-03{
-    background-image: url(../images/main3.jpg) no-repeat center/cover;
+    background-image: url(../images/main3.jpg);
 }
 .scban-04{
-    background-image: url(../images/main4.jpg) no-repeat center/cover;
+    background-image: url(../images/main4.jpg);
 }
 
 
