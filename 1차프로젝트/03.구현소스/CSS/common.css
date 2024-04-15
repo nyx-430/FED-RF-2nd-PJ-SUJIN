@@ -109,7 +109,9 @@ body{
 .video-area{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 2000px;
+    margin: 30px;
+    padding: 30px;
     background-color: #f1eee9;
 }
 
