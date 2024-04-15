@@ -42,7 +42,7 @@ function goSlide() {
 
 // 배너 자동 넘김 호출 함수
 function autoSlide() {
-  setInterval(goSlide, 4000);
+  setInterval(goSlide, 3500);
 } //////////////// autoSlide 함수 ////////////////
 /////////////////////////////////////////////////
 

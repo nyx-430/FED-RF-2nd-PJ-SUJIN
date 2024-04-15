@@ -125,13 +125,20 @@ body{
 
 #footer-area{
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px 50px;
+}
+
+.footer-menu{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CFCFCF;
 }
 
 /* STORE 타이틀 */
 #footer-area h3{
     font-size: 1.6rem;
     color: #fff;
+    padding-bottom: 10px;
 }
 
 #footer-area ul,ol{
