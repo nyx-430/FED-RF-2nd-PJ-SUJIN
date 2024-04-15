@@ -1,5 +1,8 @@
 // Beanpole 메인 JS - main.js //
 
+// 페이지로딩시 최상단이동하기
+window.addEventListener('load',()=>window.scrollTo(0,0));
+
 document.querySelector("html").style.scrollBehavior = "smooth";
 
 // 8초 후 아래로 이동 ////////////
@@ -75,5 +78,55 @@ console.log('메뉴 버튼:',menuBtn,'메뉴 박스:',menuBox);
 menuBtn.addEventListener('click',showmenu);
 
 function showmenu(){
-  menuBox.style.display='block';
+  
+  menuBox.style.display=
+  this.classList.contains('on')?'block':'none';
+  // 클래스 on이 들어간 경우 block으로 보이게함!
+  // 반대인 경우는 none으로 숨김기
 }
+
+const pagePos = [];
+const page = document.querySelectorAll('.page');
+page.forEach((ele,idx)=>{
+  pagePos[idx] = ele.offsetTop;
+})
+console.log(pagePos);
+
+
+// 휠 이벤트에 따라 페이지 넘기기
+
+// 페이지번호 
+let pgNum = 0;
+
+// 광스크롤 금지
+let wheelSts = false;
+
+window.addEventListener('wheel',(e)=>{
+
+  // 광휠금지
+  if(wheelSts){
+    return;
+  }
+  wheelSts = true;
+  setTimeout(()=>{
+    wheelSts = false;
+  },600);
+
+
+  // 스크롤 내릴때 deltaY값 양수 / 올리면 음수
+  if(e.deltaY>0){
+    pgNum++;
+  }else{
+    pgNum--;
+  }
+  if(pgNum<0){
+    pgNum=0;
+  }
+  if(pgNum>page.length-1){
+    pgNum=page.length-1;
+  }
+  console.log(pgNum);
+
+  // 페이지 이동
+  window.scrollTo(0,pagePos[pgNum]);
+});
