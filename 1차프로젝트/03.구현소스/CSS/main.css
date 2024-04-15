@@ -282,7 +282,7 @@
 /* 동영상 셋팅 */
 .video-box video{
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;

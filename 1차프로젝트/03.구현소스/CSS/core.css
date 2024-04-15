@@ -17,7 +17,7 @@
     font-family: "Titillium Web", sans-serif;
 */
 
-/* 설명숨기기 클래스 */
+/* 설명 숨기기 클래스 */
 .ir{
     display: block;
     width: 0;
@@ -30,7 +30,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/* 중앙 속 박스 */
+/* 중앙속 박스 */
 .inbox{
     /* 블록박스 중앙정렬 */
     margin: 0 auto;

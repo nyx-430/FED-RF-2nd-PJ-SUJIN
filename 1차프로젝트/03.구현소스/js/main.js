@@ -82,10 +82,12 @@ menuBtn.addEventListener('click',showmenu);
 
 function showmenu(){
   
-  menuBox.style.display=
-  this.classList.contains('on')?'block':'none';
-  // 클래스 on이 들어간 경우 block으로 보이게함!
-  // 반대인 경우는 none으로 숨김기
+  setTimeout(() => {
+    menuBox.style.display=
+    this.classList.contains('on')?'block':'none';
+    // 클래스 on이 들어간 경우 block으로 보이게 함!
+    // 반대인 경우는 none으로 숨김기
+  }, 300);
 }
 
 const pagePos = [];

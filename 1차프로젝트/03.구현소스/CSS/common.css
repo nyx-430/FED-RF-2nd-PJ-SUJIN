@@ -23,11 +23,12 @@ body{
 
 /* GNB 메뉴 */
 .gnb .menu-box{
-    padding: 50px;
-    background-color: #f1eee9;
+    padding: 90px;
     height: 100vh;
-    transform: translate(0px, 0px);
+    background-color: #f1eee9;
     display: none;
+    width: 100%;
+    transition: 0.3s ease-in;
 }
 
 /* GNB 카테고리 */
@@ -50,7 +51,6 @@ body{
     font-size: 4rem;
     font-weight: bold;
     white-space: nowrap;
-    transition: 0.3s;
 }
 
 .gnb span:hover{
