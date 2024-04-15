@@ -65,3 +65,15 @@ cursorSet.forEach(ele=>{
       ele.getAttribute('data-cursor'));
   };
 }); /// forEach ///
+
+// 햄버거 버튼 클릭으로 메뉴 열고 닫기
+const menuBtn=document.querySelector('.hambtn');
+const menuBox=document.querySelector('.menu-box');
+
+console.log('메뉴 버튼:',menuBtn,'메뉴 박스:',menuBox);
+
+menuBtn.addEventListener('click',showmenu);
+
+function showmenu(){
+  menuBox.style.display='block';
+}

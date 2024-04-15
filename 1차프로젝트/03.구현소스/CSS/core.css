@@ -116,12 +116,6 @@ html{
     margin-left: 83%;
 }
 
-/* .mbtn::before{
-    content: 'Menu';
-    display: block;
-    font-size: px;
-} */
-
 /* 마우스커서 */
 .cursor{
     position: fixed;
