@@ -1,6 +1,6 @@
 // Beanpole 메인 JS - main.js //
 
-// 페이지로딩시 최상단이동하기
+// 페이지 로딩시 최상단 이동하기
 window.addEventListener('load',()=>window.scrollTo(0,0));
 
 document.querySelector("html").style.scrollBehavior = "smooth";
@@ -12,27 +12,30 @@ setTimeout(() => {
   
   // 자동 넘김 호출 함수 최초 호출하기
   autoSlide();
-}, 8000);
+}, 9000);
 
 // 슬라이드 배너 이벤트 ////////////
 const slide = document.querySelector(".slider");
 // console.log(slide.querySelectorAll("li"));
 
 function goSlide() {
-  // (1) 먼저 왼쪽으로 이동하기
+  // 먼저 왼쪽으로 이동하기
   slide.style.left = "-100%";
   slide.style.transition = ".6s ease-in-out";
 
-  // (2) 이동하는 시간 0.7초간 기다림!
+  // 이동하는 시간 0.7초간 기다림!
   setTimeout(() => {
-    // (2-1) 맨 앞 li 맨 뒤로 이동
+    // 맨 앞 li 맨 뒤로 이동
     slide.appendChild(slide.querySelectorAll("li")[0]);
-    // 슬라이드 left 값이 -100% 이므로
-    // (2-2) left값을 0으로 변경
+    // 슬라이드 left 값이 -100% 이므로 left값을 0으로 변경
     slide.style.left = "0";
-    // (2-3) left 트랜지션 없애기
+    // left 트랜지션 없애기
     slide.style.transition = "none";
   }, 700);
+
+  // 슬라이드 버튼
+
+
 
 } ///////////// goSlide 함수 ////////////////
 /////////////////////////////////////////////
@@ -103,7 +106,7 @@ let wheelSts = false;
 
 window.addEventListener('wheel',(e)=>{
 
-  // 광휠금지
+  // 광휠 금지
   if(wheelSts){
     return;
   }
@@ -113,7 +116,7 @@ window.addEventListener('wheel',(e)=>{
   },600);
 
 
-  // 스크롤 내릴때 deltaY값 양수 / 올리면 음수
+  // 스크롤 내릴 때 deltaY값 양수 / 올리면 음수
   if(e.deltaY>0){
     pgNum++;
   }else{

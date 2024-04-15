@@ -42,13 +42,13 @@
     background-image: url(../images/banner1.jpg);
 }
 .slban-02{
-    background-image: url(../images/banner2.jpg);
+    background-image: url(../images/banner2.png);
 }
 .slban-03{
     background-image: url(../images/banner3.jpg);
 }
 .slban-04{
-    background-image: url(../images/banner4.jpg);
+    background-image: url(../images/banner4.png);
 }
 
 /* 전체 textArea 공통 */
@@ -119,22 +119,22 @@
     flex-shrink: 0;
 
     /* 공통 배경 설정 */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .scban-01{
-    background-image: url(../images/main1.jpg);
+    background-image: url(../images/main1.jpg) no-repeat center/cover;
 }
 .scban-02{
-    background-image: url(../images/main2.jpg);
+    background-image: url(../images/main2.jpg) no-repeat center/cover;
 }
 .scban-03{
-    background-image: url(../images/main3.jpg);
+    background-image: url(../images/main3.jpg) no-repeat center/cover;
 }
 .scban-04{
-    background-image: url(../images/main4.jpg);
+    background-image: url(../images/main4.jpg) no-repeat center/cover;
 }
 
 

@@ -3,9 +3,6 @@
 /* 공통 모듈 CSS - common.css */
 /* 공유 기능 요소 셋팅 */
 
-/* body * {
-    outline: 2px dashed #ccc;
-} */
 body{
     overflow: hidden;
 }
