@@ -282,10 +282,10 @@
 /* 동영상 셋팅 */
 .video-box video{
     position: absolute;
-    top: 48%;
-    left: 50%;
+    top: 45%;
+    left: 47%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 90vw;
     object-fit: cover;
     overflow: hidden;
 }
