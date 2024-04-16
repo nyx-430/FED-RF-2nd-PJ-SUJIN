@@ -16,10 +16,16 @@ setTimeout(() => {
 
 // 슬라이드 배너 이벤트 ////////////
 const slide = document.querySelector(".slider");
-// console.log(slide.querySelectorAll("li"));
+
+// 이동 버튼
+const abtn=document.querySelectorAll(".abtn");
+
+console.log("슬라이드:",slide,"\n버튼:",abtn);
+
+
+
 
 function goSlide() {
-  // 먼저 왼쪽으로 이동하기
   slide.style.left = "-100%";
   slide.style.transition = ".6s ease-in-out";
 
@@ -32,11 +38,6 @@ function goSlide() {
     // left 트랜지션 없애기
     slide.style.transition = "none";
   }, 700);
-
-  // 슬라이드 버튼
-
-
-
 } ///////////// goSlide 함수 ////////////////
 /////////////////////////////////////////////
 
@@ -45,6 +46,9 @@ function autoSlide() {
   setInterval(goSlide, 3500);
 } //////////////// autoSlide 함수 ////////////////
 /////////////////////////////////////////////////
+
+
+
 
 
 // 마우스커서 이벤트 ////////////
@@ -107,11 +111,11 @@ let pgNum = 0;
 let wheelSts = false;
 
 window.addEventListener('wheel',(e)=>{
-
   // 광휠 금지
   if(wheelSts){
     return;
   }
+
   wheelSts = true;
   setTimeout(()=>{
     wheelSts = false;
