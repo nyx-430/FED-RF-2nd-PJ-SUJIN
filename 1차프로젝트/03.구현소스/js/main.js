@@ -10,7 +10,7 @@ setTimeout(() => {
   console.log('8초 후 이동함');
   window.scrollTo(0, document.querySelector("#ban").offsetTop);
   
-  // 자동 넘김 호출 함수 최초 호출하기
+  // 자동 넘김 호출 함수 최초 호출
   autoSlide();
 }, 8000);
 
@@ -49,8 +49,6 @@ function autoSlide() {
 
 
 
-
-
 // 마우스커서 이벤트 ////////////
 const cursor=document.querySelector('.cursor');
 const myBody=document.body;
@@ -60,7 +58,7 @@ myBody.onmousemove=(e)=>{
   cursor.style.left=e.clientX+'px';
 }; /////////// mousemove ///////////
 
-// 영역별 마우스 오버 체크 커서 변경하기
+// 영역별 마우스 오버 체크 커서 변경 ////////////
 // 이벤트 대상 : #ban-area
 // 대상 : cursor
 const cursorSet = document.querySelectorAll('.cursor-set');
@@ -76,7 +74,7 @@ cursorSet.forEach(ele=>{
   };
 }); /// forEach ///
 
-// 햄버거 버튼 클릭으로 메뉴 열고 닫기
+// 햄버거 버튼 클릭으로 메뉴 열고 닫기 ////////////
 const menuBtn=document.querySelector('.hambtn');
 const menuBox=document.querySelector('.menu-box');
 
@@ -102,7 +100,7 @@ page.forEach((ele,idx)=>{
 console.log(pagePos);
 
 
-// 휠 이벤트에 따라 페이지 넘기기
+// 휠 이벤트에 따라 페이지 넘기기 ////////////
 
 // 페이지번호 
 let pgNum = 0;
@@ -120,7 +118,6 @@ window.addEventListener('wheel',(e)=>{
   setTimeout(()=>{
     wheelSts = false;
   },600);
-
 
   // 스크롤 내릴 때 deltaY값 양수 / 올리면 음수
   if(e.deltaY>0){
