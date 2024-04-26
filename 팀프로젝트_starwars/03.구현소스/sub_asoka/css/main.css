@@ -16,28 +16,27 @@ body * {
 }
 
 /*********************** 탑배너 영역 ***********************/
+.top-title{
+    margin-bottom: 5rem;
+}
 .top-banner{
     position: relative;
     max-width: 1500px;
     margin: 0 auto;
     padding: 0;
 }
-
 .top-banner img{
     width: 100%;
 }
-
 .ban-desc-box{
     position: absolute;
     top: 10%;
     left: 55%;
     max-width: 40%;
 }
-
 .ban-logo{
     margin-bottom: 3rem;
 }
-
 .ban-desc-box .desc{
     top: 0;
     left: 0;
@@ -48,6 +47,7 @@ body * {
     margin-bottom: 3rem;
 }
 
+/* 배너 버튼 */
 .top-banner .btn-box{
     cursor: pointer;
     margin-top: 5rem;
@@ -70,4 +70,7 @@ body * {
     border-radius: 4.5vw;
     box-sizing: border-box;
     padding: 1vw;
+}
+.ban-desc-box .btn2 a{
+    color: #fff;
 }

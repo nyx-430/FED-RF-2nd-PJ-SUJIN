@@ -18,3 +18,36 @@ text : 프리텐다드 regular / 16px / lh24 / desc
     background-color: #000;
     font-family: "Pretendard-Regular", AppleGothic, Sans-serif;
  }
+ 
+/*************  공통 꾸밈요소 *************/
+
+  /* 블릿 */
+  .bullet::before{
+    content: '';
+    display: block;
+
+    border-radius: 2rem;
+
+    width: 15px;
+    height: 9px;
+    background-color: #797979;
+    margin-left: 114%;
+
+  }
+  .bullet{
+    margin-bottom: 2rem;
+    display: block;
+
+    border-radius: 2rem;
+
+    width: 45px;
+    height: 9px;
+    background-color: #797979;
+  }
+
+  /* 카테고리 메뉴 사이 바 */
+  .bar-line{
+    display: block;
+    width: 1px;
+    background-color: #797979;
+  }
