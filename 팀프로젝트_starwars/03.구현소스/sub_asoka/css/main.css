@@ -18,6 +18,9 @@ body * {
 .top-banner{
     position: relative;
     max-width: 1500px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+}
+.top-banner img{
+    width: 100%;
 }
