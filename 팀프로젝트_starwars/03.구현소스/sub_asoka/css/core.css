@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* sub_asoka : 공통 클래스 CSS - core.css */
+/* 공통 셋팅을 위한 클래스 + 웹폰트 */
+
+@font-face { font-family: 'Pretendard-Regular'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/ noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); font-weight: 400; font-style: normal; }
+
+/* 
+title : 프리텐다드 extrabold / 55px / h2
+subtitle : 프리텐다드 bold / 30px / h3
+text : 프리텐다드 regular / 16px / lh24 / desc
+ */
+
+ html{
+    font-size: 10px;
+ }
+ body{
+    background-color: #000;
+    font-family: "Pretendard-Regular", AppleGothic, Sans-serif;
+ }
