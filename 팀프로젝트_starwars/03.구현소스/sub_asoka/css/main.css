@@ -15,12 +15,59 @@ body * {
     outline: 2px dashed red;
 }
 
+/*********************** 탑배너 영역 ***********************/
 .top-banner{
     position: relative;
     max-width: 1500px;
     margin: 0 auto;
     padding: 0;
 }
+
 .top-banner img{
     width: 100%;
+}
+
+.ban-desc-box{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    max-width: 40%;
+}
+
+.ban-logo{
+    margin-bottom: 3rem;
+}
+
+.ban-desc-box .desc{
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.top-banner .btn-box{
+    cursor: pointer;
+    margin-top: 5rem;
+    text-align: center;
+}
+.ban-desc-box a{
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.ban-desc-box .btn1{
+    height: 7v;
+    border-radius: 4.5vw;
+    padding: 1vw;
+    background-color: #ffe400;
+}
+.ban-desc-box .btn2{
+    height: 7vh;
+    border: 1px solid #FFE400;
+    border-radius: 4.5vw;
+    box-sizing: border-box;
+    padding: 1vw;
 }
