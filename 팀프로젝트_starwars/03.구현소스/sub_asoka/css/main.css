@@ -81,6 +81,7 @@ body * {
 }
 
 .info-area .desc .title{
+    color: #fff;
     text-align: justify;
     font-weight: 700;
     font-size: 5rem;
