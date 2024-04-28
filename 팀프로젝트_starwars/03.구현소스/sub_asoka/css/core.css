@@ -85,7 +85,6 @@ img{
     line-height: 1.2;
     margin-bottom: 2rem;
   }
-  
   .desc{
     text-align: justify;
     line-height: 1.5;
@@ -104,9 +103,7 @@ img{
   .bullet::before{
     content: '';
     display: block;
-
     border-radius: 2rem;
-
     width: 15px;
     height: 9px;
     background-color: #797979;
