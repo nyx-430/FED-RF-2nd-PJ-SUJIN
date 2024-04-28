@@ -121,6 +121,15 @@ body * {
 }
 
 /*********************** 비디오 영역 ***********************/
-#video-area{
-    max-width: 1500px;
+
+#video-area {
+  overflow: hidden;
+}
+.slide-peek-box ul{
+    display: flex;
+    gap: 0 2rem;
+}
+.slide-peek-box li{
+    width: 30rem;
+    height: auto;
 }
