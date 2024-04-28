@@ -76,15 +76,20 @@ body * {
 }
 
 /* 영화 소개 영역 */
-.info-area .img-box img{
+#info-area .img-box img{
     width: 60rem;
 }
-
-.info-area .desc .title{
+#info-area .title{
     color: #fff;
     text-align: justify;
-    font-weight: 700;
     font-size: 5rem;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 2rme;
+}
+#info-area .desc{
+    color: #fff;
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 1.5;
 }
