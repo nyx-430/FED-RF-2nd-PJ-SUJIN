@@ -16,7 +16,7 @@ body * {
 }
 
 /*********************** 탑배너 영역 ***********************/
-.top-title {
+#top-title {
   margin-bottom: 5rem;
 }
 .top-banner {
@@ -89,26 +89,19 @@ body * {
   height: 100vw;
   backdrop-filter: blur(20px) opacity(100%) saturate(50%) brightness(50%);
 }
-#info-area .cont-box {
-  display: flex;
-}
-#info-area .cont-box img {
-    width: 60rem;
+#info-area .img-box img {
+  width: 60rem;
 }
 #info-area .title {
-    color: #fff;
-    text-align: justify;
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-}
-#info-area .desc-box {
-    display: flex;
+  color: #fff;
+  text-align: justify;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 #info-area .desc-box > div {
-    margin-top: 4rem;
-  }
+  margin-top: 4rem;
+}
 #info-area .desc {
   color: #fff;
   text-align: justify;
@@ -123,5 +116,6 @@ body * {
   color: #fff;
 }
 .btn-link img {
+  width: 3rem;
   margin-right: 2rem;
 }
