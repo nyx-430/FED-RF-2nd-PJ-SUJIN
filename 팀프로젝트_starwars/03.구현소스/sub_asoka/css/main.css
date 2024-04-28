@@ -123,13 +123,20 @@ body * {
 /*********************** 비디오 영역 ***********************/
 
 #video-area {
-  overflow: hidden;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0;
+}
+.slide-peek-box{
+    margin-top: 3rem;
 }
 .slide-peek-box ul{
     display: flex;
-    gap: 0 2rem;
 }
 .slide-peek-box li{
-    width: 30rem;
-    height: auto;
+    cursor: pointer;
+}
+
+.slide-peek-box h3{
+    font-size: 1.8rem;
 }
