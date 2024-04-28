@@ -51,3 +51,9 @@ text : 프리텐다드 regular / 16px / lh24 / desc
     width: 1px;
     background-color: #797979;
   }
+  
+  .under-line{
+    display: block;
+    height: 1px;
+    background-color: #797979;
+  }

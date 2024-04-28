@@ -12,84 +12,116 @@
 
 /* 공사중 */
 body * {
-    outline: 2px dashed gray;
+  outline: 2px dashed gray;
 }
 
 /*********************** 탑배너 영역 ***********************/
-.top-title{
-    margin-bottom: 5rem;
+.top-title {
+  margin-bottom: 5rem;
 }
-.top-banner{
-    position: relative;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0;
+.top-banner {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0;
 }
-.top-banner img{
-    width: 100%;
+.top-banner img {
+  width: 100%;
 }
-.ban-desc-box{
-    position: absolute;
-    top: 10%;
-    left: 55%;
-    max-width: 40%;
+.ban-desc-box {
+  position: absolute;
+  top: 10%;
+  left: 55%;
+  max-width: 40%;
 }
-.ban-logo{
-    margin-bottom: 3rem;
+.ban-logo {
+  margin-bottom: 3rem;
 }
-.ban-desc-box .desc{
-    top: 0;
-    left: 0;
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 3rem;
+.ban-desc-box .desc {
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
 }
-
-/* 배너 버튼 */
-.top-banner .btn-box{
-    cursor: pointer;
-    margin-top: 5rem;
-    text-align: center;
+.top-banner .btn-box {
+  cursor: pointer;
+  margin-top: 5rem;
+  text-align: center;
 }
-.ban-desc-box a{
-    color: #000;
-    font-size: 1.4rem;
-    font-weight: 600;
+.ban-desc-box a {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
-.ban-desc-box .btn1{
-    height: 7v;
-    border-radius: 4.5vw;
-    padding: 1vw;
-    background-color: #ffe400;
+.ban-desc-box .btn1 {
+  height: 7v;
+  border-radius: 4.5vw;
+  padding: 1vw;
+  background-color: #ffe400;
 }
-.ban-desc-box .btn2{
-    height: 7vh;
-    border: 1px solid #FFE400;
-    border-radius: 4.5vw;
-    box-sizing: border-box;
-    padding: 1vw;
+.ban-desc-box .btn2 {
+  height: 7vh;
+  border: 1px solid #ffe400;
+  border-radius: 4.5vw;
+  box-sizing: border-box;
+  padding: 1vw;
 }
-.ban-desc-box .btn2 a{
-    color: #fff;
+.ban-desc-box .btn2 a {
+  color: #fff;
 }
 
-/* 영화 소개 영역 */
-#info-area .img-box img{
+/*********************** 영화소개 영역 ***********************/
+#info-area {
+  overflow: hidden;
+  height: 80vh;
+  padding-bottom: 15rem;
+  backdrop-filter: blur(70px);
+  background: url(../images/poster1.jpeg) center/cover no-repeat;
+}
+.bulr-box {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100vw;
+  backdrop-filter: blur(20px) opacity(100%) saturate(50%) brightness(50%);
+}
+#info-area .cont-box {
+  display: flex;
+}
+#info-area .cont-box img {
     width: 60rem;
 }
-#info-area .title{
+#info-area .title {
     color: #fff;
     text-align: justify;
     font-size: 5rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 2rme;
+    margin-bottom: 2rem;
 }
-#info-area .desc{
-    color: #fff;
-    text-align: justify;
-    font-size: 1.8rem;
-    line-height: 1.5;
+#info-area .desc-box {
+    display: flex;
+}
+#info-area .desc-box > div {
+    margin-top: 4rem;
+  }
+#info-area .desc {
+  color: #fff;
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.btn-link {
+  margin-left: -1rem;
+  margin-top: 2rem;
+}
+.btn-link a {
+  color: #fff;
+}
+.btn-link img {
+  margin-right: 2rem;
 }
