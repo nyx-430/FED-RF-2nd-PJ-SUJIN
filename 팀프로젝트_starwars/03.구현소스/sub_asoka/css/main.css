@@ -54,17 +54,17 @@ body * {
   font-weight: 600;
 }
 .ban-desc-box .btn1 {
-  height: 7v;
   border-radius: 4.5vw;
-  padding: 1vw;
+  padding: 1.5rem;
+  margin: 1rem;
   background-color: #ffe400;
 }
 .ban-desc-box .btn2 {
-  height: 7vh;
   border: 1px solid #ffe400;
   border-radius: 4.5vw;
   box-sizing: border-box;
-  padding: 1vw;
+  padding: 1.5rem;
+  margin: 1rem;
 }
 .ban-desc-box .btn2 a {
   color: #fff;
@@ -88,11 +88,11 @@ body * {
   backdrop-filter: blur(20px) opacity(100%) saturate(50%) brightness(50%);
 }
 #info-area .gradient {
-    margin-top: 32%;
-    width: 100%;
-    height: 50vh;
-    background-image: linear-gradient(0deg, #000000, #00000000);
-  }
+  margin-top: 32%;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(0deg, #000000, #00000000);
+}
 #info-area .img-box img {
   width: 60rem;
 }
@@ -131,40 +131,40 @@ body * {
   padding: 0;
   overflow: hidden;
 }
-.slide-peek-box{
-    margin-top: 3rem;
+.slide-peek-box {
+  margin-top: 3rem;
 }
-.slide-peek-box ul{
-    display: flex;
+.slide-peek-box ul {
+  display: flex;
 }
-.slide-peek-box li{
-    cursor: pointer;
+.slide-peek-box li {
+  cursor: pointer;
 }
 
-.slide-peek-box h3{
-    font-size: 1.8rem;
+.slide-peek-box h3 {
+  font-size: 1.8rem;
 }
 
 /*********************** 캐릭터 소개 영역 ***********************/
-#character-area{
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0;
+#character-area {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0;
 }
-.cbox ul{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: min(2rem, 1.2vw);
+.cbox ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: min(2rem, 1.2vw);
 }
-.cbox li{
-    cursor: pointer;
+.cbox li {
+  cursor: pointer;
 }
-.cbox img{
-    width: 100%;
-    height: 250px;
-    border-radius: 2rem;
+.cbox img {
+  width: 100%;
+  height: 250px;
+  border-radius: 2rem;
 }
-.cbox h3{
-    font-size: 1.8rem;
-    margin-top: 1rem;
+.cbox h3 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
 }
