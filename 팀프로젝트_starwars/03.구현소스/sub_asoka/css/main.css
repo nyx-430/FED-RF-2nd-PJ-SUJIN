@@ -21,7 +21,7 @@ body * {
 }
 .top-banner {
   position: relative;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   margin: 0 auto;
   padding: 0;
 }
@@ -118,4 +118,9 @@ body * {
 .btn-link img {
   width: 3rem;
   margin-right: 2rem;
+}
+
+/*********************** 비디오 영역 ***********************/
+#video-area{
+    max-width: 1500px;
 }
