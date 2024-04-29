@@ -174,7 +174,7 @@ body * {
 
 /*********************** 에피소드 가이드 영역 ***********************/
 #episode-area {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .episode-box {
   margin-top: 3rem;
@@ -192,14 +192,12 @@ body * {
   border-radius: 0 0 2rem 2rem;
   background-color: #1D1E1F;
 }
-
 .episode-box img{
   width: 100%;
   border-radius: 2rem 2rem 0 0;
 }
-
 .episode-box h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 1.2rem;
 }
@@ -207,4 +205,33 @@ body * {
   font-size: 1.5rem;
   line-height: 1.5;
   color: gray;
+}
+
+/*********************** 틱톡 영역 ***********************/
+#tiktoc-area {
+  overflow: hidden;
+}
+.tiktoc-box {
+  margin-top: 3rem;
+}
+.tiktoc-box ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: min(2rem, 1.2vw);
+}
+.tiktoc-box li {
+  cursor: pointer;
+}
+.tiktoc-box .desc-box{
+  padding: 1rem 3rem 3rem;
+  border-radius: 0 0 2rem 2rem;
+  background-color: #1D1E1F;
+}
+.tiktoc-box img{
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+.tiktoc-box h3 {
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
