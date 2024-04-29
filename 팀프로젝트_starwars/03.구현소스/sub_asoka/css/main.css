@@ -147,6 +147,7 @@
 /* 플레이 아이콘 */
 #video-area .play-icon{
   position: absolute;
+  transform: translate(50%, 50%);
   width: 5rem;
   height: 5rem;
   background: url(../images/icon-play.png) no-repeat center/cover;
