@@ -140,7 +140,6 @@ body * {
 .slide-peek-box li {
   cursor: pointer;
 }
-
 .slide-peek-box h3 {
   font-size: 1.8rem;
 }
@@ -171,4 +170,41 @@ body * {
 .cbox h3 {
   font-size: 1.8rem;
   margin-top: 1rem;
+}
+
+/*********************** 에피소드 가이드 영역 ***********************/
+#episode-area {
+  /* overflow: hidden; */
+}
+.episode-box {
+  margin-top: 3rem;
+}
+.episode-box ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: min(2rem, 1.2vw);
+}
+.episode-box li {
+  cursor: pointer;
+}
+.episode-box .desc-box{
+  padding: 1rem 3rem 3rem;
+  border-radius: 0 0 2rem 2rem;
+  background-color: #1D1E1F;
+}
+
+.episode-box img{
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.episode-box h3 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+.episode-box p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: gray;
 }
