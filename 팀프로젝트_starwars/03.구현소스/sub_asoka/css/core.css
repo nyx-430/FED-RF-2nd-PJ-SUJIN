@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* sub_asoka : 공통 클래스 CSS - core.css */
+/* sub_ahsoka : 공통 클래스 CSS - core.css */
 /* 공통 셋팅을 위한 클래스 + 웹폰트 */
 
 @font-face {
@@ -218,4 +218,16 @@ button {
 /* 화면출력 숨기기 클래스 */
 .blind{
   display: none;
+}
+
+/* 스크롤 등장액션 클래스 */
+.scAct {
+  transform: translateY(20%);
+  opacity: 0;
+  transition: 1.2s cubic-bezier(0.45, 0.05, 0.55, 0.95)
+}
+/* 등장클래스+.on */
+.scAct.on {
+  transform: translateY(0);
+  opacity: 1;
 }
