@@ -219,15 +219,3 @@ button {
 .blind{
   display: none;
 }
-
-/* 스크롤 등장액션 클래스 */
-.scAct {
-  transform: translateY(20%);
-  opacity: 0;
-  transition: 1s cubic-bezier(0.45, 0.05, 0.55, 0.95)
-}
-/* 등장클래스+.on */
-.scAct.on {
-  transform: translateY(0);
-  opacity: 1;
-}

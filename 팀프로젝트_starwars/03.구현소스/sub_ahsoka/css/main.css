@@ -145,14 +145,14 @@
 }
 
 /* 플레이 아이콘 */
-/* #video-area .play-icon{
+#video-area .play-icon{
   position: absolute;
   transform: translate(50%, 50%);
   width: 5rem;
   height: 5rem;
   background: url(../images/icon/icon-play.png) no-repeat center/cover;
   z-index: 1;
-} */
+}
 
 /*********************** 캐릭터 소개 영역 ***********************/
 #character-area {
@@ -246,4 +246,17 @@
   font-size: 1.6rem;
   line-height: 1.5;
   text-align: left;
+}
+
+
+/*********************** 스크롤 등장액션 클래스 ***********************/
+.scAct {
+  transform: translateY(20%);
+  opacity: 0;
+  transition: 1s cubic-bezier(0.45, 0.05, 0.55, 0.95)
+}
+/* 등장클래스+.on */
+.scAct.on {
+  transform: translateY(0);
+  opacity: 1;
 }
