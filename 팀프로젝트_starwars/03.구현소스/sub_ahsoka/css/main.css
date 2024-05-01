@@ -145,14 +145,14 @@
 }
 
 /* 플레이 아이콘 */
-#video-area .play-icon{
+/* #video-area .play-icon{
   position: absolute;
   transform: translate(50%, 50%);
   width: 5rem;
   height: 5rem;
   background: url(../images/icon/icon-play.png) no-repeat center/cover;
   z-index: 1;
-}
+} */
 
 /*********************** 캐릭터 소개 영역 ***********************/
 #character-area {
