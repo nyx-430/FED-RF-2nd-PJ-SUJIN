@@ -55,7 +55,7 @@
 }
 .ban-desc-box .btn1 {
   border-radius: 4.5vw;
-  padding: 1.5rem;
+  padding: 1.5rem 3rem;
   margin: 1rem;
   background-color: #ffe400;
 }
@@ -63,7 +63,7 @@
   border: 1px solid #ffe400;
   border-radius: 4.5vw;
   box-sizing: border-box;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   margin: 1rem;
 }
 .ban-desc-box .btn2 a {
@@ -150,7 +150,7 @@
   transform: translate(50%, 50%);
   width: 5rem;
   height: 5rem;
-  background: url(../images/icon-play.png) no-repeat center/cover;
+  background: url(../images/icon/icon-play.png) no-repeat center/cover;
   z-index: 1;
 }
 
