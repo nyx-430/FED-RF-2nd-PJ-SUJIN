@@ -145,9 +145,13 @@
 }
 
 /* 플레이 아이콘 */
-#video-area .play-icon{
+.slide-peek-box figure{
+  position: relative;
+}
+.play-icon{
   position: absolute;
-  transform: translate(50%, 50%);
+  top: 40%;
+  left: 45%;
   width: 5rem;
   height: 5rem;
   background: url(../images/icon/icon-play.png) no-repeat center/cover;
