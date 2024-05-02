@@ -1,6 +1,11 @@
 // 스타워즈 서브페이지 : Ahsoka 메인 JS - main.js
 
+// 나의 함수
 import mFn from "./my_function.js";
+
+// 캐릭터 데이터
+import cData from "./character_data.js";
+
 
 // 비디오 영역 아이프레임 src 변경 ///////////////////////////
 const slidePeek = mFn.qsa(".slide-peek-box li");
@@ -68,27 +73,19 @@ function scrollFn() {
 } ///////////// scrollFn /////////////
 
 // 캐릭터 소개 영역 ///////////////////////////
-const cBox = mFn.qs(".cbox");
-const cData = [
-  ["c01.jpeg", "Admiral Ackbar"],
-  ["c02.jpeg", "Ahsoka Tano"],
-  ["c03.jpeg", "Anakin Skywalker"],
-  ["c04.jpeg", "Baylan Skoll"],
-  ["c05.jpeg", "C-3PO (See-Threepio)"],
-  ["c06.jpeg", "C1-D1"],
-  ["c07.jpeg", "Captain Enoch"],
-  ["c08.jpeg", "Captain Girard"],
-  ["c09.jpeg", "Captain Hayle"],
-  ["c10.jpeg", "Captain Porter"],
-];
 
-cBox.innerHTML = `
-    <li>
-        <figure>
-        <img src="./images/characters/c01.jpeg" alt="Admiral Ackbar" />
-        </figure>
-        <div class="title-box">
-        <h3>Admiral Ackbar</h3>
-        </div>
-    </li>
-`;
+function chaItem(){
+    const cBox = mFn.qs(".cbox");
+    cBox.innerHTML = cData.map(v => `
+        <li>
+            <figure>
+            <img src="./images/characters/${v.img}.jpeg" alt="${v.name}" />
+            </figure>
+            <div class="title-box">
+            <h3>Admiral Ackbar</h3>
+            </div>
+        </li>
+    `).join('');
+    
+} /// chaItem ///
+
