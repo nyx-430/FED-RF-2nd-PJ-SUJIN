@@ -141,6 +141,7 @@ body {
 }
 .slide-peek-box h3 {
   font-size: 1.8rem;
+  text-align: left;
 }
 
 /* 플레이 아이콘 */
@@ -178,7 +179,6 @@ body {
 }
 .cbox h3 {
   font-size: 1.8rem;
-  margin-top: 1rem;
 }
 
 /*********************** 에피소드 가이드 영역 ***********************/
@@ -267,4 +267,6 @@ body {
 .under-line {
   margin-bottom: 5rem;
 }
-
+.title-box{
+  margin-top: 1rem;
+}
