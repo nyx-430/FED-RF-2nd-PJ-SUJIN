@@ -3,7 +3,7 @@
 import mFn from "./my_function.js";
 
 // 비디오 영역 아이프레임 src 변경
-const slidePeek = mFn.qsa(".slide-peek-box a");
+const slidePeek = mFn.qsa(".slide-peek-box li");
 const ifr = mFn.qs("#ifr");
 
 console.log("슬라이드 픽:", slidePeek, "\n 동영상:", ifr);
