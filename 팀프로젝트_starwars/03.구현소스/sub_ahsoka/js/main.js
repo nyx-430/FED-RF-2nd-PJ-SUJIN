@@ -12,7 +12,7 @@ const movieId = {
   Trailer: "J_1EXWNETiI",
   "Masters and Apprentices": "UTqPkjk0GLU",
   Phenomenon: "dp-9AoWxchE",
-  "Dual Lightsaber": "ZQnGCtQ0N8Q",
+  "Sabine’s Loth-Cat": "uSqsyC780OY&t=2s",
 };
 
 slidePeek.forEach((ele, idx) => {
