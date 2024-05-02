@@ -1,19 +1,30 @@
 @charset "utf-8";
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
-@import url("https://use.typekit.net/jyj1can.css");
+
+/* sub_ahsoka : 공통 클래스 CSS - core.css */
+/* 공통 셋팅을 위한 클래스 + 웹폰트 */
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/ noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* 
-1. 본문, 한글, 숫자: 프리텐다드
-
-font-family: "Pretendard Variable",Pretendard, apple-system, system-ui, Roboto, sans-serif;
-*/
+title : 프리텐다드 extrabold / 55px / h2
+subtitle : 프리텐다드 bold / 30px / h3
+text : 프리텐다드 regular / 16px / lh24 / desc
+ */
 
 html {
-  font-family: "Pretendard Variable", sans-serif;
+  font-family: "Pretendard-Regular", AppleGothic, Sans-serif;
   font-size: 10px;
-  /* ### 충돌요소 */
   text-align: center;
   color: #fff;
+}
+body {
+  background-color: #000;
 }
 
 /* 플렉스 박스 설정 */
@@ -27,9 +38,8 @@ html {
   display: grid;
 }
 
-/* ★ ### 해당영역 안의모든 요소의 두번째 직계 div? */
-/* .main-area * > div+div{
-    padding-top: 4vh;
+/* .main-area * > div + div {
+  padding-top: 4vh;
 } */
 
 /*************  박스 공통 설정 *************/
@@ -37,8 +47,6 @@ html {
 .section-top {
   padding-top: 15rem;
 }
-
-/* ### 부모요소에 보더레디우스 주는게 좋을듯!! */
 img {
   object-fit: cover;
 }
@@ -47,7 +55,7 @@ img {
 
 .slider-wrap figcaption {
   text-align: justify;
-  margin-top: 4rem;
+  margin-top: 1rem; /* -> 4rem */
   line-height: 2;
 }
 .slider-wrap ul {
@@ -71,14 +79,11 @@ img {
   font-size: 3.5rem;
   line-height: 1.5;
 }
-
 .title-sub2 {
-  text-align: justify;
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 1.3;
 }
-
 .title {
   text-align: justify;
   font-weight: 700;
@@ -86,24 +91,12 @@ img {
   line-height: 1.2;
   margin-bottom: 2rem;
 }
-
 .desc {
   text-align: justify;
   line-height: 1.5;
 }
-
-figcaption > .title-topic {
-  margin-top: 2rem;
-}
-
-figcaption > h4 {
-  margin-top: 2rem;
-}
-
 /* 링크설정 */
-/* ### 모든a는 충돌 (네비,다른메뉴등)!
-  부모선택자 같이붙이면 좋을듯! */
-.main-area > button a {
+.main-area > button a{
   font-size: 1.6rem;
   font-weight: 400;
   color: #ffe400;
@@ -112,18 +105,11 @@ figcaption > h4 {
 
 /*************  공통 꾸밈요소 *************/
 
-/* 슬라이드 화살표 */
-.abtn span {
-  color: #ffffff;
-}
-
 /* 블릿 */
 .bullet::before {
   content: "";
   display: block;
-
   border-radius: 2rem;
-
   width: 15px;
   height: 9px;
   background-color: #797979;
@@ -201,30 +187,34 @@ button {
   width: 100%;
 }
 
-/* [ 이미지호버액션 ] */
-/* 대상요소( 부모자격 ) */
-.hover-img {
-  position: relative;
-  cursor: pointer;
+/*************  스크롤바 디자인 클래스 *************/
+/* -webkit- 밴더사명(크롬,사파리) 접두어 */
+/* 클래스명 scbar */
+.scbar::-webkit-scrollbar {
+  /* 전체 스크롤바 크기변경 */
+  width: 7px;
 }
-/* 가상요소 */
-.hover-img::after {
-  content: "+";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background-color: #0000007a;
-  font-size: 5rem;
-  font-weight: 500;
-  text-shadow: 0px 0px 20px aqua;
-  pointer-events: none;
-  transition: 0.3s ease-out;
-  opacity: 0;
+.scbar::-webkit-scrollbar-thumb {
+  /* 스크롤바 */
+  background-color: #555;
+  border-radius: 5px;
 }
-.hover-img:hover::after {
-  opacity: 1;
+.scbar::-webkit-scrollbar-track {
+  /* 스크롤바 트랙 */
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* IR(Images Replacement) 
+- 배경이미지 설명 숨기기 클래스 */
+.ir{
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* 화면출력 숨기기 클래스 */
+.blind{
+  display: none;
 }

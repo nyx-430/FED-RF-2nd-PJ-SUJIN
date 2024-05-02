@@ -10,10 +10,9 @@
 /* 그리드 12  */
 @import url(./grid_12_flex.css);
 
-/* 공사중 */
-/* body * {
-  outline: 2px dashed gray;
-} */
+body {
+  background-color: #000;
+}
 
 /*********************** 탑배너 영역 ***********************/
 .top-banner {
@@ -145,10 +144,10 @@
 }
 
 /* 플레이 아이콘 */
-.slide-peek-box figure{
+.slide-peek-box figure {
   position: relative;
 }
-.play-icon{
+.play-icon {
   position: absolute;
   top: 40%;
   left: 45%;
@@ -197,13 +196,13 @@
 .episode-box li {
   cursor: pointer;
 }
-.episode-box .desc-box{
+.episode-box .desc-box {
   height: 14vh;
   padding: 1rem 3rem 3rem;
   border-radius: 0 0 2rem 2rem;
-  background-color: #1D1E1F;
+  background-color: #1d1e1f;
 }
-.episode-box img{
+.episode-box img {
   width: 100%;
   border-radius: 2rem 2rem 0 0;
 }
@@ -213,7 +212,7 @@
   text-align: left;
   margin-bottom: 1.2rem;
 }
-.episode-box p{
+.episode-box p {
   font-size: 1.5rem;
   line-height: 1.5;
   text-align: left;
@@ -236,13 +235,13 @@
 .tiktoc-box li {
   cursor: pointer;
 }
-.tiktoc-box .desc-box{
+.tiktoc-box .desc-box {
   height: 5vh;
   padding: 3rem 2rem;
   border-radius: 0 0 2rem 2rem;
-  background-color: #1D1E1F;
+  background-color: #1d1e1f;
 }
-.tiktoc-box img{
+.tiktoc-box img {
   width: 100%;
   border-radius: 2rem 2rem 0 0;
 }
@@ -252,15 +251,20 @@
   text-align: left;
 }
 
-
 /*********************** 스크롤 등장액션 클래스 ***********************/
 .scAct {
   transform: translateY(20%);
   opacity: 0;
-  transition: 1s cubic-bezier(0.45, 0.05, 0.55, 0.95)
+  transition: 1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 /* 등장클래스+.on */
 .scAct.on {
   transform: translateY(0);
   opacity: 1;
 }
+
+/*********************** 공통 core.css에서 보충 ***********************/
+.under-line {
+  margin-bottom: 5rem;
+}
+
