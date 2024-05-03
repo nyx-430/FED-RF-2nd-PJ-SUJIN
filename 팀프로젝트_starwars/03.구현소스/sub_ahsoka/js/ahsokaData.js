@@ -1,4 +1,4 @@
-// Ahsoka 캐릭터 데이터 - character_data.js
+// Ahsoka 데이터 - ahsoka_data.js
 
 const cData = {
   cha1: [
@@ -75,4 +75,4 @@ const cData = {
 
 };
 
-export default cData;
+export { cData };

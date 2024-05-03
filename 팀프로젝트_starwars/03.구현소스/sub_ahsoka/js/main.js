@@ -3,8 +3,8 @@
 // 나의 함수
 import mFn from "./my_function.js";
 
-// 캐릭터 데이터
-import cData from "./character_data.js";
+// 데이터
+import * as ahsokaData from "./ahsokaData.js";
 
 
 // 비디오 영역 아이프레임 src 변경 ///////////////////////////
@@ -73,19 +73,26 @@ function scrollFn() {
 } ///////////// scrollFn /////////////
 
 // 캐릭터 소개 영역 ///////////////////////////
+(() => {
+  const cBox = mFn.qs(".cbox");
 
-function chaItem(){
-    const cBox = mFn.qs(".cbox");
-    cBox.innerHTML = cData.map(v => `
-        <li>
-            <figure>
-            <img src="./images/characters/${v.img}.jpeg" alt="${v.name}" />
-            </figure>
-            <div class="title-box">
-            <h3>Admiral Ackbar</h3>
-            </div>
-        </li>
-    `).join('');
-    
-} /// chaItem ///
+  console.log("캐릭터 박스:", cBox);
+  
+  let hcode = `<div class="col-12"><ul>`;
+  
+  ahsokaData.cData.forEach(v => {
+  hcode += `
+    <li>
+      <figure>
+        <img src="./images/characters/${v.img}.jpeg" alt="${v.name}" />
+      </figure>
+      <div class="title-box">
+        <h3>${v.name}</h3>
+      </div>
+    </li>
+  `;
+  }); /// forEach ///
 
+  hcode += `</ul></div>`;
+  cBox.innerHTML = hcode;
+})();
