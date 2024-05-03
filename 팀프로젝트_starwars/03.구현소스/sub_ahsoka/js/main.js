@@ -75,7 +75,6 @@ function scrollFn() {
 // 캐릭터 소개 영역 ///////////////////////////
 (() => {
   const cBox = mFn.qs(".cbox");
-
   console.log("캐릭터 박스:", cBox);
   
   let hcode = `<div class="col-12"><ul>`;
@@ -95,4 +94,4 @@ function scrollFn() {
 
   hcode += `</ul></div>`;
   cBox.innerHTML = hcode;
-})();
+})(); ///////////////////////////
