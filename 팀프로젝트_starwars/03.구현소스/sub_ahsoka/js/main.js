@@ -84,7 +84,7 @@ function scrollFn() {
   hcode += `
     <li>
       <figure>
-        <img src="./images/characters/${v.img}.jpeg" alt="${v.name}" />
+        <img src="./images/characters/${v.idx}.jpeg" alt="${v.name}" />
       </figure>
       <div class="title-box">
         <h3>${v.name}</h3>
