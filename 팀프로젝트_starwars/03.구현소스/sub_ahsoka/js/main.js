@@ -6,7 +6,6 @@ import mFn from "./my_function.js";
 // 데이터
 import * as ahsokaData from "./ahsokaData.js";
 
-
 // 비디오 영역 아이프레임 src 변경 ///////////////////////////
 const slidePeek = mFn.qsa(".slide-peek-box li");
 const ifr = mFn.qs("#ifr");
@@ -76,11 +75,11 @@ function scrollFn() {
 (() => {
   const cBox = mFn.qs(".cbox");
   console.log("캐릭터 박스:", cBox);
-  
+
   let hcode = `<div class="col-12"><ul>`;
-  
-  ahsokaData.cData.forEach(v => {
-  hcode += `
+
+  ahsokaData.cData.forEach((v) => {
+    hcode += `
     <li>
       <figure>
         <img src="./images/characters/${v.idx}.jpeg" alt="${v.name}" />
@@ -94,4 +93,33 @@ function scrollFn() {
 
   hcode += `</ul></div>`;
   cBox.innerHTML = hcode;
+})(); ///////////////////////////
+
+// 캐릭터 소개 영역 ///////////////////////////
+(() => {
+  const epBox = mFn.qs(".episode-box");
+  console.log("에피소드 박스:", epBox);
+
+  let hcode = `<div class="slider-wrap col-8"><ul>`;
+
+  ahsokaData.epiData.forEach((v) => {
+    hcode += `
+      <li>
+        <figure>
+          <a href="#"
+            ><img src="./images/${v.idx}.jpeg" alt="${v.idx}"
+          /></a>
+        </figure>
+        <div class="desc-box">
+          <div class="title-box">
+            <h3>${v.title}</h3>
+            <p>${v.desc}</p>
+          </div>
+        </div>
+      </li>
+  `;
+  }); /// forEach ///
+
+  hcode += `</ul></div>`;
+  epBox.innerHTML = hcode;
 })(); ///////////////////////////

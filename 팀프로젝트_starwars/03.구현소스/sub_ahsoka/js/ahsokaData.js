@@ -1,5 +1,6 @@
 // Ahsoka 데이터 - ahsoka_data.js
 
+// 캐릭터 데이터
 const cData = [
     {
       idx: "c01",
@@ -154,4 +155,39 @@ const cData = [
     },
 ];
 
-export { cData };
+// 에피소드 가이드 데이터
+
+const epiData = [
+  {
+    idx: "ep01",
+    title: "Part One: Master and Apprentice | Episode Guide | Ahsoka",
+    desc: "A valuable prisoner escapes New Republic custody; a search for answers reunites two old friends.",
+  },
+  {
+    idx: "ep02",
+    title: "Part Two: Toil and Trouble | Episode Guide | Ahsoka",
+    desc: "Ahsoka and General Hera Syndulla travel to New Republic shipyards and make an unexpected discovery.",
+  },
+  {
+    idx: "ep03",
+    title: "Part Three: Time to Fly | Episode Guide | Ahsoka",
+    desc: "Hera tangles with New Republic politics while Ahsoka and Sabine Wren voyage to a distant planet.",
+  },
+  {
+    idx: "ep04",
+    title: "Part Four: Fallen Jedi | Episode Guide | Ahsoka",
+    desc: "Hera risks her career to help her friends while Ahsoka and Sabine confront enemies.",
+  },
+  {
+    idx: "ep05",
+    title: "Part Five: Shadow Warrior | Episode Guide | Ahsoka",
+    desc: "Ahsoka confronts her past, while Hera and her allies undertake a rescue mission.",
+  },
+  {
+    idx: "ep06",
+    title: "Part Six: Far, Far Away | Episode Guide | Ahsoka",
+    desc: "The search for Grand Admiral Thrawn reaches beyond the limits of the galaxy.",
+  },
+]
+
+export { cData, epiData };
