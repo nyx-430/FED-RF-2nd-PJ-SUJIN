@@ -15,6 +15,21 @@ body {
   background-color: #000;
 }
 
+/* 타이틀, 설명글 공통 */
+.title {
+  color: #fff;
+  text-align: justify;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.desc {
+  color: #fff;
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
 /*********************** 탑배너 영역 ***********************/
 .top-banner {
   position: relative;
@@ -75,9 +90,9 @@ body {
   overflow: hidden;
   height: 80vh;
   padding-bottom: 15rem;
+  margin-bottom: 15rem;
   backdrop-filter: blur(70px);
   background: url(../images/poster1.jpeg) center/cover no-repeat;
-  margin-bottom: 15rem;
 }
 .bulr-box {
   position: absolute;
@@ -99,20 +114,7 @@ body {
 #info-area .desc-box > div {
   margin-top: 4rem;
 }
-/* 타이틀, 설명글 공통 */
-.title {
-  color: #fff;
-  text-align: justify;
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-.desc {
-  color: #fff;
-  text-align: justify;
-  font-size: 1.8rem;
-  line-height: 1.5;
-}
+
 .btn-link {
   margin-left: -1rem;
   margin-top: 2rem;
@@ -197,24 +199,24 @@ body {
 .character-page{
   position: relative;
   background-color: #00000076;
-  padding: 15rem;
+  padding: 20rem;
   margin: 0 auto;
   z-index: 1;
 }
 .character-page .img-box{
   width: 50rem;
-  
+  margin-right: 10rem;
 }
 .character-page .img-box img{
   width: 100%;
   height: auto;
 }
 .character-page .close-btn{
-  position: absolute;
-  left: 100%;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-
+  top: 0;
+  left: 100%;
 }
 
 /*********************** 에피소드 가이드 영역 ***********************/
