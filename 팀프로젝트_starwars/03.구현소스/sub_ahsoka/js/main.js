@@ -95,7 +95,7 @@ function scrollFn() {
   cBox.innerHTML = hcode;
 })(); ///////////////////////////
 
-// 캐릭터 소개 영역 ///////////////////////////
+// 에피소드 가이드 영역 ///////////////////////////
 (() => {
   const epBox = mFn.qs(".episode-box");
   console.log("에피소드 박스:", epBox);

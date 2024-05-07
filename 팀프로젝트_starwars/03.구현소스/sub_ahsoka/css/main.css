@@ -193,6 +193,10 @@ body {
 .cbox h3 {
   font-size: 1.8rem;
 }
+.character-page{
+  background-color: #00000076;
+  margin: 15rem;
+}
 
 /*********************** 에피소드 가이드 영역 ***********************/
 #episode-area {
