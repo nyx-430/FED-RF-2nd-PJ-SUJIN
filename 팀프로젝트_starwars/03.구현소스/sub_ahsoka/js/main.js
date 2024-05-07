@@ -6,50 +6,16 @@ import mFn from "./my_function.js";
 // 데이터
 import * as ahsokaData from "./ahsokaData.js";
 
-// 비디오 영역 아이프레임 src 변경 ///////////////////////////
-const slidePeek = mFn.qsa(".slide-peek-box li");
-const ifr = mFn.qs("#ifr");
-
-console.log("슬라이드 픽:", slidePeek, "\n 동영상:", ifr);
-
-const movieId = {
-  Trailer: "J_1EXWNETiI",
-  "Masters and Apprentices": "UTqPkjk0GLU",
-  Phenomenon: "dp-9AoWxchE",
-  "Sabine’s Loth-Cat": "uSqsyC780OY&t=2s",
-};
-
-slidePeek.forEach((ele, idx) => {
-  ele.onclick = () => {
-    let txt = ele.querySelector("img").getAttribute("alt");
-    console.log("나 클릭!", ele);
-
-    ifr.setAttribute(
-      "src",
-      `https://www.youtube.com/embed/${movieId[txt]}?autoplay=1`
-    );
-
-    forEach((x, i) => {
-      if (i === idx) {
-        x.parentElement.classList.add("on");
-      } /// if ///
-      else {
-        x.parentElement.classList.remove("on");
-      } /// else ///
-    }); /// forEach ///
-  }; /// onclick ///
-}); ////// forEach //////
-
 // 스크롤 페이드인/아웃 ///////////////////////////
 const stage = mFn.qsa(".page");
 const scAct = mFn.qsa(".scAct");
-console.log("페이지:", stage, "\n scAct박스:", scAct);
+// console.log("페이지:", stage, "\n scAct박스:", scAct);
 
 const pagePos = [];
 stage.forEach((ele, idx) => {
   pagePos[idx] = ele.offsetTop;
 });
-console.log("페이지 높이값:", pagePos);
+// console.log("페이지 높이값:", pagePos);
 
 mFn.addEvt(window, "scroll", scrollFn);
 
@@ -71,10 +37,65 @@ function scrollFn() {
   });
 } ///////////// scrollFn /////////////
 
+
+// 비디오 영역 아이프레임 src 변경 ///////////////////////////
+const slidePeek = mFn.qsa(".slide-peek-box li");
+const ifr = mFn.qs("#ifr");
+
+// console.log("슬라이드 픽:", slidePeek, "\n 동영상:", ifr);
+
+const movieId = {
+  Trailer: "J_1EXWNETiI",
+  "Masters and Apprentices": "UTqPkjk0GLU",
+  Phenomenon: "dp-9AoWxchE",
+  "Sabine’s Loth-Cat": "uSqsyC780OY&t=2s",
+};
+
+slidePeek.forEach((ele, idx) => {
+  ele.onclick = () => {
+    let txt = ele.querySelector("img").getAttribute("alt");
+    // console.log("나 클릭!", ele);
+
+    ifr.setAttribute(
+      "src",
+      `https://www.youtube.com/embed/${movieId[txt]}?autoplay=1`
+    );
+
+    forEach((x, i) => {
+      if (i === idx) {
+        x.parentElement.classList.add("on");
+      } /// if ///
+      else {
+        x.parentElement.classList.remove("on");
+      } /// else ///
+    }); /// forEach ///
+  }; /// onclick ///
+}); ////// forEach //////
+
+
+// 캐릭터 소개 박스 나타나기 ///////////////////////////
+const cPage = mFn.qs("#character-page");
+console.log("캐릭터 페이지:", cPage);
+
+const showBox = mFn.qs(".show");
+console.log("왜 안나와",showBox);
+
+showBox.forEach((x) => {
+  x.onclick = () => {
+    if (style.display == "none") {
+      style.display = "block";
+    } /// if ///
+    else {
+      style.display = "none";
+    } /// else ///
+  }; /// onclick ///
+}); ////// forEach //////
+
+
 // 캐릭터 소개 영역 ///////////////////////////
 (() => {
   const cBox = mFn.qs(".cbox");
-  console.log("캐릭터 박스:", cBox);
+  // console.log("캐릭터 박스:", cBox);
 
   let hcode = `<div class="col-12"><ul>`;
 
@@ -98,7 +119,7 @@ function scrollFn() {
 // 에피소드 가이드 영역 ///////////////////////////
 (() => {
   const epBox = mFn.qs(".episode-box");
-  console.log("에피소드 박스:", epBox);
+  // console.log("에피소드 박스:", epBox);
 
   let hcode = `<div class="slider-wrap col-8"><ul>`;
 

@@ -196,27 +196,27 @@ body {
 .cbox h3 {
   font-size: 1.8rem;
 }
-.character-page{
-  position: relative;
+#character-page{
+  display: none;
   background-color: #00000076;
   padding: 20rem;
   margin: 0 auto;
   z-index: 1;
 }
-.character-page .img-box{
+#character-page .img-box{
   width: 50rem;
   margin-right: 10rem;
 }
-.character-page .img-box img{
+#character-page .img-box img{
   width: 100%;
   height: auto;
 }
-.character-page .close-btn{
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  left: 100%;
+/* 닫기 버튼 */
+.close-btn{
+  width: 3rem;
+  height: 3rem;
+  background: url(../images/ahsoka/icon/icon_close.svg) no-repeat center/cover;
+  cursor: pointer;
 }
 
 /*********************** 에피소드 가이드 영역 ***********************/
