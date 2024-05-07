@@ -153,6 +153,9 @@ body {
   width: 100%;
   height: 100%;
 }
+.slide-peek-box .img-box:hover{
+  border: 1px solid #fff;
+}
 /* 플레이 아이콘 */
 .play-icon {
   position: absolute;
