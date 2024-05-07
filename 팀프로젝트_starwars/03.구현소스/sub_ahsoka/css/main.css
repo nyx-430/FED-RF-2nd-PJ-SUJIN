@@ -157,7 +157,8 @@ body {
   border: 1px solid #fff;
 }
 /* 플레이 아이콘 */
-.play-icon {
+.slide-peek-box .img-box::after {
+  content: '';
   position: absolute;
   top: 40%;
   left: 45%;
@@ -185,6 +186,9 @@ body {
   width: 100%;
   height: 250px;
   border-radius: 2rem;
+}
+.cbox img:hover{
+  border: 1px solid #fff;
 }
 .cbox h3 {
   font-size: 1.8rem;
