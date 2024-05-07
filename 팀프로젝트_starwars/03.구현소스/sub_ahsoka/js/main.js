@@ -82,7 +82,7 @@ function scrollFn() {
     hcode += `
     <li>
       <figure>
-        <img src="./images/characters/${v.idx}.jpeg" alt="${v.name}" />
+        <img src="./images/ahsoka/characters/${v.idx}.jpeg" alt="${v.name}" />
       </figure>
       <div class="title-box">
         <h3>${v.name}</h3>
@@ -107,7 +107,7 @@ function scrollFn() {
       <li>
         <figure>
           <a href="#"
-            ><img src="./images/${v.idx}.jpeg" alt="${v.idx}"
+            ><img src="./images/ahsoka/${v.idx}.jpeg" alt="${v.idx}"
           /></a>
         </figure>
         <div class="desc-box">

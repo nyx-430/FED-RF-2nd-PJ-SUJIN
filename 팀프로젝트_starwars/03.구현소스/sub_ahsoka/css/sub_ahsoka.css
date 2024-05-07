@@ -92,7 +92,7 @@ body {
   padding-bottom: 15rem;
   margin-bottom: 15rem;
   backdrop-filter: blur(70px);
-  background: url(../images/poster1.jpeg) center/cover no-repeat;
+  background: url(../images/ahsoka/poster1.jpeg) center/cover no-repeat;
 }
 .bulr-box {
   position: absolute;
@@ -167,7 +167,7 @@ body {
   left: 45%;
   width: 5rem;
   height: 5rem;
-  background: url(../images/icon/icon-play.png) no-repeat center/cover;
+  background: url(../images/ahsoka/icon/icon-play.png) no-repeat center/cover;
   z-index: 1;
 }
 
