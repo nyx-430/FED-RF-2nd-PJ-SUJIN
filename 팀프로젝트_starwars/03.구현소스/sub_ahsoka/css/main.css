@@ -211,7 +211,7 @@ body {
 }
 .episode-box .desc-box {
   height: 14vh;
-  padding: 1rem 3rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 0 0 2rem 2rem;
   background-color: #1d1e1f;
 }
