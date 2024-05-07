@@ -37,7 +37,6 @@ function scrollFn() {
   });
 } ///////////// scrollFn /////////////
 
-
 // 비디오 영역 아이프레임 src 변경 ///////////////////////////
 const slidePeek = mFn.qsa(".slide-peek-box li");
 const ifr = mFn.qs("#ifr");
@@ -72,26 +71,6 @@ slidePeek.forEach((ele, idx) => {
   }; /// onclick ///
 }); ////// forEach //////
 
-
-// 캐릭터 소개 박스 나타나기 ///////////////////////////
-const cPage = mFn.qs("#character-page");
-console.log("캐릭터 페이지:", cPage);
-
-const showBox = mFn.qs(".show");
-console.log("왜 안나와",showBox);
-
-showBox.forEach((x) => {
-  x.onclick = () => {
-    if (style.display == "none") {
-      style.display = "block";
-    } /// if ///
-    else {
-      style.display = "none";
-    } /// else ///
-  }; /// onclick ///
-}); ////// forEach //////
-
-
 // 캐릭터 소개 영역 ///////////////////////////
 (() => {
   const cBox = mFn.qs(".cbox");
@@ -101,7 +80,7 @@ showBox.forEach((x) => {
 
   ahsokaData.cData.forEach((v) => {
     hcode += `
-    <li>
+    <li data-key="${v.idx}">
       <figure>
         <img src="./images/ahsoka/characters/${v.idx}.jpeg" alt="${v.name}" />
       </figure>
@@ -115,6 +94,38 @@ showBox.forEach((x) => {
   hcode += `</ul></div>`;
   cBox.innerHTML = hcode;
 })(); ///////////////////////////
+
+// 캐릭터 소개 박스 나타나기 ///////////////////////////
+const cPage = mFn.qs("#character-page");
+const cPageTitle = mFn.qs("#character-page .title");
+const cPageDesc = mFn.qs("#character-page .desc");
+const cPageImg = mFn.qs("#character-page img");
+console.log("캐릭터 페이지:", cPage);
+
+const showBox = mFn.qsa(".cbox li");
+console.log("왜 안나와", showBox);
+
+showBox.forEach((x) => {
+  x.onclick = () => {
+    let key = x.getAttribute("data-key");
+    // some() 메서드는 배열을 돌다가 조건에 맞으면 처리하고 나옴!
+    let selRec = ahsokaData.cData.some((z) => {
+      if (z.idx === key) { // 클릭된 idx와 일치하는 배열값을 찾음!
+        cPageTitle.innerText = z.name;
+        cPageDesc.innerText = z.desc;
+        cPageImg.src = `./images/ahsoka/characters/${z.idx}.jpeg`;
+        return;
+      }
+    });
+    console.log(key, ":", selRec);
+
+    cPage.style.display = "block";
+  }; /// onclick ///
+}); ////// forEach //////
+
+mFn.qs(".close-btn").onclick = () => {
+  cPage.style.display = "none";
+};
 
 // 에피소드 가이드 영역 ///////////////////////////
 (() => {
