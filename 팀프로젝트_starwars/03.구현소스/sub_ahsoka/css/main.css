@@ -96,17 +96,18 @@ body {
 #info-area .img-box img {
   width: 60rem;
 }
-#info-area .title {
+#info-area .desc-box > div {
+  margin-top: 4rem;
+}
+/* 타이틀, 설명글 공통 */
+.title {
   color: #fff;
   text-align: justify;
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.2;
 }
-#info-area .desc-box > div {
-  margin-top: 4rem;
-}
-#info-area .desc {
+.desc {
   color: #fff;
   text-align: justify;
   font-size: 1.8rem;
@@ -194,8 +195,26 @@ body {
   font-size: 1.8rem;
 }
 .character-page{
+  position: relative;
   background-color: #00000076;
-  margin: 15rem;
+  padding: 15rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+.character-page .img-box{
+  width: 50rem;
+  
+}
+.character-page .img-box img{
+  width: 100%;
+  height: auto;
+}
+.character-page .close-btn{
+  position: absolute;
+  left: 100%;
+  padding: 0;
+  margin: 0;
+
 }
 
 /*********************** 에피소드 가이드 영역 ***********************/
