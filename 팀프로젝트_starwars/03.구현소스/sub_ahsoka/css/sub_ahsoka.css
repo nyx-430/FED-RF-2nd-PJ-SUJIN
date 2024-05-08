@@ -190,9 +190,9 @@ body {
   height: 250px;
   border-radius: 2rem;
 }
-.cbox img:hover{
+/* .cbox img:hover{
   border: 1px solid #fff;
-}
+} */
 .cbox h3 {
   font-size: 1.8rem;
 }
