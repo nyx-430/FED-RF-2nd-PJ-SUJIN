@@ -7,12 +7,15 @@
   body > * {
     overflow-x: hidden;
 }
-.page{
-/* padding: 0 3rem; */
+.slide-peek-box {
+ max-width: 1520px;
 }
-.slider-wrap ul li {
+.slider-wrap .col-8 {
   flex-basis: 50%;
-  left: 0;
+}
+.slider-wrap ul li .img-box {
+  width: 300px;
+  
 }
 
 }
