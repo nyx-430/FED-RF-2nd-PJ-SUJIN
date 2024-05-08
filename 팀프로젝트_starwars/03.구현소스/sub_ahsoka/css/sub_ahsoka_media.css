@@ -1,3 +1,22 @@
 @charset "utf-8";
 
 /* sub_ahsoka : 미디어쿼리 CSS - sub_ahsoka_media */
+
+/********* 최대사이즈 1520px 이하 시작 *********/
+@media screen and (max-width: 1520px) {
+  body > * {
+    overflow-x: hidden;
+}
+
+
+}
+/********* 최대사이즈 1520px 이하 끝 *********/
+
+/********* 최대사이즈 1204px 이하 시작 *********/
+@media screen and (max-width: 1204px) {
+    /* 캐릭터 박스 한 줄에 4개씩 */
+    .cbox li {
+      flex-basis: calc(100% / 4 - 15px);
+    }
+}
+/********* 최대사이즈 1204px 이하 끝 *********/
