@@ -24,7 +24,7 @@
 /* 컨텐트 박스 
 -> 플렉스 박스는 싸고 있는 부모를 설정함! */
 .cont-box{
-    width: 1500px;
+    max-width: 1500px;
     margin: 0 auto;
     text-align-last: left;
 }
