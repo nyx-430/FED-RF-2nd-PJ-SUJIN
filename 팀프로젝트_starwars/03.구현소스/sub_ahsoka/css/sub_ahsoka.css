@@ -92,7 +92,7 @@ body {
   padding-bottom: 15rem;
   margin-bottom: 15rem;
   backdrop-filter: blur(70px);
-  background: url(../images/ahsoka/poster1.jpeg) center/cover no-repeat;
+  background: url(../images/sub_ahsoka_images/poster1.jpeg) center/cover no-repeat;
 }
 .bulr-box {
   position: absolute;
@@ -156,9 +156,6 @@ body {
   width: 100%;
   height: 100%;
 }
-.slide-peek-box .img-box:hover{
-  border: 1px solid #fff;
-}
 /* 플레이 아이콘 */
 .slide-peek-box .img-box::after {
   content: '';
@@ -167,7 +164,7 @@ body {
   left: 45%;
   width: 5rem;
   height: 5rem;
-  background: url(../images/ahsoka/icon/icon-play.png) no-repeat center/cover;
+  background: url(../images/sub_ahsoka_images/icon/icon-play.png) no-repeat center/cover;
   z-index: 1;
 }
 
@@ -190,9 +187,6 @@ body {
   height: 250px;
   border-radius: 2rem;
 }
-/* .cbox img:hover{
-  border: 1px solid #fff;
-} */
 .cbox h3 {
   font-size: 1.8rem;
 }
@@ -226,7 +220,7 @@ body {
 .close-btn{
   width: 3rem;
   height: 3rem;
-  background: url(../images/ahsoka/icon/icon_close.svg) no-repeat center/cover;
+  background: url(../images/sub_ahsoka_images/icon/icon_close.svg) no-repeat center/cover;
   cursor: pointer;
 }
 

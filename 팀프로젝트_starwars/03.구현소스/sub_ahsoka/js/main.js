@@ -82,7 +82,7 @@ slidePeek.forEach((ele, idx) => {
     hcode += `
     <li data-key="${v.idx}">
       <figure>
-        <img src="./images/ahsoka/characters/${v.idx}.jpeg" alt="${v.name}" />
+        <img src="./images/sub_ahsoka_images/characters/${v.idx}.jpeg" alt="${v.name}" />
       </figure>
       <div class="title-box">
         <h3>${v.name}</h3>
@@ -113,7 +113,7 @@ showBox.forEach((x) => {
       if (z.idx === key) { // 클릭된 idx와 일치하는 배열값을 찾음!
         cPageTitle.innerText = z.name;
         cPageDesc.innerText = z.desc;
-        cPageImg.src = `./images/ahsoka/characters/${z.idx}.jpeg`;
+        cPageImg.src = `./images/sub_ahsoka_images/characters/${z.idx}.jpeg`;
         return;
       }
     });
@@ -139,7 +139,7 @@ mFn.qs(".close-btn").onclick = () => {
       <li>
         <figure>
           <a href="#"
-            ><img src="./images/ahsoka/${v.idx}.jpeg" alt="${v.idx}"
+            ><img src="./images/sub_ahsoka_images/${v.idx}.jpeg" alt="${v.idx}"
           /></a>
         </figure>
         <div class="desc-box">
