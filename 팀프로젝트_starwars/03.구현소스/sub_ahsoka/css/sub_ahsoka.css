@@ -141,6 +141,19 @@ body {
   padding: 0;
   overflow: hidden;
 }
+.video-box {
+  /* width: 1250px; */
+  /* height: 703px; */
+  /* width: 125rem; */
+  /* height: 73rem; */
+  aspect-ratio: 1250 / 703;
+  
+}
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 .slide-peek-box {
   margin-top: 3rem;
 }
@@ -161,7 +174,7 @@ body {
 }
 .slide-peek-box .img-box img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 /* 플레이 아이콘 */
 .slide-peek-box .img-box::after {

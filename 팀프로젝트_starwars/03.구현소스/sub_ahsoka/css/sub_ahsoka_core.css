@@ -11,8 +11,6 @@ font-family: "Pretendard Variable",Pretendard, apple-system, system-ui, Roboto, 
 html {
   font-family: "Pretendard Variable", sans-serif;
   font-size: 10px;
-  /* ### 충돌요소 */
-  text-align: center;
   color: #fff;
 }
 
