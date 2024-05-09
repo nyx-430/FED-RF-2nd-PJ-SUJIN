@@ -77,3 +77,25 @@
   }
 }
 /********* 최대사이즈 780px 이하 끝 *********/
+
+/********* 최대사이즈 700px 이하 시작 *********/
+@media screen and (max-width: 700px) {
+  #info-area .img-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
+  }
+  #info-area .img-box .img-box img{
+    width: 100%;
+  }
+  #info-area .desc-box {
+    position: absolute;
+  }
+  #info-area .desc-box > div {
+    font-size: 1.6rem;
+  }
+}
+/********* 최대사이즈 700px 이하 끝 *********/
