@@ -17,7 +17,7 @@
 /********* 최대사이즈 1520px 이하 끝 *********/
 
 /********* 최대사이즈 1360px 이하 시작 *********/
-@media screen and (width: 1360px) {
+@media screen and (max-width: 1360px) {
   /* 캐릭터 박스 한 줄에 4개씩 */
   .cbox ul {
     grid-template-columns: repeat(4, 1fr);
