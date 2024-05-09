@@ -51,9 +51,10 @@ figcaption > h4 {
   height: 100vh;
 }
 .top-banner .main-ban {
-  width: 100%;
   height: 100vh;
-  object-fit: cover;
+}
+.top-banner img{
+  width: 100%;
 }
 .ban-desc-box {
   position: absolute;
