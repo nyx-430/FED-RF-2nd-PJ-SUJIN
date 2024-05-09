@@ -47,7 +47,7 @@ const movieId = {
   Trailer: "J_1EXWNETiI",
   "Masters and Apprentices": "UTqPkjk0GLU",
   Phenomenon: "dp-9AoWxchE",
-  "Cat": "Qc-CM89yemQ",
+  cat: "Qc-CM89yemQ",
 };
 
 slidePeek.forEach((ele, idx) => {
@@ -103,7 +103,6 @@ const cPageImg = mFn.qs("#character-page img");
 console.log("캐릭터 페이지:", cPage);
 
 const showBox = mFn.qsa(".cbox li");
-console.log("왜 안나와", showBox);
 
 showBox.forEach((x) => {
   x.onclick = () => {

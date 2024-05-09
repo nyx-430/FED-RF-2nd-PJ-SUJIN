@@ -31,6 +31,22 @@ body {
   line-height: 1.5;
 }
 
+/*************  박스 공통 설정 *************/
+/* 섹션 상단 여백 */
+.section-top {
+  padding-top: 15rem;
+}
+
+/* 슬라이드 내 박스 설정 */
+.slider-wrap figcaption {
+  margin-top: 4rem;
+
+}
+
+figcaption > h4 {
+  margin-top: 2rem;
+}
+
 /*********************** 탑배너 영역 ***********************/
 .top-banner {
   position: relative;
@@ -142,12 +158,9 @@ body {
   overflow: hidden;
 }
 .video-box {
-  /* width: 1250px; */
-  /* height: 703px; */
-  /* width: 125rem; */
-  /* height: 73rem; */
-  aspect-ratio: 1250 / 703;
-  
+  width: 125rem;
+  height: 73rem;
+  /* aspect-ratio: 1250 / 703; */
 }
 .video-box iframe {
   width: 100%;
@@ -174,7 +187,7 @@ body {
 }
 .slide-peek-box .img-box img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 /* 플레이 아이콘 */
 .slide-peek-box .img-box::after {
