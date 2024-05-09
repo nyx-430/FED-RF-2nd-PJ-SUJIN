@@ -32,6 +32,14 @@
 }
 /********* 최대사이즈 1204px 이하 끝 *********/
 
+/********* 최대사이즈 1190px 이하 시작 *********/
+@media screen and (max-width: 1190px) {
+ .section-top{
+  margin-top: 0;
+ }
+}
+/********* 최대사이즈 1190px 이하 끝 *********/
+
 /********* 최대사이즈 923px 이하 시작 *********/
 @media screen and (max-width: 923px) {
   .top-banner .ban-desc-box {
