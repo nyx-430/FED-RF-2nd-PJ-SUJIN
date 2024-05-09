@@ -13,6 +13,8 @@
   .ban-desc-box .desc{
     font-size: 2rem;
   }
+  #info-area {
+    height: 50%;}
 
   /* 캐릭터 박스 한 줄에 4개씩 */
   .cbox ul {
@@ -29,7 +31,9 @@
   .top-banner .ban-desc-box {
     justify-items: center;
   }
-  
+  #info-area {
+    height: 30%;
+  }
   .episode-box ul {
     grid-template-columns: repeat(2, 1fr);
  
