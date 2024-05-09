@@ -2,22 +2,18 @@
 
 /* sub_ahsoka : 미디어쿼리 CSS - sub_ahsoka_media */
 
-/********* 최대사이즈 1520px 이하 시작 *********/
-@media screen and (width: 1520px) {
+/********* 최대사이즈 1204px 이하 시작 *********/
+@media screen and (max-width: 1204px) {
   body > * {
     overflow-x: hidden;
   }
-  .slider-wrap .col-8 {
-    flex-basis: 50%;
+  .top-banner .btn-box {
+    margin-top: 2rem;
   }
-  .slider-wrap ul li .img-box {
-    flex-basis: 50%;
+  .ban-desc-box .desc{
+    font-size: 2rem;
   }
-}
-/********* 최대사이즈 1520px 이하 끝 *********/
 
-/********* 최대사이즈 1360px 이하 시작 *********/
-@media screen and (max-width: 1360px) {
   /* 캐릭터 박스 한 줄에 4개씩 */
   .cbox ul {
     grid-template-columns: repeat(4, 1fr);
@@ -26,18 +22,12 @@
     grid-row: auto;
   }
 }
-/********* 최대사이즈 1360px 이하 끝 *********/
+/********* 최대사이즈 1204px 이하 끝 *********/
 
-/********* 최대사이즈 1204px 이하 시작 *********/
-@media screen and (max-width: 1204px) {
-  .top-banner .btn-box {
-    margin-top: 2rem;
-  }
-  .ban-desc-box .desc{
-    font-size: 1.2rem;
-  }
-  .video-box{
-
+/********* 최대사이즈 923px 이하 시작 *********/
+@media screen and (max-width: 923px) {
+  .tiktoc-box ul {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-/********* 최대사이즈 1204px 이하 끝 *********/
+/********* 최대사이즈 923px 이하 끝 *********/
