@@ -4,7 +4,7 @@
 
 /* 리셋, 코아, 커먼, 미디어쿼리 공통 외부 CSS 합치기 */
 @import url(./reset.css);
-@import url(./sub_ahsoka_core.css);
+@import url(./core.css);
 
 /* 그리드 12  */
 @import url(./sub_ahsoka_grid_12_flex.css);
