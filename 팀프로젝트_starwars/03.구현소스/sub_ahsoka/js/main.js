@@ -131,7 +131,7 @@ mFn.qs(".close-btn").onclick = () => {
   const epBox = mFn.qs(".episode-box");
   // console.log("에피소드 박스:", epBox);
 
-  let hcode = `<div class="slider-wrap col-8"><ul>`;
+  let hcode = `<div class="slider-wrap"><ul>`;
 
   ahsokaData.epiData.forEach((v) => {
     hcode += `

@@ -182,8 +182,6 @@ figcaption > h4 {
 }
 .slide-peek-box .img-box {
   position: relative;
-  /* width: 350px; */
-  /* height: 200px; */
   aspect-ratio: 16/9;
 }
 .slide-peek-box .img-box img {
