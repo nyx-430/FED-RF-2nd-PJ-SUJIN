@@ -4,7 +4,7 @@
 import mFn from "./my_function.js";
 
 // 데이터
-import * as ahsokaData from "./ahsokaData.js";
+import * as ahsokaData from "./sub_ahsoka_data.js";
 
 // 스크롤 페이드인/아웃 ///////////////////////////
 const stage = mFn.qsa(".page");
