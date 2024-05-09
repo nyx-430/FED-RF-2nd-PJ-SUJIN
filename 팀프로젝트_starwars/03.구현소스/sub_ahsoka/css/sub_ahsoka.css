@@ -51,6 +51,7 @@ figcaption > h4 {
   position: relative;
   margin: 0 auto;
   padding: 0;
+  height: 100vh;
 }
 .top-banner img {
   width: 100%;
