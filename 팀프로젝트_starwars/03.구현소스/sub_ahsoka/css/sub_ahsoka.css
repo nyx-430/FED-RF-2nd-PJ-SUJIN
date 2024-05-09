@@ -48,10 +48,11 @@ figcaption > h4 {
   position: relative;
   margin: 0 auto;
   padding: 0;
+  height: 100vh;
 }
-.top-banner img {
+.top-banner .main-ban {
   width: 100%;
-  margin-top: 15rem;
+  height: 100vh;
   object-fit: cover;
 }
 .ban-desc-box {
@@ -61,7 +62,7 @@ figcaption > h4 {
   max-width: 40%;
 }
 .ban-logo {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .ban-desc-box .desc {
   top: 0;
@@ -74,7 +75,7 @@ figcaption > h4 {
 }
 .top-banner .btn-box {
   cursor: pointer;
-  margin-top: 8rem;
+  margin-top: 10rem;
   text-align: center;
 }
 .ban-desc-box a {
