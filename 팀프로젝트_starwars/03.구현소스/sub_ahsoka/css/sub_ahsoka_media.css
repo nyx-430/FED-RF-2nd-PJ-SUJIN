@@ -55,6 +55,12 @@
   .tiktoc-box ul {
     grid-template-columns: repeat(3, 1fr);
   }
+  .ban-desc-box .btn1 {
+    height: 5vh;
+  }
+  .ban-desc-box .btn2 {
+    height: 5vh;
+  }
 }
 /********* 최대사이즈 923px 이하 끝 *********/
 
