@@ -4,26 +4,20 @@
 /* 공통 셋팅을 위한 클래스 + 웹폰트 */
 
 /* 웹폰트 CDN */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap&family=Noto+Sans+KR:wght@100..900&display=swap"&family=Noto+Sans+KR:wght@500&display=swap&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap&Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 /* 
-    0. 메뉴 등 일반체
+    0. 메뉴 등 한글 일반체
     font-family: 'Noto Sans KR', sans-serif;
 
-    1. 배너 타이틀 폰트
-    font-family: "Archivo Black", sans-serif;
-
+    1. 영문 폰트
+    font-family: "Playfair Display", serif;
+    
     2. 배너 링크 폰트
-    font-family: "Titillium Web", sans-serif;
-*/
+    font-family: 
 
-/* 설명 숨기기 클래스 */
-.ir{
-    display: block;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-}
+    'Playfair Display','Noto Sans Korean','Apple SD Gothic Neo','Malgun Gothic','Nanum Gothic','Noto Sans',sans-serif;
+*/
 
 /**************** 공통 클래스 ****************/
 html{
@@ -36,3 +30,26 @@ html{
     margin: 0 auto;
 }
 
+html {
+    font-family:'Playfair Display','Noto Sans Korean','Malgun Gothic','Nanum Gothic','Noto Sans',sans-serif;
+    font-size: 10px;
+}
+
+/* 플렉스 박스 설정 */
+.fx-box{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+/* 그리드 박스 설정 */
+.gr-box{
+  display: grid;
+}
+
+/* 설명 숨기기 클래스 */
+.ir{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
