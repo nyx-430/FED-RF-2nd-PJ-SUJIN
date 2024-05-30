@@ -3,25 +3,36 @@
 /* 공통 모듈 CSS - common.css */
 /* 공유 기능 요소 셋팅 */
 
-body{
-    overflow: hidden;
-    background-color: #EBE9E6;
-}
-
 /* 공사중 표시 */
 body * {
     outline: 2px dotted #bfbfbf;
 }
 
+body{
+    overflow: hidden;
+    background-color: #EBE9E6;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 /* 네이게이션 */
-#nav{
-    position: sticky;
+.top-menu {
+    position: fixed;
     margin: 0 auto;
     padding: 0;
     width: 90px;
     height: 100%;
-    color: #fff;
+    background-color: #fff;
     right: 0;
     transform: translateZ(0);
     z-index: 1;
 }
+
+.top-menu a {
+    display: none;
+}
+
+
