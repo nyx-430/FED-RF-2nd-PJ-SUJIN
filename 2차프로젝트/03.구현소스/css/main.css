@@ -8,5 +8,62 @@
 @import url(./reset.css);
 @import url(./grid12_flex.css);
 
-#intro-area .logo {
+.page {
+    box-sizing: border-box;
+    width: calc(100% - 90px);
+    margin-bottom: 3rem;
+}
+
+/****************** 인트로 영역 : intro-page ******************/
+#intro-page {
+    height: 100vh;
+    background: url(../images/story_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#intro-page .logo {
+    background: url(../images/logo_w.png);
+    z-index: 1;
+}
+#intro-page .desc-box {
+    width: 50%;
+    text-align: center;
+    transform: translate(50%);
+}
+.main-title {
+    color: #fff;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.main-text {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/****************** 메인 영역 : main-page ******************/
+#main-page {
+    height: 100vh;
+    padding: 5rem;
+}
+.title {
+    color: #000;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.text {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/****************** 대표상품 영역 : product-page ******************/
+#product-page {
+    height: 100vh;
+    padding: 5rem;
 }

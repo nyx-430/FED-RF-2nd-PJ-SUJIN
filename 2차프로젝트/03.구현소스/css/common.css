@@ -9,7 +9,6 @@ body * {
 }
 
 body{
-    overflow: hidden;
     background-color: #EBE9E6;
 }
 
@@ -19,7 +18,7 @@ a {
 }
 
 /* 네이게이션 */
-.top-menu {
+.menu {
     position: fixed;
     margin: 0 auto;
     padding: 0;
@@ -31,7 +30,7 @@ a {
     z-index: 1;
 }
 
-.top-menu a {
+.menu a {
     display: none;
 }
 
