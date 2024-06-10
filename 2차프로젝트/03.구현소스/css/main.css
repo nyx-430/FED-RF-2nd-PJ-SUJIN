@@ -60,11 +60,7 @@
     line-height: 1.5;
 }
 
-/****************** 대표상품 영역 : product-page ******************/
-#product-page {
-    height: 100vh;
-    padding: 5rem;
-}
+/****************** 슬라이드 영역 : main-page ******************/
 .slider {
     display: flex;
 }
@@ -76,6 +72,7 @@
 .slider .img-box img { 
     width: 100%;
 }
+/* 상품 이미지 슬라이드 */
 .slider .goods-box {
     width: 40%;
     height: 40%;
@@ -88,7 +85,8 @@
 .slider .desc-box {
     margin: 2rem 0;
 }
-.slider .desc-box img{
+/* 상품명 이미지 */
+.slider .desc-box img {
     width: 10rem;
 }
 .slider .desc-box h3,p {
@@ -97,3 +95,10 @@
     line-height: 1.5;
     text-align: center;
 }
+
+/****************** 대표상품 영역 : product-page ******************/
+#product-page {
+    padding: 5rem;
+}
+
+/****************** 하단 영역 : footer-page ******************/
