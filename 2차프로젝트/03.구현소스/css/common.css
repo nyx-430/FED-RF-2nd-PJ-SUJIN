@@ -7,11 +7,9 @@
 body * {
     outline: 2px dotted #bfbfbf;
 }
-
 body{
     background-color: #EBE9E6;
 }
-
 a {
     text-decoration: none;
     color: #000;
@@ -24,14 +22,36 @@ a {
     padding: 0;
     width: 90px;
     height: 100%;
-    background-color: #fff;
     right: 0;
     transform: translateZ(0);
+    background-color: #fff;
     z-index: 1;
 }
-
-.menu a {
+.menu li {
     display: none;
 }
-
-
+.menu > div {
+    vertical-align: middle;
+}
+/* 메뉴 버튼 : top-menu */
+.menu-button {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+}
+/* 장바구니 버튼 */
+.cart {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+/* 로그인 버튼 */
+.login {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+}

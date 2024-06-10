@@ -67,3 +67,23 @@
     height: 100vh;
     padding: 5rem;
 }
+.slider {
+    display: flex;
+}
+.slider .img-box {
+    width: 60%;
+    height: 70%;
+    margin-right: 3rem;
+}
+.slider .img-box img { 
+    width: 100%;
+}
+.slider .goods-box {
+    width: 40%;
+    height: 40%;
+}
+.slider .goods-box img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}

@@ -15,14 +15,9 @@
     />
 </head>
 <body>
-    <!-- 네비게이션 : nav -->
+    <!-- 네비게이션 : gnb -->
     <nav id="gnb">
-        <div class="menu">
-            <div class="mbtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="menu">  
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">STORY</a></li>
@@ -30,6 +25,17 @@
                 <li><a href="#">MEMBERSHIP </a></li>
                 <li><a href="#">Q&A </a></li>
             </ul>
+            <!-- 메뉴 버튼 -->
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- 장바구니 버튼 -->
+            <div class="icon-box">
+                <a href="/cart" class="cart fa-light fa-bag-shopping"></a>
+                <a href="/login" class="login fa-light fa-user"></a>
+            </div>
         </div>
     </nav>
     <!-- 인트로 영역 : intro-page -->
@@ -56,13 +62,20 @@
     </section>
     <!-- 메인 영역 : main-page -->
     <section id="main-page" class="page">
-        <div class="inbox col-12">
+        <div class="inbox">
             <div class="collection">
                 <h2 class="title">Collections</h2>
                 <div class="slider">
-                    <div class="img-box"></div>
-                    <div class="goods-box"></div>
-                    <div class="desc-box"></div>
+                    <div class="img-box">
+                        <img src="./images/img_6am.png" alt="6am">
+                    </div>
+                    <div class="goods-box">
+                        <img src="./images/s1.jpg" alt="6am">
+                        <div class="desc-box">
+                            <h3>타이틀</h3>
+                            <p>상품 설명</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,7 +88,6 @@
     </section>
     <!-- 하단 영역 : footer-page -->
     <footer id="footer-page" class="page">
-        
     </footer>
 </body>
 </html>
