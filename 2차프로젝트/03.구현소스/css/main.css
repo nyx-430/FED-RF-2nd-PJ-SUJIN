@@ -6,7 +6,6 @@
 @import url(./common.css);
 @import url(./core.css);
 @import url(./reset.css);
-@import url(./grid12_flex.css);
 
 .page {
     box-sizing: border-box;
@@ -46,7 +45,6 @@
 
 /****************** 메인 영역 : main-page ******************/
 #main-page {
-    height: 100vh;
     padding: 5rem;
 }
 .title {
@@ -86,4 +84,16 @@
     width: 100%;
     object-position: center;
     object-fit: cover;
+}
+.slider .desc-box {
+    margin: 2rem 0;
+}
+.slider .desc-box img{
+    width: 10rem;
+}
+.slider .desc-box h3,p {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
 }
