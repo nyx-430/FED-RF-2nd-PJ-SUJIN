@@ -15,16 +15,20 @@
 
 /****************** 인트로 영역 : intro-page ******************/
 #intro-page {
-    height: 100vh;
+    height: 150vh;
     background: url(../images/story_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
 }
+/* 인트로 로고 */
 #intro-page .logo {
-    background: url(../images/logo_w.png);
-    z-index: 1;
+    height: 300px;
+    left: 50%;
+    margin: 15rem 0;
 }
+
+ /* 텍스트박스 */
 #intro-page .desc-box {
     width: 50%;
     text-align: center;
@@ -32,15 +36,24 @@
 }
 .main-title {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 2rem;
 }
-.main-text {
+.main-text1 {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.5;
+    margin: 5rem 0;
+    padding-top: 10rem;
+}
+.main-text2 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-bottom: 10rem;
 }
 
 /****************** 메인 영역 : main-page ******************/
@@ -87,7 +100,7 @@
 }
 /* 상품명 이미지 */
 .slider .desc-box img {
-    width: 10rem;
+    width: 90px;
 }
 .slider .desc-box h3,p {
     margin: 1rem 0;
@@ -98,7 +111,12 @@
 
 /****************** 대표상품 영역 : product-page ******************/
 #product-page {
+    height: 100vh;
     padding: 5rem;
 }
 
 /****************** 하단 영역 : footer-page ******************/
+#footer-page {
+    height: 70vh;
+    background-image: url(../images/footer.jpg);
+}
