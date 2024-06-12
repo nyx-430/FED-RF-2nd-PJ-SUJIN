@@ -28,8 +28,12 @@
 </head>
 <body>
     <!-- 네비게이션 : gnb -->
-    <nav id="gnb">
-        <div class="menu">  
+    <header id="gnb">
+        <div class="menu">
+            <div class="lines">
+                <p class="line">SW19</p>
+                <p class="line">A transitional scent of the green forest | of Wimbledon, London SW19 | that changes over time</p>
+            </div>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">STORY</a></li>
@@ -37,19 +41,26 @@
                 <li><a href="#">MEMBERSHIP </a></li>
                 <li><a href="#">Q&A </a></li>
             </ul>
-            <!-- 메뉴 버튼 -->
-            <div class="menu-button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <!-- 장바구니 버튼 -->
+            <!-- 아이콘 박스 -->
             <div class="icon-box">
-                <a href="/cart" class="cart fa-light fa-bag-shopping"></a>
-                <a href="/login" class="login fa-light fa-user"></a>
+                <!-- 햄버거 버튼 -->
+                <div class="menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="/login" class="login fa-solid fa-arrow-right"
+                  ><span class="ir">login</span></a
+                >
+                <a href="/join" class="cart fa-solid fa-arrow-left"
+                ><span class="ir">join</span></a
+              >
+                <a href="/cart" class="cart fa-solid fa-arrow-left"
+                ><span class="ir">cart</span></a
+              >
             </div>
         </div>
-    </nav>
+    </header>
     <!-- 인트로 영역 : intro-page -->
     <section id="intro-page" class="page">
         <div class="inbox">
