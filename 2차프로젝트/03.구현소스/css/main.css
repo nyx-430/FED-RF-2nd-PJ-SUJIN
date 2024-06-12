@@ -116,15 +116,20 @@
 
 /****************** 하단 영역 : footer-page ******************/
 #footer-page {
-    height: 70vh;
+    height: 80vh;
+    overflow: hidden;
+}
+.footer-box {
+    margin: 0 auto;
+    text-align: center;
     background-image: url(../images/footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    padding: 10rem 0;
 }
-#footer-page .footer-box {
-    margin: 0 auto;
-    text-align: center;
+.bg-color {
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
 }
 /* 하단 로고 */
 .footer-logo {
@@ -137,20 +142,23 @@
 }
 .footer-box li {
     display: inline-block;
-    width: 15%;
     margin: 0 auto;
     padding: 1rem;
+    width: 15%;
     font-size: 1.5rem;
+    outline: 1px solid #fff;
 }
 .footer-box a {
     color: #fff;
 }
-/* 회사 정보 박스 */
-#footer-page .info-box {
-    padding-top: 10rem;
+.footer-box li:hover {
+    background-color: #fff;
 }
+.footer-box li:hover a {
+    color: #000;
+}
+/* 회사 정보 박스 */
 #footer-page span {
-    color: #fff;
     display: block;
     padding: 1rem 0 0;
     font-size: 1.4rem;
