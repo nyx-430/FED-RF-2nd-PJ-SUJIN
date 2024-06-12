@@ -6,6 +6,7 @@
 @import url(./common.css);
 @import url(./core.css);
 @import url(./reset.css);
+@import url(./grid12_flex.css);
 
 .page {
     box-sizing: border-box;
