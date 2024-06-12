@@ -122,7 +122,7 @@
     background-size: cover;
     overflow: hidden;
 }
-#footer-page .logo-box {
+#footer-page .footer-box {
     margin: 0 auto;
     text-align: center;
 }
@@ -131,9 +131,23 @@
     height: 300px;
     left: 50%;
 }
+/* 구글 맵 버튼 */
+.footer-box ul {
+    padding-top: 5rem;
+}
+.footer-box li {
+    display: inline-block;
+    width: 15%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.footer-box a {
+    color: #fff;
+}
 /* 회사 정보 박스 */
 #footer-page .info-box {
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 #footer-page span {
     color: #fff;
@@ -142,5 +156,5 @@
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
 }
