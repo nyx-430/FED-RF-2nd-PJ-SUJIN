@@ -44,8 +44,8 @@
 .menu-button {
   position: relative;
   width: 4.5rem;
-  height: 4.5rem;
-  padding-top: 1.5rem;
+  // height: 4.5rem;
+  margin-top: 1.5rem;
   cursor: pointer;
 
   /* 햄버거 바 공통 */
@@ -79,24 +79,23 @@
 /* 햄버거 버튼에 클래스 on */
 /* 1번 바 */
 .menu-button.on span:nth-child(1) {
-  top: 100px;
+  top: 20px;
   transform: rotate(45deg);
   transition: top 0.3s, transform 0.3s 0.3s;
+}
+/* 2번 바 */
+.menu-button.on span:nth-child(2) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+  transition: 0.1s 0.3s;
+}
 
-  /* 2번 바 */
-  span:nth-child(2) {
-    top: 100px;
-    width: 0%;
-    left: 50%;
-    transition: 0.1s 0.3s;
-  }
-  
-  /* 3번 바 */
-  span:nth-child(3) {
-    top: 100px;
-    transform: rotate(-45deg);
-    transition: top 0.3s, transform 0.3s 0.3s;
-  }
+/* 3번 바 */
+.menu-button.on span:nth-child(3) {
+  top: 20px;
+  transform: rotate(-45deg);
+  transition: top 0.3s, transform 0.3s 0.3s;
 }
 
 /* 메뉴 아이콘 박스 */
@@ -112,7 +111,7 @@
   height: 100%;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 /* 장바구니 버튼 */
 .menu-buttom {

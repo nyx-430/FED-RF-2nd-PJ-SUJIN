@@ -48,7 +48,7 @@ export default function TopArea() {
           {/* 메뉴 아이콘 박스 */}
           <div className="menu-box">
               {/* <!-- 햄버거 버튼 --> */}
-              <div className="menu-button">
+              <div className="menu-button ">
                 <span></span>
                 <span></span>
                 <span></span>
