@@ -22,13 +22,14 @@ export default function TopArea() {
           <div className="lines">
             <p className="line">SW19</p>
             <p className="line">
-              A transitional scent of the green forest | of Wimbledon, London <br />
+              A transitional scent of the green forest | of Wimbledon, London{" "}
+              <br />
               SW19 | that changes over time
             </p>
           </div>
           <ul>
             <li>
-              <Link to="/">HOME</Link>              
+              <Link to="/">HOME</Link>
             </li>
             <li>
               <Link to="/story">STORY</Link>
@@ -43,23 +44,26 @@ export default function TopArea() {
               <a href="#">Q&A </a>
             </li>
           </ul>
-          {/* <!-- 아이콘 박스 --> */}
-          <div className="icon-box">
-            {/* <!-- 햄버거 버튼 --> */}
-            <div className="menu-button">
-              <span></span>
-              <span></span>
-              <span></span>
+          {/* 메뉴 아이콘 박스 */}
+          <div className="menu-box">
+              {/* <!-- 햄버거 버튼 --> */}
+              <div className="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            {/* <!-- 하단 아이콘 박스 --> */}
+            <div className="icon-box">
+              <a href="/login" className="menu-buttom">
+                <FontAwesomeIcon icon={faRightToBracket} />
+              </a>
+              <a href="/join" className="menu-buttom">
+                <FontAwesomeIcon icon={faUser} />
+              </a>
+              <a href="/cart" className="menu-buttom">
+                <FontAwesomeIcon icon={faBagShopping} />
+              </a>
             </div>
-            <a href="/login" className="login">
-            <FontAwesomeIcon icon={faRightToBracket} />
-            </a>
-            <a href="/join" className="cart">
-            <FontAwesomeIcon icon={faUser} />
-            </a>
-            <a href="/cart" className="cart">
-            <FontAwesomeIcon icon={faBagShopping} />
-            </a>
           </div>
         </div>
       </header>
