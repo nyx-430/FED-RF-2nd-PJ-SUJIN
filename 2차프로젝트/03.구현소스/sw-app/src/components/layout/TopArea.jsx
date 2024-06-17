@@ -21,7 +21,7 @@ export default function TopArea() {
       <header id="gnb">
         <div className="menu">
           <div className="lines">
-            <p className="line">SW19</p>
+            <span className="line">SW19</span>
             <p className="line">
               A transitional scent of the green forest | of Wimbledon, London{" "}
               <br />
@@ -36,13 +36,13 @@ export default function TopArea() {
               <Link to="/story">STORY</Link>
             </li>
             <li>
-              <a href="#">STORES</a>
+            <Link to="/stores">STORES</Link>
             </li>
             <li>
-              <a href="#">MEMBERSHIP </a>
+            <Link to="/membership">MEMBERSHIP</Link>
             </li>
             <li>
-              <a href="#">Q&A </a>
+            <Link to="/board">Q&A</Link>
             </li>
           </ul>
           {/* 메뉴 아이콘 박스 */}
