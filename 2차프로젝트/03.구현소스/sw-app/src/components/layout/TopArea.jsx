@@ -3,6 +3,9 @@
 // GNB 데이터 불러오기
 import { Link, useNavigate } from "react-router-dom";
 
+// 제이쿼리
+import $ from "jquery";
+
 // 폰트어썸 불러오기
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +18,11 @@ import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import "../../css/top_area.scss";
 
 export default function TopArea() {
-  // 코드 리턴구역 //////////////
+
+  // 메뉴 열고 닫기 함수
+  
+
+  // 코드 리턴 구역 //////////////
   return (
     <>
       <header id="gnb">
