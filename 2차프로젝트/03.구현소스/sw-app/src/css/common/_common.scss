@@ -2,9 +2,9 @@
 /* 공유 기능 요소 셋팅 */
 
 /* 공사중 표시 */
-body * {
-  outline: 2px dotted #bfbfbf;
-}
+// body * {
+//   outline: 2px dotted #bfbfbf;
+// }
 
 body {
   background-color: #ebe9e6;
@@ -51,7 +51,10 @@ a {
   line-height: 1.3;
 }
 .line:first-child {
+  display: flex;
+  align-items: center;
   margin-right: 3rem;
+  font-size: 2.3rem;
 }
 
 /* 햄버거 버튼 */
@@ -73,11 +76,12 @@ a {
   height: 100%;
   flex-direction: column;
   justify-content: flex-end;
+  padding-bottom: 1.5rem;
 }
 /* 장바구니 버튼 */
 .menu-buttom {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 1rem;
 }
