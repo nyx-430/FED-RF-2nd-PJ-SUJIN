@@ -4,6 +4,8 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 // import { faBa } from "@fortawesome/free-regular-svg-icons";
 // import { faCamera } from "@fortawesome/free-brands-svg-icons";
@@ -20,7 +22,7 @@ export default function TopArea() {
           <div className="lines">
             <p className="line">SW19</p>
             <p className="line">
-              A transitional scent of the green forest | of Wimbledon, London
+              A transitional scent of the green forest | of Wimbledon, London <br />
               SW19 | that changes over time
             </p>
           </div>
@@ -50,10 +52,10 @@ export default function TopArea() {
               <span></span>
             </div>
             <a href="/login" className="login">
-            <FontAwesomeIcon icon={faBagShopping} />
+            <FontAwesomeIcon icon={faRightToBracket} />
             </a>
             <a href="/join" className="cart">
-            <FontAwesomeIcon icon={faBagShopping} />
+            <FontAwesomeIcon icon={faUser} />
             </a>
             <a href="/cart" className="cart">
             <FontAwesomeIcon icon={faBagShopping} />

@@ -17,21 +17,25 @@
     'Playfair Display','Noto Sans Korean','Apple SD Gothic Neo','Malgun Gothic','Nanum Gothic','Noto Sans',sans-serif;
 */
 
-/**************** 공통 클래스 ****************/
 html {
+  font-family: "Playfair Display", "Noto Sans Korean", "Malgun Gothic",
+    "Nanum Gothic", "Noto Sans", sans-serif;
+  font-size: 10px;
   scroll-behavior: smooth;
+}
+
+/**************** 공통 클래스 ****************/
+/* 화면 넓이 공통 */
+.page {
+  box-sizing: border-box;
+  width: calc(100% - 90px);
+  margin-bottom: 3rem;
 }
 
 /* 중앙속 박스 */
 .inbox {
   /* 블록박스 중앙 정렬 */
   margin: 0 auto;
-}
-
-html {
-  font-family: "Playfair Display", "Noto Sans Korean", "Malgun Gothic",
-    "Nanum Gothic", "Noto Sans", sans-serif;
-  font-size: 10px;
 }
 
 /* 플렉스 박스 설정 */
