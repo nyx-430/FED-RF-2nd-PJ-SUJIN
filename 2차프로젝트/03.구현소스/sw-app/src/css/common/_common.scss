@@ -27,7 +27,8 @@ a {
 }
 /* 메뉴 카테고리 */
 .menu li {
-  display: none;
+  // display: none;
+  font-size: 2rem;
 }
 /* 라인 박스 */
 .lines {
@@ -35,13 +36,15 @@ a {
   top: 100px;
   left: calc(100% - 30px);
   transform: rotate(90deg);
+  display: flex;
+  transform-origin: left;
 }
 .line {
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
-  /* white-space: nowrap; */
+  white-space: nowrap;
   line-height: 1;
 }
 /* 햄버거 버튼 : top-menu */
@@ -53,8 +56,7 @@ a {
 /* 장바구니 버튼 */
 .cart {
   display: flex;
-  width: 5rem;
-  height: 5rem;
+  font-size: 5rem;
 }
 /* 로그인 버튼 */
 .login {
@@ -62,5 +64,3 @@ a {
   width: 5rem;
   height: 5rem;
 }
-
-

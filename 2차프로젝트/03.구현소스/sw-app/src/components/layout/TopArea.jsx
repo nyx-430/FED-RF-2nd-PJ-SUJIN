@@ -3,6 +3,11 @@
 // GNB 데이터 불러오기
 import { Link, useNavigate } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+// import { faBa } from "@fortawesome/free-regular-svg-icons";
+// import { faCamera } from "@fortawesome/free-brands-svg-icons";
+
 // 상단영역 CSS 불러오기
 // import "../../css/top_area.scss";
 
@@ -44,14 +49,14 @@ export default function TopArea() {
               <span></span>
               <span></span>
             </div>
-            <a href="/login" className="login fa-solid fa-arrow-right">
-              <span className="ir">login</span>
+            <a href="/login" className="login">
+            <FontAwesomeIcon icon={faBagShopping} />
             </a>
-            <a href="/join" className="cart fa-solid fa-arrow-left">
-              <span className="ir">join</span>
+            <a href="/join" className="cart">
+            <FontAwesomeIcon icon={faBagShopping} />
             </a>
-            <a href="/cart" className="cart fa-solid fa-arrow-left">
-              <span className="ir">cart</span>
+            <a href="/cart" className="cart">
+            <FontAwesomeIcon icon={faBagShopping} />
             </a>
           </div>
         </div>
