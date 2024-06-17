@@ -1,0 +1,66 @@
+/* 공통 모듈 CSS - common.css */
+/* 공유 기능 요소 셋팅 */
+
+/* 공사중 표시 */
+body * {
+  outline: 2px dotted #bfbfbf;
+}
+body {
+  background-color: #ebe9e6;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 네비게이션 바 */
+.menu {
+  position: fixed;
+  margin: 0 auto;
+  padding: 0;
+  width: 90px;
+  height: 100%;
+  right: 0;
+  transform: translateZ(0);
+  background-color: #fff;
+  z-index: 1;
+}
+/* 메뉴 카테고리 */
+.menu li {
+  display: none;
+}
+/* 라인 박스 */
+.lines {
+  position: absolute;
+  top: 100px;
+  left: calc(100% - 30px);
+  transform: rotate(90deg);
+}
+.line {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  /* white-space: nowrap; */
+  line-height: 1;
+}
+/* 햄버거 버튼 : top-menu */
+.menu-button {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+}
+/* 장바구니 버튼 */
+.cart {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+}
+/* 로그인 버튼 */
+.login {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+}
+
+
