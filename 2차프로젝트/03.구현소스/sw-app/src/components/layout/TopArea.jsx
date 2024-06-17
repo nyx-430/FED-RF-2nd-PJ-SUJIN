@@ -3,6 +3,7 @@
 // GNB 데이터 불러오기
 import { Link, useNavigate } from "react-router-dom";
 
+// 폰트어썸 불러오기
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -11,10 +12,10 @@ import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 // import { faCamera } from "@fortawesome/free-brands-svg-icons";
 
 // 상단영역 CSS 불러오기
-// import "../../css/top_area.scss";
+import "../../css/top_area.scss";
 
 export default function TopArea() {
-  //// 코드 리턴구역 //////////////
+  // 코드 리턴구역 //////////////
   return (
     <>
       <header id="gnb">
@@ -69,4 +70,4 @@ export default function TopArea() {
       </header>
     </>
   );
-} /////////// TopArea /////////////////////
+} /////////// TopArea ///////////

@@ -1,7 +1,7 @@
 // 메인 페이지 컴포넌트 ///
 
 // 메인 페이지용 CSS
-import "../../css/main.scss";
+import "../../css/index.scss";
 
 export default function Main() {
   //// 코드 리턴구역 //////////////
