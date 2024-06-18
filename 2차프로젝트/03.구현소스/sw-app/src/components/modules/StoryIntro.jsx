@@ -10,17 +10,17 @@ function StoryIntro(props) {
         <div className="inbox">
           <div className="desc-box">
             <img className="intro-logo" src="./images/logo_w.png" alt="logo" />
-            <h2 className="main-title">
+            <h1 className="main-title">
               A transitional scent of the green forest of
               <br />
               Wimbledon, London SW19
-            </h2>
-            <h2 className="main-title">
+            </h1>
+            <h1 className="main-title">
               시간에 따라 변화하는 런던 윔블던 숲과 공원의 향
-            </h2>
-            <h2 className="main-title">
+            </h1>
+            <h1 className="main-title">
               The Beginning Of The Story Wimbledon Forest
-            </h2>
+            </h1>
             <p className="main-text1">
               Our fragrance brand took its name after the Wimbledon district
               postal code “SW19". Wimbledon is a charming, peaceful town

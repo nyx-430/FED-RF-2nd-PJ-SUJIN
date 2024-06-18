@@ -13,11 +13,11 @@ export default function Main() {
   return (
     <>
       {/* <!-- 1. 스토리 인트로 컴포넌트 --> */}
-        <StoryIntro />
+      <StoryIntro />
 
       {/* <!-- 2. 컬렉션 컴포넌트 --> */}
       <Collection />
-      
+
       {/* <!-- 3. 프로모션 컴포넌트 --> */}
       <Promotion />
     </>

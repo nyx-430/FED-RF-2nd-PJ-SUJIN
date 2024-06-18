@@ -5,7 +5,7 @@ function Collection(props) {
     <section id="main-page" className="page">
       <div className="inbox">
         <div className="collection">
-          <h2 className="title">Collections</h2>
+          <h1 className="title">Collections</h1>
           <div className="slider">
             <div className="img-box">
               <img src="./images/img_6am.png" alt="6am" />
