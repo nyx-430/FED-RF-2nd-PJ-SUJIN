@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // 컴포넌트 불러오기
 import Layout from "./components/layout/Layout";
 import Main from "./components/pages/Main";
-import Sub1 from "./components/pages/Story";
+// import Story from "./components/pages/Story";
 
 // 전체 공통 CSS 불러오기
 import "../src/css/index.scss";
@@ -37,5 +37,6 @@ export default function MainComponent() {
 /// 컴포넌트 출력 ///
 // 먼저 root 객체 만들기
 const root = ReactDOM.createRoot(document.querySelector("#root"));
+
 // 출력하기
 root.render(<MainComponent />);

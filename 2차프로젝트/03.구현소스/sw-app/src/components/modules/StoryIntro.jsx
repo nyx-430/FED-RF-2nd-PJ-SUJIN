@@ -3,6 +3,7 @@
 import React from "react";
 
 function StoryIntro(props) {
+  // 코드 리턴 구역 //////////////
   return (
     <>
       <section id="intro-page" className="page">
