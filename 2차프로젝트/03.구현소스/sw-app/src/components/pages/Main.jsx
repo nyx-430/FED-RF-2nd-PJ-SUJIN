@@ -6,7 +6,7 @@ import "../../css/index.scss";
 // 컴포넌트 불러오기
 import StoryIntro from "../modules/StoryIntro";
 import Collection from "./Collection";
-import Product from "./Product";
+import Promotion from "./Promotion";
 
 export default function Main() {
   //// 코드 리턴구역 //////////////
@@ -18,8 +18,8 @@ export default function Main() {
       {/* <!-- 2. 컬렉션 컴포넌트 --> */}
       <Collection />
       
-      {/* <!-- 대표상품 영역 : product-page --> */}
-      <Product />
+      {/* <!-- 3. 프로모션 컴포넌트 --> */}
+      <Promotion />
     </>
   );
 } /////////// Main ///////////
