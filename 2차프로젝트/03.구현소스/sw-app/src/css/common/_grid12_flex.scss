@@ -39,14 +39,14 @@
 /* 파티션 비율 박스 공통*/
 [class*="col-"] {
   box-sizing: border-box;
-  padding: 10px;
+  // padding: 10px;
   /* 원래는 높이값 100%로 부모박스 채우기를 해야 하지만
     flex의 자식요소는 자동으로 부모를 채우도록 설정되어 */
 }
 
 /* 컨텐트 박스
 -> flex박스는 싸고 있는 부모를 설정함! */
-.cont-box {
-  display: flex;
-  height: 100%;
-}
+// .cont-box {
+//   display: flex;
+//   height: 100%;
+// }

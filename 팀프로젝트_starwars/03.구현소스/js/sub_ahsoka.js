@@ -96,7 +96,7 @@ slidePeek.forEach((ele, idx) => {
   }); /// forEach ///
 
   hcode += `</ul></div>`;
-  cBox.innerHTML = hcode;
+  cBox.innerHTML = hcode; 
 })(); ///////////////////////////
 
 // 캐릭터 소개 박스 나타나기 ///////////////////////////

@@ -7,154 +7,187 @@
 
 /****************** 인트로 영역 : intro-page ******************/
 #intro-page {
-    height: 150vh;
-    background: url(../../public/images/story_bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+  height: 150vh;
+  background: url(../../public/images/story_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 /* 인트로 로고 */
 .intro-logo {
-    height: 300px;
-    left: 50%;
-    margin: 15rem 0;
+  height: 300px;
+  left: 50%;
+  margin: 15rem 0;
 }
 /* 텍스트 박스 */
 #intro-page .desc-box {
-    width: 50%;
-    text-align: center;
-    transform: translate(50%);
+  width: 50%;
+  text-align: center;
+  transform: translate(50%);
 }
 .main-title {
-    color: #fff;
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 2rem;
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 .main-text1 {
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 8rem 0;
-    padding-top: 10rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 8rem 0;
+  padding-top: 10rem;
 }
 .main-text2 {
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.5;
-    padding-bottom: 10rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding-bottom: 10rem;
 }
 
 /****************** 메인 영역 : main-page ******************/
 #main-page {
-    padding: 5rem;
+  padding: 5rem;
 }
 .title {
-    color: #000;
-    font-size: 4rem;
-    line-height: 1.2;
-    margin-bottom: 2rem;
+  color: #000;
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 .text {
-    color: #000;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.5;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 /****************** 슬라이드 영역 : main-page ******************/
 .slider {
-    display: flex;
+  display: flex;
 }
 .slider .img-box {
-    width: 60%;
-    height: 70%;
-    margin-right: 3rem;
+  width: 60%;
+  height: 70%;
+  margin-right: 3rem;
 }
-.slider .img-box img { 
-    width: 100%;
+.slider .img-box img {
+  width: 100%;
 }
 /* 상품 이미지 슬라이드 */
 .slider .goods-box {
-    width: 40%;
-    height: 40%;
+  width: 40%;
+  height: 40%;
 }
 .slider .goods-box img {
-    width: 100%;
-    object-position: center;
-    object-fit: cover;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 .slider .desc-box {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 /* 상품명 이미지 */
 .slider .desc-box img {
-    width: 90px;
+  width: 90px;
 }
-.slider .desc-box h3,p {
-    margin: 1rem 0;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    text-align: center;
+.slider .desc-box h3,
+p {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /****************** 대표상품 영역 : product-page ******************/
 #product-page {
-    height: 100vh;
-    padding: 5rem;
+  height: auto;
+  padding: 5rem;
+
+  .banner-box {
+    aspect-ratio: 3/2;
+    // max-width: 1730px;
+    height: auto;
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  .pbox {
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 15px;
+
+      li {
+        width: 50rem;
+        height: 50rem;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
 }
 
 /****************** 하단 영역 : footer-page ******************/
 #footer-page {
-    height: 80vh;
-    overflow: hidden;
+  height: 80vh;
+  overflow: hidden;
 }
 .footer-box {
-    margin: 0 auto;
-    text-align: center;
-    background-image: url(../../public/images/footer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10rem 0;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(../../public/images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
 }
 .bg-color {
-    background-color: rgba(0, 0, 0, 0.65);
-    z-index: 1;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
 }
 /* 하단 로고 */
 .footer-logo {
-    height: 300px;
-    left: 50%;
+  height: 300px;
+  left: 50%;
 }
 /* 구글 맵 버튼 */
 .footer-box ul {
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 .footer-box li {
-    display: inline-block;
-    margin: 0 auto;
-    padding: 1rem;
-    width: 15%;
-    font-size: 1.5rem;
-    outline: 1px solid #fff;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 15%;
+  font-size: 1.5rem;
+  outline: 1px solid #fff;
 }
 .footer-box a {
-    color: #fff;
+  color: #fff;
 }
 .footer-box li:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
 .footer-box li:hover a {
-    color: #000;
+  color: #000;
 }
 /* 회사 정보 박스 */
 #footer-page span {
-    display: block;
-    padding: 1rem 0 0;
-    font-size: 1.4rem;
-    font-weight: 600;
-    line-height: 1.5;
-    text-align: center;
+  display: block;
+  padding: 1rem 0 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
 }
