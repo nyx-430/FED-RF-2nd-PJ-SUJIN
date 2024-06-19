@@ -10,11 +10,40 @@
   background-color: #fff;
   z-index: 1;
 }
-/* 탑 메뉴 카테고리 */
-.menu li {
-  display: none;
-  font-size: 2rem;
+
+/* 탑 메뉴 사이트 */
+.menu-side {
+  position: fixed;
+  width: 30vw;
+  height: 100vh;
+  background-color: #fff;
+  left: calc(100% - 30%);
+
+  /* 메뉴 카테고리 */
+  ul {
+    height: 100%;
+    margin: 5rem;
+  }
+
+  li {
+    padding: 1rem 0;
+    font-size: 4.5rem;
+
+    /* 메뉴 호버 */
+    :hover {
+      text-decoration: underline;
+      color: #000;
+    }
+  }
 }
+
+/* 검색바 */
+.search-bar {
+  position: absolute;
+    left: 8%;
+    margin: 2rem 0;
+}
+
 /* 라인 박스 */
 .lines {
   position: absolute;

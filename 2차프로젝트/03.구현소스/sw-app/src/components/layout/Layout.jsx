@@ -18,4 +18,4 @@ export default function Layout(){
         </>
     );
 
-} /////////// Layout /////////////////////
+} /////////// Layout ///////////
