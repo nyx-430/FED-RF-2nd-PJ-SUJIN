@@ -14,17 +14,16 @@ import Story from "./components/pages/Story";
 
 export default function MainComponent() {
   return (
-    // 라우터 루트로 라우터 구성시작
+    // 라우터 루트로 라우터 구성 시작
     <BrowserRouter>
       <Routes>
         {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정!
-        루트 Route 는 홀로닫지말고 반드시 다른
-        하위 라우트를 감싸도록한다!!! */}
+        루트 Route 는 홀로 닫지 말고 반드시 다른
+        하위 라우트를 감싸도록 한다!!! */}
         <Route path="/" element={<Layout />}>
           {/* 하위 라우트 셋팅 
-        -> path설정대신 index키워드를 쓰면 
-        첫페이지로 구성됨 -> MainArea 컴포넌트 <Outlet/>에
-        출력된다!*/}
+        -> path 설정 대신 index 키워드를 쓰면 
+        첫 페이지로 구성됨 -> MainArea 컴포넌트 <Outlet/>에 출력된다!*/}
           <Route index element={<Main />} />
           <Route path="/story" element={<Story />} />
         </Route>
