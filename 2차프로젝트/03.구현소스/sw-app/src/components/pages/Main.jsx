@@ -5,8 +5,8 @@ import "../../css/index.scss";
 
 // 컴포넌트 불러오기
 import StoryIntro from "../modules/StoryIntro";
-import Collection from "./Collection";
-import Promotion from "./Promotion";
+import Collection from "../modules/Collection";
+import Promotion from "../modules/Promotion";
 
 export default function Main() {
   //// 코드 리턴구역 //////////////

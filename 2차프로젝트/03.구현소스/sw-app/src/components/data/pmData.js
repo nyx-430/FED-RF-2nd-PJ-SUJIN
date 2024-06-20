@@ -3,19 +3,19 @@
 const pmData = [
   {
     idx: 1,
-    tit: "SW19 3pm BODY CARE SET",
+    tit: "",
     price: "",
     img: ""
   },
   {
     idx: 2,
-    tit: "SW19 3pm BODY WASH (280ml)",
+    tit: "",
     price: "",
     img: ""
   },
   {
     idx: 3,
-    tit: "SW19 3pm BODY LOTION (280ml)",
+    tit: "",
     price: "",
     img: ""
   },
