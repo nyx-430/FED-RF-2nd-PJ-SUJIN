@@ -25,39 +25,39 @@ export default function TopArea() {
   return (
     <>
       <header id="gnb">
-        <div className="menu">
-          <div className="lines">
-            <span className="line">SW19</span>
-            <p className="line">
-              A transitional scent of the green forest | of Wimbledon, London{" "}
-              <br />
-              SW19 | that changes over time
-            </p>
-          </div>
-          {/* 메뉴 아이콘 박스 */}
-          <div className="menu-box">
-            {/* <!-- 햄버거 버튼 --> */}
-            <div className="menu-button">
-              <span></span>
-              <span></span>
-              <span></span>
+          <div className="menu">
+            <div className="lines">
+              <span className="line">SW19</span>
+              <p className="line">
+                A transitional scent of the green forest | of Wimbledon, London{" "}
+                <br />
+                SW19 | that changes over time
+              </p>
             </div>
-            {/* <!-- 하단 아이콘 박스 --> */}
-            <div className="icon-box">
-              <a href="/login" className="menu-buttom">
-                <FontAwesomeIcon icon={faRightToBracket} />
-              </a>
-              <a href="/join" className="menu-buttom">
-                <FontAwesomeIcon icon={faUser} />
-              </a>
-              <a href="/cart" className="menu-buttom">
-                <FontAwesomeIcon icon={faBagShopping} />
-              </a>
+            {/* 메뉴 아이콘 박스 */}
+            <div className="menu-box">
+              {/* <!-- 햄버거 버튼 --> */}
+              <div className="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              {/* <!-- 하단 아이콘 박스 --> */}
+              <div className="icon-box">
+                <a href="/login" className="menu-buttom">
+                  <FontAwesomeIcon icon={faRightToBracket} />
+                </a>
+                <a href="/join" className="menu-buttom">
+                  <FontAwesomeIcon icon={faUser} />
+                </a>
+                <a href="/cart" className="menu-buttom">
+                  <FontAwesomeIcon icon={faBagShopping} />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <aside className="menu-side">
-          <div className="cont-box">
+          {/* 사이드 메뉴 */}
+          <aside className="menu-open">
             <div className="search-bar">
               <input type="text" placeholder="Search" />
               <button className="schbtn">
@@ -81,8 +81,7 @@ export default function TopArea() {
                 <Link to="/board">Q&A</Link>
               </li>
             </ul>
-          </div>
-        </aside>
+          </aside>
       </header>
     </>
   );

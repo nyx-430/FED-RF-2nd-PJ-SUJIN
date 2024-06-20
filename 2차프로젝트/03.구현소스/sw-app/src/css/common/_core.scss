@@ -35,20 +35,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 버튼 초기화 */
-button{
-  cursor: pointer;
-  background-color: transparent;
-  border: transparent;
-}
-
-/* a요소 리셋 */
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* 화면 넓이 공통 */
+/* 화면 넓이 공통 : 100% - 90px */
 .page {
   box-sizing: border-box;
   width: calc(100% - 90px);

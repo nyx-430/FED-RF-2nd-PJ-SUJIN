@@ -34,9 +34,17 @@ ol {
   list-style: none;
 }
 
+/* 버튼 초기화 */
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+}
+
 /* a요소 리셋 */
 a {
   text-decoration: none;
+  color: #000;
 }
 
 /* heading 요소 글자 크기 */
