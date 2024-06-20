@@ -19,7 +19,7 @@
   left: calc(100% - 35%);
   background-color: #fff;
   border-radius: 5% 0 0 5%;
-  padding: 10px;
+  overflow: hidden;
   opacity: 0;
 
   ul {
@@ -32,22 +32,30 @@
   li {
     padding: 1rem 0;
     font-size: 4.5rem;
-
-    /* 메뉴 호버 */
-    :hover {
-      text-decoration: underline;
-      color: #000;
-    }
   }
+}
+/* 메뉴 호버시 */
+.menu-open > ul > li:hover {
+  text-decoration: underline;
+  color: #000;
 }
 /* 사이드 메뉴 클래스 on */
 .menu-open.on {
   opacity: 1;
 }
 /* 서브 메뉴 */
-.smenu li {
-  font-size: 3rem;
+.smenu {
+  display: none;
+
+  li {
+    font-size: 2.5rem;
+  }
 }
+/* 서브 메뉴 호버시 */
+.menu-open > ul > li:hover .smenu {
+  display: block;
+}
+
 /* 검색 바 */
 .search-bar {
   position: absolute;
