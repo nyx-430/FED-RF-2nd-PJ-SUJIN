@@ -2,6 +2,7 @@
 
 // GNB 데이터 불러오기
 import { Link, useNavigate } from "react-router-dom";
+import { menu } from "../data/gnb";
 
 // 폰트어썸 불러오기
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,7 +17,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "../../css/top_area.scss";
 
 export default function TopArea() {
-  // 클래스 on 함수 
+  // 클래스 on 함수
   const addOn = () => {
     document.querySelector(".menu-button").classList.toggle("on");
     document.querySelector(".menu-open").classList.toggle("on");
@@ -26,47 +27,69 @@ export default function TopArea() {
   return (
     <>
       <header id="gnb">
-          <div className="menu">
-            <div className="lines">
+        <div className="menu">
+          <div className="lines">
+            <a href="/">
               <span className="line">SW19</span>
-              <p className="line">
-                A transitional scent of the green forest | of Wimbledon, London{" "}
-                <br />
-                SW19 | that changes over time
-              </p>
+            </a>
+            <p className="line">
+              A transitional scent of the green forest | of Wimbledon, London{" "}
+              <br />
+              SW19 | that changes over time
+            </p>
+          </div>
+          {/* 메뉴 아이콘 박스 */}
+          <div className="menu-box">
+            {/* <!-- 햄버거 버튼 --> */}
+            <div className="menu-button" onClick={addOn}>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            {/* 메뉴 아이콘 박스 */}
-            <div className="menu-box">
-              {/* <!-- 햄버거 버튼 --> */}
-              <div className="menu-button" onClick={addOn}>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              {/* <!-- 하단 아이콘 박스 --> */}
-              <div className="icon-box">
-                <a href="/login" className="menu-buttom">
-                  <FontAwesomeIcon icon={faRightToBracket} />
-                </a>
-                <a href="/join" className="menu-buttom">
-                  <FontAwesomeIcon icon={faUser} />
-                </a>
-                <a href="/cart" className="menu-buttom">
-                  <FontAwesomeIcon icon={faBagShopping} />
-                </a>
-              </div>
+            {/* <!-- 하단 아이콘 박스 --> */}
+            <div className="icon-box">
+              <a href="/login" className="menu-buttom">
+                <FontAwesomeIcon icon={faRightToBracket} />
+              </a>
+              <a href="/join" className="menu-buttom">
+                <FontAwesomeIcon icon={faUser} />
+              </a>
+              <a href="/cart" className="menu-buttom">
+                <FontAwesomeIcon icon={faBagShopping} />
+              </a>
             </div>
           </div>
-          {/* 사이드 메뉴 */}
-          <aside className="menu-open">
-            <div className="search-bar">
-              <input type="text" placeholder="Search" />
-              <button className="schbtn">
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
-              </button>
-            </div>
-            <ul>
-              <li>
+        </div>
+        {/* 사이드 메뉴 */}
+        <aside className="menu-open">
+          <div className="search-bar">
+            <input type="text" placeholder="Search" />
+            <button className="schbtn">
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </button>
+          </div>
+          <ul>
+            {menu.map((v, i) => (
+              <li key={i}>
+                {v.sub ? (
+                  <a href="#">{v.txt}</a>
+                ) : (
+                  <Link to={v.link}>{v.txt}</Link>
+                )}
+                {v.sub && (
+                  <div className="smenu">
+                    <ol>
+                      {v.sub.map((v, i) => (
+                        <li key={i}>
+                          <Link to={v.link}>{v.txt}</Link>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+              </li>
+            ))}
+            {/* <li>
                 <Link to="/">HOME</Link>
               </li>
               <li>
@@ -80,9 +103,9 @@ export default function TopArea() {
               </li>
               <li>
                 <Link to="/board">Q&A</Link>
-              </li>
-            </ul>
-          </aside>
+              </li> */}
+          </ul>
+        </aside>
       </header>
     </>
   );

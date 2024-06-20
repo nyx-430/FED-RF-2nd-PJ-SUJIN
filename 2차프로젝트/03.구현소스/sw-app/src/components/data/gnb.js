@@ -6,6 +6,10 @@ export const menu = [
     link: "/",
   },
   {
+    txt: "STORY",
+    link: "/story",
+  },
+  {
     txt: "SHOP",
     link: "/shop",
     sub: [
@@ -50,10 +54,6 @@ export const menu = [
         link: "/kit",
       },
     ],
-  },
-  {
-    txt: "STORY",
-    link: "/story",
   },
   {
     txt: "MEMBERS SHIP",

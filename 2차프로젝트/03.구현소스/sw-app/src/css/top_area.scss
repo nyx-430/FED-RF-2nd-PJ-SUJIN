@@ -44,7 +44,10 @@
 .menu-open.on {
   opacity: 1;
 }
-
+/* 서브 메뉴 */
+.smenu li {
+  font-size: 3rem;
+}
 /* 검색 바 */
 .search-bar {
   position: absolute;
