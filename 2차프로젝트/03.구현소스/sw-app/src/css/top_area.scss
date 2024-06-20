@@ -14,13 +14,13 @@
 /* 사이드 메뉴 */
 .menu-open {
   position: fixed;
-  width: 30vw;
+  width: 0;
   height: 100vh;
   left: calc(100% - 35%);
   background-color: #fff;
   border-radius: 5% 0 0 5%;
   overflow: hidden;
-  opacity: 0;
+  transition: 0.3s ease-in;
 
   ul {
     position: absolute;
@@ -34,26 +34,31 @@
     font-size: 4.5rem;
   }
 }
-/* 메뉴 호버시 */
-.menu-open > ul > li:hover {
-  text-decoration: underline;
-  color: #000;
-}
 /* 사이드 메뉴 클래스 on */
 .menu-open.on {
-  opacity: 1;
+  width: 30vw;
 }
+/* 메뉴 호버시 */
+// .menu-open > ul {
+//   li:first-child:hover {
+//     text-decoration: underline;
+//     color: #000;
+//   }
+// }
 /* 서브 메뉴 */
 .smenu {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease-in;
 
   li {
     font-size: 2.5rem;
+    padding: 5px;
   }
 }
 /* 서브 메뉴 호버시 */
-.menu-open > ul > li:hover .smenu {
-  display: block;
+.menu-open > ul > li.on .smenu {
+  height: 300px;
 }
 
 /* 검색 바 */
