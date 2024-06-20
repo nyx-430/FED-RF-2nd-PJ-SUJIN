@@ -13,13 +13,14 @@
 
 /* 사이드 메뉴 */
 .menu-open {
-  display: none;
   position: fixed;
   width: 30vw;
   height: 100vh;
   left: calc(100% - 35%);
   background-color: #fff;
   border-radius: 5% 0 0 5%;
+  padding: 10px;
+  opacity: 0;
 
   ul {
     position: absolute;
@@ -38,6 +39,10 @@
       color: #000;
     }
   }
+}
+/* 사이드 메뉴 클래스 on */
+.menu-open.on {
+  opacity: 1;
 }
 
 /* 검색 바 */

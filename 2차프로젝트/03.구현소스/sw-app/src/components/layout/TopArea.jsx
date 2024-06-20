@@ -3,9 +3,6 @@
 // GNB 데이터 불러오기
 import { Link, useNavigate } from "react-router-dom";
 
-// 제이쿼리
-import $ from "jquery";
-
 // 폰트어썸 불러오기
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +16,11 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "../../css/top_area.scss";
 
 export default function TopArea() {
-  // 메뉴 열고 닫기 함수
+  // 클래스 on 함수 
+  const addOn = () => {
+    document.querySelector(".menu-button").classList.toggle("on");
+    document.querySelector(".menu-open").classList.toggle("on");
+  }; ////// addOn //////
 
   // 코드 리턴 구역 //////////////
   return (
@@ -37,7 +38,7 @@ export default function TopArea() {
             {/* 메뉴 아이콘 박스 */}
             <div className="menu-box">
               {/* <!-- 햄버거 버튼 --> */}
-              <div className="menu-button">
+              <div className="menu-button" onClick={addOn}>
                 <span></span>
                 <span></span>
                 <span></span>

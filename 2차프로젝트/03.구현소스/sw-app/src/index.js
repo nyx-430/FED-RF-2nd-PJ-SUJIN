@@ -5,11 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // 컴포넌트 불러오기
 import Layout from "./components/layout/Layout";
 import Main from "./components/pages/Main";
-// import Story from "./components/pages/Story";
+import Story from "./components/pages/Story";
 
 // 전체 공통 CSS 불러오기
 import "../src/css/index.scss";
-import Story from "./components/pages/Story";
 
 
 export default function MainComponent() {
