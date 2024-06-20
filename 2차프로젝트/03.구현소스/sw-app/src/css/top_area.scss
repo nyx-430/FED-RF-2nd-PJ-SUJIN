@@ -11,13 +11,14 @@
   z-index: 1;
 }
 
-/* 탑 메뉴 사이트 */
+/* 탑 메뉴 사이드 */
 .menu-side {
   position: fixed;
   width: 30vw;
   height: 100vh;
   background-color: #fff;
-  left: calc(100% - 30%);
+  left: 64%;
+  border-radius: 5% 0 0 5%;
 
   /* 메뉴 카테고리 */
   ul {
@@ -37,11 +38,35 @@
   }
 }
 
-/* 검색바 */
+/* 검색 바 */
 .search-bar {
   position: absolute;
-    left: 8%;
-    margin: 2rem 0;
+  left: 8%;
+  margin: 2rem 0;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #efefef;
+  box-sizing: border-box;
+
+  /* 검색 입력창 */
+  input {
+    font-size: 15px;
+    width: 77%;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  /* 검색 버튼 */
+  .schbtn {
+    margin-top: 12px;
+    margin-left: 10px;
+  }
 }
 
 /* 라인 박스 */
@@ -52,14 +77,15 @@
   transform: rotate(90deg);
   top: 100px;
   left: calc(100% - 50%);
-}
-.line {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  white-space: nowrap;
-  line-height: 1.3;
+
+  .line {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    white-space: nowrap;
+    line-height: 1.3;
+  }
 }
 .line:first-child {
   display: flex;
@@ -73,7 +99,6 @@
 .menu-button {
   position: relative;
   width: 4.5rem;
-  // height: 4.5rem;
   margin-top: 2rem;
   cursor: pointer;
 

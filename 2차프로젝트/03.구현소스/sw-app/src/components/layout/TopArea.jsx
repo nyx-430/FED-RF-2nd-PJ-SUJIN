@@ -60,7 +60,7 @@ export default function TopArea() {
           <div className="cont-box">
             <div className="search-bar">
               <input type="text" placeholder="Search" />
-              <button>
+              <button className="schbtn">
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
               </button>
             </div>
