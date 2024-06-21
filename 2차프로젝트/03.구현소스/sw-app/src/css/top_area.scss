@@ -20,7 +20,8 @@
   background-color: #fff;
   border-radius: 5% 0 0 5%;
   overflow: hidden;
-  transition: 0.3s ease-in;
+  transition: width 0.3s;
+  transform-origin: right;
 
   ul {
     position: absolute;
@@ -57,8 +58,8 @@
   }
 }
 /* 서브 메뉴 호버시 */
-.menu-open > ul > li.on .smenu {
-  height: 300px;
+.menu-open > ul > li:hover .smenu {
+  height: 350px;
 }
 
 /* 검색 바 */

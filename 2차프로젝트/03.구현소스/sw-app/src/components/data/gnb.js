@@ -14,43 +14,43 @@ export const menu = [
     link: "/shop",
     sub: [
       {
-        txt: "All Products",
+        txt: "- All Products",
         link: "/products",
       },
       {
-        txt: "Promotion",
+        txt: "- Promotion",
         link: "/promotion",
       },
       {
-        txt: "Perfume",
+        txt: "- Perfume",
         link: "/perfume",
       },
       {
-        txt: "Body Care",
+        txt: "- Body Care",
         link: "/bodycare",
       },
       {
-        txt: "Hand Care",
+        txt: "- Hand Care",
         link: "/handcare",
       },
       {
-        txt: "Home Fragrance",
+        txt: "- Home Fragrance",
         link: "/fragrance",
       },
       {
-        txt: "Gift Set",
+        txt: "- Gift Set",
         link: "/set",
       },
       {
-        txt: "Tray",
+        txt: "- Tray",
         link: "/tray",
       },
       {
-        txt: "Accessory",
+        txt: "- Accessory",
         link: "/accessory",
       },
       {
-        txt: "Sample Kit",
+        txt: "- Sample Kit",
         link: "/kit",
       },
     ],
