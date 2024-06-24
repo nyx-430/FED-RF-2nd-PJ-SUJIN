@@ -66,30 +66,9 @@
 #collection-page {
   padding: 5rem;
 
-  .collection {
-    position: relative;
-
-    /* 슬라이드 버튼 */
-    .abtn {
-      top: 30px;
-      position: absolute;
-      transform: translateY(-50%);
-      width: 40px;
-      height: 40px;
-      font-size: 50px;
-      padding: 0;
-      box-sizing: content-box;
-      line-height: 40px;
-      cursor: pointer;
-
-      .lb {
-        left: 78vw;
-      }
-      .rb {
-        right: 5vw;
-      }
-    }
-  }
+  // .collection {
+  //   position: relative;
+  // }
 
   /* 슬라이드 셋팅 */
   .slider {
@@ -118,10 +97,32 @@
 
     /* 상품명 이미지 */
     .desc-box {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 3rem 0;
+      
+      /* 슬라이드 버튼 */
+      .abtn {
+        top: 40px;
+        position: absolute;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        font-size: 50px;
+        padding: 0;
+        box-sizing: content-box;
+        line-height: 40px;
+        cursor: pointer;
+
+        .lb {
+          left: 78vw;
+        }
+        .rb {
+          right: 5vw;
+        }
+      }
 
       img {
         width: 90px;

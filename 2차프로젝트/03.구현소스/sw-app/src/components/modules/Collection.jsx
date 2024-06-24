@@ -6,8 +6,6 @@ function Collection(props) {
       <div className="inbox">
         <div className="collection">
           <h1 className="title">Collections</h1>
-            <button className="abtn lb">＜</button>
-            <button className="abtn rb">＞</button>
           <div className="slider">
             <div className="img-box">
               <img src="./images/img_6am.png" alt="6am" />
@@ -16,6 +14,8 @@ function Collection(props) {
               <img src="./images/s1.jpg" alt="6am" />
               <div className="desc-box">
                 <img src="./images/tit_6am.png" alt="6am" />
+                <button className="abtn lb">＜</button>
+                <button className="abtn rb">＞</button>
                 <h3>
                   WIMBLEDON FOREST AT DAWN IN THE MIST
                   <br />
