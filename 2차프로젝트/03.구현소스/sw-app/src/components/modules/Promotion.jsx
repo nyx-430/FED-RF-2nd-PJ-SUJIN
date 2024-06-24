@@ -22,7 +22,7 @@ function Promotion(props) {
             <ul>
               {pmData.map((v, i) => (
                 <li key={i}>
-                  <img src={v.img} alt={v.tit} />
+                  <img src={v.src} alt={v.tit} />
                   <h2>{v.tit}</h2>
                   <h3>{v.price}</h3>
                 </li>

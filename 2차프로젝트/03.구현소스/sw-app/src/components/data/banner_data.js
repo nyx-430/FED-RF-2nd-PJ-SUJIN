@@ -1,7 +1,7 @@
 // 배너 데이터
 
 const pmBan = {
-  img: [
+  src: [
     "./images/promotion/MAIN_SLIDE_PC_SUMMER.jpg",
     "./images/promotion/MAIN_SLIDE_pc_bathduck_LOW.jpg",
   ],
@@ -11,7 +11,8 @@ const pmBan = {
 const collBan = {
         am6: [
                 {
-                img: "./images/collection/img_6am.png",
+                src: "./images/collection/img_6am.png",
+                timg: "",
                 tit: "WIMBLEDON FOREST AT DAWN IN THE MIST",
                 desc: `Just before the sunrise,
                 the mist of Wimbledon forest drifts along
@@ -22,28 +23,32 @@ const collBan = {
         ],
         noon: [
                 {
-                img: "./images/collection/img_noon.png",
+                src: "./images/collection/img_noon.png",
+                timg: "",
                 tit: "",
                 desc: ``,
                 },
         ],
         pm3: [
                 {
-                img: "./images/collection/img_3pm.png",
+                src: "./images/collection/img_3pm.png",
+                timg: "",
                 tit: "",
                 desc: ``,
                 },
         ],
         pm9: [
                 {
-                img: "./images/collection/img_9pm.png",
+                src: "./images/collection/img_9pm.png",
+                timg: "",
                 tit: "",
                 desc: ``,
                 },
         ],
         mid: [
                 {
-                img: "./images/collection/img_mid.png",
+                src: "./images/collection/img_mid.png",
+                timg: "",
                 tit: "",
                 desc: ``,
                 },
