@@ -8,13 +8,13 @@ function Promotion(props) {
       <div className="inbox">
         <h2 className="title">Promotion : The Summer, We Loved at 3PM</h2>
         {/* 슬라이드 배너 */}
-        <Banner />
-        {/* <div className="banner-box">
+        {/* <Banner /> */}
+        <div className="banner-box">
           <img
             src="./images/promotion/MAIN_SLIDE_PC_SUMMER.jpg"
             alt="promotion"
           />
-        </div> */}
+        </div>
         {/* 상품 리스트 */}
         <div className="pbox ">
           <h1 className="title">Product</h1>
