@@ -1,5 +1,5 @@
 import React from "react";
-import { pmData } from "../data/pmData";
+import { pmData } from "../data/promotion_data";
 
 function Promotion(props) {
   return (
@@ -16,18 +16,16 @@ function Promotion(props) {
           <h1 className="title">Product</h1>
           <div className="col-12">
             <ul>
+              {/* <li>
+                <img src="./images/promotion/pm_products/p_3pm.png" alt="1" />
+              </li> */}
               {pmData.map((v, i) => (
                 <li key={i}>
-                  <img src="./images/promotion/${v.img}" alt={v.tit} />
+                  <img src={v.img} alt={v.tit} />
                   <h2>{v.tit}</h2>
                   <h3>{v.price}</h3>
                 </li>
               ))}
-              {/* <li>
-                  <img src="./images/set_6am.png" alt="6am" />
-                  <h2>상품명</h2>
-                  <h3>가격</h3>
-                </li> */}
             </ul>
           </div>
         </div>
