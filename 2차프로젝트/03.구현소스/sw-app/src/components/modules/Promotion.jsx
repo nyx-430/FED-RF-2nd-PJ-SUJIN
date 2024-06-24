@@ -1,4 +1,5 @@
 import React from "react";
+import Banner from "./Banner";
 import { pmData } from "../data/promotion_data";
 
 function Promotion(props) {
@@ -6,19 +7,19 @@ function Promotion(props) {
     <section id="Promotion-page" className="page">
       <div className="inbox">
         <h2 className="title">Promotion : The Summer, We Loved at 3PM</h2>
-        <div className="banner-box">
+        {/* 슬라이드 배너 */}
+        <Banner />
+        {/* <div className="banner-box">
           <img
             src="./images/promotion/MAIN_SLIDE_PC_SUMMER.jpg"
             alt="promotion"
           />
-        </div>
+        </div> */}
+        {/* 상품 리스트 */}
         <div className="pbox ">
           <h1 className="title">Product</h1>
           <div className="col-12">
             <ul>
-              {/* <li>
-                <img src="./images/promotion/pm_products/p_3pm.png" alt="1" />
-              </li> */}
               {pmData.map((v, i) => (
                 <li key={i}>
                   <img src={v.img} alt={v.tit} />

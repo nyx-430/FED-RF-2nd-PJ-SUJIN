@@ -17,7 +17,7 @@ function Banner({ catName }) {
   const sldFn = new SlideFn();
 
   // 선택 데이터
-  const selData = pmData[catName];
+  const selData = pmBan[catName];
 
   // 코드 리턴 구역 /////////
   return (
