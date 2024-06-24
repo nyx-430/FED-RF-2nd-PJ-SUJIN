@@ -7,6 +7,8 @@ function Collection(props) {
         <div className="collection">
           <h1 className="title">Collections</h1>
           <div className="slider">
+            <button className="abtn lb">＜</button>
+            <button className="abtn rb">＞</button>
             <div className="img-box">
               <img src="./images/img_6am.png" alt="6am" />
             </div>

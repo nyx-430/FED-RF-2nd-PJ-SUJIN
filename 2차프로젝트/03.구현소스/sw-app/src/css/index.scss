@@ -68,38 +68,47 @@
 /****************** 슬라이드 영역 : main-page ******************/
 .slider {
   display: flex;
-}
-.slider .img-box {
-  width: 60%;
-  height: 70%;
-  margin-right: 3rem;
-}
-.slider .img-box img {
-  width: 100%;
-}
-/* 상품 이미지 슬라이드 */
-.slider .goods-box {
-  width: 40%;
-  height: 40%;
-}
-.slider .goods-box img {
-  width: 100%;
-  object-position: center;
-  object-fit: cover;
-}
-.slider .desc-box {
-  margin: 2rem 0;
-}
-/* 상품명 이미지 */
-.slider .desc-box img {
-  width: 90px;
-}
-.slider .desc-box h3,
-p {
-  margin: 1rem 0;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  text-align: center;
+
+  .img-box {
+    width: 60%;
+    height: 70%;
+    margin-right: 3rem;
+  }
+  .slider .img-box img {
+    width: 100%;
+  }
+
+  /* 상품 이미지 슬라이드 */
+  .goods-box {
+    width: 40%;
+    height: 40%;
+
+    img {
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+
+  /* 상품명 이미지 */
+  .desc-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+
+    img {
+      width: 90px;
+      margin-bottom: 1.5rem;
+    }
+    h3,
+    p {
+      margin: 1rem 0;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+  }
 }
 
 /****************** 대표상품 영역 : Promotion-page ******************/
@@ -122,7 +131,7 @@ p {
   .pbox {
     padding-top: 3rem;
     background-color: #ffffff99;
-    
+
     h2 {
       margin-top: 1rem;
       font-size: 2rem;
@@ -141,8 +150,8 @@ p {
         width: 40rem;
 
         h3 {
-          font-family: "Noto Sans Korean", "Malgun Gothic",
-          "Nanum Gothic", "Noto Sans", sans-serif;
+          font-family: "Noto Sans Korean", "Malgun Gothic", "Nanum Gothic",
+            "Noto Sans", sans-serif;
           font-weight: 400;
           font-size: 1.6rem;
           margin-top: 8px;
