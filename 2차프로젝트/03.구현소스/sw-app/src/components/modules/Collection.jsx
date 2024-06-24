@@ -8,17 +8,16 @@ function Collection(props) {
           <h1 className="title">Collections</h1>
           <div className="slider">
             <div className="img-box">
-              <img src="./images/img_6am.png" alt="6am" />
+              <img src="./images/collection/img_6am.png" alt="6am" />
             </div>
             <div className="goods-box">
-              <img src="./images/s1.jpg" alt="6am" />
+              <img src="./images/collection/main_6am.jpg" alt="6am" />
               <div className="desc-box">
-                <img src="./images/tit_6am.png" alt="6am" />
+                <img src="./images/collection/tit_6am.png" alt="6am" />
                 <button className="abtn lb">＜</button>
                 <button className="abtn rb">＞</button>
                 <h3>
                   WIMBLEDON FOREST AT DAWN IN THE MIST
-                  <br />
                 </h3>
                 <p>
                   Just before the sunrise,
