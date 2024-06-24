@@ -16,7 +16,7 @@ export default function Main() {
       <StoryIntro />
 
       {/* <!-- 2. 컬렉션 컴포넌트 --> */}
-      <Collection />
+      <Collection catName="am6" />
 
       {/* <!-- 3. 프로모션 컴포넌트 --> */}
       <Promotion />

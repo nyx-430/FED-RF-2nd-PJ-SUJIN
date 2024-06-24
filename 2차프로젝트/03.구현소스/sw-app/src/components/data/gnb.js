@@ -57,7 +57,7 @@ export const menu = [
   },
   {
     txt: "MEMBERS SHIP",
-    link: "/membership",
+    link: "/membersship",
   },
   {
     txt: "Q&A",

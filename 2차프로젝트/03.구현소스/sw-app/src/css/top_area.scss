@@ -16,12 +16,12 @@
   position: fixed;
   width: 0;
   height: 100vh;
-  left: calc(100% - 35%);
+  right: 90px;
   background-color: #fff;
   border-radius: 5% 0 0 5%;
   overflow: hidden;
   transition: width 0.3s;
-  transform-origin: right;
+  // transform-origin: right;
   z-index: 1;
 
   ul {
@@ -118,6 +118,7 @@
 .menu-button {
   position: relative;
   width: 4.5rem;
+  aspect-ratio: 1/1;
   margin: 2.5rem;
   cursor: pointer;
 

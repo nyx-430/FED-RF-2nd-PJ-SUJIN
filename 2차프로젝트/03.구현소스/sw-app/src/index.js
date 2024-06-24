@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Main from "./components/pages/Main";
 import Story from "./components/pages/Story";
+import MembersShip from "./components/pages/MembersShip";
 
 // 전체 공통 CSS 불러오기
 import "../src/css/index.scss";
@@ -25,6 +26,7 @@ export default function MainComponent() {
         첫 페이지로 구성됨 -> MainArea 컴포넌트 <Outlet/>에 출력된다!*/}
           <Route index element={<Main />} />
           <Route path="/story" element={<Story />} />
+          <Route path="/membersship" element={<MembersShip />} />
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}
       </Routes>

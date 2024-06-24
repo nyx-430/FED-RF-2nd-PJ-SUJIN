@@ -2,7 +2,7 @@
 import React from "react";
 
 // 배너 데이터
-import pmBan from "../data/banner_data";
+import {pmBan} from "../data/banner_data";
 
 // 배너 CSS
 import "../../css/banner.scss";
