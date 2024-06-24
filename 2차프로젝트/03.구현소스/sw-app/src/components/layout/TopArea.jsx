@@ -30,7 +30,7 @@ export default function TopArea() {
         <div className="menu">
           <div className="lines">
             <a href="/">
-              <span className="line">SW19</span>
+              <span id="logo" className="line">SW19</span>
             </a>
             <p className="line">
               A transitional scent of the green forest | of Wimbledon, London{" "}

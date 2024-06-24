@@ -1,8 +1,33 @@
 // 스토리 페이지 인트로 컴포넌트
 
-import React from "react";
+import React, { useEffect } from "react";
+
+// 제이쿼리
+import $ from "jquery";
 
 function StoryIntro(props) {
+  useEffect(() => {
+    // console.log("useEffect");
+
+    const stage = $(".page");
+    const scAct = $(".scAct");
+    // console.log("이벤트 페이지:", stage);
+
+    const CRITERIA = (window.innerHeight / 3) * 2;
+
+    $(window).on("scroll", () => {
+      stage.each((ele, idx) => {
+        let pos = $(idx).offset().top;
+        if (pos < CRITERIA) {
+          $(scAct[ele]).addClass("on");
+        }
+        // else {
+        //   $(scAct[ele]).removeClass("on");
+        // }
+      });
+    });
+  }, []); ///////////// useEffect /////////////
+
   // 코드 리턴 구역 //////////////
   return (
     <>
@@ -21,7 +46,7 @@ function StoryIntro(props) {
             <h1 className="main-title">
               The Beginning Of The Story Wimbledon Forest
             </h1>
-            <p className="main-text1">
+            <p className="main-text1 scAct">
               Our fragrance brand took its name after the Wimbledon district
               postal code “SW19". Wimbledon is a charming, peaceful town
               surrounded by green forests and parks in the southwest part of
@@ -32,7 +57,7 @@ function StoryIntro(props) {
               midnight, portrays Wimbledon's transitional scents change over
               time.
             </p>
-            <p className="main-text2">
+            <p className="main-text2 scAct">
               ‘SW19’은 윔블던 지역의 우편 주소로, 영국 런던의 남서쪽에 위치한
               푸른 숲과 공원으로 둘러싸여진 평화롭고 아름다운 도시입니다. 윔블던
               파크를 걷다 보면, 이른 아침 저 멀리 잔디 위에서 축구공을 차는

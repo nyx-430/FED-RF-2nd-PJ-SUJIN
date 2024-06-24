@@ -42,6 +42,15 @@ html {
   margin-bottom: 3rem;
 }
 
+/* 스크롤 등장 액션 */
+.scAct {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.scAct.on {
+  opacity: 1;
+}
+
 /* 중앙 속 박스 */
 .inbox {
   /* 블록박스 중앙 정렬 */
