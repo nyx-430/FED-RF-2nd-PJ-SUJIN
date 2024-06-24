@@ -22,6 +22,7 @@
   overflow: hidden;
   transition: width 0.3s;
   transform-origin: right;
+  z-index: 1;
 
   ul {
     position: absolute;
@@ -33,6 +34,7 @@
   li {
     padding: 1rem 0;
     font-size: 4.5rem;
+    white-space: nowrap;
   }
 }
 /* 사이드 메뉴 클래스 on */
