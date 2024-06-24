@@ -12,7 +12,7 @@ const collBan = {
         am6: [
                 {
                 src: "./images/collection/img_6am.png",
-                timg: "/images/collection/tit_6am.png",
+                timg: "./images/collection/tit_6am.png",
                 tit1: "WIMBLEDON FOREST AT DAWN IN THE MIST",
                 desc1: `Just before the sunrise,
                 the mist of Wimbledon forest drifts along
@@ -30,7 +30,7 @@ const collBan = {
         noon: [
                 {
                 src: "./images/collection/img_noon.png",
-                timg: "/images/collection/tit_noon.png",
+                timg: "./images/collection/tit_noon.png",
                 tit1: "TOUCH OF SUNLIGHT ON WIMBLEDON LAKE AT NOON",
                 desc1: `Midday, when the sunlight sparkles on the surface of the lake,
                 the bouquet of a full bloom iris and cool aqua scent
@@ -45,7 +45,7 @@ const collBan = {
         pm3: [
                 {
                 src: "./images/collection/img_3pm.png",
-                timg: "/images/collection/tit_3pm.png",
+                timg: "./images/collection/tit_3pm.png",
                 tit1: "햇살이 내리쬐는 윔블던 공원의 오후",
                 desc1: `While the forest’s morning dew dries away
                 in the beaming afternoon sunlight,
@@ -63,7 +63,7 @@ const collBan = {
         pm9: [
                 {
                 src: "./images/collection/img_9pm.png",
-                timg: "/images/collection/tit_9pm.png",
+                timg: "./images/collection/tit_9pm.png",
                 tit1: "BONFIRE SPARKS THE EVENING OF THE WIMBLEDON",
                 desc1: `The night in Wimbledon forest after dark.
                 The whispers of love travel through the crackling bonfire.
@@ -79,7 +79,7 @@ const collBan = {
         mid: [
                 {
                 src: "./images/collection/img_mid.png",
-                timg: "/images/collection/tit_mid.png",
+                timg: "./images/collection/tit_mid.png",
                 tit1: "MIDNIGHT, A SMALL LAMP LIGHTS UP A COTTAGE IN WIMBLEDON PARK",
                 desc1: `In the still of the night,
                 the soft moonlight surrounds the Wimbledon forest.
