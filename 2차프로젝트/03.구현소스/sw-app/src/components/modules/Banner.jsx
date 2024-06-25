@@ -2,7 +2,7 @@
 import React from "react";
 
 // 배너 데이터
-import {pmBan} from "../data/banner_data";
+import { pmBan } from "../data/banner_data";
 
 // 배너 CSS
 import "../../css/banner.scss";
@@ -19,7 +19,7 @@ function Banner() {
   // 선택 데이터
   const selData = pmBan;
 
-  console.log("이게 뭘까",selData);
+  console.log("이게 뭘까", selData);
 
   // 코드 리턴 구역 /////////
   return (
