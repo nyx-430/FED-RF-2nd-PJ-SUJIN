@@ -7,7 +7,9 @@ function Products(props) {
   return (
     <>
       <section id="product-page" className="page">
-        <h1 className="big-title">타이틀</h1>
+        <div className="inbox">
+            <h1 className="big-title">타이틀</h1>
+        </div>
         <div className="pbox ">
           <div className="col-12">
             <ul>
