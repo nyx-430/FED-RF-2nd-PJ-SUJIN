@@ -3,17 +3,6 @@ import React, { useState } from "react";
 import { pmData } from "../data/promotion_data";
 
 function Promotion(props) {
-  // const [image, setImage] = useState(pmData.map((v) => v.src));
-  // const mOver = (x) => {
-  //   console.log("마우스오버");
-  //   if (i === x) {
-  //     setImage(image.map((v, i) => pmData.map[i].hsrc));
-  //   }
-  //   else {
-  //     setImage(image.map((v, i) => pmData.map[i].src));
-  //   }
-  // }; /// mOver ///
-
   return (
     <section id="Promotion-page" className="page">
       <div className="inbox">

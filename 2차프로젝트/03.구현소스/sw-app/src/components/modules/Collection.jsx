@@ -46,7 +46,7 @@ function Collection({ catName }) {
               <img src={selData.src} alt="sw19" />
             </div>
             <div className="goods-box">
-              <img src={selData.mimg} alt="sw19" />
+              <img src={selData.img} alt="sw19" />
               <div className="desc-box">
                 <img src={selData.timg} alt="sw19" />
                 <button className="abtn lb" onClick={chgData}>

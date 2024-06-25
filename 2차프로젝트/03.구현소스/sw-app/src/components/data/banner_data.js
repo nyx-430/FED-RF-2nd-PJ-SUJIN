@@ -4,7 +4,7 @@
 const collBan = {
   am6: {
     src: "./images/collection/img_6am.png",
-    mimg: "./images/collection/main_6am.jpg",
+    img: "./images/collection/main_6am.jpg",
     timg: "./images/collection/tit_6am.png",
     tit1: "WIMBLEDON FOREST AT DAWN IN THE MIST",
     desc1: `Just before the sunrise,
@@ -30,7 +30,7 @@ const collBan = {
 
   noon: {
     src: "./images/collection/img_noon.png",
-    mimg: "./images/collection/main_noon.jpg",
+    img: "./images/collection/main_noon.jpg",
     timg: "./images/collection/tit_noon.png",
     tit1: "TOUCH OF SUNLIGHT ON WIMBLEDON LAKE AT NOON",
     desc1: `Midday, when the sunlight sparkles on the surface of the lake,
@@ -50,7 +50,7 @@ const collBan = {
 
   pm3: {
     src: "./images/collection/img_3pm.png",
-    mimg: "./images/collection/main_3pm.jpg",
+    img: "./images/collection/main_3pm.jpg",
     timg: "./images/collection/tit_3pm.png",
     tit1: "GOLDEN SUN IN THE AFTERNOON AT WIMBLEDON PARK",
     desc1: `While the forest’s morning dew dries away
@@ -76,7 +76,7 @@ const collBan = {
 
   pm9: {
     src: "./images/collection/img_9pm.png",
-    mimg: "./images/collection/main_9pm.jpg",
+    img: "./images/collection/main_9pm.jpg",
     timg: "./images/collection/tit_9pm.png",
     tit1: "BONFIRE SPARKS THE EVENING OF THE WIMBLEDON",
     desc1: `The night in Wimbledon forest after dark.
@@ -98,7 +98,7 @@ const collBan = {
 
   mid: {
     src: "./images/collection/img_midnight.png",
-    mimg: "./images/collection/main_mid.jpg",
+    img: "./images/collection/main_mid.jpg",
     timg: "./images/collection/tit_mid.png",
     tit1: `MIDNIGHT, A SMALL LAMP LIGHTS UP A COTTAGE IN WIMBLEDON PARK`,
     desc1: `In the still of the night,
