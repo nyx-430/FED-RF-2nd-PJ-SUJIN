@@ -6,7 +6,7 @@ function Collection({ catName }) {
   const [catArr, setCatArr] = useState(catName);
   const collBanAttr = useRef(Object.keys(collBan));
   const collNum = useRef(0);
-  // useRef 로 셋팅한 참조변수는 사용시 변수.current 로 쓴다!
+  // useRef로 셋팅한 참조변수는 사용시 변수.current로 쓴다!
 
   const selData = collBan[catArr];
 
@@ -14,19 +14,19 @@ function Collection({ catName }) {
   console.log(selData);
   console.log("콜밴키배열:", collBanAttr);
 
-  // 속성데이터 변경 함수
+  // 속성 데이터 변경 함수
   const chgData = (e) => {
-    // 버튼구분 : isR 오른쪽버튼이면 true
+    // 버튼 구분 : isR 오른쪽 버튼이면 true
     let isR = e.target.classList.contains("rb");
     console.log(isR);
-    // 오른쪽버튼은 배열번호 증가
+    // 오른쪽 버튼은 배열 번호 증가
     if (isR) {
       collNum.current++;
       if (collNum.current >= collBanAttr.current.length) {
         collNum.current = 0;
       }
     }
-    // 왼쪽버튼은 배열번호 감소
+    // 왼쪽 버튼은 배열 번호 감소
     else {
       collNum.current--;
       if (collNum.current < 0) {

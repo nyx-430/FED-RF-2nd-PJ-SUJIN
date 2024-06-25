@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "./Banner";
 import { pmData } from "../data/promotion_data";
 
 function Promotion(props) {
+  // const [image, setImage] = useState(pmData.map((v) => v.src));
+  // const mOver = (x) => {
+  //   console.log("마우스오버");
+  //   if (i === x) {
+  //     setImage(image.map((v, i) => pmData.map[i].hsrc));
+  //   }
+  //   else {
+  //     setImage(image.map((v, i) => pmData.map[i].src));
+  //   }
+  // }; /// mOver ///
+
   return (
     <section id="Promotion-page" className="page">
       <div className="inbox">
@@ -22,7 +33,10 @@ function Promotion(props) {
             <ul>
               {pmData.map((v, i) => (
                 <li key={i}>
-                  <img src={v.src} alt={v.tit} />
+                  <div className="img-box">
+                    <img src={v.src} alt={v.tit} />
+                    <div className="overlay"></div>
+                  </div>
                   <h2>{v.tit}</h2>
                   <h3>{v.price}</h3>
                 </li>
