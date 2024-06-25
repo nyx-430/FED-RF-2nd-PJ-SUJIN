@@ -7,18 +7,19 @@
 
 /* 상단 배너 */
 #top-banner {
-  height: 60vh;
   overflow: hidden;
-
+  
   .cont-box {
+    height: 60vh;
+    aspect-ratio: 3/2;
     position: relative;
     margin: 0 auto;
     padding: 0;
 
     img {
-      width: 80%;
+      width: 100%;
       height: auto;
-      object-position: center;
+      object-position: bottom;
       object-fit: cover;
     }
   }
