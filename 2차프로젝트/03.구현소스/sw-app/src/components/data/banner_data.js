@@ -1,13 +1,6 @@
-// 배너 데이터
+/// 배너 데이터 ///
 
-const pmBan = {
-  src: [
-    "./images/promotion/MAIN_SLIDE_PC_SUMMER.jpg",
-    "./images/promotion/MAIN_SLIDE_pc_bathduck_LOW.jpg",
-  ],
-  tit: "The Summer, We Loved at 3PM",
-};
-
+// 대표 컬렉션 상품 데이터
 const collBan = {
   am6: {
     src: "./images/collection/img_6am.png",
@@ -124,4 +117,17 @@ const collBan = {
   },
 };
 
-export { pmBan, collBan };
+// Shop 상단 공통 배너 이미지 경로
+const shopBan = {
+  all: "./images/shop/top_slide_pc_1.jpg",
+  perfume: "./images/shop/top_slide_pc_2.jpg",
+  handcare: "./images/shop/top_slide_pc_3.jpg",
+  bodycare: "./images/shop/top_slide_pc_4.jpg",
+  fragrance: "./images/shop/top_slide_pc_5.jpg",
+  gift: "./images/shop/top_slide_pc_6.jpg",
+  set: "./images/shop/top_slide_pc_7.jpg",
+  etc: "./images/shop/top_slide_pc_8.jpg",
+  kit: "./images/shop/top_slide_pc_9.jpg",
+};
+
+export { shopBan, collBan };

@@ -1,0 +1,93 @@
+/// Shop 페이지 공통 상단 배너 CSS - top-banner.scss ///
+
+// 전체 공통 CSS 불러오기
+@import "../css/common/core";
+@import "../css/common/reset";
+@import "../css/common/grid12_flex";
+
+/* 상단 배너 */
+#top-banner {
+  height: 60vh;
+  overflow: hidden;
+
+  .cont-box {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+
+    img {
+      width: 80%;
+      height: auto;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+}
+
+/* 상품 영역 */
+#product-page {
+  padding: 5rem;
+
+  .big-title {
+    font-size: 10rem;
+  }
+
+  .pbox {
+    padding-top: 3rem;
+    background-color: #ffffff99;
+
+    h2 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+      color: #999;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      li {
+        width: 40rem;
+        transition: 0.2s;
+        cursor: pointer;
+
+        .img-box {
+          position: relative;
+          display: inline-block;
+
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            transition: background-color 0.3s ease;
+          }
+        }
+        .img-box:hover .overlay {
+          background-color: rgba(0, 0, 0, 0.65);
+        }
+
+        h3 {
+          font-family: "Noto Sans Korean", "Malgun Gothic", "Nanum Gothic",
+            "Noto Sans", sans-serif;
+          font-weight: 400;
+          font-size: 1.6rem;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-// SW19 GNB 메뉴 데이터
+/// SW19 GNB 메뉴 데이터 ///
 
 export const menu = [
   {
