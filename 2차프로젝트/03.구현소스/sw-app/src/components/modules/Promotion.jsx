@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Banner from "./Banner";
+
 import { pmData } from "../data/promotion_data";
 
 function Promotion(props) {

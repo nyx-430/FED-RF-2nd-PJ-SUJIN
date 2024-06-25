@@ -1,4 +1,4 @@
-// 상단영역 컴포넌트 ///
+/// 상단영역 컴포넌트 ///
 
 // GNB 데이터 불러오기
 import { Link, useNavigate } from "react-router-dom";

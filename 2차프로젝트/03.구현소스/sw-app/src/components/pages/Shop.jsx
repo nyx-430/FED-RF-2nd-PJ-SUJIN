@@ -1,10 +1,13 @@
 import React from 'react';
 
+// 컴포넌트 불러오기
+
+
 function Shop(props) {
     return (
-        <div>
-            <h1>판매 페이지</h1>
-        </div>
+        <>
+            {/* 상단 배너 컴포넌트 */}
+        </>
     );
 }
 
