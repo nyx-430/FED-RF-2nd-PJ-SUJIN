@@ -9,14 +9,7 @@ import { handData } from "../data/handcare_data";
 import { bodyData } from "../data/bodycare_data";
 
 function Products(props) {
-  const pBox = $(".pbox");
-  const moreBtn = $(".more-btn");
-
-  //   console.log("pBox:", pBox, "더보기 버튼:", moreBtn);
-
-  let currentPage = 1;
-  const productPage = 8;
-
+  // 코드 리턴 구역 //////////
   return (
     <>
       <section id="product-page" className="page">
@@ -60,7 +53,7 @@ function Products(props) {
                 </li>
               ))}
             </ul>
-            <button className="more-btn">더보기</button>
+            <button className="load-more-btn">더보기</button>
           </div>
         </div>
       </section>

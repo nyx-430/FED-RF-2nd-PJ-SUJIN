@@ -41,18 +41,6 @@ export const menu = [
         txt: "- Gift Set",
         link: "/shop",
       },
-      {
-        txt: "- Tray",
-        link: "/shop",
-      },
-      {
-        txt: "- Accessory",
-        link: "/shop",
-      },
-      {
-        txt: "- Sample Kit",
-        link: "/shop",
-      },
     ],
   },
   {

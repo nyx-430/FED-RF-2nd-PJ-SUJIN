@@ -1,10 +1,13 @@
 import React from 'react';
 
+// 컴포넌트 불러오기
+import StoryIntro from '../modules/StoryIntro';
+
 function MembersShip(props) {
     return (
-        <div>
-            <h1>멤버십 페이지</h1>
-        </div>
+        <>
+            <StoryIntro />
+        </>
     );
 }
 

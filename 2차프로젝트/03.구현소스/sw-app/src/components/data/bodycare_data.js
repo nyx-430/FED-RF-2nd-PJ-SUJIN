@@ -5,7 +5,7 @@
 export const bodyData = [
     {
         idx: 1,
-        name: "SW19 3pm BODY WASH (280ml)",
+        tit: "SW19 3pm BODY WASH (280ml)",
         category: "Body Care",
         price: "38,000원",
         src: "./images/shop/3pm/bw_3pm.png",
@@ -27,7 +27,7 @@ export const bodyData = [
     },
     {
         idx: 2,
-        name: "SW19 3pm BODY LOTION (280ml)",
+        tit: "SW19 3pm BODY LOTION (280ml)",
         category: "Body Care",
         price: "38,000원",
         src: "./images/shop/3pm/bl_3pm.png",
@@ -49,7 +49,7 @@ export const bodyData = [
     },
     {
         idx: 3,
-        name: "SW19 3pm BODY CARE SET",
+        tit: "SW19 3pm BODY CARE SET",
         category: "Body Care",
         price: "72,000원",
         src: "./images/shop/3pm/b_care_set_3pm.png",
@@ -69,7 +69,7 @@ export const bodyData = [
     },
     {
         idx: 4,
-        name: "SW19 Midnight BODY WASH (280ml)",
+        tit: "SW19 Midnight BODY WASH (280ml)",
         category: "Body Care",
         price: "38,000원",
         src: "./images/shop/midnight/bw_mid.png",
@@ -91,7 +91,7 @@ export const bodyData = [
     },
     {
         idx: 5,
-        name: "SW19 Midnight BODY LOTION (280ml)",
+        tit: "SW19 Midnight BODY LOTION (280ml)",
         category: "Body Care",
         price: "38,000원",
         src: "./images/shop/midnight/bl_mid.png",
@@ -113,7 +113,7 @@ export const bodyData = [
     },
     {
         idx: 6,
-        name: "SW19 Midnight BODY CARE SET",
+        tit: "SW19 Midnight BODY CARE SET",
         category: "Body Care",
         price: "72,000원",
         src: "./images/shop/midnight/b_care_set_mid.png",

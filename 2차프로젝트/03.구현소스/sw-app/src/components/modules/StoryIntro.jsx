@@ -21,9 +21,6 @@ function StoryIntro(props) {
         if (pos < CRITERIA) {
           $(scAct[ele]).addClass("on");
         }
-        // else {
-        //   $(scAct[ele]).removeClass("on");
-        // }
       });
     });
   }, []); ///////////// useEffect /////////////
@@ -46,7 +43,7 @@ function StoryIntro(props) {
             <h1 className="main-title">
               The Beginning Of The Story Wimbledon Forest
             </h1>
-            <p className="main-text1 scAct">
+            <p className="main-text1">
               Our fragrance brand took its name after the Wimbledon district
               postal code “SW19". Wimbledon is a charming, peaceful town
               surrounded by green forests and parks in the southwest part of

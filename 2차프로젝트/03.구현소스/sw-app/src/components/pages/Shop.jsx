@@ -4,9 +4,6 @@ import React from 'react';
 import TopBanner from '../modules/TopBanner';
 import Products from '../modules/Products';
 
-// 컴포넌트 불러오기
-
-
 function Shop(props) {
     return (
         <>

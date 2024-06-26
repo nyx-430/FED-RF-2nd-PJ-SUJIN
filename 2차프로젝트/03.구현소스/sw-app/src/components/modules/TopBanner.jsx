@@ -2,6 +2,9 @@
 
 import React from "react";
 
+import { shopBan } from "../data/banner_data";
+
+
 // 상단 배너 CSS 불러오기
 import "../../css/shop.scss";
 
