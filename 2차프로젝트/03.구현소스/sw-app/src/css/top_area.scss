@@ -23,7 +23,7 @@
   border-radius: 5% 0 0 5%;
   overflow: hidden;
   transition: width 0.3s;
-  z-index: 1;
+  z-index: 999;
 
   ul {
     position: absolute;
