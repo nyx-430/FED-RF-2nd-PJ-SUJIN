@@ -10,9 +10,9 @@ function Collection({ catName }) {
 
   const selData = collBan[catArr];
 
-  console.log(catName);
-  console.log(selData);
-  console.log("콜밴키배열:", collBanAttr);
+  // console.log(catName);
+  // console.log(selData);
+  // console.log("콜밴키배열:", collBanAttr);
 
   // 속성 데이터 변경 함수
   const chgData = (e) => {

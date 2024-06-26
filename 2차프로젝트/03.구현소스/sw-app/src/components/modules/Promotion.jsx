@@ -10,6 +10,7 @@ function Promotion(props) {
       <section id="Promotion-page" className="page">
         <div className="inbox">
           <h2 className="title">Promotion : The Summer, We Loved at 3PM</h2>
+          {/* 스와이프 배너 */}
           <div className="banner-box">
             <img
               src="./images/promotion/MAIN_SLIDE_PC_SUMMER.jpg"
