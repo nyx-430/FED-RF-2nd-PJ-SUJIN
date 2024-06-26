@@ -107,14 +107,17 @@
 
 /* 상세 페이지 - Detail */
 #detail-page {
-  margin: 0 auto;
+  margin: 0 0 10rem;;
   padding: 5rem;
 
   .inbox {
     display: flex;
-    gap: 20;
 
     .img-box {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 15px 0 0;
+
       img {
         width: 100%;
         height: auto;
@@ -123,14 +126,16 @@
     }
 
     .desc-box {
+      box-sizing: border-box;
+      width: 70%;
       background-color: #fff;
-      border-radius: 30px;
+      border-radius: 20px;
       margin: 0 auto;
-      padding: 0;
+      padding: 0 0 0 15px;
 
       .heading-area {
-        position: relative;
-        margin: 0 0 24px;
+        // position: relative;
+        margin: 24px;
         padding: 0 0 21px;
         border-bottom: 1px solid #212121;
         border-color: rgba(33, 33, 33, 0.1);
