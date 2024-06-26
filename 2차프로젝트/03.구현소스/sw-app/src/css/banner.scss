@@ -3,12 +3,13 @@
 /* 배너슬라이드 */
 .slider {
   position: relative;
-  left: 0;
   display: flex;
+  left: 0;
+  transition: 0.3s ease-in;
 }
 
-/* 이동 버튼 고쳐야 함 */
-.abtn {
+/* 이동 버튼 */
+.desc-box .abtn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
