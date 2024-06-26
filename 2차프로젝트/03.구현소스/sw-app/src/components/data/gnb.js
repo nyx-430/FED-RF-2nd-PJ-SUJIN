@@ -14,31 +14,31 @@ export const menu = [
     link: "/shop",
     sub: [
       {
-        txt: "- All Products",
+        txt: "All Products",
         link: "/shop",
       },
       {
-        txt: "- Promotion",
+        txt: "Promotion",
+        link: "/shop/promotion",
+      },
+      {
+        txt: "Perfume",
+        link: "/shop/perfume",
+      },
+      {
+        txt: "Body Care",
+        link: "/shop/bodycare",
+      },
+      {
+        txt: "Hand Care",
+        link: "/shop/handcare",
+      },
+      {
+        txt: "Home Fragrance",
         link: "/shop",
       },
       {
-        txt: "- Perfume",
-        link: "/shop",
-      },
-      {
-        txt: "- Body Care",
-        link: "/shop",
-      },
-      {
-        txt: "- Hand Care",
-        link: "/shop",
-      },
-      {
-        txt: "- Home Fragrance",
-        link: "/shop",
-      },
-      {
-        txt: "- Gift Set",
+        txt: "Gift Set",
         link: "/shop",
       },
     ],

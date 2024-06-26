@@ -26,16 +26,16 @@ function Promotion(props) {
             <div className="col-12">
               <ul>
                 {pmData.map((v, i) => (
-                  <Link to="/detail">
-                    <li key={i}>
+                  <li key={i}>
+                    <Link to="/detail">
                       <div className="img-box">
                         <img src={v.src} alt={v.tit} />
                         <div className="overlay"></div>
                       </div>
                       <h2>{v.tit}</h2>
                       <h3>{v.price}</h3>
-                    </li>
-                  </Link>
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </div>

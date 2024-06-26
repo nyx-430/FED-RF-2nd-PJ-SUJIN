@@ -72,7 +72,7 @@ export default function TopArea() {
             {menu.map((v, i) => (
               <li key={i}>
                 {v.sub ? (
-                  <a href={v.link}>{v.txt}</a>
+                  v.txt
                 ) : (
                   <Link to={v.link}>{v.txt}</Link>
                 )}
@@ -81,7 +81,12 @@ export default function TopArea() {
                     <ol>
                       {v.sub.map((v, i) => (
                         <li key={i}>
-                          <Link to={v.link}>{v.txt}</Link>
+                          <Link 
+                          to={v.link}
+                          state={{category:v.txt}}
+                          >
+                            - {v.txt}
+                            </Link>
                         </li>
                       ))}
                     </ol>

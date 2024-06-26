@@ -14,8 +14,10 @@ import Detail from "./components/pages/Detail";
 // 전체 공통 CSS 불러오기
 import "../src/css/index.scss";
 
-
 export default function MainComponent() {
+  // 샵리스트
+  const shopList = ["", "promotion", "perfume", "bodycare", "handcare"];
+
   return (
     // 라우터 루트로 라우터 구성 시작
     <BrowserRouter>
@@ -29,7 +31,9 @@ export default function MainComponent() {
         첫 페이지로 구성됨 -> MainArea 컴포넌트 <Outlet/>에 출력된다!*/}
           <Route index element={<Main />} />
           <Route path="/story" element={<Story />} />
-          <Route path="/shop" element={<Shop />} />
+          {shopList.map((v,i) => (
+            <Route key={i} path={`/shop/${v}`} element={<Shop />} />
+          ))}
           <Route path="/membersship" element={<MembersShip />} />
           <Route path="/board" element={<Board />} />
           <Route path="/detail" element={<Detail />} />

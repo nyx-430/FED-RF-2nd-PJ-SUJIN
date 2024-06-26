@@ -7,7 +7,7 @@ export const perfumeData = [
     tit: "SW19 6am EAU DE PARFUM (50ml)",
     category: "Perfume",
     price: "109,000원",
-    src: "./images/shop/6am/p_6am.png",
+    src: "/images/shop/6am/p_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits
         ^
         Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
@@ -30,7 +30,7 @@ export const perfumeData = [
     tit: "SW19 Noon EAU DE PARFUM (50ml)",
     category: "Perfume",
     price: "109,000원",
-    src: "./images/shop/noon/p_noon.png",
+    src: "/images/shop/noon/p_noon.png",
     desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
         ^
         Midday, when the sunlight sparkles on the surface of the lake, the bouquet of a full bloom iris and cool aqua scent under the tree shade fills up the air. Feel the scent of NOON at Wimbledon Park.
@@ -54,7 +54,7 @@ export const perfumeData = [
     tit: "SW19 3pm EAU DE PARFUM (50ml)",
     category: "Perfume",
     price: "109,000원",
-    src: "./images/shop/3pm/p_3pm.png",
+    src: "/images/shop/3pm/p_3pm.png",
     desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
         While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
@@ -78,7 +78,7 @@ export const perfumeData = [
     tit: "SW19 9pm EAU DE PARFUM (50ml)",
     category: "Perfume",
     price: "109,000원",
-    src: "./images/shop/9pm/p_9pm.png",
+    src: "/images/shop/9pm/p_9pm.png",
     desc: `The romance of a silent night in the woods
         ^
         The night in Wimbledon forest after dark. The whispers of love travel through the crackling bonfire. Feel the Wimbledon’s 9PM scent of the smokey bonfire smoothly blended with sweet vanilla.
@@ -102,7 +102,7 @@ export const perfumeData = [
     tit: "SW19 Midnight EAU DE PARFUM (50ml)",
     category: "Perfume",
     price: "109,000원",
-    src: "./images/shop/midnight/p_mid.png",
+    src: "/images/shop/midnight/p_mid.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
         ^
         In the still of the night, the soft moonlight surrounds the Wimbledon forest. Feel the sensual MIDNIGHT through mesmerizing touch and scent.
@@ -126,7 +126,7 @@ export const perfumeData = [
     tit: "SW19 6am EAU DE PARFUM (8ml)",
     category: "Perfume",
     price: "31,000원",
-    src: "./images/shop/6am/m_6am.png",
+    src: "/images/shop/6am/m_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits
         ^
         Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
@@ -149,7 +149,7 @@ export const perfumeData = [
     tit: "SW19 Noon EAU DE PARFUM (8ml)",
     category: "Perfume",
     price: "31,000원",
-    src: "./images/shop/noon/m_noon.png",
+    src: "/images/shop/noon/m_noon.png",
     desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
         ^
         Midday, when the sunlight sparkles on the surface of the lake, the bouquet of a full bloom iris and cool aqua scent under the tree shade fills up the air. Feel the scent of NOON at Wimbledon Park.
@@ -172,7 +172,7 @@ export const perfumeData = [
     tit: "SW19 3pm EAU DE PARFUM (8ml)",
     category: "Perfume",
     price: "31,000원",
-    src: "./images/shop/3pm/m_3pm.png",
+    src: "/images/shop/3pm/m_3pm.png",
     desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
         While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
@@ -196,7 +196,7 @@ export const perfumeData = [
     tit: "SW19 9pm EAU DE PARFUM (8ml)",
     category: "Perfume",
     price: "31,000원",
-    src: "./images/shop/9pm/m_9pm.png",
+    src: "/images/shop/9pm/m_9pm.png",
     desc: `The romance of a silent night in the woods
         ^
         The night in Wimbledon forest after dark. The whispers of love travel through the crackling bonfire. Feel the Wimbledon’s 9PM scent of the smokey bonfire smoothly blended with sweet vanilla.
@@ -220,7 +220,7 @@ export const perfumeData = [
     tit: "SW19 Midnight EAU DE PARFUM (8ml)",
     category: "Perfume",
     price: "31,000원",
-    src: "./images/shop/midnight/m_mid.png",
+    src: "/images/shop/midnight/m_mid.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
         ^
         In the still of the night, the soft moonlight surrounds the Wimbledon forest. Feel the sensual MIDNIGHT through mesmerizing touch and scent.
