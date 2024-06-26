@@ -10,12 +10,16 @@ export const perfumeData = [
     src: "./images/shop/6am/p_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits&quot;
         Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
-        
-        &quot;숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취&quot;
+        ^
+        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        ^
         세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
-    note: `-top: Bergamot, Grapefruit, Anise Seeds
-        -heart: Cardamom, Clary Sage, Basil
-        -base: Wormwood, Cedarwood, Musk`,
+    note: `
+      -top: Bergamot, Grapefruit, Anise Seeds
+      ^
+      -heart: Cardamom, Clary Sage, Basil
+      ^
+      -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",

@@ -21,8 +21,6 @@ function Detail(props) {
   const ingredients = loc.state.ingredients;
 
   // 화면 랜더링 실행 구역 //////////
-  // 매번 실행해야 이미 생성된 컴포넌트의
-  // 랜더링 실행 구역이 업데이트 시에도 작동한다!
   useEffect(() => {
     window.scrollTo(0, 0);
   }); /////////////////////////
@@ -31,22 +29,39 @@ function Detail(props) {
   return (
     <section id="detail-page" className="page">
       <div className="inbox col-6">
-          <div className="img-box">
-            <img src={src} alt={tit} />
+        <div className="img-box">
+          <img src={src} alt={tit} />
+        </div>
+        <div className="desc-box">
+          <div className="heading-area">
+            <h2 className="sub-title">{tit}</h2>
+            <h3 className>{price}</h3>
           </div>
-          <div className="desc-box">
-            <div className="heading-area">
-                <h2 className="sub-title">{tit}</h2>
-                <h3 className>{price}</h3>
-            </div>
-            <div className="text-area">
-                <p>{desc}</p>
-                <hr />
-                <p>Note: {note}</p>
-                <p>Perfumer: {perfumer}</p>
-                <p>Ingredients: {ingredients}</p>
-            </div>
+          <div className="text-area">
+            {desc.split("^").map((v, i) => (
+              <p key={i}>{v}</p>
+            ))}
+            <hr />
+            <p>
+              Note:
+              {note.split("^").map((v, i) => (
+                <p key={i}>{v}</p>
+              ))}
+            </p>
+            <p>
+              Perfumer:
+              {perfumer.split("^").map((v, i) => (
+                <p key={i}>{v}</p>
+              ))}
+            </p>
+            <p>
+              Ingredients:{" "}
+              {ingredients.split("^").map((v, i) => (
+                <p key={i}>{v}</p>
+              ))}
+            </p>
           </div>
+        </div>
       </div>
     </section>
   );

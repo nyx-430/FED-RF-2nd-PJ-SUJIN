@@ -1,4 +1,5 @@
 // 메인 페이지 컴포넌트
+import React, { useEffect } from "react";
 
 // 메인 페이지용 CSS
 import "../../css/index.scss";
@@ -9,7 +10,11 @@ import Collection from "../modules/Collection";
 import Promotion from "../modules/Promotion";
 
 export default function Main() {
-  //// 코드 리턴구역 //////////////
+  // 화면 랜더링 실행 구역 //////////
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }); /////////////////////////
+  // 코드 리턴구역 //////////////
   return (
     <>
       {/* <!-- 1. 스토리 인트로 컴포넌트 --> */}
