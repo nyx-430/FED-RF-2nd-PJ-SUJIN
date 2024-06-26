@@ -42,9 +42,9 @@ function Detail(props) {
             <div className="text-area">
                 <p>{desc}</p>
                 <hr />
-                <p>{note}</p>
-                <p>{perfumer}</p>
-                <p>{ingredients}</p>
+                <p>Note: {note}</p>
+                <p>Perfumer: {perfumer}</p>
+                <p>Ingredients: {ingredients}</p>
             </div>
           </div>
       </div>

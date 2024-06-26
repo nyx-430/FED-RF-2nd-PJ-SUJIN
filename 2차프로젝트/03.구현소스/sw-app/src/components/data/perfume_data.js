@@ -8,7 +8,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "./images/shop/6am/p_6am.png",
-    desc: `&quot;The scent of enchanted grass created by spellbound forest spirits&quot;
+    desc: `The scent of enchanted grass created by spellbound forest spirits&quot;
         Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
         
         &quot;숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취&quot;
