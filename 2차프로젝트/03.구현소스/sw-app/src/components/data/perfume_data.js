@@ -1,4 +1,4 @@
-// SW19 상품 데이터
+/// SW19 상품 데이터 ///
 
 // 향수 데이터
 export const perfumeData = [
