@@ -6,19 +6,16 @@ import React, { useEffect } from "react";
 // 라우터로 전달한 state값을 읽기 위한 객체
 import { useLocation } from "react-router-dom";
 
-// 상품 데이터 불러오기
-import { perfumeData } from "../data/perfume_data";
-import { handData } from "../data/handcare_data";
-import { bodyData } from "../data/bodycare_data";
-
 // CSS 불러오기
 import "../../css/shop.scss";
 
 function Detail(props) {
   // 라우터 호출시 전달한 값을 받는다
   const loc = useLocation();
-  const ptit = loc.state.tit;
-  const pdesc = loc.state.desc;
+  const tit = loc.state.tit;
+  const src = loc.state.src;
+  const price = loc.state.price;
+  const desc = loc.state.desc;
   const top = loc.state.top;
   const heart = loc.state.heart;
   const base = loc.state.base;
@@ -37,7 +34,19 @@ function Detail(props) {
     <section id="detail-page" className="page">
       <div className="inbox">
         <div className="pbox">
-          <h1 className="big-title">상세 페이지</h1>
+          <div className="img-box">
+            <img src={src} alt={tit} />
+          </div>
+          <div className="desc-box">
+            <h2>{tit}</h2>
+            <h3>{price}</h3>
+            <p>{desc}</p>
+            <p>{top}</p>
+            <p>{heart}</p>
+            <p>{base}</p>
+            <p>{perfumer}</p>
+            <p>{ingredients}</p>
+          </div>
         </div>
       </div>
     </section>

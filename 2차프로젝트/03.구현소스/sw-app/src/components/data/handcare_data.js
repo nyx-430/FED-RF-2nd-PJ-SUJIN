@@ -15,9 +15,9 @@ export const handData = [
     
     Ingredients certified by the EVE VEGAN® MARK
     ※ Plant based 원료 특성상 갈색의 침전물이 발생할 수 있으며, 이는 자연 현상으로 제품 사용에는 문제가 없음을 미리 알려드립니다.`,
-    top: "Bergamot, Grapefruit, Anise Seeds",
-    heart: "Cardamom, Clary Sage, Basil",
-    base: "Wormwood, Cedarwood, Musk",
+    Note: `-top: Bergamot, Grapefruit, Anise Seeds
+        -heart: Cardamom, Clary Sage, Basil
+        -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Centella Asiatica Extract, Xylitol, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tromethamine, Sodium Phytate, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Linalool, Limonene, Coumarin, Eugenol, Hydroxycitronellal, Geraniol",
@@ -33,9 +33,11 @@ export const handData = [
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Green Leaf, Aqua, Mint, Almond Blossom",
-    heart: "Vetiver, Lavender, Lily of The Vally",
-    base: "Orris(Iris), Cedar Wood, Amber, Musk",
+    Note: `
+    -top: Green Leaf, Aqua, Mint, Almond Blossom
+    -heart: Vetiver, Lavender, Lily of The Vally
+    -base: Orris(Iris), Cedar Wood, Amber, Musk
+    `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Ethylhexylglycerin, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Sodium Phytate, Beta-Glucan, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Linalool, Limonene, Hydroxycitronellal, Coumarin, Citronellol, Geraniol, Alpha-Isomethyl Ionone",
   },
@@ -50,9 +52,11 @@ export const handData = [
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Bergamot, Rhubarb, Tangerine Lotus",
-    heart: "Cedarwood, Jasmine, Gardenia",
-    base: "White Musk, Vetiver, Orris",
+    Note: `
+    -top: Bergamot, Rhubarb, Tangerine Lotus
+    -heart: Cedarwood, Jasmine, Gardenia
+    -base: White Musk, Vetiver, Orris
+    `,
     perfumer: "Nathalie Benareau",
     ingredients: "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Centella Asiatica Extract, Xylitol, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tromethamine, Sodium Phytate, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional",
   },
@@ -67,9 +71,11 @@ export const handData = [
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus",
-    heart: "Chestnut accord, Gaiac wood, Cade",
-    base: "Sandalwood, Vanilla Accord, Peru balsam, Cashmeran",
+    Note: `
+    -top: Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus
+    -heart: Chestnut accord, Gaiac wood, Cade
+    -base: Sandalwood, Vanilla Accord, Peru balsam, Cashmeran
+    `,
     perfumer: "Florian Gallo",
     ingredients: "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Centella Asiatica Extract, Xylitol, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tromethamine, Sodium Phytate, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Eugenol, Cinnamal, Limonene, Linalool",
   },
@@ -84,9 +90,11 @@ export const handData = [
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Lily of The Valley, White Lotus",
-    heart: "White Musk, Powdery Notes",
-    base: "Sensual Musk, Sandalwood, Benzoin",
+    Note: `
+    -top: Lily of The Valley, White Lotus
+    -heart: White Musk, Powdery Notes
+    -base: Sensual Musk, Sandalwood, Benzoin
+    `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Ethylhexylglycerin, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Sodium Phytate, Beta-Glucan, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Limonene, Linalool",
   },
@@ -101,9 +109,9 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Bergamot, Grapefruit, Anise Seeds",
-    heart: "Cardamom, Clary Sage, Basil",
-    base: "Wormwood, Cedarwood, Musk",
+    Note: `-top: Bergamot, Grapefruit, Anise Seeds
+        -heart: Cardamom, Clary Sage, Basil
+        -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet - VP Senior Perfumer at Symrise",
     ingredients: "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Linalool, Limonene",
   },
@@ -118,9 +126,11 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Green Leaf, Aqua, Mint, Almond Blossom",
-    heart: "Vetiver, Lavender, Lily of The Vally",
-    base: "Orris(Iris), Cedar Wood, Amber, Musk",
+    Note: `
+    -top: Green Leaf, Aqua, Mint, Almond Blossom
+    -heart: Vetiver, Lavender, Lily of The Vally
+    -base: Orris(Iris), Cedar Wood, Amber, Musk
+    `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Eugenol",
   },
@@ -135,9 +145,11 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Bergamot, Rhubarb, Tangerine Lotus",
-    heart: "Cedarwood, Jasmine, Gardenia",
-    base: "White Musk, Vetiver, Orris",
+    Note: `
+    -top: Bergamot, Rhubarb, Tangerine Lotus
+    -heart: Cedarwood, Jasmine, Gardenia
+    -base: White Musk, Vetiver, Orris
+    `,
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
     ingredients: "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional",
   },
@@ -152,9 +164,11 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus",
-    heart: "Chestnut accord, Gaiac wood, Cade",
-    base: "Sandalwood, Vanilla Accord, Peru balsam, Cashmeran",
+    Note: `
+    -top: Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus
+    -heart: Chestnut accord, Gaiac wood, Cade
+    -base: Sandalwood, Vanilla Accord, Peru balsam, Cashmeran
+    `,
     perfumer: "Florian Gallo",
     ingredients: "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Eugenol",
   },
@@ -169,9 +183,11 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Lily of The Valley, White Lotus",
-    heart: "White Musk, Powdery Notes",
-    base: "Sensual Musk, Sandalwood, Benzoin",
+    Note: `
+    -top: Lily of The Valley, White Lotus
+    -heart: White Musk, Powdery Notes
+    -base: Sensual Musk, Sandalwood, Benzoin
+    `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Eugenol",
   },
@@ -190,9 +206,9 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Bergamot, Grapefruit, Anise Seeds",
-    heart: "Cardamom, Clary Sage, Basil",
-    base: "Wormwood, Cedarwood, Musk",
+    Note: `-top: Bergamot, Grapefruit, Anise Seeds
+        -heart: Cardamom, Clary Sage, Basil
+        -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet - VP Senior Perfumer at Symrise",
     ingredients: "",
   },
@@ -211,9 +227,11 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Green Leaf, Aqua, Mint, Almond Blossom",
-    heart: "Vetiver, Lavender, Lily of The Vally",
-    base: "Orris(Iris), Cedar Wood, Amber, Musk",
+    Note: `
+    -top: Green Leaf, Aqua, Mint, Almond Blossom
+    -heart: Vetiver, Lavender, Lily of The Vally
+    -base: Orris(Iris), Cedar Wood, Amber, Musk
+    `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "",
   },
@@ -232,9 +250,11 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Bergamot, Rhubarb, Tangerine Lotus",
-    heart: "Cedarwood, Jasmine, Gardenia",
-    base: "White Musk, Vetiver, Orris",
+    Note: `
+    -top: Bergamot, Rhubarb, Tangerine Lotus
+    -heart: Cedarwood, Jasmine, Gardenia
+    -base: White Musk, Vetiver, Orris
+    `,
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
     ingredients: "",
   },
@@ -253,9 +273,11 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus",
-    heart: "Chestnut accord, Gaiac wood, Cade",
-    base: "Sandalwood, Vanilla Accord, Peru balsam, Cashmeran",
+    Note: `
+    -top: Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus
+    -heart: Chestnut accord, Gaiac wood, Cade
+    -base: Sandalwood, Vanilla Accord, Peru balsam, Cashmeran
+    `,
     perfumer: "Florian Gallo",
     ingredients: "",
   },
@@ -274,9 +296,11 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    top: "Lily of The Valley, White Lotus",
-    heart: "White Musk, Powdery Notes",
-    base: "Sensual Musk, Sandalwood, Benzoin",
+    Note: `
+    -top: Lily of The Valley, White Lotus
+    -heart: White Musk, Powdery Notes
+    -base: Sensual Musk, Sandalwood, Benzoin
+    `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "",
   },
