@@ -16,9 +16,7 @@ function Detail(props) {
   const src = loc.state.src;
   const price = loc.state.price;
   const desc = loc.state.desc;
-  const top = loc.state.top;
-  const heart = loc.state.heart;
-  const base = loc.state.base;
+  const note = loc.state.note;
   const perfumer = loc.state.perfumer;
   const ingredients = loc.state.ingredients;
 
@@ -41,9 +39,7 @@ function Detail(props) {
             <h2>{tit}</h2>
             <h3>{price}</h3>
             <p>{desc}</p>
-            <p>{top}</p>
-            <p>{heart}</p>
-            <p>{base}</p>
+            <p>{note}</p>
             <p>{perfumer}</p>
             <p>{ingredients}</p>
           </div>

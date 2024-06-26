@@ -33,9 +33,7 @@ function Products(props) {
                     src: v.src,
                     price: v.price,
                     desc: v.desc,
-                    top: v.top,
-                    heart: v.heart,
-                    base: v.base,
+                    note: v.note,
                     perfumer: v.perfumer,
                     ingredients: v.ingredients,
                   }}
