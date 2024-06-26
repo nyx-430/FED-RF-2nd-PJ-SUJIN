@@ -26,8 +26,8 @@ export function SwiperApp() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+        slidesPerView={1}
+        spaceBetween={20}
         pagination={{
           clickable: true,
         }}

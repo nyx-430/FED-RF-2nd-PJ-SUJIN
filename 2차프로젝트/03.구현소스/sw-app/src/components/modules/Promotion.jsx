@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 // 프로모션 데이터 불러오기
 import { pmData } from "../data/promotion_data";
+import { SwiperApp } from "../../plugin/SwiperApp";
 
 function Promotion(props) {
   return (
@@ -11,7 +12,9 @@ function Promotion(props) {
         <div className="inbox">
           <h2 className="title">Promotion : The Summer, We Loved at 3PM</h2>
           {/* 스와이프 배너 */}
-          <div className="banner-box">
+          {/* <div className="banner-box"> */}
+          <div className="swiper">
+            <SwiperApp />
             {/* <img
               src="./images/promotion/MAIN_SLIDE_PC_SUMMER.jpg"
               alt="promotion"
