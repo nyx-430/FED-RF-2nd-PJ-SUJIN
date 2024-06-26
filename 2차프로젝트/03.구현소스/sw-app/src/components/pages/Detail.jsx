@@ -35,12 +35,17 @@ function Detail(props) {
             <img src={src} alt={tit} />
           </div>
           <div className="desc-box">
-            <h2>{tit}</h2>
-            <h3>{price}</h3>
-            <p>{desc}</p>
-            <p>{note}</p>
-            <p>{perfumer}</p>
-            <p>{ingredients}</p>
+            <div className="heading-area">
+                <h2 className="sub-title">{tit}</h2>
+                <h3 className>{price}</h3>
+            </div>
+            <div className="text-area">
+                <p>{desc}</p>
+                <hr />
+                <p>{note}</p>
+                <p>{perfumer}</p>
+                <p>{ingredients}</p>
+            </div>
           </div>
       </div>
     </section>
