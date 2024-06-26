@@ -1,7 +1,7 @@
 /// 상단영역 컴포넌트 ///
 
 // GNB 데이터 불러오기
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { menu } from "../data/gnb";
 
 // 폰트어썸 불러오기
@@ -72,7 +72,7 @@ export default function TopArea() {
             {menu.map((v, i) => (
               <li key={i}>
                 {v.sub ? (
-                  <a href="#">{v.txt}</a>
+                  <a href={v.link}>{v.txt}</a>
                 ) : (
                   <Link to={v.link}>{v.txt}</Link>
                 )}

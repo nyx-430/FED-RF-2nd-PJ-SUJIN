@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 // 제이쿼리
 import $ from "jquery";
@@ -8,7 +9,11 @@ import { perfumeData } from "../data/perfume_data";
 import { handData } from "../data/handcare_data";
 import { bodyData } from "../data/bodycare_data";
 
+// CSS 불러오기
+import "../../css/shop.scss";
+
 function Products(props) {
+
   // 코드 리턴 구역 //////////
   return (
     <>
@@ -21,14 +26,29 @@ function Products(props) {
             <ul>
               {/* 향수 */}
               {perfumeData.map((v, i) => (
-                <li key={i}>
-                  <div className="img-box">
-                    <img src={v.src} alt={v.tit} />
-                    <div className="overlay"></div>
-                  </div>
-                  <h2>{v.tit}</h2>
-                  <h3>{v.price}</h3>
-                </li>
+                <Link
+                  to="/detail"
+                  state={{
+                    tit: v.tit,
+                    src: v.src,
+                    price: v.price,
+                    desc: v.desc,
+                    top: v.top,
+                    heart: v.heart,
+                    base: v.base,
+                    perfumer: v.perfumer,
+                    ingredients: v.ingredients,
+                  }}
+                >
+                  <li key={i}>
+                    <div className="img-box">
+                      <img src={v.src} alt={v.tit} />
+                      <div className="overlay"></div>
+                    </div>
+                    <h2>{v.tit}</h2>
+                    <h3>{v.price}</h3>
+                  </li>
+                </Link>
               ))}
               {/* 핸드케어 */}
               {handData.map((v, i) => (
