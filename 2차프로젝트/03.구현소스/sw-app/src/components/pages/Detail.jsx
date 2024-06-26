@@ -42,24 +42,26 @@ function Detail(props) {
               <p key={i}>{v}</p>
             ))}
             <hr />
-            <p>
-              Note:
-              {note.split("^").map((v, i) => (
-                <p key={i}>{v}</p>
-              ))}
-            </p>
-            <p>
-              Perfumer:
-              {perfumer.split("^").map((v, i) => (
-                <p key={i}>{v}</p>
-              ))}
-            </p>
-            <p>
-              Ingredients:{" "}
-              {ingredients.split("^").map((v, i) => (
-                <p key={i}>{v}</p>
-              ))}
-            </p>
+            <div className="small-text">
+              <p>
+                Note:
+                {note.split("^").map((v, i) => (
+                  <p key={i}>{v}</p>
+                ))}
+              </p>
+              <p>
+                Perfumer:
+                {perfumer.split("^").map((v, i) => (
+                  <p key={i}>{v}</p>
+                ))}
+              </p>
+              <p>
+                Ingredients:{" "}
+                {ingredients.split("^").map((v, i) => (
+                  <p key={i}>{v}</p>
+                ))}
+              </p>
+            </div>
           </div>
         </div>
       </div>
