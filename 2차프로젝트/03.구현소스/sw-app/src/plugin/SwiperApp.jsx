@@ -21,6 +21,8 @@ export function SwiperApp() {
   const imgArr = [
     "MAIN_SLIDE_PC_SUMMER",
     "MAIN_SLIDE_pc_bathduck_LOW",
+    "MAIN_SLIDE_pc_3",
+    "MAIN_SLIDE_pc_4",
   ];
 
   return (
@@ -32,7 +34,7 @@ export function SwiperApp() {
           clickable: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 2800,
           disableOnInteraction: false,
         }}
         loop={true}
