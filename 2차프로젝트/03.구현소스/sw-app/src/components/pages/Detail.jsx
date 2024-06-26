@@ -27,45 +27,47 @@ function Detail(props) {
 
   // 코드 리턴 구역 //////////
   return (
-    <section id="detail-page" className="page">
-      <div className="inbox col-6">
-        <div className="img-box">
-          <img src={src} alt={tit} />
-        </div>
-        <div className="desc-box">
-          <div className="heading-area">
-            <h2 className="sub-title">{tit}</h2>
-            <h3 className>{price}</h3>
+    <>
+      <section id="detail-page" className="page">
+        <div className="inbox col-6">
+          <div className="img-box">
+            <img src={src} alt={tit} />
           </div>
-          <div className="text-area">
-            {desc.split("^").map((v, i) => (
-              <p key={i}>{v}</p>
-            ))}
-            <hr />
-            <div className="small-text">
-              <p>
-                Note:
-                {note.split("^").map((v, i) => (
-                  <p key={i}>{v}</p>
-                ))}
-              </p>
-              <p>
-                Perfumer:
-                {perfumer.split("^").map((v, i) => (
-                  <p key={i}>{v}</p>
-                ))}
-              </p>
-              <p>
-                Ingredients:{" "}
-                {ingredients.split("^").map((v, i) => (
-                  <p key={i}>{v}</p>
-                ))}
-              </p>
+          <div className="desc-box">
+            <div className="heading-area">
+              <h2 className="sub-title">{tit}</h2>
+              <h3 className>{price}</h3>
+            </div>
+            <div className="text-area">
+              {desc.split("^").map((v, i) => (
+                <p key={i}>{v}</p>
+              ))}
+              <hr />
+              <div className="small-text">
+                <p>
+                  Note:
+                  {note.split("^").map((v, i) => (
+                    <p key={i}>{v}</p>
+                  ))}
+                </p>
+                <p>
+                  Perfumer:
+                  {perfumer.split("^").map((v, i) => (
+                    <p key={i}>{v}</p>
+                  ))}
+                </p>
+                <p>
+                  Ingredients:{" "}
+                  {ingredients.split("^").map((v, i) => (
+                    <p key={i}>{v}</p>
+                  ))}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
