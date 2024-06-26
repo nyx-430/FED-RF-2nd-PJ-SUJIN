@@ -12,10 +12,10 @@ function Promotion(props) {
           <h2 className="title">Promotion : The Summer, We Loved at 3PM</h2>
           {/* 스와이프 배너 */}
           <div className="banner-box">
-            <img
+            {/* <img
               src="./images/promotion/MAIN_SLIDE_PC_SUMMER.jpg"
               alt="promotion"
-            />
+            /> */}
           </div>
           {/* 상품 리스트 */}
           <div className="pbox ">
