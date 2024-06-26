@@ -10,18 +10,25 @@ export const bodyData = [
     price: "38,000원",
     src: "./images/shop/3pm/bw_3pm.png",
     desc: `Authentic 3pm Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
+        ^
         Formulated from plant-derived ingredients, such as shea butter, sweet aroma oil, and jojoba seed oil hydrates and softens your skin.This mild lather and elegantly spreading scents will enhance your morning and evening rituals.
-        
+        ^
         마스터 조향사의 세심한 터치를 통해 3pm 오드퍼퓸 향을 그대로 담았습니다.
+        ^
         은은한 잔향은 기분 좋은 하루의 시작과 끝을 함께 합니다.
+        ^
         강한 보습력을 가진 시어버터, 스위트아로마오일, 호호바씨오일이 함유된 식물성 자연 유래 포뮬러로 더욱 부드럽고 촉촉하게 피부를 케어합니다.
+        ^
         마일드한 거품과 우아하게 퍼지는 향기로 하루의 시작과 마무리를 풍성하게 채워보세요.
-        
+        ^
         Ingredients certified by the EVE VEGAN® MARK
+        ^
         ※ Plant based 원료 특성상 갈색의 침전물이 발생할 수 있으며, 이는 자연 현상으로 제품 사용에는 문제가 없음을 미리 알려드립니다.`,
     note: `
     -top: Bergamot, Rhubarb, Tangerine Lotus
+    ^
     -heart: Cedarwood, Jasmine, Gardenia
+    ^
     -base: White Musk, Vetiver, Orris
     `,
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
@@ -35,18 +42,26 @@ export const bodyData = [
     price: "38,000원",
     src: "./images/shop/3pm/bl_3pm.png",
     desc: `Authentic 3pm Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
+        ^
         Formulated from plant-derived ingredients, such as shea butter, sweet aroma oil, and jojoba seed oil hydrates and softens your skin.This mild lather and elegantly spreading scents will enhance your morning and evening rituals.
-
+        ^
         마스터 조향사의 세심한 터치를 통해 3pm 오드퍼퓸 향을 그대로 담았습니다.
+        ^
         은은한 잔향은 기분 좋은 하루의 시작과 끝을 함께 합니다.
+        ^
         강한 보습력을 가진 글리세린, 트레할로오스, 퀸즈랜드넛 오일과 각종 식물유래 성분이
+        ^
         피부에 촘촘하게 스며들어 피부장벽을 강화해줍니다.
+        ^
         Moisture-Lock Technology가 적용된 수분 가득한 포뮬러로 충분한 보습을 경험해보세요.
-        
-        Ingredients certified by the EVE VEGAN® MARK`,
+        ^
+        Ingredients certified by the EVE VEGAN® MARK
+        `,
     note: `
         -top: Bergamot, Rhubarb, Tangerine Lotus
+        ^
         -heart: Cedarwood, Jasmine, Gardenia
+        ^
         -base: White Musk, Vetiver, Orris
         `,
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
@@ -60,17 +75,23 @@ export const bodyData = [
     price: "72,000원",
     src: "./images/shop/3pm/b_care_set_3pm.png",
     desc: `Introducing SW19 Body Care Set, which carries the perfume's authentic scent and leaves a subtle scent.
+        ^
         Take care of your skin with a body wash that keeps your body hydrated even after shower and a body cream that that leaves your skin feeling smooth without sensation of tackiness.
         Both products are vegan formulas and have obtained the French Yves vegan certification mark.
-
+        ^
         퍼퓸 본연의 향을 담아 사용 후 은은한 향기가 지속되는 SW19 바디케어 세트를 만나보세요.
+        ^
         세정 후에도 바디를 촉촉하게 유지하는 바디워시와 끈적임 없이 매끄럽게 피부결을 정돈하는 바디로션으로 바디 피부를 관리하세요.
+        ^
         두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
-
-        Ingredients certified by the EVE VEGAN® MARK`,
+        ^
+        Ingredients certified by the EVE VEGAN® MARK
+        `,
     note: `
         -top: Bergamot, Rhubarb, Tangerine Lotus
+        ^
         -heart: Cedarwood, Jasmine, Gardenia
+        ^
         -base: White Musk, Vetiver, Orris
         `,
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
@@ -82,18 +103,25 @@ export const bodyData = [
     price: "38,000원",
     src: "./images/shop/midnight/bw_mid.png",
     desc: `Authentic Midnight Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
+        ^
         Formulated from plant-derived ingredients, such as shea butter, sweet aroma oil, and jojoba seed oil hydrates and softens your skin.This mild lather and elegantly spreading scents will enhance your morning and evening rituals.
-
+        ^
         마스터 조향사의 세심한 터치를 통해 미드나잇 오드퍼퓸 향을 그대로 담았습니다.
+        ^
         은은한 잔향은 기분 좋은 하루의 시작과 끝을 함께 합니다.
+        ^
         강한 보습력을 가진 시어버터, 스위트아로마오일, 호호바씨오일이 함유된 식물성 자연 유래 포뮬러로 더욱 부드럽고 촉촉하게 피부를 케어합니다.
+        ^
         마일드한 거품과 우아하게 퍼지는 향기로 하루의 시작과 마무리를 풍성하게 채워보세요.
-        
+        ^
         Ingredients certified by the EVE VEGAN® MARK
+        ^
         ※ Plant based 원료 특성상 갈색의 침전물이 발생할 수 있으며, 이는 자연 현상으로 제품 사용에는 문제가 없음을 미리 알려드립니다.`,
     note: `
         -top: Lily of The Valley, White Lotus
+        ^
         -heart: White Musk, Powdery Notes
+        ^
         -base: Sensual Musk, Sandalwood, Benzoin
         `,
     perfumer: "Marianne Nawrocki Sabatier",
@@ -107,18 +135,26 @@ export const bodyData = [
     price: "38,000원",
     src: "./images/shop/midnight/bl_mid.png",
     desc: `Authentic Midnight Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
+        ^
         Formulated from plant-derived ingredients, such as shea butter, sweet aroma oil, and jojoba seed oil hydrates and softens your skin.This mild lather and elegantly spreading scents will enhance your morning and evening rituals.
-        
+        ^
         마스터 조향사의 세심한 터치를 통해 미드나잇 오드퍼퓸 향을 그대로 담았습니다.
+        ^
         은은한 잔향은 기분 좋은 하루의 시작과 끝을 함께 합니다.
+        ^
         강한 보습력을 가진 글리세린, 트레할로오스, 퀸즈랜드넛 오일과 각종 식물유래 성분이
+        ^
         피부에 촘촘하게 스며들어 피부장벽을 강화해줍니다.
+        ^
         Moisture-Lock Technology가 적용된 수분 가득한 포뮬러로 충분한 보습을 경험해보세요.
-        
-        Ingredients certified by the EVE VEGAN® MARK`,
+        ^
+        Ingredients certified by the EVE VEGAN® MARK
+        `,
     note: `
         -top: Lily of The Valley, White Lotus
+        ^
         -heart: White Musk, Powdery Notes
+        ^
         -base: Sensual Musk, Sandalwood, Benzoin
         `,
     perfumer: "Marianne Nawrocki Sabatier",
@@ -132,17 +168,23 @@ export const bodyData = [
     price: "72,000원",
     src: "./images/shop/midnight/b_care_set_mid.png",
     desc: `Introducing SW19 Body Care Set, which carries the perfume's authentic scent and leaves a subtle scent.
+        ^
         Take care of your skin with a body wash that keeps your body hydrated even after shower and a body cream that that leaves your skin feeling smooth without sensation of tackiness.
         Both products are vegan formulas and have obtained the French Yves vegan certification mark.
-
+        ^
         퍼퓸 본연의 향을 담아 사용 후 은은한 향기가 지속되는 SW19 바디케어 세트를 만나보세요.
+        ^
         세정 후에도 바디를 촉촉하게 유지하는 바디워시와 끈적임 없이 매끄럽게 피부결을 정돈하는 바디로션으로 바디 피부를 관리하세요.
+        ^
         두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
-
-        Ingredients certified by the EVE VEGAN® MARK`,
+        ^
+        Ingredients certified by the EVE VEGAN® MARK
+        `,
     note: `
         -top: Lily of The Valley, White Lotus
+        ^
         -heart: White Musk, Powdery Notes
+        ^
         -base: Sensual Musk, Sandalwood, Benzoin
         `,
     perfumer: "Marianne Nawrocki Sabatier",
