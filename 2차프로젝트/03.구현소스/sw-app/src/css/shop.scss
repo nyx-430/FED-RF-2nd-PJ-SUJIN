@@ -107,7 +107,29 @@
 
 /* 상세 페이지 - Detail */
 #detail-page {
-  padding: 5rem;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 5rem;
+
+  .inbox {
+    display: flex;
+
+    .img-box {
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    
+    .desc-box {
+      
+    }
+
+
+
+  }
 
   h1 {
     font-size: 3rem;

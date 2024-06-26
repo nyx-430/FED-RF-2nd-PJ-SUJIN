@@ -15,7 +15,7 @@ export const handData = [
     
     Ingredients certified by the EVE VEGAN® MARK
     ※ Plant based 원료 특성상 갈색의 침전물이 발생할 수 있으며, 이는 자연 현상으로 제품 사용에는 문제가 없음을 미리 알려드립니다.`,
-    Note: `-top: Bergamot, Grapefruit, Anise Seeds
+    note: `-top: Bergamot, Grapefruit, Anise Seeds
         -heart: Cardamom, Clary Sage, Basil
         -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet",
@@ -33,7 +33,7 @@ export const handData = [
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Green Leaf, Aqua, Mint, Almond Blossom
     -heart: Vetiver, Lavender, Lily of The Vally
     -base: Orris(Iris), Cedar Wood, Amber, Musk
@@ -52,7 +52,7 @@ export const handData = [
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Bergamot, Rhubarb, Tangerine Lotus
     -heart: Cedarwood, Jasmine, Gardenia
     -base: White Musk, Vetiver, Orris
@@ -71,7 +71,7 @@ export const handData = [
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus
     -heart: Chestnut accord, Gaiac wood, Cade
     -base: Sandalwood, Vanilla Accord, Peru balsam, Cashmeran
@@ -90,7 +90,7 @@ export const handData = [
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Lily of The Valley, White Lotus
     -heart: White Musk, Powdery Notes
     -base: Sensual Musk, Sandalwood, Benzoin
@@ -109,7 +109,7 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `-top: Bergamot, Grapefruit, Anise Seeds
+    note: `-top: Bergamot, Grapefruit, Anise Seeds
         -heart: Cardamom, Clary Sage, Basil
         -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet - VP Senior Perfumer at Symrise",
@@ -126,7 +126,7 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Green Leaf, Aqua, Mint, Almond Blossom
     -heart: Vetiver, Lavender, Lily of The Vally
     -base: Orris(Iris), Cedar Wood, Amber, Musk
@@ -145,7 +145,7 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Bergamot, Rhubarb, Tangerine Lotus
     -heart: Cedarwood, Jasmine, Gardenia
     -base: White Musk, Vetiver, Orris
@@ -164,7 +164,7 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus
     -heart: Chestnut accord, Gaiac wood, Cade
     -base: Sandalwood, Vanilla Accord, Peru balsam, Cashmeran
@@ -183,7 +183,7 @@ export const handData = [
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Lily of The Valley, White Lotus
     -heart: White Musk, Powdery Notes
     -base: Sensual Musk, Sandalwood, Benzoin
@@ -206,7 +206,7 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `-top: Bergamot, Grapefruit, Anise Seeds
+    note: `-top: Bergamot, Grapefruit, Anise Seeds
         -heart: Cardamom, Clary Sage, Basil
         -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet - VP Senior Perfumer at Symrise",
@@ -227,7 +227,7 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Green Leaf, Aqua, Mint, Almond Blossom
     -heart: Vetiver, Lavender, Lily of The Vally
     -base: Orris(Iris), Cedar Wood, Amber, Musk
@@ -250,7 +250,7 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Bergamot, Rhubarb, Tangerine Lotus
     -heart: Cedarwood, Jasmine, Gardenia
     -base: White Musk, Vetiver, Orris
@@ -273,7 +273,7 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus
     -heart: Chestnut accord, Gaiac wood, Cade
     -base: Sandalwood, Vanilla Accord, Peru balsam, Cashmeran
@@ -296,7 +296,7 @@ export const handData = [
     두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
     Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
     -top: Lily of The Valley, White Lotus
     -heart: White Musk, Powdery Notes
     -base: Sensual Musk, Sandalwood, Benzoin

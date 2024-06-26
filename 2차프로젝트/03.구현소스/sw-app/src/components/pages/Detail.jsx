@@ -30,8 +30,7 @@ function Detail(props) {
   // 코드 리턴 구역 //////////
   return (
     <section id="detail-page" className="page">
-      <div className="inbox">
-        <div className="pbox">
+      <div className="inbox col-6">
           <div className="img-box">
             <img src={src} alt={tit} />
           </div>
@@ -43,7 +42,6 @@ function Detail(props) {
             <p>{perfumer}</p>
             <p>{ingredients}</p>
           </div>
-        </div>
       </div>
     </section>
   );

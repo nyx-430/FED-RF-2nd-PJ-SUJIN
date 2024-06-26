@@ -13,7 +13,7 @@ export const perfumeData = [
         
         &quot;숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취&quot;
         세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
-    Note: `-top: Bergamot, Grapefruit, Anise Seeds
+    note: `-top: Bergamot, Grapefruit, Anise Seeds
         -heart: Cardamom, Clary Sage, Basil
         -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet",
@@ -31,7 +31,7 @@ export const perfumeData = [
 
         &quot;공원 호숫가 벤치에 불어오는 물과 꽃 향의 절묘한 조화&quot;
         호수에 반짝이는 햇살 찬란한 낮 12시, 서늘한 나무그늘 아래 차가운 물 향과 햇살에 만개한 아이리스 꽃 향이 어우러진 윔블던 공원의 정오를 느껴보세요.`,
-    Note: `
+    note: `
         -top: Green Leaf, Aqua, Mint, Almond Blossom
         -heart: Vetiver, Lavender, Lily of The Vally
         -base: Orris(Iris), Cedar Wood, Amber, Musk
@@ -51,7 +51,7 @@ export const perfumeData = [
         
         &quot;햇살이 내리쬐는 푸른 잔디와 부드럽고 향긋한 과일의 향취&quot;
         이슬 젖은 초록숲이 상큼한 햇살에 말라가는 윔블던의 오후. 공원에 만개한 꽃들의 향기와 홍차에 띄운 레몬 조각 향기가 어우러진 윔블던의 오후 3시를 느껴보세요.`,
-    Note: `
+    note: `
     -top: Bergamot, Rhubarb, Tangerine Lotus
     -heart: Cedarwood, Jasmine, Gardenia
     -base: White Musk, Vetiver, Orris
@@ -71,7 +71,7 @@ export const perfumeData = [
         
         &quot;고요한 숲 속의 밤을 채운 사랑의 설레임&quot;
         어둠이 내린 윔블던 숲의 저녁. 모닥불 타는 소리 사이로 들려오는 연인들의 달콤한 속삭임. 바닐라의 달콤함과 숲 속 모닥불의 스모키함이 어우러진 윔블던의 저녁 9시를 느껴보세요.`,
-    Note: `
+    note: `
     -top: Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus
     -heart: Chestnut accord, Gaiac wood, Cade
     -base: Sandalwood, Vanilla Accord, Peru balsam, Cashmeran
@@ -91,7 +91,7 @@ export const perfumeData = [
 
         "&quot;모두가 잠든 깊은 밤, 서로의 향에 물들어 하나가 된 둘&quot;
         은은한 달빛에 감싸인 윔블던 숲 속의 깊은 밤. 손 끝을 스치는 살결과 향기에 취한 센슈얼한 밤12시를 느껴보세요.`,
-    Note: `
+    note: `
     -top: Lily of The Valley, White Lotus
     -heart: White Musk, Powdery Notes
     -base: Sensual Musk, Sandalwood, Benzoin
@@ -111,7 +111,7 @@ export const perfumeData = [
         
         &quot;숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취&quot;
         세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
-    Note: `-top: Bergamot, Grapefruit, Anise Seeds
+    note: `-top: Bergamot, Grapefruit, Anise Seeds
         -heart: Cardamom, Clary Sage, Basil
         -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet",
@@ -129,7 +129,7 @@ export const perfumeData = [
 
         &quot;공원 호숫가 벤치에 불어오는 물과 꽃 향의 절묘한 조화&quot;
         호수에 반짝이는 햇살 찬란한 낮 12시, 서늘한 나무그늘 아래 차가운 물 향과 햇살에 만개한 아이리스 꽃 향이 어우러진 윔블던 공원의 정오를 느껴보세요.`,
-    Note: `
+    note: `
         -top: Green Leaf, Aqua, Mint, Almond Blossom
         -heart: Vetiver, Lavender, Lily of The Vally
         -base: Orris(Iris), Cedar Wood, Amber, Musk
@@ -149,7 +149,7 @@ export const perfumeData = [
         
         &quot;햇살이 내리쬐는 푸른 잔디와 부드럽고 향긋한 과일의 향취&quot;
         이슬 젖은 초록숲이 상큼한 햇살에 말라가는 윔블던의 오후. 공원에 만개한 꽃들의 향기와 홍차에 띄운 레몬 조각 향기가 어우러진 윔블던의 오후 3시를 느껴보세요.`,
-    Note: `
+    note: `
     -top: Bergamot, Rhubarb, Tangerine Lotus
     -heart: Cedarwood, Jasmine, Gardenia
     -base: White Musk, Vetiver, Orris
@@ -169,7 +169,7 @@ export const perfumeData = [
         
         &quot;고요한 숲 속의 밤을 채운 사랑의 설레임&quot;
         어둠이 내린 윔블던 숲의 저녁. 모닥불 타는 소리 사이로 들려오는 연인들의 달콤한 속삭임. 바닐라의 달콤함과 숲 속 모닥불의 스모키함이 어우러진 윔블던의 저녁 9시를 느껴보세요.`,
-    Note: `
+    note: `
         -top: Pink Pepper, Orange flower, Clove , Marshmallow accord Lotus
         -heart: Chestnut accord, Gaiac wood, Cade
         -base: Sandalwood, Vanilla Accord, Peru balsam, Cashmeran
@@ -189,7 +189,7 @@ export const perfumeData = [
 
         &quot;모두가 잠든 깊은 밤, 서로의 향에 물들어 하나가 된 둘&quot;
         은은한 달빛에 감싸인 윔블던 숲 속의 깊은 밤. 손 끝을 스치는 살결과 향기에 취한 센슈얼한 밤12시를 느껴보세요.`,
-    Note: `
+    note: `
         -top: Lily of The Valley, White Lotus
         -heart: White Musk, Powdery Notes
         -base: Sensual Musk, Sandalwood, Benzoin

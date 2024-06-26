@@ -19,7 +19,7 @@ export const bodyData = [
         
         Ingredients certified by the EVE VEGAN® MARK
         ※ Plant based 원료 특성상 갈색의 침전물이 발생할 수 있으며, 이는 자연 현상으로 제품 사용에는 문제가 없음을 미리 알려드립니다.`,
-    Note: `
+    note: `
     -top: Bergamot, Rhubarb, Tangerine Lotus
     -heart: Cedarwood, Jasmine, Gardenia
     -base: White Musk, Vetiver, Orris
@@ -44,7 +44,7 @@ export const bodyData = [
         Moisture-Lock Technology가 적용된 수분 가득한 포뮬러로 충분한 보습을 경험해보세요.
         
         Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
         -top: Bergamot, Rhubarb, Tangerine Lotus
         -heart: Cedarwood, Jasmine, Gardenia
         -base: White Musk, Vetiver, Orris
@@ -68,7 +68,7 @@ export const bodyData = [
         두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
         Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
         -top: Bergamot, Rhubarb, Tangerine Lotus
         -heart: Cedarwood, Jasmine, Gardenia
         -base: White Musk, Vetiver, Orris
@@ -91,7 +91,7 @@ export const bodyData = [
         
         Ingredients certified by the EVE VEGAN® MARK
         ※ Plant based 원료 특성상 갈색의 침전물이 발생할 수 있으며, 이는 자연 현상으로 제품 사용에는 문제가 없음을 미리 알려드립니다.`,
-    Note: `
+    note: `
         -top: Lily of The Valley, White Lotus
         -heart: White Musk, Powdery Notes
         -base: Sensual Musk, Sandalwood, Benzoin
@@ -116,7 +116,7 @@ export const bodyData = [
         Moisture-Lock Technology가 적용된 수분 가득한 포뮬러로 충분한 보습을 경험해보세요.
         
         Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
         -top: Lily of The Valley, White Lotus
         -heart: White Musk, Powdery Notes
         -base: Sensual Musk, Sandalwood, Benzoin
@@ -140,7 +140,7 @@ export const bodyData = [
         두 제품 모두 비건 포뮬러로 프랑스 이브사의 비건 인증 마크를 획득한 제품입니다.
 
         Ingredients certified by the EVE VEGAN® MARK`,
-    Note: `
+    note: `
         -top: Lily of The Valley, White Lotus
         -heart: White Musk, Powdery Notes
         -base: Sensual Musk, Sandalwood, Benzoin
