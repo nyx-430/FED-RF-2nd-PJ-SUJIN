@@ -9,6 +9,7 @@ import Story from "./components/pages/Story";
 import Shop from "./components/pages/Shop";
 import MembersShip from "./components/pages/MembersShip";
 import Board from "./components/pages/Board";
+import Detail from "./components/pages/Detail";
 
 // 전체 공통 CSS 불러오기
 import "../src/css/index.scss";
@@ -31,6 +32,7 @@ export default function MainComponent() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/membersship" element={<MembersShip />} />
           <Route path="/board" element={<Board />} />
+          <Route path="/detail" element={<Detail />} />
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}
       </Routes>
