@@ -1,5 +1,6 @@
 /// 상단 영역 컴포넌트 ///
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 // 제이쿼리
 import $ from "jquery";
@@ -28,6 +29,13 @@ export default function TopArea() {
     document.querySelector(".menu-button").classList.toggle("on");
     document.querySelector(".menu-open").classList.toggle("on");
   }; ////// addOn //////
+
+  const location = useLocation();
+
+  useEffect(()=>{
+    document.querySelector(".menu-button").classList.remove("on");
+    document.querySelector(".menu-open").classList.remove("on");
+  },[location]);
 
   // 검색 관련 함수들 /////////////
   // 검색창에 엔터키 누르면 검색 함수 호출
