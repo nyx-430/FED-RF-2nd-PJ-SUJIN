@@ -21,11 +21,12 @@ export default function Main() {
       {/* <!-- 1. 스토리 인트로 컴포넌트 --> */}
       <StoryIntro />
 
+      {/* <!-- 3. 프로모션 컴포넌트 --> */}
+      <Promotion />
+      
       {/* <!-- 2. 컬렉션 컴포넌트 --> */}
       <Collection catName="am6" />
 
-      {/* <!-- 3. 프로모션 컴포넌트 --> */}
-      <Promotion />
     </>
   );
 } /////////// Main ///////////

@@ -8,7 +8,6 @@ export default function FooterArea() {
   return (
     <footer id="footer-page">
       <div className="inbox">
-        <div className="bg-color"></div>
         <div className="footer-box">
           <img className="footer-logo" src="./images/logo_w.png" alt="logo" />
           <ul>

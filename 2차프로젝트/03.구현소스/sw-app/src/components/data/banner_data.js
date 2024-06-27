@@ -119,15 +119,15 @@ const collBan = {
 
 // Shop 상단 공통 배너 이미지 경로
 const shopBan = {
-  all: "./images/shop/top_slide_pc_1.jpg",
-  perfume: "./images/shop/top_slide_pc_2.jpg",
-  handcare: "./images/shop/top_slide_pc_3.jpg",
-  bodycare: "./images/shop/top_slide_pc_4.jpg",
-  fragrance: "./images/shop/top_slide_pc_5.jpg",
-  gift: "./images/shop/top_slide_pc_6.jpg",
-  set: "./images/shop/top_slide_pc_7.jpg",
-  etc: "./images/shop/top_slide_pc_8.jpg",
-  kit: "./images/shop/top_slide_pc_9.jpg",
+  all: "/images/shop/top_slide_pc_1.jpg",
+  perfume: "/images/shop/top_slide_pc_2.jpg",
+  handcare: "/images/shop/top_slide_pc_3.jpg",
+  bodycare: "/images/shop/top_slide_pc_4.jpg",
+  fragrance: "/images/shop/top_slide_pc_5.jpg",
+  gift: "/images/shop/top_slide_pc_6.jpg",
+  set: "/images/shop/top_slide_pc_7.jpg",
+  etc: "/images/shop/top_slide_pc_8.jpg",
+  kit: "/images/shop/top_slide_pc_9.jpg",
 };
 
 export { shopBan, collBan };

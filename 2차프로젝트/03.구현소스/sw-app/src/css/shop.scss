@@ -6,14 +6,12 @@
 
   .cont-box {
     height: 60vh;
-    aspect-ratio: 3/2;
     position: relative;
     margin: 0 auto;
     padding: 0;
 
     img {
       width: 100%;
-      height: auto;
       object-position: bottom;
       object-fit: cover;
     }
@@ -32,7 +30,7 @@
   .pbox {
     display: flex;
     padding-top: 3rem;
-    background-color: #ffffff99;
+    background-color: #fff;
 
     h2 {
       margin-top: 1rem;
@@ -123,10 +121,11 @@
       box-sizing: content-box;
       cursor: pointer;
     }
-
+    
     span {
       display: flex;
       font-size: 20px;
+      cursor: pointer;
     }
 
   }

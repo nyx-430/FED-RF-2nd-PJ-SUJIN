@@ -34,8 +34,8 @@ function Detail(props) {
   return (
     <>
       <section id="detail-page" className="page">
-        <div className="btn-box">
-          <button className="back-btn" onClick={goBack}>
+        <div className="btn-box" onClick={goBack}>
+          <button className="back-btn">
             ＜
           </button>
           <span>Back</span>

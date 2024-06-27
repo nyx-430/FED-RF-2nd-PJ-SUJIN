@@ -84,7 +84,7 @@
       .goods-box {
         width: 40%;
         height: 40%;
-        
+
         img {
           width: 100%;
           object-position: center;
@@ -220,61 +220,55 @@
 #footer-page {
   height: 80vh;
   overflow: hidden;
-}
-.footer-box {
-  margin: 0 auto;
-  text-align: center;
-  background-image: url(../../public/images/footer.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10rem 0;
-}
-.bg-color {
-  background-color: rgba(0, 0, 0, 0.65);
-  z-index: 1;
-}
-/* 하단 로고 */
-.footer-logo {
-  height: 300px;
-  left: 50%;
-}
-/* 구글 맵 버튼 */
-.footer-box ul {
-  padding-top: 5rem;
-}
-.footer-box li {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 1rem;
-  width: 15%;
-  font-size: 1.5rem;
-  outline: 1px solid #fff;
-  cursor: pointer;
-}
-.footer-box a {
-  color: #fff;
-  box-sizing: content-box;
-}
-.footer-box li:hover {
-  background-color: #fff;
-}
-.footer-box li:hover a {
-  color: #000;
-}
-/* 회사 정보 박스 */
-#footer-page {
 
+  .footer-box {
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../../public/images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+  }
+  /* 하단 로고 */
+  .footer-logo {
+    height: 300px;
+    left: 50%;
+  }
+  /* 구글 맵 버튼 */
+  .footer-box ul {
+    padding-top: 5rem;
+  }
+  .footer-box li {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 15%;
+    font-size: 1.5rem;
+    outline: 1px solid #fff;
+    cursor: pointer;
+  }
+  .footer-box a {
+    color: #fff;
+    box-sizing: content-box;
+  }
+  .footer-box li:hover {
+    background-color: #fff;
+  }
+  .footer-box li:hover a {
+    color: #000;
+  }
+
+  /* 회사 정보 박스 */
   .info-box {
     margin-top: 1.5rem;
   }
   span {
     display: block;
-    font-family: "Noto Sans Korean", "Malgun Gothic",
-    "Nanum Gothic", "Noto Sans", sans-serif;
+    font-family: "Noto Sans Korean", "Malgun Gothic", "Nanum Gothic",
+      "Noto Sans", sans-serif;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2;
     text-align: center;
   }
 }
-

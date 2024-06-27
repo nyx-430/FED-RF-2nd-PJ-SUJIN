@@ -8,11 +8,11 @@ import { shopBan } from "../data/banner_data";
 // CSS 불러오기
 import "../../css/shop.scss";
 
-function TopBanner(props) {
+function TopBanner() {
   return (
     <section id="top-banner">
       <div className="cont-box">
-        <img src="./images/shop/banner/top_slide_pc_1.jpg" alt="ban" />
+        <img src="/images/shop/banner/Wimbledon Park.jpg" alt="ban" />
       </div>
     </section>
   );
