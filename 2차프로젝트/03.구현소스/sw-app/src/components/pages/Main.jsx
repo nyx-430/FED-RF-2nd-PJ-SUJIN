@@ -14,6 +14,7 @@ export default function Main() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }); /////////////////////////
+  
   // 코드 리턴 구역 //////////////
   return (
     <>

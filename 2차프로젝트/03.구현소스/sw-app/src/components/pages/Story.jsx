@@ -16,7 +16,8 @@ function Story(props) {
       <StoryIntro />
 
       {/* 컬렉션 컴포넌트 */}
-      {/* <Collection /> */}
+      {/* <!-- 2. 컬렉션 컴포넌트 --> */}
+      <Collection catName="am6" />
     </>
   );
 }

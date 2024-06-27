@@ -103,8 +103,9 @@
 
         /* 슬라이드 버튼 */
         .abtn {
-          top: 40px;
           position: absolute;
+          display: flex;
+          top: 40px;
           transform: translateY(-50%);
           width: 40px;
           height: 40px;
@@ -259,11 +260,19 @@
   color: #000;
 }
 /* 회사 정보 박스 */
-#footer-page span {
-  display: block;
-  padding: 1rem 0 0;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: center;
+#footer-page {
+
+  .info-box {
+    margin-top: 1.5rem;
+  }
+  span {
+    display: block;
+    font-family: "Noto Sans Korean", "Malgun Gothic",
+    "Nanum Gothic", "Noto Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2;
+    text-align: center;
+  }
 }
+
