@@ -5,13 +5,13 @@ import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-// CSS불러오기
-import "../../css/searching.scss";
-
 // 상품 데이터 불러오기
 import { perfumeData } from "../data/perfume_data";
 import { handData } from "../data/handcare_data";
 import { bodyData } from "../data/bodycare_data";
+
+// 검색 페이지 CSS 불러오기
+import "../../css/searching.scss";
 
 // 캐릭터 리스트 결과 컴포넌트
 import SearchingCat from "./SearchingCat";

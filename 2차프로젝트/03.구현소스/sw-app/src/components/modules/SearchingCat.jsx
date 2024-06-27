@@ -17,7 +17,7 @@ function SearchingCat({ dt }) {
   return (
     <>
       {
-        // 데이터 개수가 0이 아닐때 출력
+        // 데이터 개수가 0이 아닐 때 출력
         total > 0 && (
           <ul className="clist">
             {dt.map((v, i) => (
@@ -47,8 +47,7 @@ function SearchingCat({ dt }) {
         // 선택 데이터가 0개이면 아래 출력
         total == 0 && (
           <h2 style={{ textAlign: "center" }}>
-            Sorry, we don't have any matches for that. But there's plenty more
-            to see on DC!
+            Sorry, we don't have any matches for that.
           </h2>
         )
       }

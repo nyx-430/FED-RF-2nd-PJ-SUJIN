@@ -1,8 +1,10 @@
 import React from 'react';
-import Searching from '../modules/Searching';
 
-// 라우터 전달변수값을 받기위해 useLocation을 불러옴
+// 라우터 전달변수값을 받기 위해 useLocation을 불러옴
 import { useLocation } from 'react-router-dom';
+
+// 검색 모듈 불러오기
+import Searching from '../modules/Searching';
 
 function SearchPage() {
     // 라우터 전달값 받기 객체 생성

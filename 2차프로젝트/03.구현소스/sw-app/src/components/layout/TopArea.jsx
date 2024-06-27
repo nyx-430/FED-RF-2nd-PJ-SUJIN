@@ -56,7 +56,7 @@ export default function TopArea() {
   const goSearch = (txt) => {
     console.log("나는 검색하러 간다규~!");
     // 라우터 이동 함수로 이동하기
-    // 네비게이트메서드("라우터 주소",{state:{보낼 객체}})
+    // 네비게이트 메서드("라우터 주소",{state:{보낼 객체}})
     goNav("search", { state: { keyword: txt } });
   }; ///////// goSearch 함수 /////////
 

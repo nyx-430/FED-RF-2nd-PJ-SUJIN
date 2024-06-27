@@ -38,7 +38,7 @@ export default function MainComponent() {
           <Route path="/membersship" element={<MembersShip />} />
           <Route path="/board" element={<Board />} />
           <Route path="/detail" element={<Detail />} />
-          <Route path="search" element={<SearchPage />} />
+          <Route path="/search" element={<SearchPage />} />
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}
       </Routes>
