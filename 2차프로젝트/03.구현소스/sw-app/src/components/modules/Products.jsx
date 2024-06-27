@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-// 제이쿼리
-import $ from "jquery";
-
 // 상품 데이터 불러오기
 import { perfumeData } from "../data/perfume_data";
 import { handData } from "../data/handcare_data";

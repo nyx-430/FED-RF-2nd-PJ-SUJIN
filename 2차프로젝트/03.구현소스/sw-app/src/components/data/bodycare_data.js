@@ -95,6 +95,7 @@ export const bodyData = [
         -base: White Musk, Vetiver, Orris
         `,
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
+    ingredients: "",
   },
   {
     idx: 4,
@@ -188,5 +189,6 @@ export const bodyData = [
         -base: Sensual Musk, Sandalwood, Benzoin
         `,
     perfumer: "Marianne Nawrocki Sabatier",
+    ingredients: "",
   },
 ];

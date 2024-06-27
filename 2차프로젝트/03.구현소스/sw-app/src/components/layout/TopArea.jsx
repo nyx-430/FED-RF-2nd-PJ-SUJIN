@@ -1,7 +1,8 @@
-/// 상단영역 컴포넌트 ///
+/// 상단 영역 컴포넌트 ///
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // GNB 데이터 불러오기
-import { Link } from "react-router-dom";
 import { menu } from "../data/gnb";
 
 // 폰트어썸 불러오기
@@ -13,10 +14,11 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 // import { faBa } from "@fortawesome/free-regular-svg-icons";
 // import { faCamera } from "@fortawesome/free-brands-svg-icons";
 
-// 상단영역 CSS 불러오기
+// CSS 불러오기
 import "../../css/top_area.scss";
 
 export default function TopArea() {
+  
   // 클래스 on 함수
   const addOn = () => {
     document.querySelector(".menu-button").classList.toggle("on");

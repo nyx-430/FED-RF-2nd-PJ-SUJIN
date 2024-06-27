@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { pmData } from "../data/promotion_data";
 import { SwiperApp } from "../../plugin/SwiperApp";
 
-function Promotion(props) {
+function Promotion() {
   return (
     <>
       <section id="Promotion-page" className="page">
