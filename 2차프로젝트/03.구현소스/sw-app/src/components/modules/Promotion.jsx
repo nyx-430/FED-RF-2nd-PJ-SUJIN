@@ -27,7 +27,18 @@ function Promotion() {
               <ul>
                 {pmData.map((v, i) => (
                   <li key={i}>
-                    <Link to="/detail">
+                    <Link 
+                    to="/detail"                    
+                    state={{
+                      tit: v.tit,
+                      src: v.src,
+                      price: v.price,
+                      desc: v.desc,
+                      note: v.note,
+                      perfumer: v.perfumer,
+                      ingredients: v.ingredients,
+                    }}
+                    >
                       <div className="img-box">
                         <img src={v.src} alt={v.tit} />
                         <div className="overlay"></div>

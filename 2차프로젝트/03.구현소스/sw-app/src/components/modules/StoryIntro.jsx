@@ -9,18 +9,17 @@ function StoryIntro(props) {
   useEffect(() => {
     // console.log("useEffect");
 
-    const stage = $(".page");
     const scAct = $(".scAct");
     // console.log("이벤트 페이지:", stage);
 
     const CRITERIA = (window.innerHeight / 3) * 2;
+    console.log(CRITERIA);
 
     $(window).on("scroll", () => {
-      stage.each((ele, idx) => {
-        let pos = $(idx).offset().top;
-        if (pos < CRITERIA) {
-          $(scAct[ele]).addClass("on");
-        }
+      scAct.each((idx, ele) => {
+        let pos = ele.getBoundingClientRect().top;
+        console.log(pos);
+        if(pos<CRITERIA) $(ele).addClass("on");
       });
     });
   }, []); ///////////// useEffect /////////////
@@ -43,7 +42,7 @@ function StoryIntro(props) {
             <h1 className="main-title">
               The Beginning Of The Story Wimbledon Forest
             </h1>
-            <p className="main-text1">
+            <p className="main-text1 scAct">
               Our fragrance brand took its name after the Wimbledon district
               postal code “SW19". Wimbledon is a charming, peaceful town
               surrounded by green forests and parks in the southwest part of
