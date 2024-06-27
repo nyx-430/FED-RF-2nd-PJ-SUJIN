@@ -34,9 +34,12 @@ function Detail(props) {
   return (
     <>
       <section id="detail-page" className="page">
-        <button className="back-btn" onClick={goBack}>
-          ＜
-        </button>
+        <div className="btn-box">
+          <button className="back-btn" onClick={goBack}>
+            ＜
+          </button>
+          <span>Back</span>
+        </div>
         <div className="inbox col-6">
           <div className="img-box">
             <img src={src} alt={tit} />

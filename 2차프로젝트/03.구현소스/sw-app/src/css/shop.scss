@@ -105,16 +105,30 @@
   margin: 0 0 10rem;
   padding: 5rem;
 
-  .back-btn {
+  .btn-box {
     display: flex;
-    width: 40px;
-    height: 40px;
-    font-size: 55px;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
-    line-height: 1.2;
-    padding: 10px;
-    box-sizing: content-box;
+    
+    .back-btn {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      font-size: 60px;
+      transform: scaleX(0.7);
+      align-items: center;
+      justify-content: center;
+      line-height: 1.2;
+      padding: 10px 0;
+      box-sizing: content-box;
+      cursor: pointer;
+    }
+
+    span {
+      display: flex;
+      font-size: 20px;
+    }
+
   }
 
   .inbox {
