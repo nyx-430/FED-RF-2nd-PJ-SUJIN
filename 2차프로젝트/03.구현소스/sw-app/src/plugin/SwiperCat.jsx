@@ -11,12 +11,6 @@ import "swiper/css/navigation";
 // 스와이퍼 비디오 모듈 CSS : 내가 작성한 CSS
 import "./css/swiper_cat.scss";
 
-// 데이터 불러오기
-// 상품 데이터 불러오기
-import { perfumeData } from "../data/perfume_data";
-import { handData } from "../data/handcare_data";
-import { bodyData } from "../data/bodycare_data";
-
 // import required modules
 // 사용할 스와이퍼 모듈을 불러온다
 // (여기서는 네비게이션 - 양쪽이동버튼)
@@ -24,29 +18,6 @@ import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 export function SwiperCat() {
-  const { state } = useLocation();
-  // console.log("전달값:", state.category);
-
-  // 데이터 합치기 : ...(스프레드 연산자)사용
-  let selData = [...perfumeData, ...handData, ...bodyData];
-
-  // 데이터 처리대상 : 나중에 처리 대상 변경만 하면 끝!
-  let rangeData = ["Perfume", "Body Care", "Hand Care"];
-  // console.log("데이터대상인가?", rangeData.includes(state.category));
-
-  // state전달값이 빈값이 아니면 배열filter돌리기
-  // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사후 있으면 true
-  if (rangeData.includes(state.category)) {
-    selData = selData.filter((v) => {
-      if (v.category === state.category) return true;
-    });
-  }
-
-  // console.log(selData);
-
-  // 선택 데이터 변수할당
-  // const selData = catListData;
-
   // 코드 리턴 구역 /////////////
   return (
     <>
@@ -94,11 +65,11 @@ export function SwiperCat() {
                   }}
                 >
                   <section className="sw-inbox2">
-                    {/* 캐릭터 이미지 영역 */}
+                    {/* 상품 이미지 영역 */}
                     <div className="cat-img2">
                       <img src={v.tmsrc} alt={v.cname} />
                     </div>
-                    {/* 캐릭터 타이틀 영역 */}
+                    {/* 상품 타이틀 영역 */}
                     <div className="cat-tit2">
                       <h3>{v.cname}</h3>
                     </div>
