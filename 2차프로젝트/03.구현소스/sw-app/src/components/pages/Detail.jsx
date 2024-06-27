@@ -9,11 +9,12 @@ import { useLocation } from "react-router-dom";
 // CSS 불러오기
 import "../../css/shop.scss";
 
-function Detail(props) {
+function Detail() {
   // 라우터 호출시 전달한 값을 받는다
   const loc = useLocation();
   const tit = loc.state.tit;
   const src = loc.state.src;
+  const detail = loc.state.detail;
   const price = loc.state.price;
   const desc = loc.state.desc;
   const note = loc.state.note;
@@ -75,6 +76,11 @@ function Detail(props) {
                 </aside>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="detail-box">
+          <div className="img-box">
+            <img src={detail} alt={tit} />
           </div>
         </div>
       </section>
