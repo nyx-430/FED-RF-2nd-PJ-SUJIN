@@ -8,7 +8,7 @@
 .clist {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 1.3%;
+  gap: 20px 1.3%;
 }
 .clist li {
   width: 24%;
@@ -23,7 +23,7 @@
 /* 캐릭터 이름 */
 .clist li h3 {
   text-align: center;
-  font-size: min(23px, 1.7vw);
-  white-space: nowrap;
+  font-size: min(23px, 1.5rem);
+  line-height: 1.3;
   padding: 15px;
 }

@@ -12,7 +12,7 @@
 .searching input {
   font-size: 15px;
   width: 77%;
-  margin-top: 5px;
+  margin-top: 9px;
   margin-left: 10px;
   background-color: transparent;
   border: none;
@@ -24,6 +24,11 @@ input:focus {
   cursor: pointer;
   margin-top: 9px;
   margin-left: 10px;
+}
+
+.big-title {
+  font-size: min(35px, 5vw);
+  margin: 20px 60px;
 }
 
 .restit {

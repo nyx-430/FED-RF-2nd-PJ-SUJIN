@@ -18,7 +18,7 @@ function SearchPage() {
     // 코드 리턴구역 ///////////////
     return (
         <>
-            <h1 className='tit'>
+            <h1 className='big-title'>
                 Search Result
             </h1>
             <Searching kword={keyword} />
