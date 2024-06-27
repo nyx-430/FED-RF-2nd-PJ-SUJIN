@@ -249,9 +249,11 @@
   width: 15%;
   font-size: 1.5rem;
   outline: 1px solid #fff;
+  cursor: pointer;
 }
 .footer-box a {
   color: #fff;
+  box-sizing: content-box;
 }
 .footer-box li:hover {
   background-color: #fff;
