@@ -18,7 +18,6 @@ import SearchingCat from "./SearchingCat";
 
 function Searching({ kword }) {
   const { state } = useLocation();
-  console.log("전달값:", state.category);
 
   // 데이터 합치기 : ...(스프레드 연산자)사용
   let selData = [...perfumeData, ...handData, ...bodyData];
@@ -27,13 +26,13 @@ function Searching({ kword }) {
   let rangeData = ["Perfume", "Body Care", "Hand Care"];
 
   // console.log(selData);
-  console.log("데이터대상인가?", rangeData.includes(state.category));
+  console.log("데이터 대상인가?", rangeData.includes(state.tit));
 
   // state전달값이 빈값이 아니면 배열filter돌리기
   // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사후 있으면 true
-  if (rangeData.includes(state.category)) {
+  if (rangeData.includes(state.tit)) {
     selData = selData.filter((v) => {
-      if (v.category === state.category) return true;
+      if (v.tit === state.tit) return true;
     });
   }
 
@@ -83,7 +82,7 @@ function Searching({ kword }) {
   const newList = selData.filter((v) => {
     // 속성중 캐릭터 이름 중 검색(v.cname)
     // 검색어는 모두 영어일 경우 소문자 처리함
-    let newVal = v.cname.toLocaleLowerCase();
+    let newVal = v.tit.toLocaleLowerCase();
 
     // 전달 받은 키워드도 소문자 처리
     // ((중요!!!)) 상태변수인 kw로 대체한다!!!

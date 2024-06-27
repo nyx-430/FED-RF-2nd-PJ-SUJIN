@@ -25,16 +25,14 @@ import { Link } from "react-router-dom";
 
 export function SwiperCat() {
   const { state } = useLocation();
-  console.log("전달값:", state.category);
+  // console.log("전달값:", state.category);
 
   // 데이터 합치기 : ...(스프레드 연산자)사용
   let selData = [...perfumeData, ...handData, ...bodyData];
 
   // 데이터 처리대상 : 나중에 처리 대상 변경만 하면 끝!
   let rangeData = ["Perfume", "Body Care", "Hand Care"];
-
-  // console.log(selData);
-  console.log("데이터대상인가?", rangeData.includes(state.category));
+  // console.log("데이터대상인가?", rangeData.includes(state.category));
 
   // state전달값이 빈값이 아니면 배열filter돌리기
   // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사후 있으면 true
@@ -44,7 +42,7 @@ export function SwiperCat() {
     });
   }
 
-  console.log(selData);
+  // console.log(selData);
 
   // 선택 데이터 변수할당
   // const selData = catListData;
