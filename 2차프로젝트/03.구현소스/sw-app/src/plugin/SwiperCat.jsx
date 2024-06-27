@@ -1,6 +1,6 @@
 // 캐릭터 모듈 스와이퍼 플러그인 컴포넌트
 
-import React, { useEffect } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

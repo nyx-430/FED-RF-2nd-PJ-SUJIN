@@ -1,5 +1,4 @@
 /// 상단 영역 컴포넌트 ///
-import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 // 제이쿼리
@@ -21,10 +20,10 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "../../css/top_area.scss";
 
 export default function TopArea() {
-  // 이동 함수
+  // 이동 함수 /////////////
   const goNav = useNavigate();
 
-  // 클래스 on 함수
+  // 클래스 on 함수 /////////////
   const addOn = () => {
     document.querySelector(".menu-button").classList.toggle("on");
     document.querySelector(".menu-open").classList.toggle("on");
@@ -54,7 +53,8 @@ export default function TopArea() {
 
   // 3. 검색 페이지로 검색어와 함께 이동하기 함수
   const goSearch = (txt) => {
-    console.log("나는 검색하러 간다규~!");
+    console.log("검색 시작!");
+    
     // 라우터 이동 함수로 이동하기
     // 네비게이트 메서드("라우터 주소",{state:{보낼 객체}})
     goNav("search", { state: { keyword: txt } });

@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 // 제이쿼리
 import $ from "jquery";
 
-function StoryIntro(props) {
+function StoryIntro() {
   useEffect(() => {
     // console.log("useEffect");
 
@@ -18,7 +18,7 @@ function StoryIntro(props) {
     $(window).on("scroll", () => {
       scAct.each((idx, ele) => {
         let pos = ele.getBoundingClientRect().top;
-        console.log(pos);
+        // console.log(pos);
         if(pos<CRITERIA) $(ele).addClass("on");
       });
     });

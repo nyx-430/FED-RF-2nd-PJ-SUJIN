@@ -26,7 +26,7 @@ function Searching({ kword }) {
   let rangeData = ["Perfume", "Body Care", "Hand Care"];
 
   // console.log(selData);
-  console.log("데이터 대상인가?", rangeData.includes(state.tit));
+  // console.log("데이터 대상인가?", rangeData.includes(state.tit));
 
   // state전달값이 빈값이 아니면 배열filter돌리기
   // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사후 있으면 true
@@ -35,9 +35,6 @@ function Searching({ kword }) {
       if (v.tit === state.tit) return true;
     });
   }
-
-  console.log(selData);
-
   // kword - 전달 받은 키워드
   console.log("kword:", kword);
   console.log("data:", selData);
