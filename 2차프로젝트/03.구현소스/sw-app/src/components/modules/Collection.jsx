@@ -43,12 +43,12 @@ function Collection({ catName }) {
           <h1 className="title">Collections</h1>
           <div className="slider">
             <div className="img-box">
-              <img src={selData.src} alt="sw19" />
+              <img src={process.env.PUBLIC_URL+selData.src} alt="sw19" />
             </div>
             <div className="goods-box">
-              <img src={selData.img} alt="sw19" />
+              <img src={process.env.PUBLIC_URL+selData.img} alt="sw19" />
               <div className="desc-box">
-                <img src={selData.timg} alt="sw19" />
+                <img src={process.env.PUBLIC_URL+selData.timg} alt="sw19" />
                 <button className="abtn lb" onClick={chgData}>
                   ＜
                 </button>

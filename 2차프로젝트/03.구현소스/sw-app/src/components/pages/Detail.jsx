@@ -41,7 +41,7 @@ function Detail() {
         </div>
         <div className="inbox col-6">
           <div className="img-box">
-            <img src={src} alt={tit} />
+            <img src={process.env.PUBLIC_URL+src} alt={tit} />
           </div>
           <div className="desc-box">
             <div className="heading-area">
@@ -79,7 +79,7 @@ function Detail() {
         <hr />
         <div className="detail-box col-12">
           <div className="img-box">
-            <img src={img} alt={tit} />
+            <img src={process.env.PUBLIC_URL+img} alt={tit} />
           </div>
         </div>
       </section>

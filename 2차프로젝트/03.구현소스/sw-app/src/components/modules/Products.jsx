@@ -61,7 +61,7 @@ function Products() {
                     }}
                   >
                     <div className="img-box">
-                      <img src={v.src} alt={v.tit} />
+                      <img src={process.env.PUBLIC_URL+v.src} alt={v.tit} />
                       <div className="overlay"></div>
                     </div>
                     <h2>{v.tit}</h2>
