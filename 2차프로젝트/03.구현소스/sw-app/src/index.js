@@ -21,7 +21,7 @@ export default function MainComponent() {
 
   return (
     // 라우터 루트로 라우터 구성 시작
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정!
         루트 Route 는 홀로 닫지 말고 반드시 다른
