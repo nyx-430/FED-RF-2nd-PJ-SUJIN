@@ -96,21 +96,6 @@ export default function TopArea() {
                 )}
               </li>
             ))}
-            {/* <li>
-                <Link to="/">HOME</Link>
-              </li>
-              <li>
-                <Link to="/story">STORY</Link>
-              </li>
-              <li>
-                <Link to="/store">STORE</Link>
-              </li>
-              <li>
-                <Link to="/membership">MEMBER SHIP</Link>
-              </li>
-              <li>
-                <Link to="/board">Q&A</Link>
-              </li> */}
           </ul>
         </aside>
       </header>
