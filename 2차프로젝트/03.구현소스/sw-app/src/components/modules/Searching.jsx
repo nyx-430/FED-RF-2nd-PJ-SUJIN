@@ -103,13 +103,13 @@ function Searching({ kword }) {
   // (1) 오름차순일 경우
   if (sort == "asc") {
     newList.sort((a, b) =>
-      a.cname > b.cname ? 1 : a.cname < b.cname ? -1 : 0
+      a.tit > b.tit ? 1 : a.tit < b.tit ? -1 : 0
     );
   } /// if ///
   // (2) 내림차순일 경우
   else if (sort == "desc") {
     newList.sort((a, b) =>
-      a.cname > b.cname ? -1 : a.cname < b.cname ? 1 : 0
+      a.tit > b.tit ? -1 : a.tit < b.tit ? 1 : 0
     );
   } /// else if ///
 

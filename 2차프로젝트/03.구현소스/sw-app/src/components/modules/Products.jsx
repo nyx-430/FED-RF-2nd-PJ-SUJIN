@@ -52,7 +52,7 @@ function Products() {
                     state={{
                       tit: v.tit,
                       src: v.src,
-                      detail: v.detail,
+                      img: v.img,
                       price: v.price,
                       desc: v.desc,
                       note: v.note,

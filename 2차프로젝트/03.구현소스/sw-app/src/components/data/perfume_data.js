@@ -8,7 +8,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/6am/p_6am.png",
-    detail: "/images/shop/6am/img_6am.png",
+    img: "/images/shop/6am/img_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits
         ^
         Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
@@ -32,7 +32,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/noon/p_noon.png",
-    detail: "img_6am",
+    img: "/images/shop/noon/img_noon.png",
     desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
         ^
         Midday, when the sunlight sparkles on the surface of the lake, the bouquet of a full bloom iris and cool aqua scent under the tree shade fills up the air. Feel the scent of NOON at Wimbledon Park.
@@ -57,7 +57,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/3pm/p_3pm.png",
-    detail: "img_6am",
+    img: "/images/shop/3pm/img_3pm.png",
     desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
         While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
@@ -82,7 +82,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/9pm/p_9pm.png",
-    detail: "img_6am",
+    img: "/images/shop/9pm/img_9pm.png",
     desc: `The romance of a silent night in the woods
         ^
         The night in Wimbledon forest after dark. The whispers of love travel through the crackling bonfire. Feel the Wimbledon’s 9PM scent of the smokey bonfire smoothly blended with sweet vanilla.
@@ -107,7 +107,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/midnight/p_mid.png",
-    detail: "img_6am",
+    img: "/images/shop/midnight/img_midnight.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
         ^
         In the still of the night, the soft moonlight surrounds the Wimbledon forest. Feel the sensual MIDNIGHT through mesmerizing touch and scent.
@@ -132,7 +132,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/6am/m_6am.png",
-    detail: "img_6am",
+    img: "/images/shop/6am/img_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits
         ^
         Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
@@ -156,7 +156,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/noon/m_noon.png",
-    detail: "img_6am",
+    img: "/images/shop/noon/img_noon.png",
     desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
         ^
         Midday, when the sunlight sparkles on the surface of the lake, the bouquet of a full bloom iris and cool aqua scent under the tree shade fills up the air. Feel the scent of NOON at Wimbledon Park.
@@ -180,7 +180,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/3pm/m_3pm.png",
-    detail: "img_6am",
+    img: "/images/shop/3pm/img_3pm.png",
     desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
         While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
@@ -205,7 +205,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/9pm/m_9pm.png",
-    detail: "img_6am",
+    img: "/images/shop/9pm/img_9am.png",
     desc: `The romance of a silent night in the woods
         ^
         The night in Wimbledon forest after dark. The whispers of love travel through the crackling bonfire. Feel the Wimbledon’s 9PM scent of the smokey bonfire smoothly blended with sweet vanilla.
@@ -230,7 +230,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/midnight/m_mid.png",
-    detail: "img_6am",
+    img: "/images/shop/midnight/img_midnight.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
         ^
         In the still of the night, the soft moonlight surrounds the Wimbledon forest. Feel the sensual MIDNIGHT through mesmerizing touch and scent.

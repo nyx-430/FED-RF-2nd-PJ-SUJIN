@@ -9,6 +9,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/6am/h_6am.png",
+    img: "/images/shop/6am/img_6am.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
@@ -32,6 +33,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/noon/h_noon.png",
+    img: "/images/shop/noon/img_noon.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
@@ -54,6 +56,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/3pm/h_3pm.png",
+    img: "/images/shop/3pm/img_3pm.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
@@ -76,6 +79,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/9pm/h_9pm.png",
+    img: "/images/shop/9pm/img_9pm.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
@@ -98,6 +102,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/midnight/h_mid.png",
+    img: "/images/shop/midnight/img_midnight.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
@@ -120,6 +125,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/6am/hw_6am.png",
+    img: "/images/shop/6am/img_6am.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
@@ -141,6 +147,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/noon/hw_noon.png",
+    img: "/images/shop/noon/img_noon.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
@@ -163,6 +170,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/3pm/hw_3pm.png",
+    img: "/images/shop/3pm/img_3pm.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
@@ -185,6 +193,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/9pm/hw_9pm.png",
+    img: "/images/shop/9pm/img_9pm.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
@@ -207,6 +216,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/midnight/hw_mid.png",
+    img: "/images/shop/midnight/img_midnight.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
     비건 포뮬러로 만들어진 SW19 핸드워시는 퍼퓸 본연의 향을 그대로 담아 세정 후에도 은은한 향기가 지속됩니다. 식물 유래 성분과 코코넛 유래 성분을 함유하여 사용 후에도 손을 촉촉하게 유지합니다.
@@ -229,6 +239,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/6am/h_care_set_6am.png",
+    img: "/images/shop/6am/img_6am.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^
     Both products are vegan formulas and have obtained the French Yves vegan certification mark.
@@ -253,6 +264,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/noon/h_care_set_noon.png",
+    img: "/images/shop/noon/img_noon.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^
     Both products are vegan formulas and have obtained the French Yves vegan certification mark.
@@ -278,6 +290,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/3pm/h_care_set_3pm.png",
+    img: "/images/shop/3pm/img_3pm.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^
     Both products are vegan formulas and have obtained the French Yves vegan certification mark.
@@ -303,6 +316,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/9pm/h_care_set_9pm.png",
+    img: "/images/shop/9pm/img_9pm.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^
     Both products are vegan formulas and have obtained the French Yves vegan certification mark.
@@ -328,6 +342,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/midnight/h_care_set_mid.png",
+    img: "/images/shop/midnight/img_midnight.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^
     Both products are vegan formulas and have obtained the French Yves vegan certification mark.

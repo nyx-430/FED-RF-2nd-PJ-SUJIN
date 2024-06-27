@@ -14,7 +14,7 @@ function Detail() {
   const loc = useLocation();
   const tit = loc.state.tit;
   const src = loc.state.src;
-  const detail = loc.state.detail;
+  const img = loc.state.img;
   const price = loc.state.price;
   const desc = loc.state.desc;
   const note = loc.state.note;
@@ -27,7 +27,7 @@ function Detail() {
   }); /////////////////////////
 
   // 뒤로 가기 버튼 함수
-  function goBack (){
+  function goBack() {
     window.history.back();
   } /// goBack ///
 
@@ -36,9 +36,7 @@ function Detail() {
     <>
       <section id="detail-page" className="page">
         <div className="btn-box" onClick={goBack}>
-          <button className="back-btn">
-            ＜
-          </button>
+          <button className="back-btn">＜</button>
           <span>Back</span>
         </div>
         <div className="inbox col-6">
@@ -80,7 +78,7 @@ function Detail() {
         </div>
         <div className="detail-box">
           <div className="img-box">
-            <img src={detail} alt={tit} />
+            <img src={img} alt={tit} />
           </div>
         </div>
       </section>

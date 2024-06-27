@@ -57,6 +57,7 @@ export function SwiperCat() {
                   state={{
                     tit: v.tit,
                     src: v.src,
+                    detail: v.detail,
                     price: v.price,
                     desc: v.desc,
                     note: v.note,
