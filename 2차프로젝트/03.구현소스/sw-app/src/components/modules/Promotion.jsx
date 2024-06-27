@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 // 프로모션 데이터 불러오기
 import { pmData } from "../data/promotion_data";
+
+// 스와이프
 import { SwiperApp } from "../../plugin/SwiperApp";
 
 function Promotion() {
@@ -15,10 +17,6 @@ function Promotion() {
           {/* <div className="banner-box"> */}
           <div className="swiper">
             <SwiperApp />
-            {/* <img
-              src="./images/promotion/MAIN_SLIDE_PC_SUMMER.jpg"
-              alt="promotion"
-            /> */}
           </div>
           {/* 상품 리스트 */}
           <div className="pbox ">
@@ -28,7 +26,7 @@ function Promotion() {
                 {pmData.map((v, i) => (
                   <li key={i}>
                     <Link 
-                    to="/detail"                    
+                    to="/detail"
                     state={{
                       tit: v.tit,
                       src: v.src,

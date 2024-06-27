@@ -1,6 +1,9 @@
 /// 상단 영역 컴포넌트 ///
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+// 제이쿼리
+import $ from "jquery";
 
 // GNB 데이터 불러오기
 import { menu } from "../data/gnb";
@@ -18,12 +21,44 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "../../css/top_area.scss";
 
 export default function TopArea() {
-  
+  // 이동 함수
+  const goNav = useNavigate();
+
   // 클래스 on 함수
   const addOn = () => {
     document.querySelector(".menu-button").classList.toggle("on");
     document.querySelector(".menu-open").classList.toggle("on");
   }; ////// addOn //////
+
+  // 검색 관련 함수들 /////////////
+  // 검색창에 엔터키 누르면 검색 함수 호출
+  const enterKey = (e) => {
+    // console.log(e.key,e.keyCode);
+    // e.keyCode는 숫자, e.key문자로 리턴함
+
+    if (e.key == "Enter") {
+      // 입력창의 입력값 읽어오기 : val() 사용
+      let txt = $(e.target).val().trim();
+      console.log(txt);
+
+      // 빈 값이 아니면 검색 함수 호출 (검색어 전달!)
+      if (txt != "") {
+        // 입력창 비우고 부모박스 닫기
+        $(e.target).val("").parents().hide();
+
+        // 검색 보내기
+        goSearch(txt);
+      } /// if ///
+    } /// if ///
+  }; ///////// showSearch 함수 /////////
+
+  // 3. 검색 페이지로 검색어와 함께 이동하기 함수
+  const goSearch = (txt) => {
+    console.log("나는 검색하러 간다규~!");
+    // 라우터 이동 함수로 이동하기
+    // 네비게이트메서드("라우터 주소",{state:{보낼 객체}})
+    goNav("search", { state: { keyword: txt } });
+  }; ///////// goSearch 함수 /////////
 
   // 코드 리턴 구역 //////////////
   return (
@@ -32,7 +67,9 @@ export default function TopArea() {
         <div className="menu">
           <div className="lines">
             <a href="/">
-              <span id="logo" className="line">SW19</span>
+              <span id="logo" className="line">
+                SW19
+              </span>
             </a>
             <p className="line">
               A transitional scent of the green forest | of Wimbledon, London{" "}
@@ -64,31 +101,47 @@ export default function TopArea() {
         </div>
         {/* 사이드 메뉴 */}
         <aside className="menu-open">
+          {/* 검색 입력 박스 */}
           <div className="search-bar">
-            <input type="text" placeholder="Search" />
+            <input
+              type="text"
+              placeholder="Search"
+              name="schinGnb"
+              id="schinGnb"
+              onKeyUp={enterKey}
+            />
             <button className="schbtn">
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="schbtnGnb"
+                title="Open search"
+                onClick={(e) => {
+                  // 검색어 읽기
+                  let stxt = e.currentTarget.nextElementSibling.value;
+                  if (stxt.trim() != "") {
+                    // 검색하기
+                    goSearch(stxt);
+                  } /// if ///
+                  else {
+                    // 검색어 비었을 때 메시지
+                    alert("Please enter a search term!");
+                  }
+                }}
+              />
             </button>
           </div>
           <ul>
             {menu.map((v, i) => (
               <li key={i}>
-                {v.sub ? (
-                  v.txt
-                ) : (
-                  <Link to={v.link}>{v.txt}</Link>
-                )}
+                {v.sub ? v.txt : <Link to={v.link}>{v.txt}</Link>}
                 {v.sub && (
                   <div className="smenu">
                     <ol>
                       {v.sub.map((v, i) => (
                         <li key={i}>
-                          <Link 
-                          to={v.link}
-                          state={{category:v.txt}}
-                          >
+                          <Link to={v.link} state={{ category: v.txt }}>
                             - {v.txt}
-                            </Link>
+                          </Link>
                         </li>
                       ))}
                     </ol>

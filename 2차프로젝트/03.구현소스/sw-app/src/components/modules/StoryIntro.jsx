@@ -13,7 +13,7 @@ function StoryIntro(props) {
     // console.log("이벤트 페이지:", stage);
 
     const CRITERIA = (window.innerHeight / 3) * 2;
-    console.log(CRITERIA);
+    // console.log(CRITERIA);
 
     $(window).on("scroll", () => {
       scAct.each((idx, ele) => {
