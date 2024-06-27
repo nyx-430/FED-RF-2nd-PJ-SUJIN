@@ -52,7 +52,7 @@ function Detail() {
               {desc.split("^").map((v, i) => (
                 <p key={i}>{v}</p>
               ))}
-              <hr />
+              
               <div className="small-text">
                 <aside>
                   Note:
@@ -76,7 +76,8 @@ function Detail() {
             </div>
           </div>
         </div>
-        <div className="detail-box">
+        <hr />
+        <div className="detail-box col-12">
           <div className="img-box">
             <img src={img} alt={tit} />
           </div>
