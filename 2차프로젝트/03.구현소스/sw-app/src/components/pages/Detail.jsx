@@ -25,10 +25,18 @@ function Detail(props) {
     window.scrollTo(0, 0);
   }); /////////////////////////
 
+  // 뒤로 가기 버튼 함수
+  function goBack (){
+    window.history.back();
+  } /// goBack ///
+
   // 코드 리턴 구역 //////////
   return (
     <>
       <section id="detail-page" className="page">
+        <button className="back-btn" onClick={goBack}>
+          ＜
+        </button>
         <div className="inbox col-6">
           <div className="img-box">
             <img src={src} alt={tit} />
