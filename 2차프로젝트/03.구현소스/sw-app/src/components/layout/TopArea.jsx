@@ -32,10 +32,10 @@ export default function TopArea() {
 
   const location = useLocation();
 
-  useEffect(()=>{
+  useEffect(() => {
     document.querySelector(".menu-button").classList.remove("on");
     document.querySelector(".menu-open").classList.remove("on");
-  },[location]);
+  }, [location]);
 
   // 검색 관련 함수들 /////////////
   // 검색창에 엔터키 누르면 검색 함수 호출
@@ -62,7 +62,7 @@ export default function TopArea() {
   // 3. 검색 페이지로 검색어와 함께 이동하기 함수
   const goSearch = (txt) => {
     console.log("검색 시작!");
-    
+
     // 라우터 이동 함수로 이동하기
     // 네비게이트 메서드("라우터 주소",{state:{보낼 객체}})
     goNav("/search", { state: { keyword: txt } });
@@ -161,7 +161,16 @@ export default function TopArea() {
         </aside>
         {/* 사이드 메뉴 - 장바구니 */}
         <aside className="shopping-tab">
-          
+          <div className="text-box">
+            <h3>장바구니가 비었습니다.</h3>
+            <Link to="/shop" className="go-shop">
+              <button>CONTINUE SHOPPING</button>
+            </Link>
+            <h3>혹시 SW19 회원이신가요?</h3>
+            <button>
+              <span>로그인</span>하고 편하게 쇼핑하세요
+            </button>
+          </div>
         </aside>
       </header>
     </>
