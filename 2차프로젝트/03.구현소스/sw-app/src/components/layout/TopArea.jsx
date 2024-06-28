@@ -107,7 +107,7 @@ export default function TopArea() {
             </div>
           </div>
         </div>
-        {/* 사이드 메뉴 */}
+        {/* 사이드 메뉴 - 카테고리 */}
         <aside className="menu-open">
           {/* 검색 입력 박스 */}
           <div className="search-bar">
@@ -158,6 +158,10 @@ export default function TopArea() {
               </li>
             ))}
           </ul>
+        </aside>
+        {/* 사이드 메뉴 - 장바구니 */}
+        <aside className="shopping-tab">
+          
         </aside>
       </header>
     </>
