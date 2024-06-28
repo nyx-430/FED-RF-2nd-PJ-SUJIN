@@ -43,18 +43,20 @@ function Collection({ catName }) {
           <h1 className="title">Collections</h1>
           <div className="slider">
             <div className="img-box">
-              <img src={process.env.PUBLIC_URL+selData.src} alt="sw19" />
+              <img src={process.env.PUBLIC_URL + selData.src} alt="sw19" />
             </div>
             <div className="goods-box">
-              <img src={process.env.PUBLIC_URL+selData.img} alt="sw19" />
+              <img src={process.env.PUBLIC_URL + selData.img} alt="sw19" />
               <div className="desc-box">
-                <img src={process.env.PUBLIC_URL+selData.timg} alt="sw19" />
-                <button className="abtn lb" onClick={chgData}>
-                  ＜
-                </button>
-                <button className="abtn rb" onClick={chgData}>
-                  ＞
-                </button>
+                <img src={process.env.PUBLIC_URL + selData.timg} alt="sw19" />
+                <div className="btn-box">
+                  <button className="abtn lb" onClick={chgData}>
+                    ＜
+                  </button>
+                  <button className="abtn rb" onClick={chgData}>
+                    ＞
+                  </button>
+                </div>
                 <h3>{selData.tit1}</h3>
                 <div>
                   {selData.desc1.split("^").map((v, i) => (
