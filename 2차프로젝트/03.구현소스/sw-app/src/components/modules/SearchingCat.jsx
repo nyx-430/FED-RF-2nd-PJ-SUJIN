@@ -36,7 +36,7 @@ function SearchingCat({ dt }) {
                     ingredients: v.ingredients,
                   }}
                 >
-                  <img src={v.src} alt={v.tit} />
+                  <img src={process.env.PUBLIC_URL+v.src} alt={v.tit} />
                   <h3>{v.tit}</h3>
                 </Link>
               </li>
