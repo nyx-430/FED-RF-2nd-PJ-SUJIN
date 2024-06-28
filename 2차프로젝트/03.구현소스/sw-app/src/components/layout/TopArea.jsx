@@ -51,7 +51,7 @@ export default function TopArea() {
       // 빈 값이 아니면 검색 함수 호출 (검색어 전달!)
       if (txt != "") {
         // 입력창 비우고 부모박스 닫기
-        $(e.target).val("").parents().hide();
+        $(e.target).val("").parent().hide();
 
         // 검색 보내기
         goSearch(txt);
@@ -65,7 +65,7 @@ export default function TopArea() {
     
     // 라우터 이동 함수로 이동하기
     // 네비게이트 메서드("라우터 주소",{state:{보낼 객체}})
-    goNav("search", { state: { keyword: txt } });
+    goNav("/search", { state: { keyword: txt } });
   }; ///////// goSearch 함수 /////////
 
   // 코드 리턴 구역 //////////////
