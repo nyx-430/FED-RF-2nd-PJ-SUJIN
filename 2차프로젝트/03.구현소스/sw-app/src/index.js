@@ -7,7 +7,7 @@ import Layout from "./components/layout/Layout";
 import Main from "./components/pages/Main";
 import Story from "./components/pages/Story";
 import Shop from "./components/pages/Shop";
-import MembersShip from "./components/pages/MembersShip";
+import MemberShip from "./components/pages/MemberShip";
 import Board from "./components/pages/Board";
 import Detail from "./components/pages/Detail";
 import SearchPage from "./components/pages/SearchPage";
@@ -35,7 +35,7 @@ export default function MainComponent() {
           {shopList.map((v,i) => (
             <Route key={i} path={`/shop/${v}`} element={<Shop />} />
           ))}
-          <Route path="/membersship" element={<MembersShip />} />
+          <Route path="/membership" element={<MemberShip />} />
           <Route path="/board" element={<Board />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="/search" element={<SearchPage />} />
