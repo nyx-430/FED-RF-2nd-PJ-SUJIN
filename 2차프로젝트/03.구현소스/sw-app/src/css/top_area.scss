@@ -200,17 +200,55 @@
 /**************** 오픈 사이드 메뉴 - 장바구니 ****************/
 .shopping-tab {
   position: fixed;
-  width: 29vw;
+  width: 0;
   height: 100vh;
   right: 90px;
   background-color: #fff;
   border-radius: 5% 0 0 5%;
-  overflow: hidden;
   transition: width 0.3s;
   box-shadow: 0 1px 5px -1px #888;
+  overflow: hidden;
   z-index: 999;
 
-  /* 장바구니 버튼 구현하기 */
-  display: none;
+  /* 사이드 메뉴 클래스 on */
+  &.on {
+    width: 29vw;
+  }
 
+  .cont-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  /* 텍스트+버튼 박스 */
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .go-shop {
+      margin-bottom: 3.5rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    button {
+      font-size: 2rem;
+      font-weight: 200;
+      color: gray;
+    }
+    div {
+      font-size: 1.6rem;
+      color: gray;
+      span {
+        color: black;
+        text-decoration-line: underline;
+        cursor: pointer;
+      }
+    }
+  }
 }

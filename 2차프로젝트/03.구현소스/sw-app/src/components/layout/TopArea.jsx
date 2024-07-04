@@ -160,16 +160,18 @@ export default function TopArea() {
           </ul>
         </aside>
         {/* 사이드 메뉴 - 장바구니 */}
-        <aside className="shopping-tab">
-          <div className="text-box">
-            <h3>장바구니가 비었습니다.</h3>
-            <Link to="/shop" className="go-shop">
-              <button>CONTINUE SHOPPING</button>
-            </Link>
-            <h3>혹시 SW19 회원이신가요?</h3>
-            <button>
-              <span>로그인</span>하고 편하게 쇼핑하세요
-            </button>
+        <aside className="shopping-tab on">
+          <div className="cont-box">
+            <div className="text-box">
+              <h3>장바구니가 비었습니다.</h3>
+              <Link to="/shop" className="go-shop">
+                <button>CONTINUE SHOPPING</button>
+              </Link>
+              <h3>혹시 SW19 회원이신가요?</h3>
+              <div>
+                <span>로그인</span>하고 편하게 쇼핑하세요!
+              </div>
+            </div>
           </div>
         </aside>
       </header>
