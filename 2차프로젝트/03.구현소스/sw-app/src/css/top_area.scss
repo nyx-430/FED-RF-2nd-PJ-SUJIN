@@ -215,7 +215,35 @@
     width: 29vw;
   }
 
-  .cont-box {
+  /* 로그인 했을 때 화면 */
+  .cart {
+    display: flex;
+    padding: 0 30px;
+
+    h1 {
+      font-size: 3rem;
+      padding: 20px 0;
+    }
+    .cart-item {
+      margin: 0 auto;
+
+      width: 30vw;
+      height: 30vh;
+      background-color: #d1d1d1;
+    }
+    .info-box {
+      
+    }
+
+
+
+
+
+  }
+
+
+  /* 로그인 안 했을 때 화면 */
+  .no-login {
     display: flex;
     flex-direction: column;
     align-items: center;
