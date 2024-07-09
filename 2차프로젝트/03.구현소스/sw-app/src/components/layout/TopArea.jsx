@@ -14,6 +14,8 @@ import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faMinus } from "@fortawesome/free-solid-svg-icons";
 // import { faBa } from "@fortawesome/free-regular-svg-icons";
 // import { faCamera } from "@fortawesome/free-brands-svg-icons";
 
@@ -179,12 +181,12 @@ export default function TopArea() {
               {/* 상품 수량 - 증감 버튼 */}
               <td className="cart-item-quantity">
                 <div className="btn-box">
-                  <buttom className="">
-                    <span></span>
+                  <buttom className="increase">
+                    <FontAwesomeIcon icon={faPlus} />
                   </buttom>
                   <input type="text" />
-                  <buttom className="">
-                    <span></span>
+                  <buttom className="decrease">
+                    <FontAwesomeIcon icon={faMinus} />
                   </buttom>
                 </div>
               </td>

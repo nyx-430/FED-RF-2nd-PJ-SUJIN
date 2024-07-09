@@ -266,6 +266,14 @@
       .cart-item-quantity {
         padding-top: 0;
         grid-column: 2 / 5;
+
+        .btn-box {
+          display: flex;
+
+          .increase {
+            
+          }
+        }
       }
       
     }
