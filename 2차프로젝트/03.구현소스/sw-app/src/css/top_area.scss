@@ -293,11 +293,9 @@
     /* 총합 계산 + 구매 버튼 */
     .cart-footer {
       display: flex;
-      align-items: end;
-      
-      .total-box {
+      flex-direction: column;
 
-      }
+    
     }
   }
 

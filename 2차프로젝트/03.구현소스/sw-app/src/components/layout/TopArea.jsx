@@ -181,13 +181,13 @@ export default function TopArea() {
               {/* 상품 수량 - 증감 버튼 */}
               <td className="cart-item-quantity">
                 <div className="btn-box">
-                  <buttom className="increase">
+                  <button className="increase">
                     <FontAwesomeIcon icon={faPlus} />
-                  </buttom>
+                  </button>
                   <input type="number" value={1} />
-                  <buttom className="decrease">
+                  <button className="decrease">
                     <FontAwesomeIcon icon={faMinus} />
-                  </buttom>
+                  </button>
                 </div>
               </td>
             </tr>
@@ -197,7 +197,8 @@ export default function TopArea() {
           <div className="cart-footer">
             <div className="total-box">
               <div className="total-price">
-                <span>원</span>
+                <p>Total</p>
+                <p>원</p>
               </div>
               <div className="btn-box">
                 <button className="buy">구매하기</button>
