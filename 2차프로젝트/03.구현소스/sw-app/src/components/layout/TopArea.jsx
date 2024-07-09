@@ -184,7 +184,9 @@ export default function TopArea() {
                   <buttom className="increase">
                     <FontAwesomeIcon icon={faPlus} />
                   </buttom>
-                  <input type="text" />
+                  <input 
+                  type="number"
+                  value={1} />
                   <buttom className="decrease">
                     <FontAwesomeIcon icon={faMinus} />
                   </buttom>

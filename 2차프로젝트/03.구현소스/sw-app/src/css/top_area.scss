@@ -270,8 +270,19 @@
         .btn-box {
           display: flex;
 
+          input {
+            border: 0;
+            margin: 0 auto;
+            padding: 0;
+          }
+
           .increase {
-            
+            font-size: 15px;
+            padding: 5px;
+          }
+          .decrease {
+            font-size: 15px;
+            padding: 5px;
           }
         }
       }
