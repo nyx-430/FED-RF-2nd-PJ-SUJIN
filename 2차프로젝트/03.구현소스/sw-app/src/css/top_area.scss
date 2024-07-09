@@ -241,9 +241,10 @@
 
       /* 상품 이미지 */
       .cart-item-media {
+        grid-row: 1/3;
         width: 150px;
-        height: 150px;
         background-color: #ddd;
+
         img {
           width: 100%;
           height: 100%;
@@ -252,14 +253,14 @@
       }
       /* 상품 이름 */
       .cart-item-name {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 600;
         width: auto;
         grid-column: 2 / 4;
       }
       /* 상품 가격 */
       .cart-item-price {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-top: 10px;
       }
       /* 상품 수량 */
