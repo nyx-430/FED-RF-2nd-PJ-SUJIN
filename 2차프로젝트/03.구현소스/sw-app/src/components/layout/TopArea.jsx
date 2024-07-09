@@ -102,7 +102,13 @@ export default function TopArea() {
               <a href="/join" className="menu-buttom">
                 <FontAwesomeIcon icon={faUser} />
               </a>
-              <a href="/cart" className="menu-buttom">
+              <a href="/cart"
+              className="menu-buttom"
+              onClick={(e)=>{
+                e.preventDefault();
+                $("")
+              }}
+              >
                 <FontAwesomeIcon icon={faBagShopping} />
               </a>
             </div>
@@ -161,7 +167,9 @@ export default function TopArea() {
           </ul>
         </aside>
         {/* 사이드 메뉴 - 쇼핑탭 */}
-        <CartList />
+        <aside className="shopping-tab">
+          <CartList />
+        </aside>
       </header>
     </>
   );

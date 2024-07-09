@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
+import { pCon } from "./pCon";
 
+// 폰트어썸
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
@@ -8,9 +10,11 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import "../../css/cart_list.scss";
 
 function CartList(props) {
+  // 컨텍스트
+  const myCon = useContext(pCon);
+
   return (
     <>
-      <aside className="shopping-tab">
         <div className="tab-title">
           <h1>CART</h1>
         </div>
@@ -53,7 +57,6 @@ function CartList(props) {
             </div>
           </div>
         </div>
-      </aside>
 
       {/* 사이드 메뉴 - 장바구니(로그인x) */}
       {/* <aside className="shopping-tab">
