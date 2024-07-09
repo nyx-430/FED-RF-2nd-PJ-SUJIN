@@ -165,16 +165,31 @@ export default function TopArea() {
             <h1>CART</h1>
           </div>
           <hr />
-            <tbody className="cart-list">
-              <tr>
-                <td className="cart-item-media">
-                  <img src="/images/shop/6am/p_6am.png" alt="item" />
-                </td>
-                <td className="cart-item-name">Item Name</td>
-                <td>가격</td>
-                <td>수량</td>
-              </tr>
-            </tbody>
+          {/* 장바구니 리스트 */}
+          <tbody className="cart-list">
+            <tr>
+              {/* 상품 이미지 */}
+              <td className="cart-item-media">
+                <img src="/images/shop/6am/p_6am.png" alt="item" />
+              </td>
+              {/* 상품 이름 */}
+              <td className="cart-item-name">Item Name</td>
+              {/* 상품 가격 */}
+              <td className="cart-item-price">원</td>
+              {/* 상품 수량 - 증감 버튼 */}
+              <td className="cart-item-quantity">
+                <div className="btn-box">
+                  <buttom className="">
+                    <span></span>
+                  </buttom>
+                  <input type="text" />
+                  <buttom className="">
+                    <span></span>
+                  </buttom>
+                </div>
+              </td>
+            </tr>
+          </tbody>
         </aside>
 
         {/* 사이드 메뉴 - 장바구니(로그인x) */}
