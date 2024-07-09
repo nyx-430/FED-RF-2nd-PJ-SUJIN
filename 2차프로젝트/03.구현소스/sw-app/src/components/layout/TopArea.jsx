@@ -167,8 +167,10 @@ export default function TopArea() {
           <hr />
             <tbody className="cart-list">
               <tr>
-                <td className="cart-item-media">이미지</td>
-                <td>타이틀</td>
+                <td className="cart-item-media">
+                  <img src="/images/shop/6am/p_6am.png" alt="item" />
+                </td>
+                <td className="cart-item-name">Item Name</td>
                 <td>가격</td>
                 <td>수량</td>
               </tr>
