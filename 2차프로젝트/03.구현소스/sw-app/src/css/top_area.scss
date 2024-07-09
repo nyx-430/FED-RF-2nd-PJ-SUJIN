@@ -128,7 +128,7 @@
   height: 100vh;
   right: 90px;
   background-color: #fff;
-  border-radius: 5% 0 0 5%;
+  border-radius: 3% 0 0 3%;
   overflow: hidden;
   transition: width 0.3s;
   z-index: 999;
@@ -203,10 +203,12 @@
   width: 0;
   height: 100vh;
   right: 90px;
+  padding: 20px;
+  box-sizing: border-box;
   background-color: #fff;
-  border-radius: 5% 0 0 5%;
-  transition: width 0.3s;
   box-shadow: 0 1px 5px -1px #888;
+  border-radius: 3% 0 0 3%;
+  transition: width 0.3s;
   overflow: hidden;
   z-index: 999;
 
@@ -214,69 +216,75 @@
   &.on {
     width: 29vw;
   }
-
-  /* 로그인 했을 때 화면 */
-  .cart {
-    display: flex;
-    padding: 0 30px;
-
-    h1 {
-      font-size: 3rem;
-      padding: 20px 0;
-    }
-    .cart-item {
-      margin: 0 auto;
-
-      width: 30vw;
-      height: 30vh;
-      background-color: #d1d1d1;
-    }
-    .info-box {
-      
-    }
-
-
-
-
-
+  /* 쇼핑탭 타이틀 */
+  .tab-title {
+    font-size: 3rem;
+    padding: 10px 0;
   }
 
+  hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+  /* 카트 리스트 */
+  .cart-list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior: contain;
+
+    tr {
+      display: flex;
+      flex-direction: repeat(2, auto) / repeat(4, 1fr);
+      column-gap: 10px;
+      row-gap: 20px;
+
+      .cart-item-media {
+        width: 100px;
+        height: 100px;
+        background-color: #ddd;
+      }
+
+
+    }
+  }
 
   /* 로그인 안 했을 때 화면 */
-  .no-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
+  // .no-login {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  //   height: 100%;
+  // }
 
-  /* 텍스트+버튼 박스 */
-  .text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  // /* 텍스트+버튼 박스 */
+  // .text-box {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
 
-    .go-shop {
-      margin-bottom: 3.5rem;
-    }
-    h3 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-    button {
-      font-size: 1.6rem;
-      font-weight: 200;
-      color: gray;
-    }
-    div {
-      font-size: 1.6rem;
-      color: gray;
-      span {
-        color: black;
-        text-decoration-line: underline;
-        cursor: pointer;
-      }
-    }
-  }
+  //   .go-shop {
+  //     margin-bottom: 3.5rem;
+  //   }
+  //   h3 {
+  //     font-size: 1.8rem;
+  //     margin-bottom: 10px;
+  //   }
+  //   button {
+  //     font-size: 1.6rem;
+  //     font-weight: 200;
+  //     color: gray;
+  //   }
+  //   div {
+  //     font-size: 1.6rem;
+  //     color: gray;
+  //     span {
+  //       color: black;
+  //       text-decoration-line: underline;
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
 }

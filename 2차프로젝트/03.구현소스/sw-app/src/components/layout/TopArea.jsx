@@ -159,18 +159,20 @@ export default function TopArea() {
             ))}
           </ul>
         </aside>
-        {/* 사이드 메뉴 - 장바구니(로그인o) */}
+        {/* 사이드 메뉴 - 장바구니 */}
         <aside className="shopping-tab on">
-          <div className="cart">
+          <div className="tab-title">
             <h1>CART</h1>
-            <div className="cart-item col-6">
-              <div className="good-box"></div>
-              <div className="info-box">
-                <h1 className="title">Name</h1>
-                <h2 className="price">0원</h2>
-              </div>
-            </div>
           </div>
+          <hr />
+            <tbody className="cart-list">
+              <tr>
+                <td className="cart-item-media">이미지</td>
+                <td>타이틀</td>
+                <td>가격</td>
+                <td>수량</td>
+              </tr>
+            </tbody>
         </aside>
 
         {/* 사이드 메뉴 - 장바구니(로그인x) */}
