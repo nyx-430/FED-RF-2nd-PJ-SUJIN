@@ -161,7 +161,7 @@ export default function TopArea() {
             ))}
           </ul>
         </aside>
-        {/* 사이드 메뉴 - 장바구니 */}
+        {/* 사이드 메뉴 - 쇼핑탭 */}
         <aside className="shopping-tab on">
           <div className="tab-title">
             <h1>CART</h1>
@@ -184,9 +184,7 @@ export default function TopArea() {
                   <buttom className="increase">
                     <FontAwesomeIcon icon={faPlus} />
                   </buttom>
-                  <input 
-                  type="number"
-                  value={1} />
+                  <input type="number" value={1} />
                   <buttom className="decrease">
                     <FontAwesomeIcon icon={faMinus} />
                   </buttom>
@@ -194,6 +192,18 @@ export default function TopArea() {
               </td>
             </tr>
           </tbody>
+          <hr />
+          {/* 총합 계산 + 구매 버튼 */}
+          <div className="cart-footer">
+            <div className="total-box">
+              <div className="total-price">
+                <span>원</span>
+              </div>
+              <div className="btn-box">
+                <button className="buy">구매하기</button>
+              </div>
+            </div>
+          </div>
         </aside>
 
         {/* 사이드 메뉴 - 장바구니(로그인x) */}
