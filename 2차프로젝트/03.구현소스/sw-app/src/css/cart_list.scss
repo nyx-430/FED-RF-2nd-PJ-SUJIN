@@ -3,7 +3,7 @@
 /**************** 오픈 사이드 메뉴 - 장바구니 ****************/
 .shopping-tab {
   position: fixed;
-  width: 0;
+  width: 29vw;
   height: 100vh;
   right: 90px;
   padding: 20px;
@@ -19,6 +19,7 @@
   // &.on {
   //   width: 29vw;
   // }
+  
   /* 쇼핑탭 타이틀 */
   .tab-title {
     font-size: 3rem;
