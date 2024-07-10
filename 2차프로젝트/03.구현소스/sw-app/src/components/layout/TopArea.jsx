@@ -19,6 +19,8 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 // CSS 불러오기
 import "../../css/top_area.scss";
+
+// 카트 리스트 모듈
 import CartList from "../modules/CartList";
 
 export default function TopArea() {
@@ -106,7 +108,7 @@ export default function TopArea() {
               className="menu-buttom"
               onClick={(e)=>{
                 e.preventDefault();
-                $("")
+                $(".shopping-tab").show();
               }}
               >
                 <FontAwesomeIcon icon={faBagShopping} />
@@ -167,7 +169,10 @@ export default function TopArea() {
           </ul>
         </aside>
         {/* 사이드 메뉴 - 쇼핑탭 */}
-        <aside className="shopping-tab">
+        <aside 
+        className="shopping-tab"
+        style={{display: "none"}}
+        >
           <CartList />
         </aside>
       </header>
