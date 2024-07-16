@@ -33,7 +33,7 @@ const fullSet = [
     src: "/images/shop/set/full_set_noon.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: ``,
-   notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
+    notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
     ^
@@ -50,7 +50,7 @@ const fullSet = [
     src: "/images/shop/set/full_set_3pm.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: ``,
-   notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
+    notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
     ^
@@ -67,7 +67,7 @@ const fullSet = [
     src: "/images/shop/set/full_set_9pm.png",
     detail: "/images/shop/9pm/img_9pm.png",
     desc: ``,
-   notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
+    notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
     ^
@@ -84,7 +84,7 @@ const fullSet = [
     src: "/images/shop/set/full_set_mid.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: ``,
-   notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
+    notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
     ^
@@ -229,3 +229,5 @@ const discovertSet = [
     ※ 사용기한 : 제조일로부터 36개월`,
   },
 ];
+
+export { fullSet, hcSet, miniDuoSet, discovertSet };
