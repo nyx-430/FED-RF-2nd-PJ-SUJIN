@@ -36,14 +36,14 @@ const fullSetData = [
     category: "Gift Set",
     price: "132,000원",
     src: "/images/shop/set/full_set_mid.png",
-    detail: "/images/shop/midnight/img_img_midnight.png",
+    detail: "/images/shop/midnight/img_midnight.png",
   },
   {
     tit: "SW19 DISCOVERY SET (8ml*5)",
     category: "Gift Set",
     price: "118,000원",
     src: "/images/shop/set/full_set_mid.png",
-    detail: "/images/shop/midnight/img_img_midnight.png",
+    detail: "/images/shop/midnight/img_midnight.png",
   },
 ]
 
@@ -53,6 +53,13 @@ const hcSetData = [
         category: "Gift Set",
         price: "69,000원",
         src: "/images/shop/set/handcream_trio_set.png",
+        detail: "handcream_trio_set_detail.png",
+    },
+    {
+        tit: "SW19 HAND CREAM MINI SET (10ml*5)",
+        category: "Gift Set",
+        price: "30,000원",
+        src: "/images/shop/set/handcream_mini_set",
         detail: "handcream_trio_set_detail.png",
     },
 ]
