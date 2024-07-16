@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 // 상품 데이터 불러오기
@@ -13,8 +13,16 @@ import "../../css/shop.scss";
 function Products() {
   // 라우터 전달값 받기
   const { state } = useLocation();
+  // 상품 상태관리변수
+  const [product, setProduct] = useState([]);
+  // 상품 더보기 상태관리변수
+  const [visibleCount, setVisibleCount] = useState(8);
 
-  console.log("전달값:", state.category);
+  // 랜더링 구역 ////////////////////////
+  useEffect(() => {
+    // 더보기 버튼
+    loadMore();
+  }, []); ////////// useEffect //////////
 
   // 데이터 합치기 : ...(스프레드 연산자)사용
   let selData = [
@@ -29,9 +37,7 @@ function Products() {
 
   // 데이터 처리대상 : 나중에 처리 대상 변경만 하면 끝!
   let rangeData = ["Perfume", "Body Care", "Hand Care", "Gift Set"];
-
-  // console.log("카테고리",rangeData);
-  // console.log("데이터 대상인가?", rangeData.includes(state.category));
+  console.log("데이터 대상인가?", rangeData.includes(state.category));
 
   // state전달값이 빈값이 아니면 배열 filter 돌리기
   // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사후 있으면 true
@@ -41,7 +47,16 @@ function Products() {
     });
   }
 
-  console.log(selData);
+  // console.log(selData);
+
+  // 더보기 버튼 기능 //////////
+  const loadMore = () => {
+    let nextProduct = selData.slice(
+      product.length,
+      product.length + visibleCount
+    );
+    setProduct((prevProduct) => [...prevProduct, ...nextProduct]);
+  }; ////////// loadMore //////////
 
   // 코드 리턴 구역 //////////
   return (
@@ -54,8 +69,8 @@ function Products() {
           <div className="col-12">
             <ul>
               {/* 향수 + 핸드케어 + 바디케어 */}
-              {selData.map((v, i) => (
-                <li key={i}>
+              {product.map((v, i) => (
+                <li key={product.id}>
                   <Link
                     to="/detail"
                     state={{
@@ -80,7 +95,9 @@ function Products() {
                 </li>
               ))}
             </ul>
-            <button className="load-more-btn">더보기</button>
+            <button className="load-more-btn" onClick={loadMore}>
+              더보기
+            </button>
           </div>
         </div>
       </section>
