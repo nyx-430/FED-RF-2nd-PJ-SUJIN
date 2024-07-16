@@ -16,6 +16,9 @@ const fullSet = [
     “숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취”
     ^
     세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
@@ -33,6 +36,9 @@ const fullSet = [
     src: "/images/shop/set/full_set_noon.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: ``,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
@@ -50,6 +56,9 @@ const fullSet = [
     src: "/images/shop/set/full_set_3pm.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: ``,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
@@ -67,6 +76,9 @@ const fullSet = [
     src: "/images/shop/set/full_set_9pm.png",
     detail: "/images/shop/9pm/img_9pm.png",
     desc: ``,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
@@ -84,6 +96,9 @@ const fullSet = [
     src: "/images/shop/set/full_set_mid.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: ``,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
@@ -108,6 +123,9 @@ const hcSet = [
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
     ^
     Ingredients certified by the EVE VEGAN® MARK`,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 3종의 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
@@ -130,6 +148,9 @@ const hcSet = [
     ^
     Ingredients certified by the EVE VEGAN® MARK
     `,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 5종의 미니 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)`,
@@ -150,6 +171,9 @@ const miniDuoSet = [
     모두가 잠든 깊은 밤, 서로의 향에 물들어 하나가 된 둘
     ^
     은은한 달빛에 감싸인 윔블던 숲 속의 깊은 밤. 손 끝을 스치는 살결과 향기에 취한 센슈얼한 밤12시를 느껴보세요.`,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
@@ -173,6 +197,9 @@ const miniDuoSet = [
     모두가 잠든 깊은 밤, 서로의 향에 물들어 하나가 된 둘
     ^
     은은한 달빛에 감싸인 윔블던 숲 속의 깊은 밤. 손 끝을 스치는 살결과 향기에 취한 센슈얼한 밤12시를 느껴보세요.`,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 향수와 핸드크림으로 구성된 기프트 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
@@ -197,6 +224,9 @@ const discovertSet = [
     시간에 따라 변화하는 런던 윔블던 숲과 공원의 향을 담은 SW19의 오드 퍼퓸 컬렉션 다섯 가지 향을 모두 경험할 수 있는 디스커버리세트 입니다.
     ^
     Ingredients certified by the EVE VEGAN® MARK`,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 향수 5종으로 구성된 세트입니다.
     ^
     ※ 해당 제품은 수작업으로 제작되는 유리 보틀의 내측 용량 편차로 인해 개별 용량에 차이가 있어 보일 수 있으나, 제조 시 동일 용량이 주입되는 점 참고 부탁드립니다.
@@ -218,6 +248,9 @@ const discovertSet = [
     desc: `Explore full collection of SW19 Eau de parfum Mini Discovery set which was inspired by green forest of the Wimbledon, London SW19 that changes over time.
     ^
     시간에 따라 변화하는 런던 윔블던 숲과 공원의 향을 담은 SW19의 오 드 퍼퓸 컬렉션 다섯 가지 향을 모두 경험할 수 있는 미니 디스커버리 세트 입니다.`,
+    note: "",
+    perfumer: "",
+    ingredients: "",
     notice: `※ 향수 2ml 5종으로 구성된 세트입니다.
     ^
     ※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)

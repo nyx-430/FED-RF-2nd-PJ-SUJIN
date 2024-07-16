@@ -34,6 +34,7 @@ function SearchingCat({ dt }) {
                     note: v.note,
                     perfumer: v.perfumer,
                     ingredients: v.ingredients,
+                    notice: v.notice,
                   }}
                 >
                   <img src={process.env.PUBLIC_URL+v.src} alt={v.tit} />

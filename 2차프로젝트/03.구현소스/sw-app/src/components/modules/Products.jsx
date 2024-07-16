@@ -30,8 +30,8 @@ function Products() {
   // 데이터 처리대상 : 나중에 처리 대상 변경만 하면 끝!
   let rangeData = ["Perfume", "Body Care", "Hand Care", "Gift Set"];
 
-  // console.log(selData);
-  console.log("데이터 대상인가?", rangeData.includes(state.category));
+  // console.log("카테고리",rangeData);
+  // console.log("데이터 대상인가?", rangeData.includes(state.category));
 
   // state전달값이 빈값이 아니면 배열 filter 돌리기
   // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사후 있으면 true
