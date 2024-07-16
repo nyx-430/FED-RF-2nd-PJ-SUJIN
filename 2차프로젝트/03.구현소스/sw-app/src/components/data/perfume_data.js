@@ -25,6 +25,7 @@ export const perfumeData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 2,
@@ -50,6 +51,7 @@ export const perfumeData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Alcohol, Fragrance(Parfum), Water, Butylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Methoxycinnamate, BHT, Linalool, Limonene, Hydroxycitronellal, Coumarin, Citronellol, Geraniol, Alpha-Isomethyl Ionone, Citral",
+      notice: ``,
   },
   {
     idx: 3,
@@ -75,6 +77,7 @@ export const perfumeData = [
     perfumer: "Nathalie Benareau",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Linalool, Limonene, Coumarin, Eugenol, Hydroxycitronellal, Geraniol, Citral",
+      notice: ``,
   },
   {
     idx: 4,
@@ -100,6 +103,7 @@ export const perfumeData = [
     perfumer: "Florian Gallo",
     ingredients:
       "Alcohol, Fragrance, Water, Butylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Methoxycinnamate, Bht, Eugenol, Cinnamal, Limonene, Linalool, Cinnamyl Alcohol",
+      notice: ``,
   },
   {
     idx: 5,
@@ -125,6 +129,7 @@ export const perfumeData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Sexyl Benzoate, Ethylhexyl Methoxycinnamate, BHT, Hexyl Cinnamal",
+      notice: ``,
   },
   {
     idx: 6,
@@ -149,6 +154,7 @@ export const perfumeData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 7,
@@ -173,6 +179,7 @@ export const perfumeData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Alcohol, Fragrance(Parfum), Water, Butylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Methoxycinnamate, BHT, Linalool, Limonene, Hydroxycitronellal, Coumarin, Citronellol, Geraniol, Alpha-Isomethyl Ionone, Citral",
+      notice: ``,
   },
   {
     idx: 8,
@@ -198,6 +205,7 @@ export const perfumeData = [
     perfumer: "Nathalie Benareau",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Linalool, Limonene, Coumarin, Eugenol, Hydroxycitronellal, Geraniol, Citral",
+      notice: ``,
   },
   {
     idx: 9,
@@ -223,6 +231,7 @@ export const perfumeData = [
     perfumer: "Florian Gallo",
     ingredients:
       "Alcohol, Fragrance, Water, Butylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Methoxycinnamate, Bht, Eugenol, Cinnamal, Limonene, Linalool, Cinnamyl Alcohol",
+      notice: ``,
   },
   {
     idx: 10,
@@ -248,5 +257,6 @@ export const perfumeData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Sexyl Benzoate, Ethylhexyl Methoxycinnamate, BHT, Hexyl Cinnamal",
+      notice: ``,
   },
 ];

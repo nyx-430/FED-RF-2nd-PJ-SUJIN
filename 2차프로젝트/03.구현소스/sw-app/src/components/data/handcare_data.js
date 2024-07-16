@@ -26,6 +26,7 @@ export const handData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Centella Asiatica Extract, Xylitol, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tromethamine, Sodium Phytate, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Linalool, Limonene, Coumarin, Eugenol, Hydroxycitronellal, Geraniol",
+      notice: ``,
   },
   {
     idx: 2,
@@ -49,6 +50,7 @@ export const handData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Ethylhexylglycerin, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Sodium Phytate, Beta-Glucan, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Linalool, Limonene, Hydroxycitronellal, Coumarin, Citronellol, Geraniol, Alpha-Isomethyl Ionone",
+      notice: ``,
   },
   {
     idx: 3,
@@ -72,6 +74,7 @@ export const handData = [
     perfumer: "Nathalie Benareau",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Centella Asiatica Extract, Xylitol, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tromethamine, Sodium Phytate, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional",
+      notice: ``,
   },
   {
     idx: 4,
@@ -95,6 +98,7 @@ export const handData = [
     perfumer: "Florian Gallo",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Centella Asiatica Extract, Xylitol, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tromethamine, Sodium Phytate, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Eugenol, Cinnamal, Limonene, Linalool",
+      notice: ``,
   },
   {
     idx: 5,
@@ -118,6 +122,7 @@ export const handData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Ethylhexylglycerin, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Sodium Phytate, Beta-Glucan, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Limonene, Linalool",
+      notice: ``,
   },
   {
     idx: 6,
@@ -140,6 +145,7 @@ export const handData = [
     perfumer: "Aliénor Massenet - VP Senior Perfumer at Symrise",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Linalool, Limonene",
+      notice: ``,
   },
   {
     idx: 7,
@@ -163,6 +169,7 @@ export const handData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Eugenol",
+      notice: ``,
   },
   {
     idx: 8,
@@ -186,6 +193,7 @@ export const handData = [
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional",
+      notice: ``,
   },
   {
     idx: 9,
@@ -209,6 +217,7 @@ export const handData = [
     perfumer: "Florian Gallo",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Eugenol",
+      notice: ``,
   },
   {
     idx: 10,
@@ -232,6 +241,7 @@ export const handData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Eugenol",
+      notice: ``,
   },
   {
     idx: 11,
@@ -257,6 +267,7 @@ export const handData = [
         -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet - VP Senior Perfumer at Symrise",
     ingredients: "",
+    notice: ``,
   },
   {
     idx: 12,
@@ -283,6 +294,7 @@ export const handData = [
     `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "",
+    notice: ``,
   },
   {
     idx: 13,
@@ -309,6 +321,7 @@ export const handData = [
     `,
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
     ingredients: "",
+    notice: ``,
   },
   {
     idx: 14,
@@ -335,6 +348,7 @@ export const handData = [
     `,
     perfumer: "Florian Gallo",
     ingredients: "",
+    notice: ``,
   },
   {
     idx: 15,
@@ -361,5 +375,6 @@ export const handData = [
     `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "",
+    notice: ``,
   },
 ];

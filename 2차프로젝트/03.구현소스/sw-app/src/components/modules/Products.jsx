@@ -67,6 +67,7 @@ function Products() {
                       note: v.note,
                       perfumer: v.perfumer,
                       ingredients: v.ingredients,
+                      notice: v.notice,
                     }}
                   >
                     <div className="img-box">

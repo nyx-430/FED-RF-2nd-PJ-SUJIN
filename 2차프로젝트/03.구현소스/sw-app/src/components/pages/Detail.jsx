@@ -20,6 +20,9 @@ function Detail() {
   const note = loc.state.note;
   const perfumer = loc.state.perfumer;
   const ingredients = loc.state.ingredients;
+  const notice = loc.state.notice;
+
+  console.log("공지",notice);
 
   // 화면 랜더링 실행 구역 //////////
   useEffect(() => {
@@ -52,7 +55,6 @@ function Detail() {
               {desc.split("^").map((v, i) => (
                 <p key={i}>{v}</p>
               ))}
-              
               <div className="small-text">
                 <aside>
                   Note:
@@ -69,6 +71,11 @@ function Detail() {
                 <aside>
                   Ingredients:{" "}
                   {ingredients.split("^").map((v, i) => (
+                    <p key={i}>{v}</p>
+                  ))}
+                </aside>
+                <aside>
+                  {notice.split("^").map((v, i) => (
                     <p key={i}>{v}</p>
                   ))}
                 </aside>

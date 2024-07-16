@@ -34,10 +34,6 @@ export const menu = [
         link: "/shop/handcare",
       },
       {
-        txt: "Home Fragrance",
-        link: "/shop",
-      },
-      {
         txt: "Gift Set",
         link: "/shop/giftset",
       },
