@@ -24,7 +24,7 @@ function Detail() {
 
   console.log("공지", notice);
 
-  // 화면 랜더링 실행 구역 //////////
+  // 랜더링 실행 구역 ////////////////////////
   useEffect(() => {
     window.scrollTo(0, 0);
   }); /////////////////////////
@@ -34,7 +34,7 @@ function Detail() {
     window.history.back();
   } /// goBack ///
 
-  // 코드 리턴 구역 //////////
+  // 코드 리턴 구역 ////////////////////////
   return (
     <>
       <section id="detail-page" className="page">

@@ -7,13 +7,13 @@ const pmData = [
     price: "109,000원",
     src: "/images/promotion/pm_products/p_3pm.png",
     detail: "/images/shop/6am/img_6am.png",
-    desc: `The scent of enchanted grass created by spellbound forest spirits
+    desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
-        Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
+        While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “햇살이 내리쬐는 푸른 잔디와 부드럽고 향긋한 과일의 향취”
         ^
-        세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
+        이슬 젖은 초록숲이 상큼한 햇살에 말라가는 윔블던의 오후. 공원에 만개한 꽃들의 향기와 홍차에 띄운 레몬 조각 향기가 어우러진 윔블던의 오후 3시를 느껴보세요.`,
     note: `
       -top: Bergamot, Grapefruit, Anise Seeds
       ^
@@ -23,6 +23,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 2,
@@ -30,13 +31,13 @@ const pmData = [
     price: "31,000원",
     src: "/images/promotion/pm_products/m_3pm.png",
     detail: "/images/shop/6am/img_6am.png",
-    desc: `The scent of enchanted grass created by spellbound forest spirits
+    desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
-        Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
+        While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “햇살이 내리쬐는 푸른 잔디와 부드럽고 향긋한 과일의 향취”
         ^
-        세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
+        이슬 젖은 초록숲이 상큼한 햇살에 말라가는 윔블던의 오후. 공원에 만개한 꽃들의 향기와 홍차에 띄운 레몬 조각 향기가 어우러진 윔블던의 오후 3시를 느껴보세요.`,
     note: `
       -top: Bergamot, Grapefruit, Anise Seeds
       ^
@@ -46,6 +47,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 3,
@@ -53,13 +55,13 @@ const pmData = [
     price: "23,000원",
     src: "/images/promotion/pm_products/h_3pm.png",
     detail: "/images/shop/6am/img_6am.png",
-    desc: `The scent of enchanted grass created by spellbound forest spirits
+    desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
-        Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
+        While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “햇살이 내리쬐는 푸른 잔디와 부드럽고 향긋한 과일의 향취”
         ^
-        세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
+        이슬 젖은 초록숲이 상큼한 햇살에 말라가는 윔블던의 오후. 공원에 만개한 꽃들의 향기와 홍차에 띄운 레몬 조각 향기가 어우러진 윔블던의 오후 3시를 느껴보세요.`,
     note: `
       -top: Bergamot, Grapefruit, Anise Seeds
       ^
@@ -69,6 +71,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 4,
@@ -76,13 +79,13 @@ const pmData = [
     price: "34,000원",
     src: "/images/promotion/pm_products/hw_3pm.png",
     detail: "/images/shop/6am/img_6am.png",
-    desc: `The scent of enchanted grass created by spellbound forest spirits
+    desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
-        Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
+        While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “햇살이 내리쬐는 푸른 잔디와 부드럽고 향긋한 과일의 향취”
         ^
-        세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
+        이슬 젖은 초록숲이 상큼한 햇살에 말라가는 윔블던의 오후. 공원에 만개한 꽃들의 향기와 홍차에 띄운 레몬 조각 향기가 어우러진 윔블던의 오후 3시를 느껴보세요.`,
     note: `
       -top: Bergamot, Grapefruit, Anise Seeds
       ^
@@ -92,6 +95,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 5,
@@ -99,13 +103,13 @@ const pmData = [
     price: "38,000원",
     src: "/images/promotion/pm_products/bw_3pm.png",
     detail: "/images/shop/6am/img_6am.png",
-    desc: `The scent of enchanted grass created by spellbound forest spirits
+    desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
-        Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
+        While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “햇살이 내리쬐는 푸른 잔디와 부드럽고 향긋한 과일의 향취”
         ^
-        세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
+        이슬 젖은 초록숲이 상큼한 햇살에 말라가는 윔블던의 오후. 공원에 만개한 꽃들의 향기와 홍차에 띄운 레몬 조각 향기가 어우러진 윔블던의 오후 3시를 느껴보세요.`,
     note: `
       -top: Bergamot, Grapefruit, Anise Seeds
       ^
@@ -115,6 +119,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 6,
@@ -122,13 +127,13 @@ const pmData = [
     price: "38,000원",
     src: "/images/promotion/pm_products/bl_3pm.png",
     detail: "/images/shop/6am/img_6am.png",
-    desc: `The scent of enchanted grass created by spellbound forest spirits
+    desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
-        Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
+        While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “햇살이 내리쬐는 푸른 잔디와 부드럽고 향긋한 과일의 향취”
         ^
-        세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
+        이슬 젖은 초록숲이 상큼한 햇살에 말라가는 윔블던의 오후. 공원에 만개한 꽃들의 향기와 홍차에 띄운 레몬 조각 향기가 어우러진 윔블던의 오후 3시를 느껴보세요.`,
     note: `
       -top: Bergamot, Grapefruit, Anise Seeds
       ^
@@ -138,6 +143,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 7,
@@ -145,13 +151,13 @@ const pmData = [
     price: "54,000원",
     src: "/images/promotion/pm_products/duo_set_3pm.png",
     detail: "/images/shop/6am/img_6am.png",
-    desc: `The scent of enchanted grass created by spellbound forest spirits
+    desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
-        Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
+        While the forest’s morning dew dries away in the beaming afternoon sunlight, feel the scent of the fully blossomed flowers in the park come together with the freshness of lemon floating on a cup of black tea at 3PM in Wimbledon.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “햇살이 내리쬐는 푸른 잔디와 부드럽고 향긋한 과일의 향취”
         ^
-        세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
+        이슬 젖은 초록숲이 상큼한 햇살에 말라가는 윔블던의 오후. 공원에 만개한 꽃들의 향기와 홍차에 띄운 레몬 조각 향기가 어우러진 윔블던의 오후 3시를 느껴보세요.`,
     note: `
       -top: Bergamot, Grapefruit, Anise Seeds
       ^
@@ -161,6 +167,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 8,
@@ -172,7 +179,7 @@ const pmData = [
         ^
         Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취”
         ^
         세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
     note: `
@@ -184,6 +191,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 9,
@@ -195,7 +203,7 @@ const pmData = [
         ^
         Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취”
         ^
         세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
     note: `
@@ -207,6 +215,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
   {
     idx: 10,
@@ -218,7 +227,7 @@ const pmData = [
         ^
         Just before the sunrise, the mist of Wimbledon forest drifts along and greets you as you take a stroll. Feel the 6AM scent of the Wimbledon forest’s glistening morning dew and moist soil.
         ^
-        숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취
+        “숲의 정령이 만들어낸 중독적인 묘약, 신비로운 풀의 향취”
         ^
         세상의 아침이 시작되기 전, 윔블던의 숲을 산책하는 당신에게 푸른 안개가 바람에 실려와 인사를 합니다. 이슬 머금은 잔디와 촉촉한 흙내음을 품은 윔블던의 새벽 6시를 느껴보세요.`,
     note: `
@@ -230,6 +239,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+      notice: ``,
   },
 ];
 

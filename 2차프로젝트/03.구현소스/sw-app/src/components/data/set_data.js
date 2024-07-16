@@ -35,7 +35,13 @@ const fullSet = [
     price: "132,000원",
     src: "/images/shop/set/full_set_noon.png",
     detail: "/images/shop/noon/img_noon.png",
-    desc: ``,
+    desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
+        ^
+        Midday, when the sunlight sparkles on the surface of the lake, the bouquet of a full bloom iris and cool aqua scent under the tree shade fills up the air. Feel the scent of NOON at Wimbledon Park.
+        ^
+        “공원 호숫가 벤치에 불어오는 물과 꽃 향의 절묘한 조화”
+        ^
+        호수에 반짝이는 햇살 찬란한 낮 12시, 서늘한 나무그늘 아래 차가운 물 향과 햇살에 만개한 아이리스 꽃 향이 어우러진 윔블던 공원의 정오를 느껴보세요.`,
     note: "",
     perfumer: "",
     ingredients: "",
