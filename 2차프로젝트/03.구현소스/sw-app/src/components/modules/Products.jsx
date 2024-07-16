@@ -12,7 +12,8 @@ import "../../css/shop.scss";
 
 function Products() {
   // 라우터 전달값 받기
-  const { state } = useLocation();
+  const { state, location } = useLocation();
+
   // 상품 상태관리변수
   const [product, setProduct] = useState([]);
   // 상품 더보기 상태관리변수
@@ -22,7 +23,7 @@ function Products() {
   useEffect(() => {
     // 더보기 버튼
     loadMore();
-  }, []); ////////// useEffect //////////
+  }, [location]); ////////////////////////
 
   // 데이터 합치기 : ...(스프레드 연산자)사용
   let selData = [
@@ -49,7 +50,7 @@ function Products() {
 
   // console.log(selData);
 
-  // 더보기 버튼 기능 //////////
+  // 더보기 버튼 기능 ////////////////////////
   const loadMore = () => {
     let nextProduct = selData.slice(
       product.length,
@@ -58,7 +59,7 @@ function Products() {
     setProduct((prevProduct) => [...prevProduct, ...nextProduct]);
   }; ////////// loadMore //////////
 
-  // 코드 리턴 구역 //////////
+  // 코드 리턴 구역 ////////////////////////
   return (
     <>
       <section id="product-page" className="page">
@@ -70,7 +71,7 @@ function Products() {
             <ul>
               {/* 향수 + 핸드케어 + 바디케어 */}
               {product.map((v, i) => (
-                <li key={product.id}>
+                <li key={i}>
                   <Link
                     to="/detail"
                     state={{
