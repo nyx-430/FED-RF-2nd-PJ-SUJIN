@@ -22,7 +22,7 @@ function Detail() {
   const ingredients = loc.state.ingredients;
   const notice = loc.state.notice;
 
-  console.log("공지",notice);
+  console.log("공지", notice);
 
   // 화면 랜더링 실행 구역 //////////
   useEffect(() => {
@@ -44,7 +44,7 @@ function Detail() {
         </div>
         <div className="inbox col-6">
           <div className="img-box">
-            <img src={process.env.PUBLIC_URL+src} alt={tit} />
+            <img src={process.env.PUBLIC_URL + src} alt={tit} />
           </div>
           <div className="desc-box">
             <div className="heading-area">
@@ -74,13 +74,13 @@ function Detail() {
                     <p key={i}>{v}</p>
                   ))}
                 </aside>
-                <div className="notice">
-                  <aside>
-                    {notice.split("^").map((v, i) => (
-                      <p key={i}>{v}</p>
-                    ))}
-                  </aside>
-                </div>
+              </div>
+              <div className="notice-text">
+                <aside>
+                  {notice.split("^").map((v, i) => (
+                    <p key={i}>{v}</p>
+                  ))}
+                </aside>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ function Detail() {
         <hr />
         <div className="detail-box col-12">
           <div className="img-box">
-            <img src={process.env.PUBLIC_URL+detail} alt={tit} />
+            <img src={process.env.PUBLIC_URL + detail} alt={tit} />
           </div>
         </div>
       </section>
