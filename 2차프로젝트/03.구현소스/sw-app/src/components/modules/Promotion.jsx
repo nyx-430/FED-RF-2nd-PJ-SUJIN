@@ -30,7 +30,7 @@ function Promotion() {
                     state={{
                       tit: v.tit,
                       src: v.src,
-                      img: v.img,
+                      detail: v.detail,
                       price: v.price,
                       desc: v.desc,
                       note: v.note,

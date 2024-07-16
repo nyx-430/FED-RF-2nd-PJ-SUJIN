@@ -9,7 +9,7 @@ export const bodyData = [
     category: "Body Care",
     price: "38,000원",
     src: "/images/shop/3pm/bw_3pm.png",
-    img: "/images/shop/3pm/img_3pm.png",
+    detail: "/images/shop/3pm/img_3pm.png",
     desc: `Authentic 3pm Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
         ^
         Formulated from plant-derived ingredients, such as shea butter, sweet aroma oil, and jojoba seed oil hydrates and softens your skin.This mild lather and elegantly spreading scents will enhance your morning and evening rituals.
@@ -42,7 +42,7 @@ export const bodyData = [
     category: "Body Care",
     price: "38,000원",
     src: "/images/shop/3pm/bl_3pm.png",
-    img: "/images/shop/3pm/img_3pm.png",
+    detail: "/images/shop/3pm/img_3pm.png",
     desc: `Authentic 3pm Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
         ^
         Formulated from plant-derived ingredients, such as shea butter, sweet aroma oil, and jojoba seed oil hydrates and softens your skin.This mild lather and elegantly spreading scents will enhance your morning and evening rituals.
@@ -76,7 +76,7 @@ export const bodyData = [
     category: "Body Care",
     price: "72,000원",
     src: "/images/shop/3pm/b_care_set_3pm.png",
-    img: "/images/shop/3pm/img_3pm.png",
+    detail: "/images/shop/3pm/img_3pm.png",
     desc: `Introducing SW19 Body Care Set, which carries the perfume's authentic scent and leaves a subtle scent.
         ^
         Take care of your skin with a body wash that keeps your body hydrated even after shower and a body cream that that leaves your skin feeling smooth without sensation of tackiness.
@@ -106,7 +106,7 @@ export const bodyData = [
     category: "Body Care",
     price: "38,000원",
     src: "/images/shop/midnight/bw_mid.png",
-    img: "/images/shop/midnight/img_midnight.png",
+    detail: "/images/shop/midnight/img_midnight.png",
     desc: `Authentic Midnight Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
         ^
         Formulated from plant-derived ingredients, such as shea butter, sweet aroma oil, and jojoba seed oil hydrates and softens your skin.This mild lather and elegantly spreading scents will enhance your morning and evening rituals.
@@ -139,7 +139,7 @@ export const bodyData = [
     category: "Body Care",
     price: "38,000원",
     src: "/images/shop/midnight/bl_mid.png",
-    img: "/images/shop/midnight/img_midnight.png",
+    detail: "/images/shop/midnight/img_midnight.png",
     desc: `Authentic Midnight Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
         ^
         Formulated from plant-derived ingredients, such as shea butter, sweet aroma oil, and jojoba seed oil hydrates and softens your skin.This mild lather and elegantly spreading scents will enhance your morning and evening rituals.
@@ -173,7 +173,7 @@ export const bodyData = [
     category: "Body Care",
     price: "72,000원",
     src: "/images/shop/midnight/b_care_set_mid.png",
-    img: "/images/shop/midnight/img_midnight.png",
+    detail: "/images/shop/midnight/img_midnight.png",
     desc: `Introducing SW19 Body Care Set, which carries the perfume's authentic scent and leaves a subtle scent.
         ^
         Take care of your skin with a body wash that keeps your body hydrated even after shower and a body cream that that leaves your skin feeling smooth without sensation of tackiness.

@@ -14,7 +14,7 @@ function Detail() {
   const loc = useLocation();
   const tit = loc.state.tit;
   const src = loc.state.src;
-  const img = loc.state.img;
+  const detail = loc.state.detail;
   const price = loc.state.price;
   const desc = loc.state.desc;
   const note = loc.state.note;
@@ -79,7 +79,7 @@ function Detail() {
         <hr />
         <div className="detail-box col-12">
           <div className="img-box">
-            <img src={process.env.PUBLIC_URL+img} alt={tit} />
+            <img src={process.env.PUBLIC_URL+detail} alt={tit} />
           </div>
         </div>
       </section>
