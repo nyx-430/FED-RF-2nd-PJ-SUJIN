@@ -39,7 +39,7 @@ export const menu = [
       },
       {
         txt: "Gift Set",
-        link: "/shop",
+        link: "/shop/giftset",
       },
     ],
   },
