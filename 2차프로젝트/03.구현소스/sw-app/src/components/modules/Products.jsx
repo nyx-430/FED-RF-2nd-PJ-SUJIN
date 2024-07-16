@@ -28,7 +28,7 @@ function Products() {
   ];
 
   // 데이터 처리대상 : 나중에 처리 대상 변경만 하면 끝!
-  let rangeData = ["Perfume", "Body Care", "Hand Care", "Gife Set"];
+  let rangeData = ["Perfume", "Body Care", "Hand Care", "Gift Set"];
 
   // console.log(selData);
   console.log("데이터 대상인가?", rangeData.includes(state.category));

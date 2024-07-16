@@ -74,11 +74,13 @@ function Detail() {
                     <p key={i}>{v}</p>
                   ))}
                 </aside>
-                <aside>
-                  {notice.split("^").map((v, i) => (
-                    <p key={i}>{v}</p>
-                  ))}
-                </aside>
+                <div className="notice">
+                  <aside>
+                    {notice.split("^").map((v, i) => (
+                      <p key={i}>{v}</p>
+                    ))}
+                  </aside>
+                </div>
               </div>
             </div>
           </div>
