@@ -96,8 +96,29 @@
 
     /* 총합 계산 + 구매 버튼 */
     .cart-footer {
-      display: flex;
-      flex-direction: column;
+
+      .total-box {
+        display: flex;
+        flex-direction: column;
+
+        .total-price {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+
+      }
+
+      /* 구매 버튼 */
+      .btn-box {
+        .buy-btn {
+          font-size: 2rem;
+          font-weight: 700;
+          padding: 1rem 2rem;
+          background-color: #000;
+          color: #fff;
+        }
+      }
     }
   }
 

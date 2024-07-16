@@ -53,7 +53,7 @@ function CartList(props) {
               <p>원</p>
             </div>
             <div className="btn-box">
-              <button className="buy">구매하기</button>
+              <button className="buy-btn">구매하기</button>
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@ function Products() {
   // console.log(selData);
   console.log("데이터대상인가?",rangeData.includes(state.category));
 
-  // state전달값이 빈값이 아니면 배열filter돌리기
+  // state전달값이 빈값이 아니면 배열 filter 돌리기
   // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사후 있으면 true
   if(rangeData.includes(state.category)){
     selData = selData.filter((v) => {
