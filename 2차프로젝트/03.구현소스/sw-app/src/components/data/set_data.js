@@ -122,8 +122,8 @@ const hcSet = [
     tit: "SW19 HAND CREAM MINI SET (10ml*5)",
     category: "Gift Set",
     price: "30,000원",
-    src: "/images/shop/set/handcream_mini_set",
-    detail: "handcream_trio_set_detail.png",
+    src: "/images/shop/set/handcream_mini_set.png",
+    detail: "/images/shop/set/handcream_trio_set_detail.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
     SW19 퍼퓸 향을 그대로 담은 핸드크림은 실키 파우더가 함유되어 끈적임 없이 매끄럽게 피부결을 정돈하며, 비건 포뮬러로 만들어진 순한 식물성 보습 성분이 피부를 산뜻하고 건강하게 유지합니다.
