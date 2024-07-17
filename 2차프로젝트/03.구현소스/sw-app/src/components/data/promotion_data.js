@@ -24,7 +24,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
   {
     idx: 2,
@@ -49,7 +49,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
   {
     idx: 3,
@@ -74,7 +74,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
   {
     idx: 4,
@@ -99,7 +99,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
   {
     idx: 5,
@@ -124,7 +124,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
   {
     idx: 6,
@@ -149,7 +149,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
   {
     idx: 7,
@@ -174,7 +174,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
   {
     idx: 8,
@@ -199,7 +199,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
   {
     idx: 9,
@@ -224,7 +224,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
   {
     idx: 10,
@@ -249,7 +249,7 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-      notice: ``,
+    notice: ``,
   },
 ];
 

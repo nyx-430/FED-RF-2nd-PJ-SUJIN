@@ -8,7 +8,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/6am/p_6am.png",
-    hoverSrc:"/images/shop/6am/p_6am_1.png",
+    hoverSrc: "/images/shop/6am/p_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits
         ^
@@ -26,6 +26,7 @@ export const perfumeData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+    notice: ``,
   },
   {
     idx: 2,
@@ -33,7 +34,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/noon/p_noon.png",
-    hoverSrc:"/images/shop/noon/p_noon_1.png",
+    hoverSrc: "/images/shop/noon/p_noon_1.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
         ^
@@ -52,6 +53,7 @@ export const perfumeData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Alcohol, Fragrance(Parfum), Water, Butylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Methoxycinnamate, BHT, Linalool, Limonene, Hydroxycitronellal, Coumarin, Citronellol, Geraniol, Alpha-Isomethyl Ionone, Citral",
+    notice: ``,
   },
   {
     idx: 3,
@@ -59,7 +61,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/3pm/p_3pm.png",
-    hoverSrc:"/images/shop/3pm/p_3pm_1.png",
+    hoverSrc: "/images/shop/3pm/p_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
@@ -78,6 +80,7 @@ export const perfumeData = [
     perfumer: "Nathalie Benareau",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Linalool, Limonene, Coumarin, Eugenol, Hydroxycitronellal, Geraniol, Citral",
+    notice: ``,
   },
   {
     idx: 4,
@@ -85,7 +88,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/9pm/p_9pm.png",
-    hoverSrc:"/images/shop/9pm/p_9pm_1.png",
+    hoverSrc: "/images/shop/9pm/p_9pm_1.png",
     detail: "/images/shop/9pm/img_9pm.png",
     desc: `The romance of a silent night in the woods
         ^
@@ -104,6 +107,7 @@ export const perfumeData = [
     perfumer: "Florian Gallo",
     ingredients:
       "Alcohol, Fragrance, Water, Butylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Methoxycinnamate, Bht, Eugenol, Cinnamal, Limonene, Linalool, Cinnamyl Alcohol",
+    notice: ``,
   },
   {
     idx: 5,
@@ -111,7 +115,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/midnight/p_mid.png",
-    hoverSrc:"/images/shop/midnight/p_mid_1.png",
+    hoverSrc: "/images/shop/midnight/p_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
         ^
@@ -130,6 +134,7 @@ export const perfumeData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Sexyl Benzoate, Ethylhexyl Methoxycinnamate, BHT, Hexyl Cinnamal",
+    notice: ``,
   },
   {
     idx: 6,
@@ -137,7 +142,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/6am/m_6am.png",
-    hoverSrc:"/images/shop/6am/m_6am_1.png",
+    hoverSrc: "/images/shop/6am/m_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits
         ^
@@ -155,6 +160,7 @@ export const perfumeData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
+    notice: ``,
   },
   {
     idx: 7,
@@ -162,7 +168,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/noon/m_noon.png",
-    hoverSrc:"/images/shop/noon/m_noon_1.png",
+    hoverSrc: "/images/shop/noon/m_noon_1.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
         ^
@@ -181,6 +187,7 @@ export const perfumeData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Alcohol, Fragrance(Parfum), Water, Butylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Methoxycinnamate, BHT, Linalool, Limonene, Hydroxycitronellal, Coumarin, Citronellol, Geraniol, Alpha-Isomethyl Ionone, Citral",
+    notice: ``,
   },
   {
     idx: 8,
@@ -188,7 +195,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/3pm/m_3pm.png",
-    hoverSrc:"/images/shop/3pm/m_3pm_1.png",
+    hoverSrc: "/images/shop/3pm/m_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
@@ -207,6 +214,7 @@ export const perfumeData = [
     perfumer: "Nathalie Benareau",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Linalool, Limonene, Coumarin, Eugenol, Hydroxycitronellal, Geraniol, Citral",
+    notice: ``,
   },
   {
     idx: 9,
@@ -214,7 +222,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/9pm/m_9pm.png",
-    hoverSrc:"/images/shop/9pm/m_9pm_1.png",
+    hoverSrc: "/images/shop/9pm/m_9pm_1.png",
     detail: "/images/shop/9pm/img_9am.png",
     desc: `The romance of a silent night in the woods
         ^
@@ -233,6 +241,7 @@ export const perfumeData = [
     perfumer: "Florian Gallo",
     ingredients:
       "Alcohol, Fragrance, Water, Butylene Glycol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Methoxycinnamate, Bht, Eugenol, Cinnamal, Limonene, Linalool, Cinnamyl Alcohol",
+    notice: ``,
   },
   {
     idx: 10,
@@ -240,7 +249,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/midnight/m_mid.png",
-    hoverSrc:"/images/shop/midnight/m_mid_1.png",
+    hoverSrc: "/images/shop/midnight/m_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
         ^
@@ -259,5 +268,6 @@ export const perfumeData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Sexyl Benzoate, Ethylhexyl Methoxycinnamate, BHT, Hexyl Cinnamal",
+    notice: ``,
   },
 ];
