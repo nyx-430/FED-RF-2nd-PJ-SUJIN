@@ -8,6 +8,7 @@ const fullSet = [
     category: "Gift Set",
     price: "132,000원",
     src: "/images/shop/set/full_set_6am.png",
+    hoverSrc: "/images/shop/set/full_set_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits
     ^
@@ -34,6 +35,7 @@ const fullSet = [
     category: "Gift Set",
     price: "132,000원",
     src: "/images/shop/set/full_set_noon.png",
+    hoverSrc: "/images/shop/set/full_set_noon_1.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
         ^
@@ -60,6 +62,7 @@ const fullSet = [
     category: "Gift Set",
     price: "132,000원",
     src: "/images/shop/set/full_set_3pm.png",
+    hoverSrc: "/images/shop/set/full_set_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: ``,
     note: "",
@@ -80,6 +83,7 @@ const fullSet = [
     category: "Gift Set",
     price: "132,000원",
     src: "/images/shop/set/full_set_9pm.png",
+    hoverSrc: "/images/shop/set/full_set_9pm_1.png",
     detail: "/images/shop/9pm/img_9pm.png",
     desc: ``,
     note: "",
@@ -100,6 +104,7 @@ const fullSet = [
     category: "Gift Set",
     price: "132,000원",
     src: "/images/shop/set/full_set_mid.png",
+    hoverSrc: "/images/shop/set/full_set_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: ``,
     note: "",
@@ -123,6 +128,7 @@ const hcSet = [
     category: "Gift Set",
     price: "69,000원",
     src: "/images/shop/set/handcream_trio_set.png",
+    hoverSrc: "/images/shop/set/handcream_trio_set_1.png",
     detail: "handcream_trio_set_detail.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
@@ -147,6 +153,7 @@ const hcSet = [
     category: "Gift Set",
     price: "30,000원",
     src: "/images/shop/set/handcream_mini_set.png",
+    hoverSrc: "/images/shop/set/handcream_mini_set_1.png",
     detail: "/images/shop/set/handcream_trio_set_detail.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
@@ -169,6 +176,7 @@ const miniDuoSet = [
     category: "Gift Set",
     price: "54,000원",
     src: "/images/shop/set/mini_duo_set_mid.png",
+    hoverSrc: "/images/shop/set/mini_duo_set_mid_1.png",
     detail: "/images/shop/set/mini_duo_set_mid_detail.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
     ^
@@ -195,6 +203,7 @@ const miniDuoSet = [
     category: "Gift Set",
     price: "54,000원",
     src: "/images/shop/set/mini_duo_set_mid.png",
+    hoverSrc: "/images/shop/set/mini_duo_set_mid_1.png",
     detail: "/images/shop/set/mini_duo_set_3pm_detail.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
     ^
@@ -224,6 +233,7 @@ const discovertSet = [
     category: "Gift Set",
     price: "118,000원",
     src: "/images/shop/set/discovery_set.png",
+    hoverSrc: "/images/shop/set/discovery_set_1.png",
     detail: "/images/shop/set/discovery_set_detail.png",
     desc: `Explore full collection of SW19 Eau de parfum Discovery set which was inspired by green forest of the Wimbledon, London SW19 that changes over time.
     ^
@@ -250,6 +260,7 @@ const discovertSet = [
     category: "Gift Set",
     price: "30,000원",
     src: "/images/shop/set/discovery_set.png",
+    hoverSrc: "/images/shop/set/discovery_set_1.png",
     detail: "/images/shop/set/discovery_set_detail.png",
     desc: `Explore full collection of SW19 Eau de parfum Mini Discovery set which was inspired by green forest of the Wimbledon, London SW19 that changes over time.
     ^

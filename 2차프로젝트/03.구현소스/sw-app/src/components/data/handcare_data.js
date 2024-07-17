@@ -9,6 +9,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/6am/h_6am.png",
+    hoverSrc: "/images/shop/6am/h_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
@@ -34,6 +35,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/noon/h_noon.png",
+    hoverSrc: "/images/shop/noon/h_noon_1.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
@@ -58,6 +60,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/3pm/h_3pm.png",
+    hoverSrc: "/images/shop/3pm/h_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
@@ -82,6 +85,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/9pm/h_9pm.png",
+    hoverSrc: "/images/shop/9pm/h_9pm_1.png",
     detail: "/images/shop/9pm/img_9pm.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
@@ -106,6 +110,7 @@ export const handData = [
     category: "Hand Care",
     price: "23,000원",
     src: "/images/shop/midnight/h_mid.png",
+    hoverSrc: "/images/shop/midnight/h_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `The SW19 perfume-scented hand cream is enriched with silky powder and mild botanical moisturizing ingredients to nourish and moisturize hands without sticky after-feel.
     ^
@@ -130,6 +135,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/6am/hw_6am.png",
+    hoverSrc: "/images/shop/6am/hw_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
@@ -153,6 +159,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/noon/hw_noon.png",
+    hoverSrc: "/images/shop/noon/hw_noon_1.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
@@ -177,6 +184,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/3pm/hw_3pm.png",
+    hoverSrc: "/images/shop/3pm/hw_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
@@ -201,6 +209,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/9pm/hw_9pm.png",
+    hoverSrc: "/images/shop/9pm/hw_9pm_1.png",
     detail: "/images/shop/9pm/img_9pm.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
@@ -225,6 +234,7 @@ export const handData = [
     category: "Hand Care",
     price: "34,000원",
     src: "/images/shop/midnight/hw_mid.png",
+    hoverSrc: "/images/shop/midnight/hw_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `SW19 hand wash, made of plant-based formula, provides a long-lasting scent of SW19 perfume. Using botanical and coconut extracts, it leaves the hands smooth and moisturized after use.
     ^
@@ -249,6 +259,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/6am/h_care_set_6am.png",
+    hoverSrc: "/images/shop/6am/h_care_set_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^
@@ -275,6 +286,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/noon/h_care_set_noon.png",
+    hoverSrc: "/images/shop/noon/h_care_set_noon_1.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^
@@ -302,6 +314,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/3pm/h_care_set_3pm.png",
+    hoverSrc: "/images/shop/3pm/h_care_set_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^
@@ -329,6 +342,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/9pm/h_care_set_9pm.png",
+    hoverSrc: "/images/shop/9pm/h_care_set_9pm_1.png",
     detail: "/images/shop/9pm/img_9pm.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^
@@ -356,6 +370,7 @@ export const handData = [
     category: "Hand Care",
     price: "57,000원",
     src: "/images/shop/midnight/h_care_set_mid.png",
+    hoverSrc: "/images/shop/midnight/h_care_set_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `Introducing SW19 Hand Care Set, which carries the perfume's authentic scent and leaves a subtle scent.Take care of your skin with a hand wash that keeps your hand hydrated even after shower and a hand cream that that leaves your skin feeling smooth without sensation of tackiness.
     ^

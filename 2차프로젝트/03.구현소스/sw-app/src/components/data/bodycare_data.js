@@ -9,6 +9,7 @@ export const bodyData = [
     category: "Body Care",
     price: "38,000원",
     src: "/images/shop/3pm/bw_3pm.png",
+    hoverSrc: "/images/shop/3pm/bw_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `Authentic 3pm Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
         ^
@@ -43,6 +44,7 @@ export const bodyData = [
     category: "Body Care",
     price: "38,000원",
     src: "/images/shop/3pm/bl_3pm.png",
+    hoverSrc: "/images/shop/3pm/bl_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `Authentic 3pm Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
         ^
@@ -78,6 +80,7 @@ export const bodyData = [
     category: "Body Care",
     price: "72,000원",
     src: "/images/shop/3pm/b_care_set_3pm.png",
+    hoverSrc: "/images/shop/3pm/b_care_set_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `Introducing SW19 Body Care Set, which carries the perfume's authentic scent and leaves a subtle scent.
         ^
@@ -109,6 +112,7 @@ export const bodyData = [
     category: "Body Care",
     price: "38,000원",
     src: "/images/shop/midnight/bw_mid.png",
+    hoverSrc: "/images/shop/midnight/bw_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `Authentic Midnight Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
         ^
@@ -143,6 +147,7 @@ export const bodyData = [
     category: "Body Care",
     price: "38,000원",
     src: "/images/shop/midnight/bl_mid.png",
+    hoverSrc: "/images/shop/midnight/bl_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `Authentic Midnight Eau de parfum scent is formulated through the meticulous touch of the master perfumer. A pleasant day begins and ends with our subtle scents.
         ^
@@ -178,6 +183,7 @@ export const bodyData = [
     category: "Body Care",
     price: "72,000원",
     src: "/images/shop/midnight/b_care_set_mid.png",
+    hoverSrc: "/images/shop/midnight/b_care_set_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `Introducing SW19 Body Care Set, which carries the perfume's authentic scent and leaves a subtle scent.
         ^
