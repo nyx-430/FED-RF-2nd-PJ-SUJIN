@@ -1,24 +1,28 @@
-// 스토리 페이지 인트로 컴포넌트
+/// 스토리 인트로 컴포넌트 ///
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 // 제이쿼리
 import $ from "jquery";
 
+// 스토리 인트로 CSS
+import "../../css/storyintro.scss";
+
 function StoryIntro() {
+  // 클래스 visible 상태관리변수
+  const [visible, setVisible] = useState(false);
+
+   // 랜더링 구역 ////////////////////////
   useEffect(() => {
-    // console.log("useEffect");
+      // 클래스 visible
+      setVisible(true);
 
     const scAct = $(".scAct");
-    // console.log("이벤트 페이지:", stage);
-
     const CRITERIA = (window.innerHeight / 3) * 2;
-    // console.log(CRITERIA);
 
     $(window).on("scroll", () => {
       scAct.each((idx, ele) => {
         let pos = ele.getBoundingClientRect().top;
-        // console.log(pos);
         if(pos<CRITERIA) $(ele).addClass("on");
       });
     });

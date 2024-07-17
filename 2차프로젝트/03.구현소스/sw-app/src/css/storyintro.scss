@@ -1,0 +1,45 @@
+/// 스토리 인트로 CSS - storyintro.scss ///
+
+#intro-page {
+  height: 155vh;
+  background: url(../../public/images/story_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  .inbox {
+    /* 인트로 로고 */
+    .intro-logo {
+      height: 300px;
+      left: 50%;
+      margin: 15rem 0;
+    }
+    /* 텍스트 박스 */
+    .desc-box {
+      width: 50%;
+      text-align: center;
+      transform: translate(50%);
+      .main-title {
+        color: #fff;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+      }
+      .main-text1 {
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5;
+        margin: 8rem 0;
+        padding-top: 10rem;
+      }
+      .main-text2 {
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.5;
+        padding-bottom: 10rem;
+      }
+    }
+  }
+}

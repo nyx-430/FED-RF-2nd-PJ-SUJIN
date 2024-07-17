@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 // 제이쿼리
 import $ from "jquery";
 
-// GNB 데이터 불러오기
+// GNB 데이터
 import { menu } from "../data/gnb";
 
-// 폰트어썸 불러오기
+// 폰트어썸
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -24,13 +24,13 @@ import "../../css/top_area.scss";
 import CartList from "../modules/CartList";
 
 export default function TopArea() {
-  // 클래스 visible 상태관리변수
+  // 메뉴 바 클래스 visible 상태관리변수
   const [visible, setVisible] = useState(false);
 
-  // 이동 함수 /////////////
+  // 이동 함수
   const goNav = useNavigate();
 
-  // 메뉴 버튼 클래스 on 함수 /////////////
+  // 메뉴 버튼 클래스 on 함수
   const addOn = () => {
     document.querySelector(".menu-button").classList.toggle("on");
     document.querySelector(".menu-open").classList.toggle("on");
@@ -40,7 +40,7 @@ export default function TopArea() {
 
   // 랜더링 구역 ////////////////////////
   useEffect(() => {
-    // 페이지 로드 후 클래스 visible
+    // 메뉴 바 클래스 visible
     setVisible(true);
 
     // 메뉴 버튼 클래스 on
