@@ -1,6 +1,6 @@
 /// 상단 영역 컴포넌트 ///
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // 제이쿼리
 import $ from "jquery";
@@ -24,10 +24,13 @@ import "../../css/top_area.scss";
 import CartList from "../modules/CartList";
 
 export default function TopArea() {
+  // 클래스 visible 상태관리변수
+  const [visible, setVisible] = useState(false);
+
   // 이동 함수 /////////////
   const goNav = useNavigate();
 
-  // 클래스 on 함수 /////////////
+  // 메뉴 버튼 클래스 on 함수 /////////////
   const addOn = () => {
     document.querySelector(".menu-button").classList.toggle("on");
     document.querySelector(".menu-open").classList.toggle("on");
@@ -35,10 +38,15 @@ export default function TopArea() {
 
   const location = useLocation();
 
+  // 랜더링 구역 ////////////////////////
   useEffect(() => {
+    // 페이지 로드 후 클래스 visible
+    setVisible(true);
+
+    // 메뉴 버튼 클래스 on
     document.querySelector(".menu-button").classList.remove("on");
     document.querySelector(".menu-open").classList.remove("on");
-  }, [location]);
+  }, [location]); ////////////////////////
 
   // 검색 관련 함수들 /////////////
   // 검색창에 엔터키 누르면 검색 함수 호출
@@ -75,7 +83,9 @@ export default function TopArea() {
   return (
     <>
       <header id="gnb">
-        <div className="menu">
+        <div 
+        className={`menu ${visible ? "visible" : ""}`}
+        >
           <div className="lines">
             <a href="/">
               <span id="logo" className="line">
@@ -104,12 +114,13 @@ export default function TopArea() {
               <a href="/join" className="menu-buttom">
                 <FontAwesomeIcon icon={faUser} />
               </a>
-              <a href="/cart"
-              className="menu-buttom"
-              onClick={(e)=>{
-                e.preventDefault();
-                $(".shopping-tab").show();
-              }}
+              <a
+                href="/cart"
+                className="menu-buttom"
+                onClick={(e) => {
+                  e.preventDefault();
+                  $(".shopping-tab").show();
+                }}
               >
                 <FontAwesomeIcon icon={faBagShopping} />
               </a>
@@ -169,10 +180,7 @@ export default function TopArea() {
           </ul>
         </aside>
         {/* 사이드 메뉴 - 쇼핑탭 */}
-        <aside 
-        className="shopping-tab"
-        style={{display: "none"}}
-        >
+        <aside className="shopping-tab" style={{ display: "none" }}>
           <CartList />
         </aside>
       </header>

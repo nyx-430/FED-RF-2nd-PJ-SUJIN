@@ -8,9 +8,17 @@
   width: 90px;
   height: 100%;
   right: 0;
-  transform: translateZ(0);
   background-color: #fff;
   z-index: 9999;
+  transform: translate(20px) translateZ(0);
+  // transform: translateZ(0);
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(.215,.61,.355,1) 1.2s, transform .6s cubic-bezier(.215,.61,.355,1) 1.2s;
+  /* 로딩시 클래스 visible */
+  &.visible {
+    transform: translateZ(0);
+    opacity: 1;
+  }
 
   /* 라인 박스 */
   .lines {
