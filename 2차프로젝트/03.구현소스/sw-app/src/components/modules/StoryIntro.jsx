@@ -31,10 +31,7 @@ function StoryIntro() {
   // 코드 리턴 구역 //////////////
   return (
     <>
-      <section 
-      id="intro-page" 
-      // className="page"
-      >
+      <section id="intro-page">
         <div className={`inbox ${visible ? "visible" : ""}`}>
           <div className="item-box">
             <img className="intro-logo" src={process.env.PUBLIC_URL + "/images/logo_w.png"} alt="logo" />
