@@ -11,16 +11,19 @@ import "../../css/shop.scss";
 
 function Detail() {
   // 라우터 호출시 전달한 값을 받는다
+
+  
   const loc = useLocation();
-  const tit = loc.state.tit;
-  const src = loc.state.src;
-  const detail = loc.state.detail;
-  const price = loc.state.price;
-  const desc = loc.state.desc;
-  const note = loc.state.note;
-  const perfumer = loc.state.perfumer;
-  const ingredients = loc.state.ingredients;
-  const notice = loc.state.notice;
+  // console.log(loc.state);
+  const tit = (loc.state.tit?loc.state.tit:'');
+  const src = (loc.state.src?loc.state.src:'');
+  const detail = (loc.state.detail?loc.state.detail:'');
+  const price = (loc.state.price?loc.state.price:'');
+  const desc = (loc.state.desc?loc.state.desc:'');
+  const note = (loc.state.note?loc.state.note:'');
+  const perfumer = (loc.state.perfumer?loc.state.perfumer:'');
+  const ingredients = (loc.state.ingredients?loc.state.ingredients:'');
+  const notice = (loc.state.notice?loc.state.notice:'');
 
   console.log("공지", notice);
 

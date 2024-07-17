@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 // 상품 데이터 불러오기
@@ -12,19 +12,25 @@ import "../../css/shop.scss";
 
 function Products() {
   // 라우터 전달값 받기
-  const { state, location } = useLocation();
+  const { state } = useLocation();
 
   // 상품 상태관리변수
   const [product, setProduct] = useState([]);
 
-  // 상품 더보기 상태관리변수
-  const [visibleCount, setVisibleCount] = useState(8);
+  // 상품 더보기 참조변수 : 개수 더하기 배수곱할수 증가
+  const vCnt = useRef(1);
 
   // 랜더링 구역 ////////////////////////
   useEffect(() => {
+    console.log("로케이션새로로딩");
+    // 상품 개수 더하기 초기화
+    vCnt.current = 1;
+
+    // 데이터 상태값 변경
+    setProduct(selData.slice(0,8*vCnt.current));
     // 더보기 버튼
-    loadMore();
-  }, [location]); ////////////////////////
+    // loadMore();
+  },[state]); ////////////////////////
 
   // 데이터 합치기 : ...(스프레드 연산자)사용
   let selData = [
@@ -49,15 +55,16 @@ function Products() {
     });
   }
 
-  // console.log(selData);
+  console.log(selData.length);
+
+  console.log(product.length);
 
   // 더보기 버튼 기능 ////////////////////////
   const loadMore = () => {
-    let nextProduct = selData.slice(
-      product.length,
-      product.length + visibleCount
-    );
-    setProduct((prevProduct) => [...prevProduct, ...nextProduct]);
+    // 곱할수 1씩 증가
+    vCnt.current++;
+    // 보여줄 상품 변경하기 : 곱할 수 만큼 더 보여주기
+    setProduct(selData.slice(0,8*vCnt.current));
   }; ////////// loadMore //////////
 
   // 코드 리턴 구역 ////////////////////////
@@ -75,17 +82,7 @@ function Products() {
                 <li key={i}>
                   <Link
                     to="/detail"
-                    state={{
-                      tit: v.tit,
-                      src: v.src,
-                      detail: v.detail,
-                      price: v.price,
-                      desc: v.desc,
-                      note: v.note,
-                      perfumer: v.perfumer,
-                      ingredients: v.ingredients,
-                      notice: v.notice,
-                    }}
+                    state={v}
                   >
                     <div 
                     className="img-box"
