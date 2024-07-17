@@ -39,9 +39,17 @@ function Promotion() {
                       notice: v.notice,
                     }}
                     >
-                      <div className="img-box">
+                      <div 
+                      className="img-box"
+                      onMouseOver={(e)=>{
+                        e.currentTarget.querySelector('img').src=process.env.PUBLIC_URL + v.hoverSrc
+                      }}
+                      onMouseLeave={(e)=>{
+                        e.currentTarget.querySelector('img').src=process.env.PUBLIC_URL + v.src
+                      }}
+                      >
                         <img src={process.env.PUBLIC_URL+v.src} alt={v.tit} />
-                        <div className="overlay"></div>
+                        {/* <div className="overlay"></div> */}
                       </div>
                       <h2>{v.tit}</h2>
                       <h3>{v.price}</h3>
