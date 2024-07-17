@@ -17,7 +17,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 // import { faBa } from "@fortawesome/free-regular-svg-icons";
 // import { faCamera } from "@fortawesome/free-brands-svg-icons";
 
-// 사이드 메뉴 CSS
+// 헤더 탑메뉴 CSS
 import "../../css/top_area.scss";
 
 // 카트 리스트 모듈
