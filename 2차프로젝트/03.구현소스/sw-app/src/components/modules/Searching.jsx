@@ -9,6 +9,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { perfumeData } from "../data/perfume_data";
 import { handData } from "../data/handcare_data";
 import { bodyData } from "../data/bodycare_data";
+import { fullSet, hcSet, miniDuoSet, discovertSet } from "../data/set_data";
 
 // 검색 페이지 CSS 불러오기
 import "../../css/searching.scss";
@@ -20,13 +21,18 @@ function Searching({ kword }) {
   const { state } = useLocation();
 
   // 데이터 합치기 : ...(스프레드 연산자)사용
-  let selData = [...perfumeData, ...handData, ...bodyData];
+  let selData = [
+    ...perfumeData,
+    ...handData,
+    ...bodyData,
+    ...fullSet,
+    ...hcSet,
+    ...miniDuoSet,
+    ...discovertSet,
+  ];
 
   // 데이터 처리대상 : 나중에 처리 대상 변경만 하면 끝!
-  let rangeData = ["Perfume", "Body Care", "Hand Care"];
-
-  // console.log(selData);
-  // console.log("데이터 대상인가?", rangeData.includes(state.tit));
+  let rangeData = ["Perfume", "Body Care", "Hand Care", "Gift Set"];
 
   // state전달값이 빈값이 아니면 배열filter돌리기
   // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사후 있으면 true

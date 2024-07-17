@@ -16,6 +16,7 @@ function Products() {
 
   // 상품 상태관리변수
   const [product, setProduct] = useState([]);
+
   // 상품 더보기 상태관리변수
   const [visibleCount, setVisibleCount] = useState(8);
 
@@ -96,9 +97,11 @@ function Products() {
                 </li>
               ))}
             </ul>
-            <button className="load-more-btn" onClick={loadMore}>
-              더보기
-            </button>
+            {selData.length > product.length && (
+              <button className="load-more-btn" onClick={loadMore}>
+                더보기
+              </button>
+            )}
           </div>
         </div>
       </section>
