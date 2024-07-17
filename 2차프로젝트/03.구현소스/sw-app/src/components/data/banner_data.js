@@ -16,7 +16,7 @@ const collBan = {
                 Feel the 6AM scent of the Wimbledon forest’s
                 ^
                 glistening morning dew and moist soil.`,
-    tit2: "안개가 자욱한 윔블던 숲의 새벽",
+    tit2: "“안개가 자욱한 윔블던 숲의 새벽”",
     desc2: `세상의 아침이 시작되기 전,
     ^
                 윔블던의 숲을 산책하는 당신에게
@@ -40,7 +40,7 @@ const collBan = {
                 under the tree shade fills up the air.
                 ^
                 Feel the scent of NOON at Wimbledon Park.`,
-    tit2: "햇살에 반짝이는 윔블던 호수의 정오",
+    tit2: "“햇살에 반짝이는 윔블던 호수의 정오”",
     desc2: `호수에 반짝이는 햇살 찬란한 낮 12시,
     ^
                 서늘한 나무그늘 아래 차가운 물 향과 햇살에 만개한
@@ -62,7 +62,7 @@ const collBan = {
                 flowers in the park come together with the freshness
                 ^
                 of lemon floating on a cup of black tea at 3PM in Wimbledon.`,
-    tit2: "햇살이 내리쬐는 윔블던 공원의 오후",
+    tit2: "“햇살이 내리쬐는 윔블던 공원의 오후”",
     desc2: `이슬 젖은 초록숲이
     ^
                 상큼한 햇살에 말라가는 윔블던의 오후.
@@ -86,7 +86,7 @@ const collBan = {
                 Feel the Wimbledon’s 9PM scent of the smokey
                 ^
                 bonfire smoothly blended with sweet vanilla.`,
-    tit2: "모닥불이 피어 오르는 윔블던 숲의 저녁",
+    tit2: "“모닥불이 피어 오르는 윔블던 숲의 저녁”",
     desc2: `어둠이 내린 윔블던 숲의 저녁.
     ^
                 모닥불 타는 소리 사이로 들려오는 연인들의 달콤한 속삭임.
@@ -108,7 +108,7 @@ const collBan = {
                 Feel the sensual MIDNIGHT
                 ^
                 through mesmerizing touch and scent.`,
-    tit2: "인적이 드문 윔블던 공원 옆, 작은 등불 하나 켜진 어느 집의 자정",
+    tit2: "“인적이 드문 윔블던 공원 옆, 작은 등불 하나 켜진 어느 집의 자정”",
     desc2: `은은한 달빛에 감싸인 윔블던 숲 속의 깊은 밤.
     ^
                 손 끝을 스치는 살결과 향기에 취한
