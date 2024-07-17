@@ -70,7 +70,7 @@ function Products() {
         <div className="pbox ">
           <div className="col-12">
             <ul>
-              {/* 향수 + 핸드케어 + 바디케어 */}
+              {/* 상품 리스트 */}
               {product.map((v, i) => (
                 <li key={i}>
                   <Link
@@ -78,6 +78,7 @@ function Products() {
                     state={{
                       tit: v.tit,
                       src: v.src,
+                      hoverSrc: v.hoverSrc,
                       detail: v.detail,
                       price: v.price,
                       desc: v.desc,
@@ -87,9 +88,19 @@ function Products() {
                       notice: v.notice,
                     }}
                   >
-                    <div className="img-box">
+                    <div 
+                    className="img-box"
+                    onMouseOver={(e)=>{
+                      console.log("마우스오버");
+                      e.currentTarget.querySelector('img').src=process.env.PUBLIC_URL + v.hoverSrc
+                    }}
+                    onMouseLeave={(e)=>{
+                      console.log("마우스리브");
+                      e.currentTarget.querySelector('img').src=process.env.PUBLIC_URL + v.src
+                    }}
+                    
+                    >
                       <img src={process.env.PUBLIC_URL + v.src} alt={v.tit} />
-                      <div className="overlay"></div>
                     </div>
                     <h2>{v.tit}</h2>
                     <h3>{v.price}</h3>

@@ -8,6 +8,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/6am/p_6am.png",
+    hoverSrc:"/images/shop/6am/p_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits
         ^
@@ -32,6 +33,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/noon/p_noon.png",
+    hoverSrc:"/images/shop/noon/p_noon_1.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
         ^
@@ -57,6 +59,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/3pm/p_3pm.png",
+    hoverSrc:"/images/shop/3pm/p_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
@@ -82,6 +85,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/9pm/p_9pm.png",
+    hoverSrc:"/images/shop/9pm/p_9pm_1.png",
     detail: "/images/shop/9pm/img_9pm.png",
     desc: `The romance of a silent night in the woods
         ^
@@ -107,6 +111,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "109,000원",
     src: "/images/shop/midnight/p_mid.png",
+    hoverSrc:"/images/shop/midnight/p_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
         ^
@@ -132,6 +137,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/6am/m_6am.png",
+    hoverSrc:"/images/shop/6am/m_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",
     desc: `The scent of enchanted grass created by spellbound forest spirits
         ^
@@ -156,6 +162,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/noon/m_noon.png",
+    hoverSrc:"/images/shop/noon/m_noon_1.png",
     detail: "/images/shop/noon/img_noon.png",
     desc: `The exquisite breeze around the lakeside bench filled with the harmonious scent of floral and aqua
         ^
@@ -181,6 +188,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/3pm/m_3pm.png",
+    hoverSrc:"/images/shop/3pm/m_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
     desc: `The sweet scent of ripened fruits combined with lustrous grass under the beaming sunlight
         ^
@@ -206,6 +214,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/9pm/m_9pm.png",
+    hoverSrc:"/images/shop/9pm/m_9pm_1.png",
     detail: "/images/shop/9pm/img_9am.png",
     desc: `The romance of a silent night in the woods
         ^
@@ -231,6 +240,7 @@ export const perfumeData = [
     category: "Perfume",
     price: "31,000원",
     src: "/images/shop/midnight/m_mid.png",
+    hoverSrc:"/images/shop/midnight/m_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
     desc: `Deep in the soundless night, the scent of two lovers unite to create one
         ^
