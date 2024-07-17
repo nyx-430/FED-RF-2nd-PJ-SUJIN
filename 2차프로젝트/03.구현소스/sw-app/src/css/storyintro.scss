@@ -1,24 +1,35 @@
 /// 스토리 인트로 CSS - storyintro.scss ///
 
 #intro-page {
-  height: 155vh;
-  background: url(../../public/images/story_bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-
+    height: 155vh;
+    overflow: hidden;
   .inbox {
-    /* 인트로 로고 */
-    .intro-logo {
-      height: 300px;
-      left: 50%;
-      margin: 15rem 0;
+    background: url(../../public/images/story_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(1000px);
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s,
+      transform 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s;
+
+    /* 로딩시 클래스 visible */
+    &.visible {
+      transform: translateY(0);
+      opacity: 1;
     }
-    /* 텍스트 박스 */
-    .desc-box {
+
+    /* 아이템 박스 */
+    .item-box {
       width: 50%;
       text-align: center;
       transform: translate(50%);
+
+      /* 인트로 로고 */
+      .intro-logo {
+        height: 300px;
+        left: 50%;
+        margin: 15rem 0;
+      }
       .main-title {
         color: #fff;
         font-size: 3rem;
