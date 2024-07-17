@@ -17,7 +17,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 // import { faBa } from "@fortawesome/free-regular-svg-icons";
 // import { faCamera } from "@fortawesome/free-brands-svg-icons";
 
-// CSS 불러오기
+// 사이드 메뉴 CSS
 import "../../css/top_area.scss";
 
 // 카트 리스트 모듈
@@ -60,7 +60,7 @@ export default function TopArea() {
         goSearch(txt);
       } /// if ///
     } /// if ///
-  }; ///////// showSearch 함수 /////////
+  }; ///////// enterKey /////////
 
   // 3. 검색 페이지로 검색어와 함께 이동하기 함수
   const goSearch = (txt) => {
@@ -69,9 +69,9 @@ export default function TopArea() {
     // 라우터 이동 함수로 이동하기
     // 네비게이트 메서드("라우터 주소",{state:{보낼 객체}})
     goNav("/search", { state: { keyword: txt } });
-  }; ///////// goSearch 함수 /////////
+  }; ///////// goSearch /////////
 
-  // 코드 리턴 구역 //////////////
+  // 코드 리턴 구역 ////////////////////////
   return (
     <>
       <header id="gnb">
