@@ -1,13 +1,14 @@
-// 회원가입 페이지 컴포넌트 - Member.jsx
+/// 회원가입 페이지 컴포넌트 - Member.jsx ///
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 // 로컬스토리지 생성 JS
 import { initData } from "../func/mem_fn";
 
+// 제이쿼리
 import $ from "jquery";
 
-// 회원가입 CSS 불러오기
+// 회원가입 CSS
 import "../../css/member.scss";
 
 // 다음 주소 모듈 불러오기
@@ -24,7 +25,7 @@ function Member() {
   // 유효성 체크를 에러 메시지를 출력한다.
   // 3. 유효성 검사 통과시 로컬스에 저장한다.
   // -> 특이사항 :
-  // 글자를 입력할때마다 검사
+  // 글자를 입력할 때마다 검사
   // + submit버튼 작동시 검사
 
   // [ 상태관리변수 ] /////////////

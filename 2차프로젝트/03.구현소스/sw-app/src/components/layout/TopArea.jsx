@@ -114,24 +114,29 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
             </div>
             {/* <!-- 하단 아이콘 박스 --> */}
             <div className="icon-box">
-              <li className="menu-buttom">
-                <Link to="/login">
-                  <FontAwesomeIcon icon={faRightToBracket} />
-                </Link>
-              </li>
-              <a href="/join" className="menu-buttom">
-                <FontAwesomeIcon icon={faUser} />
-              </a>
-              <a
-                href="/cart"
-                className="menu-buttom"
-                onClick={(e) => {
-                  e.preventDefault();
-                  $(".shopping-tab").show();
-                }}
-              >
-                <FontAwesomeIcon icon={faBagShopping} />
-              </a>
+              <ul>
+                <li className="menu-buttom">
+                  {/* 로그인 */}
+                  <Link to="/login">
+                    <FontAwesomeIcon icon={faRightToBracket} />
+                  </Link>
+                </li>
+                <li className="menu-buttom">
+                  {/* 회원가입 */}
+                  <Link to="/member">
+                    <FontAwesomeIcon icon={faUser} />
+                  </Link>
+                </li>
+                {/* 장바구니 */}
+                <li className="menu-buttom"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    $(".shopping-tab").show();
+                  }}
+                >
+                  <FontAwesomeIcon icon={faBagShopping} />
+                </li>
+              </ul>
             </div>
           </div>
         </div>
