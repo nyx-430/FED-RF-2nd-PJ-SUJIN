@@ -11,20 +11,19 @@ import $ from "jquery";
 // GNB 데이터
 import { menu } from "../data/gnb";
 
+// 카트 리스트 모듈
+import CartList from "../modules/CartList";
+
 // 폰트어썸
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-// import { faBa } from "@fortawesome/free-regular-svg-icons";
-// import { faCamera } from "@fortawesome/free-brands-svg-icons";
 
 // 헤더 탑메뉴 CSS
 import "../../css/top_area.scss";
 
-// 카트 리스트 모듈
-import CartList from "../modules/CartList";
 
 export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
   // 전달값
@@ -129,10 +128,10 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
                 </li>
                 {/* 장바구니 */}
                 <li className="menu-buttom"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    $(".shopping-tab").show();
-                  }}
+                onClick={(e)=>{
+                  e.currentTarget.style.display = "block";
+                }}
+                style={{cursor: "pointer"}}
                 >
                   <FontAwesomeIcon icon={faBagShopping} />
                 </li>
