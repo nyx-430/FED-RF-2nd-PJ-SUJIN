@@ -73,9 +73,6 @@
             transition: background-color 0.3s ease;
           }
         }
-        .img-box:hover .overlay {
-          background-color: rgba(0, 0, 0, 0.65);
-        }
 
         h3 {
           font-family: "Noto Sans Korean", "Malgun Gothic", "Nanum Gothic",
@@ -94,6 +91,12 @@
       font-size: 1.8rem;
       cursor: pointer;
       border: 1px solid #000;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
     }
   }
 }
