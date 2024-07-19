@@ -28,14 +28,14 @@ const clearData = () => {
                 "uid":"admin",
                 "pwd":"1111",
                 "unm":"Administrator",
-                "eml":"admin@dc.com"
+                "eml":"admin@gmail.com"
             },
             {
                 "idx": "2",
-                "uid":"tomtom",
+                "uid":"user",
                 "pwd":"1111",
-                "unm":"Tom",
-                "eml":"tom@gmail.com"
+                "unm":"User",
+                "eml":"user@gmail.com"
             }
         ]
     `
