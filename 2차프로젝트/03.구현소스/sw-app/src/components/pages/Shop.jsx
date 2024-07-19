@@ -14,7 +14,7 @@ function Shop(props) {
       {/* 상단 공통 컴포넌트 */}
       <TopBanner />
 
-      {/* 상품 영역 */}
+      {/* 상품 리스트 영역 */}
       <Products />
     </>
   );

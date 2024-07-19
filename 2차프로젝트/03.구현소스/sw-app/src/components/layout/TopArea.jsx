@@ -2,6 +2,9 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+// 메모이제이션
+import { memo } from "react";
+
 // 제이쿼리
 import $ from "jquery";
 
@@ -23,7 +26,12 @@ import "../../css/top_area.scss";
 // 카트 리스트 모듈
 import CartList from "../modules/CartList";
 
-export default function TopArea() {
+export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
+  // 전달값
+  // 1. loginMsg - 로그인 메시지 변수
+  // 2. loginSts - 로그인 상태 변수
+  // 3. logoutFn - 로그아웃 함수
+
   // 메뉴 바 클래스 visible 상태관리변수
   const [visible, setVisible] = useState(false);
 
@@ -83,9 +91,7 @@ export default function TopArea() {
   return (
     <>
       <header id="gnb">
-        <div 
-        className={`menu ${visible ? "visible" : ""}`}
-        >
+        <div className={`menu ${visible ? "visible" : ""}`}>
           <div className="lines">
             <a href="/">
               <span id="logo" className="line">
@@ -108,9 +114,11 @@ export default function TopArea() {
             </div>
             {/* <!-- 하단 아이콘 박스 --> */}
             <div className="icon-box">
-              <a href="/login" className="menu-buttom">
-                <FontAwesomeIcon icon={faRightToBracket} />
-              </a>
+              <li className="menu-buttom">
+                <Link to="/login">
+                  <FontAwesomeIcon icon={faRightToBracket} />
+                </Link>
+              </li>
               <a href="/join" className="menu-buttom">
                 <FontAwesomeIcon icon={faUser} />
               </a>
@@ -186,4 +194,4 @@ export default function TopArea() {
       </header>
     </>
   );
-} /////////// TopArea ///////////
+}); /////////// TopArea ///////////
