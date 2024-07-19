@@ -1,0 +1,85 @@
+/* SW19 컬렉션 영역 CSS : collection.scss */
+
+#collection-page {
+  padding: 5rem;
+
+  .collection {
+    /* 슬라이드 셋팅 */
+    .big-slider {
+      display: flex;
+      /* 슬라이드 배너 이미지 박스 */
+      .img-box {
+        width: 60%;
+        height: 70%;
+        margin-right: 3rem;
+        cursor: pointer;
+        
+        img {
+          width: 100%;
+        }
+      }
+      /* 슬라이드 상품 이미지 박스 */
+      .goods-box {
+        width: 40%;
+        height: 40%;
+
+        img {
+          width: 100%;
+          object-position: center;
+          object-fit: cover;
+          cursor: pointer;
+        }
+      }
+
+      /* 슬라이드 상품 이미지 */
+      .desc-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem 0;
+
+        /* 슬라이드 버튼 박스 */
+        .btn-box {
+          position: absolute;
+          display: flex;
+          top: 40px;
+          width: 100%;
+          justify-content: space-between;
+          transform: translateY(-50%);
+        }
+
+        /* 슬라이드 버튼 */
+        .abtn {
+          width: 40px;
+          height: 40px;
+          font-size: 50px;
+          line-height: 40px;
+          padding: 0;
+          box-sizing: content-box;
+          cursor: pointer;
+
+          .lb {
+            left: 5vw;
+          }
+          .rb {
+            right: 5vw;
+          }
+        }
+        /* 타이틀 이미지 */
+        img {
+          width: 90px;
+          margin-bottom: 1.5rem;
+          cursor: pointer;
+        }
+        h3,
+        p {
+          margin: 1rem 0;
+          font-size: 1.6rem;
+          line-height: 1.5;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

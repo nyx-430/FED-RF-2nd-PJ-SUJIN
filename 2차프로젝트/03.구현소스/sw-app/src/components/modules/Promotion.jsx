@@ -7,6 +7,9 @@ import { pmData } from "../data/promotion_data";
 // 스와이프
 import { SwiperApp } from "../../plugin/SwiperApp";
 
+// CSS
+import "../../css/promotion.scss";
+
 function Promotion() {
   return (
     <>

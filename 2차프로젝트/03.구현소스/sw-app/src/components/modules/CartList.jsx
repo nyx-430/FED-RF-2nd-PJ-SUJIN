@@ -1,3 +1,5 @@
+/// 카트 리스트 컴포넌트 ///
+
 import React, { useContext } from "react";
 import { pCon } from "./pCon";
 

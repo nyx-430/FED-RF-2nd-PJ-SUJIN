@@ -1,6 +1,11 @@
+/// 컬렉션 컴포넌트 ///
 import React, { useRef, useState } from "react";
 
+// 배너 데이터
 import { collBan } from "../data/banner_data";
+
+// CSS
+import "../../css/collection.scss";
 
 function Collection({ catName }) {
   const [catArr, setCatArr] = useState(catName);
@@ -41,7 +46,7 @@ function Collection({ catName }) {
       <div className="inbox">
         <div className="collection">
           <h1 className="title">Collections</h1>
-          <div className="slider">
+          <div className="big-slider">
             <div className="img-box">
               <img src={process.env.PUBLIC_URL + selData.src} alt="sw19" />
             </div>
