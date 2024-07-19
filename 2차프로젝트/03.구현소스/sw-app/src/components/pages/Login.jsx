@@ -165,7 +165,7 @@ function Login() {
             myCon.makeMsg(result.unm);
 
             // 4. 로그인 성공 메시지 버튼에 출력하기
-            document.querySelector(".sbtn").innerText =
+            document.querySelector(".login-btn").innerText =
             "넌 로그인 된거야~!";
 
             // 5. 라우팅 페이지 이동
@@ -212,9 +212,9 @@ function Login() {
 
   // 코드 리턴구역 ////////////////////////
   return (
-    <div className="outbx">
-      <section className="membx" style={{ minHeight: "300px" }}>
-        <h2>LOG IN</h2>
+    <section id="login-page" className="page">
+      <div className="longin-box" style={{ minHeight: "300px" }}>
+        <h2>Log in</h2>
         <form method="post" action="process.php">
           <ul>
             <li>
@@ -223,7 +223,7 @@ function Login() {
                 id="user-id"
                 type="text"
                 maxLength="20"
-                placeholder="Please enter your ID"
+                placeholder="아이디"
                 value={userId}
                 onChange={changeUserId}
               />
@@ -249,7 +249,7 @@ function Login() {
               <input
                 type="password"
                 maxLength="20"
-                placeholder="Please enter your Password"
+                placeholder="비밀번호"
                 value={pwd}
                 onChange={changePwd}
               />
@@ -271,14 +271,14 @@ function Login() {
               }
             </li>
             <li style={{ overflow: "hidden" }}>
-              <button className="sbtn" onClick={onSubmit}>
-                Submit
+              <button className="login-btn" onClick={onSubmit}>
+                로그인
               </button>
             </li>
           </ul>
         </form>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 

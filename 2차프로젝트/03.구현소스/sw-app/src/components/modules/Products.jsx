@@ -1,15 +1,14 @@
 /// SW19 상품 페이지 ///
-
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-// 상품 데이터 불러오기
+// 상품 데이터
 import { perfumeData } from "../data/perfume_data";
 import { handData } from "../data/handcare_data";
 import { bodyData } from "../data/bodycare_data";
 import { fullSet, hcSet, miniDuoSet, discovertSet } from "../data/set_data";
 
-// CSS 불러오기
+// 상품 페이지 CSS
 import "../../css/shop.scss";
 
 function Products() {
@@ -24,12 +23,12 @@ function Products() {
 
   // 랜더링 구역 ////////////////////////
   useEffect(() => {
-    console.log("로케이션새로로딩");
     // 상품 개수 더하기 초기화
     vCnt.current = 1;
 
     // 데이터 상태값 변경
     setProduct(selData.slice(0,8*vCnt.current));
+
     // 더보기 버튼
     // loadMore();
   },[state]); ////////////////////////
