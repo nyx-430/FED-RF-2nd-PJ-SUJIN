@@ -1,5 +1,6 @@
 /// SW19 로그인 페이지 - Login.jsx  ///
 import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 // 로컬 스토리지 셋팅 함수 호출
 import { initData } from "../func/mem_fn";
@@ -248,7 +249,9 @@ function Login() {
           </ul>
           <ul className="join-find-box">
             <li className="join-btn">
-              <a href="#">회원가입</a>
+              <Link to="/member">
+              <span>회원가입</span>
+              </Link>
             </li>
             <li className="find-btn">
               <a href="#">아이디/비밀번호 찾기</a>
