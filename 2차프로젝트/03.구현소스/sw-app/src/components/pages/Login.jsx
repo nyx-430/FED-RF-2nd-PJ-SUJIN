@@ -1,4 +1,4 @@
-/// SW19 로그인 페이지 ///
+/// SW19 로그인 페이지 - Login.jsx  ///
 import React, { useContext, useEffect, useState } from "react";
 
 // 로컬 스토리지 셋팅 함수 호출
@@ -29,7 +29,7 @@ function Login() {
 
   /// [ 아이디 관련 메시지 프리셋 ] ///
   const msgId = ["아이디를 입력해 주세요.", "아이디가 존재하지 않습니다."];
-  /// [ 비밀번호관련 메시지 프리셋 ] ///
+  /// [ 비밀번호 관련 메시지 프리셋 ] ///
   const msgPwd = [
     // 비밀번호
     "비밀번호를 입력해 주세요.",

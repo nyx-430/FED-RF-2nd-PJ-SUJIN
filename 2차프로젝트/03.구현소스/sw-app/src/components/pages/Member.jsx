@@ -8,10 +8,10 @@ import { initData } from "../func/mem_fn";
 // 제이쿼리
 import $ from "jquery";
 
-// 회원가입 CSS
+// 로그인/회원가입 CSS
 import "../../css/member.scss";
 
-// 다음 주소 모듈 불러오기
+// 다음 주소 모듈
 import AddressInput from "../modules/AddressInput";
 
 function Member() {
@@ -20,8 +20,8 @@ function Member() {
   // goNav(라이터주소,state변수)
 
   // [ 회원가입 페이지 요구사항 ]
-  // 1. 각 입력항목별로 유효성검사를 실행함
-  // 2. 상태체크를 통하여 적절한 유효성검사시
+  // 1. 각 입력항목별로 유효성 검사를 실행함
+  // 2. 상태체크를 통하여 적절한 유효성 검사시
   // 유효성 체크를 에러 메시지를 출력한다.
   // 3. 유효성 검사 통과시 로컬스에 저장한다.
   // -> 특이사항 :
@@ -29,42 +29,42 @@ function Member() {
   // + submit버튼 작동시 검사
 
   // [ 상태관리변수 ] /////////////
-  // [1] 입력요소 상태변수
+  // [1] 입력요소상태변수
   // 1. 아이디변수
   const [userId, setUserId] = useState("");
-  // 2. 비밀번호변수
+  // 2. 비밀번호 변수
   const [pwd, setPwd] = useState("");
-  // 3. 비밀번호확인변수
+  // 3. 비밀번호 확인 변수
   const [chkPwd, setChkPwd] = useState("");
-  // 4. 사용자이름변수
+  // 4. 사용자 이름 변수
   const [userName, setUserName] = useState("");
-  // 5. 이메일변수
+  // 5. 이메일 변수
   const [email, setEmail] = useState("");
-  // 6. 주소변수
+  // 6. 주소 변수
   const [addr, setAddr] = useState("");
-  // 7. 우편번호변수
+  // 7. 우편번호 변수
   const [zipcode, setZipcode] = useState("");
 
-  // [2] 에러상태관리 변수
-  // -> 에러상태값 초기값은 에러아님(false)
-  // 1. 아이디변수
+  // [2] 에러상태관리변수
+  // -> 에러 상태값 초기값은 에러 아님(false)
+  // 1. 아이디 변수
   const [userIdError, setUserIdError] = useState(false);
-  // 2. 비밀번호변수
+  // 2. 비밀번호 변수
   const [pwdError, setPwdError] = useState(false);
-  // 3. 비밀번호확인변수
+  // 3. 비밀번호 확인 변수
   const [chkPwdError, setChkPwdError] = useState(false);
-  // 4. 사용자이름변수
+  // 4. 사용자 이름 변수
   const [userNameError, setUserNameError] = useState(false);
-  // 5. 이메일변수
+  // 5. 이메일 변수
   const [emailError, setEmailError] = useState(false);
-  // 6. 주소변수
+  // 6. 주소 변수
   const [addrError, setAddrError] = useState("");
 
   // console.log(">>>>", userIdError);
 
-  // [ 아이디관련 메시지 프리셋 ] ////
+  // [ 아이디 관련 메시지 프리셋 ] ////
   const msgId = [
-    // 1. 최소 5글자 이상 입력할것
+    // 1. 최소 5글자 이상 입력할 것
     "User ID must contain a minimum of 5 characters",
     // 2. 이미 사용중인 아이디임
     "This ID is already in use!",
@@ -76,7 +76,7 @@ function Member() {
   const msgEtc = {
     // 비밀번호
     pwd: "5 to 15 digits in the form of special characters, characters, and numbers",
-    // 비밀번호확인
+    // 비밀번호 확인
     confPwd: "Password verification does not match",
     // 필수입력
     req: "This is a required entry",
@@ -91,23 +91,23 @@ function Member() {
   // [ 유효성 검사 함수 ] ///////
   // 1. 아이디 유효성 검사 ////////////
   const changeUserId = (e) => {
-    // 입력된 값읽기
+    // 입력된 값 읽기
     let val = e.target.value;
 
-    // 1. 아이디 유효성 검사식(따옴표로 싸지 말것!)
+    // 1. 아이디 유효성 검사식(따옴표로 싸지 말 것!)
     const valid = /^[A-Za-z0-9+]{5,}$/;
-    // 유효성 검사방법: 정규식.test(값)
+    // 유효성 검사 방법: 정규식.test(값)
 
-    // 2. 입력값 확인 : e.target
+    // 2. 입력 값 확인 : e.target
     // console.log(val);
 
-    // 3. 에러상태 분기하기
-    // 3-1. 에러 아닐때 (유효성검사만 통과한 경우)
+    // 3. 에러 상태 분기하기
+    // 3-1. 에러 아닐 때 (유효성 검사만 통과한 경우)
     if (valid.test(val)) {
       console.log("통과했지만...!");
-      // 아이디 검사를 위해 기본 데이터 생성호출!
+      // 아이디 검사를 위해 기본 데이터 생성 호출!
       initData();
-      // 로컬스토리지에 "mem-data"가 없으면 초기셋팅함!
+      // 로컬스토리지에 "mem-data"가 없으면 초기 셋팅함!
 
       // 이제 중복 아이디 검사를 실행한다!!!
       // 1. 로컬스 변수할당
@@ -117,11 +117,11 @@ function Member() {
       // 2. 로컬스 객체변환 (왜? 문자형이니까!)
       memData = JSON.parse(memData);
       console.log(memData);
-      // -> 배열데이터로 변환!
-      // 주의: JSON 파싱할때 원본형식이 제이슨 파일형식으로
-      // 엄격하게 작성되어야 에러가 없음(마지막콤마 불허용 등)
+      // -> 배열 데이터로 변환!
+      // 주의: JSON 파싱할 때 원본 형식이 제이슨 파일 형식으로
+      // 엄격하게 작성되어야 에러가 없음(마지막 콤마 불허용 등)
 
-      // 3. 배열이니까 현재 입력데이터의 아이디가
+      // 3. 배열이니까 현재 입력 데이터의 아이디가
       // 기존 배열값으로 있는지 검사함!
       // 있으면 true, 없으면 false
       let isT = memData.some((v) => v.uid === val);
@@ -131,16 +131,16 @@ function Member() {
       if (isT) {
         // 에러 메시지 업데이트
         setIdMsg(msgId[1]);
-        // 에러상태값 업데이트
+        // 에러 상태값 업데이트
         setUserIdError(true);
       } /// if ///
-      // 5. false 일 경우 [성공 메시지] 표시
+      // 5. false일 경우 [성공 메시지] 표시
       else {
-        // 에러상태값 업데이트 : 에러가 아님!(false)
+        // 에러 상태값 업데이트 : 에러가 아님!(false)
         setUserIdError(false);
       } /// else ///
     } /// if ///
-    // 3-2. 에러일때 : 유효성 검사 에러
+    // 3-2. 에러일 때 : 유효성 검사 에러
     else {
       console.log("에러~!");
       // 에러 메시지 업데이트
@@ -149,66 +149,65 @@ function Member() {
       setUserIdError(true);
     } /// else ///
 
-    // 실제 userId 상태변수값이 업데이트 돼야만
-    // 화면에 출력된다!
+    // 실제 userId 상태변수값이 업데이트 돼야만 화면에 출력된다!
     setUserId(val);
   }; ////////// changeUserId 함수 ////////////
 
   // 2. 비밀번호 유효성 검사 ///////////
   const changePwd = (e) => {
-    // 입력된 값읽기
+    // 입력된 값 읽기
     let val = e.target.value;
 
-    // 1. 비밀번호 유효성 검사식(따옴표로 싸지 말것!)
+    // 1. 비밀번호 유효성 검사식(따옴표로 싸지 말 것!)
     const valid = /^.*(?=^.{5,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
 
-    // 2. 입력값 확인 : e.target -> 이벤트가 발생한 요소
+    // 2. 입력 값 확인 : e.target -> 이벤트가 발생한 요소
     // console.log(val);
 
     // 3. 에러에 따른 상태값 변경
     if (valid.test(val)) setPwdError(false);
     else setPwdError(true);
 
-    // 4. 기존입력값 반영하기
+    // 4. 기존 입력값 반영하기
     setPwd(val);
   }; ///////// changePwd 함수 //////////
 
-  // 3. 비밀번호확인 유효성 검사 ///////////
+  // 3. 비밀번호 확인 유효성 검사 ///////////
   const changeChkPwd = (e) => {
-    // 입력된 값읽기
+    // 입력된 값 읽기
     let val = e.target.value;
 
-    // 1. 비밀번호 입력내용과 일치여부 확인
+    // 1. 비밀번호 입력 내용과 일치 여부 확인
     if (pwd === val) setChkPwdError(false);
     else setChkPwdError(true);
 
-    // 2. 기존입력값 반영하기
+    // 2. 기존 입력값 반영하기
     setChkPwd(val);
   }; ///////// changeChkPwd 함수 //////////
 
-  // 4. 사용자이름 유효성 검사 ///////////
+  // 4. 사용자 이름 유효성 검사 ///////////
   const changeUserName = (e) => {
     // 입력된 값읽기
     let val = e.target.value;
 
-    // 1. 빈값체크
+    // 1. 빈값 체크
     if (val !== "") setUserNameError(false);
     else setUserNameError(true);
 
-    // 2. 기존입력값 반영하기
+    // 2. 기존 입력값 반영하기
     setUserName(val);
   }; ///////// changeUserName 함수 //////////
 
   // 5. 이메일 유효성 검사 ///////////
   const changeEmail = (e) => {
-    // 입력된 값읽기
+    // 입력된 값 읽기
     let val = e.target.value;
 
     // 1. 이메일 유효성 검사식(따옴표로 싸지 말것!)
     const valid =
       /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 
-    // 2. 입력값 확인 : e.target -> 이벤트가 발생한 요소
+    // 2. 입력 값 확인 : e.target -> 이벤트가 발생한 요소
     // console.log(val);
 
     // 3. 에러에 따른 상태값 변경
@@ -233,7 +232,7 @@ function Member() {
     if (address1 !== "" && address2 !== "" && zc !== "") setAddrError(false);
     else setAddrError(true);
 
-    // 3. 기존입력값 반영하기 : 상태변수에 반영함
+    // 3. 기존 입력값 반영하기 : 상태변수에 반영함
     // (1) 전체 주소값 저장 (앞주소+뒷주소)
     setAddr(address1 + " " + address2);
     console.log(addr);
@@ -256,7 +255,7 @@ function Member() {
     if (!zipcode) setAddrError(true);
 
     // 2. 통과시 true, 불통과시 false 리턴 처리
-    // 통과조건 : 빈값 아님 + 에러후크변수가 모두 false
+    // 통과 조건 : 빈값 아님 + 에러 후크 변수가 모두 false
     if (
       userId &&
       pwd &&
@@ -356,8 +355,8 @@ function Member() {
                 onBlur={changeUserId}
               />
               {
-                //   에러일 경우 메시지 출력
-                // 조건문 && 출력요소
+                // 에러일 경우 메시지 출력
+                // 조건문 && 출력 요소
                 userIdError && (
                   <div className="msg">
                     <small
@@ -373,9 +372,9 @@ function Member() {
               }
               {
                 // 통과시 메시지 출력
-                // 조건문 && 출력요소
-                // 조건추가 : userId가 입력전일때 안보임처리
-                // userId가 입력전엔 false로 리턴됨!
+                // 조건문 && 출력 요소
+                // 조건 추가 : userId가 입력 전일 때 안 보임 처리
+                // userId가 입력 전엔 false로 리턴됨!
                 !userIdError && userId && (
                   <div className="msg">
                     <small
@@ -402,7 +401,7 @@ function Member() {
               />
               {
                 // 에러일 경우 메시지 출력
-                // 조건문 && 출력요소
+                // 조건문 && 출력 요소
                 pwdError && (
                   <div className="msg">
                     <small
@@ -429,7 +428,7 @@ function Member() {
               />
               {
                 // 에러일 경우 메시지 출력
-                // 조건문 && 출력요소
+                // 조건문 && 출력 요소
                 chkPwdError && (
                   <div className="msg">
                     <small
@@ -481,7 +480,7 @@ function Member() {
               <AddressInput changeAddr={changeAddr} />
               {
                 // 에러일 경우 메시지 출력
-                // 조건문 && 출력요소
+                // 조건문 && 출력 요소
                 addrError && (
                   <div className="msg">
                     <small
@@ -508,7 +507,7 @@ function Member() {
               />
               {
                 // 에러일 경우 메시지 출력
-                // 조건문 && 출력요소
+                // 조건문 && 출력 요소
                 emailError && (
                   <div className="msg">
                     <small
