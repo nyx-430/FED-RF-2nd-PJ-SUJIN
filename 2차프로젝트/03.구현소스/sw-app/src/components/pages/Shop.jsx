@@ -1,6 +1,7 @@
+/// SW19 상품 페이지 - Shop.jsx ///
 import React, { useEffect } from "react";
 
-// Shop 페이지 공통 컴포넌트 불러오기
+// Shop 페이지 공통 모듈
 import TopBanner from "../modules/TopBanner";
 import Products from "../modules/Products";
 
@@ -9,12 +10,14 @@ function Shop(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }); /////////////////////////
+  
+  // 코드 리턴 구역 /////////////
   return (
     <>
-      {/* 상단 공통 컴포넌트 */}
+      {/* 상단 공통 배너 */}
       <TopBanner />
 
-      {/* 상품 리스트 영역 */}
+      {/* 상품 리스트 */}
       <Products />
     </>
   );

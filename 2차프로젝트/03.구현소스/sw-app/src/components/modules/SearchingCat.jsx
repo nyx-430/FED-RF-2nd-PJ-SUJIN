@@ -1,18 +1,16 @@
 // DC PJ 캐릭터 검색결과 리스트 컴포넌트
 import React from "react";
-
-// CSS불러오기
-import "../../css/searching_cat.scss";
-
-// 라우터돔 Link
 import { Link } from "react-router-dom";
+
+// 검색 결과 페이지 CSS
+import "../../css/searching_cat.scss";
 
 function SearchingCat({ dt }) {
   // dt - 검색된 배열데이터
 
   // total - 검색된 배열데이터 개수
   const total = dt.length;
-  console.log("데이터수:", total);
+  console.log("데이터 수:", total);
 
   return (
     <>
@@ -24,7 +22,6 @@ function SearchingCat({ dt }) {
               <li key={i}>
                 <Link
                   to="/detail"
-                  /* state로 3가지 값을 넘겨준다! */
                   state={{
                     tit: v.tit,
                     src: v.src,
@@ -46,7 +43,7 @@ function SearchingCat({ dt }) {
         )
       }
       {
-        // 선택 데이터가 0개이면 아래 출력
+        // 선택 데이터가 0개일 때 출력 코드
         total == 0 && (
           <h2 style={{ textAlign: "center" }}>
             Sorry, we don't have any matches for that.

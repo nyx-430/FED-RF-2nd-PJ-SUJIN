@@ -1,4 +1,4 @@
-// 메인 페이지 컴포넌트
+/// 메인 페이지 컴포넌트 - Main.jsx ///
 import React, { useEffect } from "react";
 
 // 메인 페이지 CSS

@@ -1,4 +1,4 @@
-/// 스토리 인트로 컴포넌트 ///
+/// SW19 스토리 인트로 - StoryIntro.jsx ///
 
 import React, { useEffect, useState } from "react";
 

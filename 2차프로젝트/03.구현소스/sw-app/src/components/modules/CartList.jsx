@@ -1,5 +1,4 @@
-/// 카트 리스트 컴포넌트 ///
-
+/// SW19 카트 리스트 - CartList.jsx ///
 import React, { useContext } from "react";
 import { pCon } from "./pCon";
 

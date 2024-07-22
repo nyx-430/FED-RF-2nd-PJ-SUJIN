@@ -1,4 +1,4 @@
-/// SW19 상품 페이지 ///
+/// SW19 상품 리스트 - Products.jsx ///
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -8,7 +8,7 @@ import { handData } from "../data/handcare_data";
 import { bodyData } from "../data/bodycare_data";
 import { fullSet, hcSet, miniDuoSet, discovertSet } from "../data/set_data";
 
-// 상품 페이지 CSS
+// 상품/상세/배너 CSS
 import "../../css/shop.scss";
 
 function Products() {

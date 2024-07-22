@@ -1,4 +1,4 @@
-/// SW19 전체 레이아웃 컴포넌트 ///
+/// SW19 전체 레이아웃 - Layout.jsx ///
 import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 

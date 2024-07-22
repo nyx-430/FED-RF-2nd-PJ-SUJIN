@@ -1,7 +1,7 @@
-// 스토리 페이지 컴포넌트
+/// SW19 스토리 페이지 - Story.jsx ///
 import React, { useEffect } from "react";
 
-// 컴포넌트 불러오기
+// 모듈
 import StoryIntro from "../modules/StoryIntro";
 import Collection from "../modules/Collection";
 
@@ -12,11 +12,10 @@ function Story(props) {
   }); /////////////////////////
   return (
     <>
-      {/* <!-- 스토리 인트로 컴포넌트 --> */}
+      {/* <!-- 스토리 인트로 --> */}
       <StoryIntro />
 
-      {/* 컬렉션 컴포넌트 */}
-      {/* <!-- 2. 컬렉션 컴포넌트 --> */}
+      {/* <!-- 컬렉션 --> */}
       <Collection catName="am6" />
     </>
   );

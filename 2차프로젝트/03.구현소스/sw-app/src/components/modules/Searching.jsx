@@ -1,3 +1,4 @@
+/// SW19 검색 모듈 - Searching.jsx ///
 import React, { useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -5,16 +6,16 @@ import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-// 상품 데이터 불러오기
+// 상품 데이터
 import { perfumeData } from "../data/perfume_data";
 import { handData } from "../data/handcare_data";
 import { bodyData } from "../data/bodycare_data";
 import { fullSet, hcSet, miniDuoSet, discovertSet } from "../data/set_data";
 
-// 검색 페이지 CSS 불러오기
+// 검색 페이지 CSS
 import "../../css/searching.scss";
 
-// 캐릭터 리스트 결과 컴포넌트
+// 캐릭터 리스트 결과 페이지 컴포넌트
 import SearchingCat from "./SearchingCat";
 
 function Searching({ kword }) {
@@ -34,8 +35,8 @@ function Searching({ kword }) {
   // 데이터 처리대상 : 나중에 처리 대상 변경만 하면 끝!
   let rangeData = ["Perfume", "Body Care", "Hand Care", "Gift Set"];
 
-  // state전달값이 빈값이 아니면 배열filter돌리기
-  // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사후 있으면 true
+  // state전달값이 빈값이 아니면 배열 filter돌리기
+  // 배열.includes(특정값) -> 배열값 만큼 돌면서 검사 후 있으면 true
   if (rangeData.includes(state.tit)) {
     selData = selData.filter((v) => {
       if (v.tit === state.tit) return true;
@@ -103,7 +104,7 @@ function Searching({ kword }) {
     // filter에서 변수에 저장할 배열로 수집된다!
   }); //////////////// filter ///////////////////
 
-  // [ 결과내 재검색 : 데이터 항목 중 alignment값으로 검색함! ]
+  // [ 결과내 재검색 : 데이터 항목 중 alignment값으로 검색 ]
 
   // [ 정렬 기능 추가하기 ] /////////
   // (1) 오름차순일 경우
@@ -133,13 +134,12 @@ function Searching({ kword }) {
   // 코드 리턴 구역 ////////////////////////
   return (
     <>
-      {/* 전체 검색모듈 코드 */}
+      {/* 전체 검색 모듈 코드 */}
       <section className="schbx">
         {/* 1. 옵션선택박스 */}
         <div className="schopt">
-          {/* 1-1.검색박스 */}
+          {/* 1-1. 검색박스 */}
           <div className="searching">
-            {/* 검색버튼 돋보기 아이콘 */}
             <FontAwesomeIcon
               icon={faSearch}
               className="schbtn"
@@ -151,8 +151,7 @@ function Searching({ kword }) {
               type="text"
               placeholder="Filter by Keyword"
               defaultValue={kword}
-              // 엔터키를 눌렀을 때 검색 실행!
-              // 검색어 상태변수만 업데이트하면 끝!!!
+              // 엔터키를 눌렀을 때 검색 실행
               // -> setKw(검색어)
               onKeyUp={(e) => {
                 if (e.key == "Enter") {
@@ -160,7 +159,7 @@ function Searching({ kword }) {
                   setKw(e.target.value);
                   // 2. 처음 검색시 정렬은 기본 정렬 오름차순(asc)
                   setSort("asc");
-                  // 3. 정렬선택박스 선택값 변경 (DOM에서 보이기 변경)
+                  // 3. 정렬선택박스 선택값 변경(DOM에서 보이기 변경)
                   document.querySelector("#sel").value = "asc";
                 } /// if ///
               }}
@@ -188,7 +187,7 @@ function Searching({ kword }) {
               <option value="desc">Z-A</option>
             </select>
           </aside>
-          {/* 2-3. 캐릭터 리스트 컴포넌트 : 
+          {/* 2-3. 상품 리스트 컴포넌트 : 
             데이터 상태변수 중 첫번째 값만 보냄 */}
           <SearchingCat dt={newList} />
         </div>

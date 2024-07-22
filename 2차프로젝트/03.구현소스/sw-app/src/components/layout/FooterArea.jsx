@@ -1,4 +1,4 @@
-// 하단영역 컴포넌트 ///
+/// SW19 하단 영역 - FooterArea.jsx ///
 
 // 하단영역 CSS 불러오기
 import "../../css/footer_area.scss";

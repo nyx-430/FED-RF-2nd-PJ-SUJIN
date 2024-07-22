@@ -1,10 +1,11 @@
+/// SW19 주소 검색 모듈 - AddressInput.jsx ///
 import React, { useEffect, useState } from "react";
 import DaumPostcode from "react-daum-postcode";
 
 const AddressInput = ({ changeAddr }) => {
   // changeAddr - 회원가입 양식 체크 전달 함수
 
-  // 상태관리변수
+  // 상태관리변수 ///////////////////
   // [1] 우편번호
   const [zonecode, setZonecode] = useState("");
   // [2] 주소

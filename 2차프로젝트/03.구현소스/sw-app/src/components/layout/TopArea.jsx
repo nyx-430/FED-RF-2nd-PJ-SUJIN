@@ -1,4 +1,4 @@
-/// 상단 영역 컴포넌트 ///
+/// SW19 상단 영역 - TopArea.jsx ///
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 

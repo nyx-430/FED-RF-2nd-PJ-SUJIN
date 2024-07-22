@@ -1,4 +1,4 @@
-/// SW19 상품 상세 페이지 ///
+/// SW19 상품 상세 페이지 - Detail.jsx ///
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -6,9 +6,6 @@ import { useLocation } from "react-router-dom";
 import "../../css/shop.scss";
 
 function Detail() {
-  // 라우터 호출시 전달한 값을 받는다
-
-  
   const loc = useLocation();
   // console.log(loc.state);
   const tit = (loc.state.tit?loc.state.tit:'');
@@ -20,8 +17,6 @@ function Detail() {
   const perfumer = (loc.state.perfumer?loc.state.perfumer:'');
   const ingredients = (loc.state.ingredients?loc.state.ingredients:'');
   const notice = (loc.state.notice?loc.state.notice:'');
-
-  console.log("공지", notice);
 
   // 랜더링 실행 구역 ////////////////////////
   useEffect(() => {

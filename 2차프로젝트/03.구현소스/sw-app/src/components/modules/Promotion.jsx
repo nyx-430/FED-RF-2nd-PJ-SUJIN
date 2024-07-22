@@ -1,7 +1,8 @@
+/// SW19 프로모션 - Promotion.jsx ///
 import React from "react";
 import { Link } from "react-router-dom";
 
-// 프로모션 데이터 불러오기
+// 프로모션 데이터
 import { pmData } from "../data/promotion_data";
 
 // 스와이프

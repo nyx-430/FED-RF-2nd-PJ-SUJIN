@@ -1,4 +1,4 @@
-// 메인영역 컴포넌트 ///
+/// SW19 메인 영역 - MainArea.jsx ///
 
 import { Outlet } from "react-router-dom";
 

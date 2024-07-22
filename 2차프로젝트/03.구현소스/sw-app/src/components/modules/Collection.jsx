@@ -1,4 +1,4 @@
-/// 컬렉션 컴포넌트 ///
+/// SW19 대표상품 컬렉션 - Collection.jsx ///
 import React, { useRef, useState } from "react";
 
 // 배너 데이터
