@@ -65,23 +65,23 @@ function Member() {
   // [ 아이디 관련 메시지 프리셋 ] ////
   const msgId = [
     // 1. 최소 5글자 이상 입력할 것
-    "User ID must contain a minimum of 5 characters",
+    "최소 5글자 이상 입력해 주세요.",
     // 2. 이미 사용중인 아이디임
-    "This ID is already in use!",
+    "이미 사용중인 아이디입니다.",
     // 3. 훌륭한 아이디!
-    "That's a great ID!",
+    "사용 가능한 아이디입니다.",
   ];
 
   // [ 기타 메시지 프리셋 ]
   const msgEtc = {
     // 비밀번호
-    pwd: "5 to 15 digits in the form of special characters, characters, and numbers",
+    pwd: "영문 대소문자/숫자/특수문자 중 2가지 이상을 조합한 5자~15자 비밀번호를 입력해 주세요.",
     // 비밀번호 확인
-    confPwd: "Password verification does not match",
+    confPwd: "비밀번호가 일치하지 않습니다.",
     // 필수입력
-    req: "This is a required entry",
+    // req: "필수입력 사항입니다.",
     // 이메일
-    email: "Please enter a valid email format",
+    email: "이메일을 입력해 주세요.",
   }; ///// msgEtc ///////
 
   // [3] 에러메시지 상태변수 : 초기값 msgId[0]
@@ -104,12 +104,12 @@ function Member() {
     // 3. 에러 상태 분기하기
     // 3-1. 에러 아닐 때 (유효성 검사만 통과한 경우)
     if (valid.test(val)) {
-      console.log("통과했지만...!");
-      // 아이디 검사를 위해 기본 데이터 생성 호출!
+      // console.log("통과했지만...!");
+      // 아이디 검사를 위해 기본 데이터 생성 호출
       initData();
-      // 로컬스토리지에 "mem-data"가 없으면 초기 셋팅함!
+      // 로컬스토리지에 "mem-data"가 없으면 초기 셋팅
 
-      // 이제 중복 아이디 검사를 실행한다!!!
+      // 이제 중복 아이디 검사 실행
       // 1. 로컬스 변수할당
       let memData = localStorage.getItem("mem-data");
       console.log(memData);
@@ -125,9 +125,9 @@ function Member() {
       // 기존 배열값으로 있는지 검사함!
       // 있으면 true, 없으면 false
       let isT = memData.some((v) => v.uid === val);
-      console.log("중복id있어?", isT);
+      // console.log("중복id있어?", isT);
 
-      // 4. true 일 경우 중복데이터 메시지 표시
+      // 4. true일 경우 중복 데이터 메시지 표시
       if (isT) {
         // 에러 메시지 업데이트
         setIdMsg(msgId[1]);
@@ -187,7 +187,7 @@ function Member() {
 
   // 4. 사용자 이름 유효성 검사 ///////////
   const changeUserName = (e) => {
-    // 입력된 값읽기
+    // 입력된 값 읽기
     let val = e.target.value;
 
     // 1. 빈값 체크
@@ -203,7 +203,7 @@ function Member() {
     // 입력된 값 읽기
     let val = e.target.value;
 
-    // 1. 이메일 유효성 검사식(따옴표로 싸지 말것!)
+    // 1. 이메일 유효성 검사식(따옴표로 싸지 말 것!)
     const valid =
       /^(([^<>()\[\].,;:\s@"]+(\.[^<>()\[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
 
@@ -214,13 +214,13 @@ function Member() {
     if (valid.test(val)) setEmailError(false);
     else setEmailError(true);
 
-    // 4. 기존입력값 반영하기
+    // 4. 기존 입력값 반영하기
     setEmail(val);
   }; ///////// changeEmail 함수 //////////
 
   // 6. 주소 유효성 검사 ///////////
   const changeAddr = () => {
-    // 입력된 값읽기
+    // 입력된 값 읽기
     // 앞주소(자동 입력값)
     let address1 = $(".addr1").val();
     // 뒷주소(직접 입력값)
@@ -284,11 +284,11 @@ function Member() {
 
     // 2. 유효성검사 전체 통과시
     if (totalValid()) {
-      console.log("모두통과! 저장!");
+      console.log("모두 통과! 저장!");
 
-      // [회원정보를 로컬스토리지에 저장하기]
+      // [회원정보 로컬스토리지에 저장하기]
 
-      // 1. 로컬스 체크함수호출(없으면 생성!)
+      // 1. 로컬스 체크 함수호출(없으면 생성!)
       initData();
 
       // 2. 로컬스 변수할당
@@ -322,7 +322,7 @@ function Member() {
       // 7. 회원가입 환영메시지 + 로그인 페이지 이동
       // 버튼 텍스트에 환영메시지
       document.querySelector(".sbtn").innerText = "Thank you for joining us!";
-      // 1초 후 페이지 이동 : 라우터 Navigate로 이동함
+      // 1초 후 페이지 이동 : 라우터 Navigate로 이동
       setTimeout(() => {
         goNav("/login");
         // 주의: 경로 앞에 슬래쉬(/) 안 쓰면
@@ -349,7 +349,7 @@ function Member() {
               <input
                 type="text"
                 maxLength="20"
-                placeholder="Please enter your ID"
+                placeholder="영문소문자/숫자, 4~20자"
                 value={userId}
                 onChange={changeUserId}
                 onBlur={changeUserId}
@@ -394,7 +394,7 @@ function Member() {
               <input
                 type="password"
                 maxLength="20"
-                placeholder="Please enter your Password"
+                placeholder="영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 5자~15자"
                 value={pwd}
                 onChange={changePwd}
                 onBlur={changePwd}
@@ -421,7 +421,7 @@ function Member() {
               <input
                 type="password"
                 maxLength="20"
-                placeholder="Please enter your Confirm Password"
+                placeholder="비밀번호 재확인"
                 value={chkPwd}
                 onChange={changeChkPwd}
                 onBlur={changeChkPwd}
@@ -444,11 +444,11 @@ function Member() {
               }
             </li>
             <li>
-              <label>User Name : </label>
+              <label>Name : </label>
               <input
                 type="text"
                 maxLength="20"
-                placeholder="Please enter your Name"
+                placeholder="이름"
                 value={userName}
                 onChange={changeUserName}
                 onBlur={changeUserName}
@@ -500,7 +500,7 @@ function Member() {
               <input
                 type="text"
                 maxLength="50"
-                placeholder="Please enter your Email"
+                placeholder="이메일을 입력해 주세요."
                 value={email}
                 onChange={changeEmail}
                 onBlur={changeEmail}
@@ -528,8 +528,8 @@ function Member() {
               </button>
             </li>
             <li>
-              Are you already a Member?
-              <Link to="/login">Log In</Link>
+              혹시 SW19 회원이신가요?
+              <Link to="/login">로그인</Link>
             </li>
           </ul>
         </form>

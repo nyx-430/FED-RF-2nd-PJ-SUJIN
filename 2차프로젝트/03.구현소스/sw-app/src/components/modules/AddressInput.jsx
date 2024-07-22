@@ -89,18 +89,17 @@ const AddressInput = ({ changeAddr }) => {
   return (
     <div style={wholeBoxStyle}>
       <div>
-        <div style={{ paddingLeft: "20px", lineHeight: "2" }}>
-          <button type="button" onClick={toggleHandler}>
-            Search Address
-          </button>
+        <div style={{ lineHeight: "2" }}>
+          {/* <button type="button" onClick={toggleHandler}>
+            주소검색
+          </button> */}
           <div>
-            ZipCode :
             <input
               className="zipcode"
               value={zonecode}
               readOnly
               onClick={toggleHandler}
-              placeholder="Click 'Search Address'"
+              placeholder="우편번호"
             />
           </div>
         </div>
@@ -124,12 +123,12 @@ const AddressInput = ({ changeAddr }) => {
           readOnly
           onClick={toggleHandler}
           style={{ width: "100%" }}
-          placeholder="Click 'Search Address'"
+          placeholder="기본 주소"
         />
         {/* 주소 직접 작성 뒷부분(상세 주소) */}
         <input
           className="addr2"
-          placeholder="input detail adress"
+          placeholder="나머지 주소(선택 입력 가능)"
           style={{ width: "100%" }}
           onChange={changeAddr}
           onBlur={changeAddr}
