@@ -1,12 +1,12 @@
 /// SW19 로그인 페이지 ///
 import React, { useContext, useEffect, useState } from "react";
 
-// CSS (회원가입과 동일)
-import "../../css/member.scss";
-
 // 로컬 스토리지 셋팅 함수 호출
 import { initData } from "../func/mem_fn";
 import { dCon } from "../modules/dCon";
+
+// 로그인/회원가입 CSS
+import "../../css/member.scss";
 
 function Login() {
   // 컨텍스트 사용
@@ -28,15 +28,12 @@ function Login() {
   const [pwdError, setPwdError] = useState(false);
 
   /// [ 아이디 관련 메시지 프리셋 ] ///
-  const msgId = [
-    "This is a required entry", // 필수입력
-    "ID does not exist", // 아이디가 존재하지 않습니다
-  ];
+  const msgId = ["아이디를 입력해 주세요.", "아이디가 존재하지 않습니다."];
   /// [ 비밀번호관련 메시지 프리셋 ] ///
   const msgPwd = [
     // 비밀번호
-    "This is a required entry", //필수입력
-    "Password doesn't match", //비밀번호가 일치하지 않습니다
+    "비밀번호를 입력해 주세요.",
+    "비밀번호가 일치하지 않습니다.",
   ];
 
   // [3] 에러메시지 상태변수 : 초기값 msgId[0]
@@ -47,22 +44,21 @@ function Login() {
   // [ 유효성 검사 함수 ] ///////
   // 1. 아이디 유효성 검사 ////////////
   const changeUserId = (e) => {
-    // 입력된 값읽기
+    // 입력된 값 읽기
     let val = e.target.value;
 
     // 1. 빈값 체크 :
-    // 1-1.빈값아니면 에러아님(false)
+    // 1-1.빈값 아니면 에러 아님(false)
     if (val !== "") setUserIdError(false);
-    // 1-2.빈값이면 에러임(true)
+    // 1-2.빈값이면 에러(true)
     else {
       // (1) 메시지 띄우기(필수입력메시지)
       setIdMsg(msgId[0]);
-      // (2) 에러상태값 변경하기
+      // (2) 에러 상태값 변경하기
       setUserIdError(true);
     } /////// else ///////////
 
-    // 실제 userId 상태변수값이 업데이트 돼야만
-    // 화면에 출력된다!
+    // 실제 userId 상태변수값이 업데이트 돼야만 화면에 출력된다!
     setUserId(val);
   }; ////////// changeUserId 함수 ////////////
 
@@ -129,10 +125,10 @@ function Login() {
 
       // 4-1. 결과값이 없으면 메시지 보이기
       if (!result) {
-        // (1) 에러메시지 선택하기
+        // (1) 에러 메시지 선택하기
         setIdMsg(msgId[1]);
 
-        // (2) 에러메시지 보이기
+        // (2) 에러 메시지 보이기
         setUserIdError(true);
       } /// if ///
       // 4-2. 결과값이 있으면 비밀번호검사
@@ -141,7 +137,7 @@ function Login() {
         setUserIdError(false);
         // (2) 비밀번호 검사 : 입력비번 == 결과비번
         if (pwd === result.pwd) {
-          // 같을 경우 로그인 성공처리
+          // 같을 경우 로그인 성공 처리
           alert("Login Success!");
 
           // ****** [ 로그인 후 셋팅작업 ] ****** //
@@ -153,7 +149,7 @@ function Login() {
 
           // 2. 컨텍스트 API의 로그인 상태 업데이트
           myCon.setLoginSts(sessionStorage.getItem("minfo"));
-          // -> 업데이트 된 minfo 세션스값을 넣음!
+          // -> 업데이트 된 minfo 세션스 값을 넣음!
 
           // 3. 로그인 환영 메시지 셋팅함수 호출
           myCon.makeMsg(result.unm);
@@ -175,14 +171,12 @@ function Login() {
           setPwdError(true);
         } /// else ///
 
-        // -> 원래 비밀번호는 암호화 되어 있으므로
-        // 백엔드 비밀번호 검사 모듈로 대부분 검사한다!
+        // -> 원래 비밀번호는 암호화 되어 있으므로 백엔드 비밀번호 검사 모듈로 대부분 검사한다!
       } /// else ///
 
       // 배열.find() -> 있을 경우 레코드 저장
-      // find는 filter와 달리 배열로 저장하지 않고
-      // 값만 저장함. 그래서 결과값이 없으면
-      // undefined 를 리턴함!
+      // find는 filter와 달리 배열로 저장하지 않고 값만 저장함.
+      // 그래서 결과값이 없으면 undefined 를 리턴함!
     } /// if ///
     // 3. 불통과시 /////
     else {
@@ -190,13 +184,13 @@ function Login() {
     } /// else ///
   }; /////////// onSubmit 함수 //////////
 
-  // 화면랜더링 구역 /////////
+  // 화면 랜더링 구역 /////////
   useEffect(() => {
-    // 아이디입력창 포커스
+    // 아이디 입력창 포커스
     document.querySelector("#user-id").focus();
   }, []);
 
-  // 코드 리턴구역 ////////////////////////
+  // 코드 리턴 구역 ////////////////////////
   return (
     <section id="login-page" className="page">
       <div className="longin-box" style={{ minHeight: "300px" }}>
@@ -218,12 +212,7 @@ function Login() {
                 // 조건문 && 출력요소
                 userIdError && (
                   <div className="msg">
-                    <small
-                      style={{
-                        color: "red",
-                        fontSize: "10px",
-                      }}
-                    >
+                    <small>
                       {idMsg}
                     </small>
                   </div>
@@ -244,12 +233,7 @@ function Login() {
                 // 조건문 && 출력요소
                 pwdError && (
                   <div className="msg">
-                    <small
-                      style={{
-                        color: "red",
-                        fontSize: "10px",
-                      }}
-                    >
+                    <small>
                       {pwdMsg}
                     </small>
                   </div>

@@ -1,12 +1,8 @@
 /// SW19 상품 상세 페이지 ///
-// -> 상품 리스트로부터 라우팅 이동하여 보이는 페이지
-
 import React, { useEffect } from "react";
-
-// 라우터로 전달한 state값을 읽기 위한 객체
 import { useLocation } from "react-router-dom";
 
-// CSS 불러오기
+// CSS
 import "../../css/shop.scss";
 
 function Detail() {

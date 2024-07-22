@@ -1,7 +1,7 @@
 /* 회원가입 페이지 CSS : member.scss */
 
 #login-page {
-  height: 60vh;
+  height: 100vh;
   padding: 5rem;
 
   .longin-box {
@@ -23,12 +23,16 @@
 
       li {
         display: flex;
-        padding: 20px;
-        justify-content: center;
+        padding: 20px 0;
+        margin: 0 auto;
+        width: 66%;
+        flex-direction: column;
+
         a {
           font-size: 16px;
           color: #000;
           text-decoration: none;
+          /* a요소 호버 */
           &:hover {
             color: #545454;
           }
@@ -36,25 +40,25 @@
 
         label {
           display: inline-block;
-          width: 16%;
-          text-align: right;
+          text-align: left;
           font-size: 20px;
-          white-space: nowrap;
+          margin-bottom: 5px;
         }
 
         input {
-          width: 50%;
           height: 4vh;
-          margin-left: 3%;
-          font-size: 17px;
-          vertical-align: baseline;
+          font-size: 16px;
         }
 
         .msg {
           width: 50%;
-          font-size: 14px;
-          padding: 5px 0;
-          font-weight: bold;
+          font-size: 16px;
+          margin-top: 5px;
+
+          small {
+            color: red;
+            font-size: 15px;
+          }
         }
 
         .login-btn {
@@ -73,21 +77,27 @@
     }
     .join-find-box {
       display: flex;
-      width: 70%;
+      width: 66%;
       margin: 0 auto;
+      padding: 0;
       flex-direction: row;
       justify-content: space-between;
 
       li {
-        padding: 20px;
+        padding: 20px 0;
         a {
           font-size: 16px;
           color: #000;
           text-decoration: none;
+
           &:hover {
             color: #545454;
           }
         }
+      }
+
+      .find-btn {
+        text-align: right;
       }
     }
   }
