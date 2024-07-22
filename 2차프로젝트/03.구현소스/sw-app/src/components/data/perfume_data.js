@@ -223,7 +223,7 @@ export const perfumeData = [
     price: "31,000원",
     src: "/images/shop/9pm/m_9pm.png",
     hoverSrc: "/images/shop/9pm/m_9pm_1.png",
-    detail: "/images/shop/9pm/img_9am.png",
+    detail: "/images/shop/9pm/img_9pm.png",
     desc: `The romance of a silent night in the woods
         ^
         The night in Wimbledon forest after dark. The whispers of love travel through the crackling bonfire. Feel the Wimbledon’s 9PM scent of the smokey bonfire smoothly blended with sweet vanilla.
