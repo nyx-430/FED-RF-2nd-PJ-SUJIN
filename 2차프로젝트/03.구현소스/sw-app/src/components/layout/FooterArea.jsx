@@ -1,7 +1,7 @@
 // 하단영역 컴포넌트 ///
 
 // 하단영역 CSS 불러오기
-// import "../../css/footer_area.scss";
+import "../../css/footer_area.scss";
 
 export default function FooterArea() {
   //// 코드 리턴구역 //////////////
