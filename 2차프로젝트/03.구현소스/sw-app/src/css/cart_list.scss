@@ -3,10 +3,10 @@
 /**************** 오픈 사이드 메뉴 - 장바구니 ****************/
 .shopping-tab {
   position: fixed;
-  width: 29vw;
+  width: 0;
   height: 100vh;
   right: 90px;
-  padding: 20px;
+  padding: 0;
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 0 1px 5px -1px #888;
@@ -14,11 +14,12 @@
   transition: width 0.3s;
   overflow: hidden;
   z-index: 999;
-
+  
   /* 사이드 메뉴 클래스 on */
-  // &.on {
-  //   width: 29vw;
-  // }
+  &.on {
+    width: 29vw;
+    padding: 20px;
+  }
   
   /* 쇼핑탭 타이틀 */
   .tab-title {

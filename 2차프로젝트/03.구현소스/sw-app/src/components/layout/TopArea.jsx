@@ -24,7 +24,6 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 // 헤더 탑메뉴 CSS
 import "../../css/top_area.scss";
 
-
 export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
   // 전달값
   // 1. loginMsg - 로그인 메시지 변수
@@ -42,6 +41,13 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
     document.querySelector(".menu-button").classList.toggle("on");
     document.querySelector(".menu-open").classList.toggle("on");
   }; ////// addOn //////
+
+    // 쇼핑탭 버튼 클래스 on 함수
+    const showTab = () => {
+      document.querySelector(".cart").classList.toggle("on");
+      document.querySelector(".shopping-tab").classList.toggle("on");
+    } ////// showTab //////
+  
 
   const location = useLocation();
 
@@ -127,10 +133,8 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
                   </Link>
                 </li>
                 {/* 장바구니 */}
-                <li className="menu-buttom"
-                onClick={(e)=>{
-                  e.currentTarget.style.display = "block";
-                }}
+                <li className="menu-buttom cart"
+                onClick={showTab}
                 style={{cursor: "pointer"}}
                 >
                   <FontAwesomeIcon icon={faBagShopping} />
@@ -192,7 +196,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
           </ul>
         </aside>
         {/* 사이드 메뉴 - 쇼핑탭 */}
-        <aside className="shopping-tab" style={{ display: "none" }}>
+        <aside className="shopping-tab">
           <CartList />
         </aside>
       </header>

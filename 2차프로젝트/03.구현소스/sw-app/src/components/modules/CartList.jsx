@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
-// CSS 불러오기
+// CSS
 import "../../css/cart_list.scss";
 
 function CartList(props) {
