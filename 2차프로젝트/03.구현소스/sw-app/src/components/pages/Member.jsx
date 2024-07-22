@@ -20,8 +20,8 @@ function Member() {
   // goNav(라이터주소,state변수)
 
   // [ 회원가입 페이지 요구사항 ]
-  // 1. 각 입력항목별로 유효성 검사를 실행함
-  // 2. 상태체크를 통하여 적절한 유효성 검사시
+  // 1. 각 입력 항목별로 유효성 검사를 실행함
+  // 2. 상태 체크를 통하여 적절한 유효성 검사시
   // 유효성 체크를 에러 메시지를 출력한다.
   // 3. 유효성 검사 통과시 로컬스에 저장한다.
   // -> 특이사항 :
@@ -84,7 +84,7 @@ function Member() {
     email: "이메일을 입력해 주세요.",
   }; ///// msgEtc ///////
 
-  // [3] 에러메시지 상태변수 : 초기값 msgId[0]
+  // [3] 에러 메시지 상태변수 : 초기값 msgId[0]
   // -> 기본 메시지가 출력됨
   const [idMsg, setIdMsg] = useState(msgId[0]);
 
@@ -104,7 +104,7 @@ function Member() {
     // 3. 에러 상태 분기하기
     // 3-1. 에러 아닐 때 (유효성 검사만 통과한 경우)
     if (valid.test(val)) {
-      // console.log("통과했지만...!");
+      // console.log("통과했지만...");
       // 아이디 검사를 위해 기본 데이터 생성 호출
       initData();
       // 로컬스토리지에 "mem-data"가 없으면 초기 셋팅
@@ -125,7 +125,7 @@ function Member() {
       // 기존 배열값으로 있는지 검사함!
       // 있으면 true, 없으면 false
       let isT = memData.some((v) => v.uid === val);
-      // console.log("중복id있어?", isT);
+      // console.log("중복id여부", isT);
 
       // 4. true일 경우 중복 데이터 메시지 표시
       if (isT) {
@@ -136,7 +136,7 @@ function Member() {
       } /// if ///
       // 5. false일 경우 [성공 메시지] 표시
       else {
-        // 에러 상태값 업데이트 : 에러가 아님!(false)
+        // 에러 상태값 업데이트 : 에러가 아님(false)
         setUserIdError(false);
       } /// else ///
     } /// if ///
@@ -280,7 +280,7 @@ function Member() {
     // 1. 기본서브밋 막기
     e.preventDefault();
 
-    console.log("최종검사:", totalValid());
+    console.log("최종 검사:", totalValid());
 
     // 2. 유효성검사 전체 통과시
     if (totalValid()) {
@@ -321,7 +321,7 @@ function Member() {
 
       // 7. 회원가입 환영메시지 + 로그인 페이지 이동
       // 버튼 텍스트에 환영메시지
-      document.querySelector(".sbtn").innerText = "Thank you for joining us!";
+      document.querySelector(".login-join-btn").innerText = "Thank you for joining us!";
       // 1초 후 페이지 이동 : 라우터 Navigate로 이동
       setTimeout(() => {
         goNav("/login");
@@ -349,7 +349,7 @@ function Member() {
               <input
                 type="text"
                 maxLength="20"
-                placeholder="영문소문자/숫자, 4~20자"
+                placeholder="영문소문자/숫자, 5~20자"
                 value={userId}
                 onChange={changeUserId}
                 onBlur={changeUserId}
@@ -362,7 +362,6 @@ function Member() {
                     <small
                       style={{
                         color: "red",
-                        fontSize: "10px",
                       }}
                     >
                       {idMsg}
@@ -380,7 +379,6 @@ function Member() {
                     <small
                       style={{
                         color: "green",
-                        fontSize: "10px",
                       }}
                     >
                       {msgId[2]}
@@ -407,7 +405,6 @@ function Member() {
                     <small
                       style={{
                         color: "red",
-                        fontSize: "10px",
                       }}
                     >
                       {msgEtc.pwd}
@@ -434,7 +431,6 @@ function Member() {
                     <small
                       style={{
                         color: "red",
-                        fontSize: "10px",
                       }}
                     >
                       {msgEtc.confPwd}
@@ -461,7 +457,6 @@ function Member() {
                     <small
                       style={{
                         color: "red",
-                        fontSize: "10px",
                       }}
                     >
                       {msgEtc.req}
@@ -486,7 +481,6 @@ function Member() {
                     <small
                       style={{
                         color: "red",
-                        fontSize: "10px",
                       }}
                     >
                       {msgEtc.req}
@@ -513,7 +507,6 @@ function Member() {
                     <small
                       style={{
                         color: "red",
-                        fontSize: "10px",
                       }}
                     >
                       {msgEtc.email}
@@ -523,13 +516,15 @@ function Member() {
               }
             </li>
             <li style={{ overflow: "hidden" }}>
-              <button className="sbtn" onClick={onSubmit}>
-                Submit
+              <button className="login-join-btn" onClick={onSubmit}>
+                회원가입
               </button>
             </li>
             <li>
               혹시 SW19 회원이신가요?
-              <Link to="/login">로그인</Link>
+              <Link to="/login"
+              style={{fontWeight: "600", fontSize: "17px"}}
+              >로그인</Link>
             </li>
           </ul>
         </form>

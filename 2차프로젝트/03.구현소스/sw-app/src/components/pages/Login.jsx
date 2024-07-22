@@ -242,7 +242,7 @@ function Login() {
               }
             </li>
             <li style={{ overflow: "hidden" }}>
-              <button className="login-btn" onClick={onSubmit}>
+              <button className="login-join-btn" onClick={onSubmit}>
                 로그인
               </button>
             </li>
