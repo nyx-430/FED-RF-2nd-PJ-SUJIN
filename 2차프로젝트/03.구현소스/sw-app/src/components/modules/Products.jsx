@@ -8,6 +8,9 @@ import { handData } from "../data/handcare_data";
 import { bodyData } from "../data/bodycare_data";
 import { fullSet, hcSet, miniDuoSet, discovertSet } from "../data/set_data";
 
+// 콤마 추가 함수
+import { addComma } from "../func/common_fn";
+
 // 상품/상세/배너 CSS
 import "../../css/shop.scss";
 
@@ -96,7 +99,7 @@ function Products() {
                       <img src={process.env.PUBLIC_URL + v.src} alt={v.tit} />
                     </div>
                     <h2>{v.tit}</h2>
-                    <h3>{v.price}원</h3>
+                    <h3>{addComma(v.price)}원</h3>
                   </Link>
                 </li>
               ))}

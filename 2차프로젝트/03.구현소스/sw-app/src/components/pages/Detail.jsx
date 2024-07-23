@@ -5,6 +5,9 @@ import { useLocation } from "react-router-dom";
 // 제이쿼리
 import $ from "jquery";
 
+// 콤마 추가 함수
+import { addComma } from "../func/common_fn";
+
 // 폰트어썸
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -73,7 +76,7 @@ function Detail() {
           <div className="desc-box">
             <div className="heading-area">
               <h2 className="sub-title">{tit}</h2>
-              <h3 className>{price}원</h3>
+              <h3 className>{addComma(price)}원</h3>
             </div>
             {/* 상품 설명 */}
             <div className="text-area">
