@@ -6,7 +6,7 @@ const fullSet = [
   {
     tit: "SW19 6am PERFUME & HAND CREAM DUO SET",
     category: "Gift Set",
-    price: "132,000원",
+    price: "132,000",
     src: "/images/shop/set/full_set_6am.png",
     hoverSrc: "/images/shop/set/full_set_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",
@@ -33,7 +33,7 @@ const fullSet = [
   {
     tit: "SW19 Noon PERFUME & HAND CREAM DUO SET",
     category: "Gift Set",
-    price: "132,000원",
+    price: "132,000",
     src: "/images/shop/set/full_set_noon.png",
     hoverSrc: "/images/shop/set/full_set_noon_1.png",
     detail: "/images/shop/noon/img_noon.png",
@@ -60,7 +60,7 @@ const fullSet = [
   {
     tit: "SW19 3pm PERFUME & HAND CREAM DUO SET",
     category: "Gift Set",
-    price: "132,000원",
+    price: "132,000",
     src: "/images/shop/set/full_set_3pm.png",
     hoverSrc: "/images/shop/set/full_set_3pm_1.png",
     detail: "/images/shop/3pm/img_3pm.png",
@@ -81,7 +81,7 @@ const fullSet = [
   {
     tit: "SW19 9pm PERFUME & HAND CREAM DUO SET",
     category: "Gift Set",
-    price: "132,000원",
+    price: "132,000",
     src: "/images/shop/set/full_set_9pm.png",
     hoverSrc: "/images/shop/set/full_set_9pm_1.png",
     detail: "/images/shop/9pm/img_9pm.png",
@@ -102,7 +102,7 @@ const fullSet = [
   {
     tit: "SW19 Midnight PERFUME & HAND CREAM DUO SET",
     category: "Gift Set",
-    price: "132,000원",
+    price: "132,000",
     src: "/images/shop/set/full_set_mid.png",
     hoverSrc: "/images/shop/set/full_set_mid_1.png",
     detail: "/images/shop/midnight/img_midnight.png",
@@ -126,7 +126,7 @@ const hcSet = [
   {
     tit: "SW19 HAND CREAM TRIO SET",
     category: "Gift Set",
-    price: "69,000원",
+    price: "69,000",
     src: "/images/shop/set/handcream_trio_set.png",
     hoverSrc: "/images/shop/set/handcream_trio_set_1.png",
     detail: "handcream_trio_set_detail.png",
@@ -151,7 +151,7 @@ const hcSet = [
   {
     tit: "SW19 HAND CREAM MINI SET (10ml*5)",
     category: "Gift Set",
-    price: "30,000원",
+    price: "30,000",
     src: "/images/shop/set/handcream_mini_set.png",
     hoverSrc: "/images/shop/set/handcream_mini_set_1.png",
     detail: "/images/shop/set/handcream_trio_set_detail.png",
@@ -174,7 +174,7 @@ const miniDuoSet = [
   {
     tit: "SW19 MIDNIGHT MINI DUO SET",
     category: "Gift Set",
-    price: "54,000원",
+    price: "54,000",
     src: "/images/shop/set/mini_duo_set_mid.png",
     hoverSrc: "/images/shop/set/mini_duo_set_mid_1.png",
     detail: "/images/shop/set/mini_duo_set_mid_detail.png",
@@ -201,7 +201,7 @@ const miniDuoSet = [
   {
     tit: "SW19 3PM MINI DUO SET",
     category: "Gift Set",
-    price: "54,000원",
+    price: "54,000",
     src: "/images/shop/set/mini_duo_set_mid.png",
     hoverSrc: "/images/shop/set/mini_duo_set_mid_1.png",
     detail: "/images/shop/set/mini_duo_set_3pm_detail.png",
@@ -231,7 +231,7 @@ const discovertSet = [
   {
     tit: "SW19 DISCOVERY SET (8ml*5)",
     category: "Gift Set",
-    price: "118,000원",
+    price: "118,000",
     src: "/images/shop/set/discovery_set.png",
     hoverSrc: "/images/shop/set/discovery_set_1.png",
     detail: "/images/shop/set/discovery_set_detail.png",
@@ -258,7 +258,7 @@ const discovertSet = [
   {
     tit: "SW19 MINI DISCOVERY SET",
     category: "Gift Set",
-    price: "30,000원",
+    price: "30,000",
     src: "/images/shop/set/discovery_set.png",
     hoverSrc: "/images/shop/set/discovery_set_1.png",
     detail: "/images/shop/set/discovery_set_detail.png",

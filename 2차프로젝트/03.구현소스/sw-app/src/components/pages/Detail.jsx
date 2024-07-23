@@ -85,7 +85,7 @@ function Detail() {
                 </aside>
               </div>
             </div>
-            {/* 상품 수량 - 증감 버튼 */}
+            {/* 상품 수량 증감 버튼 */}
             <div className="item-quantity">
               <div className="btn-box1">
                 <button className="increase">
@@ -95,6 +95,17 @@ function Detail() {
                 <button className="decrease">
                   <FontAwesomeIcon icon={faMinus} />
                 </button>
+              </div>
+              <div id="total-price" class="total-price">
+                <strong class="price-title">
+                  총 상품금액
+                  <span class="qty">
+                (1){" "}
+                    <strong>
+                      <em>{price}원</em>
+                    </strong>
+                  </span>
+                </strong>
               </div>
               {/* 장바구니 버튼 */}
               <div className="btn-box2">
