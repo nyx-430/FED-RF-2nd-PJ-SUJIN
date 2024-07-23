@@ -24,7 +24,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 2,
@@ -49,7 +55,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 3,
@@ -74,7 +86,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 4,
@@ -99,7 +117,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 5,
@@ -124,7 +148,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 6,
@@ -149,7 +179,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 7,
@@ -174,7 +210,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 8,
@@ -199,7 +241,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 9,
@@ -224,7 +272,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 10,
@@ -249,7 +303,13 @@ const pmData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Alcohol, Fragrance, Water, BHT, Denatonium benzoate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional, Geraniol",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
 ];
 

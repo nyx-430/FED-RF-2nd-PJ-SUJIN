@@ -36,7 +36,13 @@ export const bodyData = [
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
     ingredients:
       "Water,Sodium C14-16 Olefin Sulfonate,C12-14 Alketh-12,Lauryl Hydroxysultaine,Fragrance(Parfum),Disodium Cocoamphodiacetate,Alcohol Denat.,Chlorella Vulgaris Extract,Malt Extract,Quillaja Saponaria Bark Extract,Cynanchum Atratum Extract,Althaea Rosea Flower Extract,Prunus Amygdalus Dulcis (Sweet Almond) Oil,Simmondsia Chinensis (Jojoba) Seed Oil,Macadamia Integrifolia Seed Oil,Sodium Chloride,Coco-Glucoside,Caprylyl Glycol,Citric Acid,Glucose,Butylene Glycol,Fructooligosaccharides,Fructose,Sodium Cocoyl Isethionate,1,2-Hexanediol,Sodium Phytate,Hexylene Glycol,Decyl Glucoside,Ethylhexylglycerin,Tocopherol,Potassium Sorbate,Limonene",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 2,
@@ -72,7 +78,13 @@ export const bodyData = [
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
     ingredients:
       "Water,Glycerin,Dipropylene Glycol,Fragrance(Parfum),Glyceryl Stearate SE,Caprylic/Capric Triglyceride,Coco-Caprylate/Caprate,Ethylhexyl Palmitate,Pentylene Glycol,Butyrospermum Parkii (Shea) Butter,Macadamia Integrifolia Seed Oil,Cynanchum Atratum Extract,Prunus Amygdalus Dulcis (Sweet Almond) Oil,Simmondsia Chinensis (Jojoba) Seed Oil,Althaea Rosea Flower Extract,Methyl Trimethicone,1,2-Hexanediol,Bis-Diglyceryl Polyacyladipate-2,Polyglyceryl-3 Methylglucose Distearate,Silica,Synthetic Beeswax,Trehalose,Caprylyl Glycol,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Tromethamine,Butylene Glycol,Lauroyl Lysine,Glyceryl Acrylate/Acrylic Acid Copolymer,Hydrogenated Lecithin,Sodium Phytate,Cholesterol,Beta-Glucan,Ethylhexylglycerin,Tocopherol,Stearyl Alcohol,Cetyl Alcohol,Xanthan Gum,Myristyl Alcohol,Lauryl Alcohol,Limonene,Hydroxycitronellal,Citronellol,Butylphenyl Methylpropional",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 3,
@@ -104,7 +116,13 @@ export const bodyData = [
         `,
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
     ingredients: "",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 4,
@@ -139,7 +157,13 @@ export const bodyData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water,Sodium C14-16 Olefin Sulfonate,C12-14 Alketh-12,Lauryl Hydroxysultaine,Fragrance(Parfum),Disodium Cocoamphodiacetate,Alcohol Denat.,Chlorella Vulgaris Extract,Malt Extract,Quillaja Saponaria Bark Extract,Cynanchum Atratum Extract,Althaea Rosea Flower Extract,Prunus Amygdalus Dulcis (Sweet Almond) Oil,Simmondsia Chinensis (Jojoba) Seed Oil,Macadamia Integrifolia Seed Oil,Sodium Chloride,Coco-Glucoside,Caprylyl Glycol,Citric Acid,Glucose,Butylene Glycol,Fructooligosaccharides,Fructose,Sodium Cocoyl Isethionate,1,2-Hexanediol,Sodium Phytate,Hexylene Glycol,Decyl Glucoside,Ethylhexylglycerin,Tocopherol,Potassium Sorbate,Limonene",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 5,
@@ -175,7 +199,13 @@ export const bodyData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water,Glycerin,Dipropylene Glycol,Fragrance(Parfum),Glyceryl Stearate SE,Caprylic/Capric Triglyceride,Coco-Caprylate/Caprate,Ethylhexyl Palmitate,Pentylene Glycol,Butyrospermum Parkii (Shea) Butter,Macadamia Integrifolia Seed Oil,Cynanchum Atratum Extract,Prunus Amygdalus Dulcis (Sweet Almond) Oil,Simmondsia Chinensis (Jojoba) Seed Oil,Althaea Rosea Flower Extract,Methyl Trimethicone,1,2-Hexanediol,Bis-Diglyceryl Polyacyladipate-2,Polyglyceryl-3 Methylglucose Distearate,Silica,Synthetic Beeswax,Trehalose,Caprylyl Glycol,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Tromethamine,Butylene Glycol,Lauroyl Lysine,Glyceryl Acrylate/Acrylic Acid Copolymer,Hydrogenated Lecithin,Sodium Phytate,Cholesterol,Beta-Glucan,Ethylhexylglycerin,Tocopherol,Stearyl Alcohol,Cetyl Alcohol,Xanthan Gum,Myristyl Alcohol,Lauryl Alcohol,Limonene,Linalool",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 6,
@@ -207,6 +237,12 @@ export const bodyData = [
         `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
 ];

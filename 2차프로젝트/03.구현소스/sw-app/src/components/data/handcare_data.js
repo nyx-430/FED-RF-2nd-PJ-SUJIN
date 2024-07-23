@@ -27,7 +27,13 @@ export const handData = [
     perfumer: "Aliénor Massenet",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Centella Asiatica Extract, Xylitol, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tromethamine, Sodium Phytate, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Linalool, Limonene, Coumarin, Eugenol, Hydroxycitronellal, Geraniol",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 2,
@@ -52,7 +58,13 @@ export const handData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Ethylhexylglycerin, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Sodium Phytate, Beta-Glucan, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Linalool, Limonene, Hydroxycitronellal, Coumarin, Citronellol, Geraniol, Alpha-Isomethyl Ionone",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 3,
@@ -77,7 +89,13 @@ export const handData = [
     perfumer: "Nathalie Benareau",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Centella Asiatica Extract, Xylitol, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tromethamine, Sodium Phytate, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 4,
@@ -102,7 +120,13 @@ export const handData = [
     perfumer: "Florian Gallo",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Centella Asiatica Extract, Xylitol, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Ethylhexylglycerin, Tromethamine, Sodium Phytate, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Eugenol, Cinnamal, Limonene, Linalool",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 5,
@@ -127,7 +151,13 @@ export const handData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water, Glycerin, Butylene Glycol, Butyrospermum Parkii (Shea) Butter, Cetearyl Alcohol, Hydrogenated Polydecene, Fragrance(Parfum), 1,2-Hexanediol, Caprylic/Capric Triglyceride, Macadamia Integrifolia Seed Oil, Chlorella Vulgaris Extract, Melia Azadirachta Flower Extract, Ocimum Sanctum Leaf Extract, Melia Azadirachta Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Corallina Officinalis Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, Polyglyceryl-3 Methylglucose Distearate, Synthetic Beeswax, Hydrogenated Lecithin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Silica, Vinyl Dimethicone, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Glyceryl Stearate, Caprylyl Glycol, Glucose, Fructooligosaccharides, Fructose, Ethylhexylglycerin, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Tromethamine, Sodium Phytate, Beta-Glucan, Tocopherol, Madecassoside, Anhydroxylitol, Asiaticoside, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Cetyl Alcohol, Xanthan Gum, Limonene, Linalool",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 6,
@@ -151,7 +181,13 @@ export const handData = [
     perfumer: "Aliénor Massenet - VP Senior Perfumer at Symrise",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Linalool, Limonene",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 7,
@@ -176,7 +212,13 @@ export const handData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Eugenol",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 8,
@@ -201,7 +243,13 @@ export const handData = [
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Limonene, Hydroxycitronellal, Citronellol, Butylphenyl Methylpropional",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 9,
@@ -226,7 +274,13 @@ export const handData = [
     perfumer: "Florian Gallo",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Eugenol",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 10,
@@ -251,7 +305,13 @@ export const handData = [
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients:
       "Water, Decyl Glucoside, Disodium Cocoamphodiacetate, Sodium Chloride, Sodium C14-16 Olefin Sulfonate, Octyldodeceth-16, PEG-60 Hydrogenated Castor Oil, Fragrance(Parfum), Alcohol Denat, Chlorella Vulgaris Extract, Glycine Soja (Soybean) Seed Extract, Quillaja Saponaria Bark Extract, Xylitylglucoside, Centella Asiatica Leaf Extract, Xylitol, Centella Asiatica Extract, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Hyaluronic Acid, 1,2-Hexanediol, Coco-Glucoside, Citric Acid, Glyceryl Caprylate, Glucose, Butylene Glycol, Fructooligosaccharides, Fructose, Sodium Cocoyl Isethionate, Hexylene Glycol, Sodium Phytate, Glycerin, Pentylene Glycol, Octanediol, Ethylhexylglycerin, Cocamide Methyl MEA, Madecassoside, Anhydroxylitol, Asiaticoside, Caprylic/Capric Triglyceride, Hydrogenated Lecithin, Ceramide NP, Hydroxypropyltrimonium Hyaluronate, Sodium Acetylated Hyaluronate, Sodium Stearoyl Glutamate, Hydrolyzed Sodium Hyaluronate, Sodium Hyaluronate Crosspolymer, Potassium Hyaluronate, Eugenol",
-      notice: ``,
+      notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 11,
@@ -278,7 +338,13 @@ export const handData = [
         -base: Wormwood, Cedarwood, Musk`,
     perfumer: "Aliénor Massenet - VP Senior Perfumer at Symrise",
     ingredients: "",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 12,
@@ -306,7 +372,13 @@ export const handData = [
     `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 13,
@@ -334,7 +406,13 @@ export const handData = [
     `,
     perfumer: "Nathalie Benareau - Master Perfumer at Symrise",
     ingredients: "",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 14,
@@ -362,7 +440,13 @@ export const handData = [
     `,
     perfumer: "Florian Gallo",
     ingredients: "",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
   {
     idx: 15,
@@ -390,6 +474,12 @@ export const handData = [
     `,
     perfumer: "Marianne Nawrocki Sabatier",
     ingredients: "",
-    notice: ``,
+    notice: `※ 상품 구매 시, 바디케어 샘플 키트가 함께 제공됩니다.(품절 시 제공불가)
+    ^
+    ※ 선물용 기프트백은 SHOP-ACC 메뉴에서 구매 가능합니다.
+    ^
+    ※ 30,000원 이상 구매 시, 무료 배송
+    ^
+    ※ 사용기한 : 제조일로부터 36개월`,
   },
 ];

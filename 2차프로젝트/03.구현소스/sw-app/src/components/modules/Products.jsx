@@ -56,8 +56,8 @@ function Products() {
     });
   }
 
-  console.log(selData.length);
-  console.log(product.length);
+  // console.log(selData.length);
+  // console.log(product.length);
 
   // 더보기 버튼 기능 ////////////////////////
   const loadMore = () => {
