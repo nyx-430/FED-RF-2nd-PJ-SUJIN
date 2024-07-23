@@ -25,7 +25,7 @@ function CartList(props) {
           <tr>
             {/* 상품 이미지 */}
             <td className="cart-item-media">
-              <img src="/images/shop/6am/p_6am.png" alt="item" />
+              <img src={process.env.PUBLIC_URL +"/images/shop/6am/p_6am.png"} alt="item" />
             </td>
             {/* 상품 이름 */}
             <td className="cart-item-name">Item Name</td>

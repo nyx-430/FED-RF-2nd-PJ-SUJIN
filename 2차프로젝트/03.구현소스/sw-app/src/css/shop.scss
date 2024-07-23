@@ -138,7 +138,7 @@
       box-sizing: border-box;
       width: 60%;
       aspect-ratio: 1/1;
-      padding: 0 15px 0 0;;
+      padding: 0 15px 0 0;
 
       img {
         width: 100%;
@@ -191,22 +191,21 @@
         .small-text aside {
           font-size: 1.4rem;
           font-family: "Noto Sans Korean", "Malgun Gothic", "Nanum Gothic",
-          "Noto Sans", sans-serif;
+            "Noto Sans", sans-serif;
           color: #888;
-          
+
           p {
             font-size: 1.4rem;
           }
         }
         .notice-text aside {
           margin-top: 30px;
-          
+
           p {
             font-size: 1.4rem;
             font-weight: 600;
             line-height: 1;
             color: #000;
-            
           }
         }
       }
@@ -239,3 +238,42 @@
     }
   }
 }
+
+/***************** 수량 증감/장바구니 버튼 *****************/
+.item-quantity {
+  padding-top: 20px;
+  justify-content: space-between;
+
+  .btn-box {
+    display: flex;
+
+    input {
+      font-size: 2rem;
+      border: 0;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+
+    .increase {
+      font-size: 23px;
+      padding: 5px;
+    }
+    .decrease {
+      font-size: 23px;
+      padding: 5px;
+    }
+  }
+}
+/* 구매 버튼 */
+  .buy-btn {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+  }
+
