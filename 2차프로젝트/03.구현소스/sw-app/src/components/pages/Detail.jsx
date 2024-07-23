@@ -87,7 +87,7 @@ function Detail() {
             </div>
             {/* 상품 수량 - 증감 버튼 */}
             <div className="item-quantity">
-              <div className="btn-box">
+              <div className="btn-box1">
                 <button className="increase">
                   <FontAwesomeIcon icon={faPlus} />
                 </button>
@@ -97,7 +97,10 @@ function Detail() {
                 </button>
               </div>
               {/* 장바구니 버튼 */}
-              <button className="buy-btn">구매하기</button>
+              <div className="btn-box2">
+                <button className="buy-btn">구매하기</button>
+                <button className="cart-btn">장바구니</button>
+              </div>
             </div>
           </div>
         </div>

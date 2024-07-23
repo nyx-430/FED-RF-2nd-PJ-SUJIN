@@ -244,7 +244,7 @@
   padding-top: 20px;
   justify-content: space-between;
 
-  .btn-box {
+  .btn-box1 {
     display: flex;
 
     input {
@@ -266,6 +266,10 @@
   }
 }
 /* 구매 버튼 */
+.btn-box2{
+  display: flex;
+  gap: 10px;
+
   .buy-btn {
     width: 100%;
     font-size: 2rem;
@@ -275,5 +279,19 @@
     box-sizing: border-box;
     background-color: #000;
     color: #fff;
+    border: 1px solid #000;
   }
+  .cart-btn {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+
+  }
+}
 
