@@ -6,7 +6,7 @@ export const perfumeData = [
     idx: 1,
     tit: "SW19 6am EAU DE PARFUM (50ml)",
     category: "Perfume",
-    price: "109,000",
+    price: "109000",
     src: "/images/shop/6am/p_6am.png",
     hoverSrc: "/images/shop/6am/p_6am_1.png",
     detail: "/images/shop/6am/img_6am.png",

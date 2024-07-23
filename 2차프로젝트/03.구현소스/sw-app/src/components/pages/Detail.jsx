@@ -1,6 +1,9 @@
 /// SW19 상품 상세 페이지 - Detail.jsx ///
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+
+// 제이쿼리
+import $ from "jquery";
 
 // 폰트어썸
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,15 +26,35 @@ function Detail() {
   const ingredients = loc.state.ingredients ? loc.state.ingredients : "";
   const notice = loc.state.notice ? loc.state.notice : "";
 
+  // 수량, 총합계 상태관리변수
+  const [quantity, setQuantity] = useState(1);
+  const [totalPrice, setTotalPrice] = useState(parseFloat(price));
+
   // 랜더링 실행 구역 ////////////////////////
   useEffect(() => {
+    // 로딩시 상단 이동
     window.scrollTo(0, 0);
-  }); /////////////////////////
+  },[]); ////////////////////////
+
+  useEffect(()=>{
+    // 수량, 총합계 반영
+    setTotalPrice(parseFloat(price) * quantity);
+  },[price, quantity]); ////////////////////////
+
+  const plusFn = () => {
+    setQuantity(prevQuantity => prevQuantity + 1);
+  }; ////// plusFn //////
+
+  const minusFn = () => {
+    if (quantity > 1) {
+      setQuantity(prevQuantity => prevQuantity - 1);
+    }
+  }; ////// minusFn //////
 
   // 뒤로 가기 버튼 함수
-  function goBack() {
+  const goBack = () => {
     window.history.back();
-  } /// goBack ///
+  } ////// goBack //////
 
   // 코드 리턴 구역 ////////////////////////
   return (
@@ -88,24 +111,28 @@ function Detail() {
             {/* 상품 수량 증감 버튼 */}
             <div className="item-quantity">
               <div className="btn-box1">
-                <button className="increase">
+                <button 
+                className="increase"
+                onClick={plusFn}
+                >
                   <FontAwesomeIcon icon={faPlus} />
                 </button>
-                <input type="number" value={1} />
-                <button className="decrease">
+                <input type="text" id="sum" value={quantity} readOnly />
+                <button 
+                className="decrease"
+                onClick={minusFn}
+                >
                   <FontAwesomeIcon icon={faMinus} />
                 </button>
               </div>
               <div id="total-price" className="total-price">
                 <strong className="price-title">
                   총 상품금액
-                  <span className="qty">
-                  (1){" "}
-                  </span>
+                  <span className="qty">({quantity})</span>
                 </strong>
-                    <strong className="total">
-                      <em>{price}원</em>
-                    </strong>
+                <strong className="total">
+                  <em>{totalPrice.toLocaleString()}원</em>
+                </strong>
               </div>
               {/* 장바구니 버튼 */}
               <div className="btn-box2">
