@@ -78,6 +78,7 @@
           display: flex;
 
           input {
+            font-size: 1.6rem;
             border: 0;
             margin: 0 auto;
             padding: 0;
@@ -85,11 +86,11 @@
           }
 
           .increase {
-            font-size: 20px;
+            font-size: 1.8rem;
             padding: 5px;
           }
           .decrease {
-            font-size: 20px;
+            font-size: 1.8rem;
             padding: 5px;
           }
         }
