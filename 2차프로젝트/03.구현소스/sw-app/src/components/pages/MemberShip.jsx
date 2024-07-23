@@ -13,7 +13,7 @@ function MemberShip(props) {
   return (
     <>
       <section id="membership-page" className="page">
-        <div className="backgroundBox"></div>
+
         <h1 className="title">MEMBERSHIP REWARD</h1>
         <div className="inbox">
           <div className="boxInner">
@@ -28,17 +28,18 @@ function MemberShip(props) {
                   *VVIP, VIP 분들께는 시크릿 리워드 혜택이 추가로 제공됩니다.
                 </p>
               </div>
+              {/* 큰 제목 */}
               <h3 className="storesTextTitle">등급별 혜택</h3>
               <ul className="storesText">
                 <li>
-                  <ul className="listTwo clearfix">
+                  <ul className="listTwo">
                     <li className="hImg">
                       <h3 className="hFamily_PD">VVIP</h3>
                       <p>
                         1년간 누적 <b>200만원 이상</b> 구매 회원
                       </p>
                     </li>
-                    <li className="hImg dot_style">
+                    <li className="hImg">
                       <h3 className="empty">&nbsp;</h3>
                       <p>멤버십 업그레이드 20,000P 지급</p>
                       <p>구매금액 5% 적립</p>
@@ -48,14 +49,14 @@ function MemberShip(props) {
                   </ul>
                 </li>
                 <li>
-                  <ul className="listTwo clearfix">
+                  <ul className="listTwo">
                     <li className="hImg">
                       <h3 className="hFamily_PD">VIP</h3>
                       <p>
                         1년간 누적 <b>100만원 이상</b> 구매 회원
                       </p>
                     </li>
-                    <li className="hImg dot_style">
+                    <li className="hImg">
                       <h3 className="empty">&nbsp;</h3>
                       <p>멤버십 업그레이드 10,000P 지급</p>
                       <p>구매금액 5% 적립</p>
@@ -72,7 +73,7 @@ function MemberShip(props) {
                         1년간 누적 <b>50만원 이상</b> 구매 회원
                       </p>
                     </li>
-                    <li className="hImg dot_style">
+                    <li className="hImg">
                       <h3 className="empty">&nbsp;</h3>
                       <p>멤버십 업그레이드 5,000P 지급</p>
                       <p>구매금액 3% 적립</p>
@@ -82,7 +83,7 @@ function MemberShip(props) {
                 </li>
                 <li>
                   <ul className="listTwo">
-                    <li className="hImg dot_style">
+                    <li className="hImg">
                       <h3 className="hFamily_PD">MIDDLE</h3>
                       <p>
                         1년간 누적 <b>20만원 이하</b> 구매 회원
@@ -97,7 +98,7 @@ function MemberShip(props) {
                 </li>
                 <li>
                   <ul className="listTwo">
-                    <li className="hImg dot_style">
+                    <li className="hImg">
                       <h3 className="hFamily_PD">BASE</h3>
                       <p>가입 후 1년간 미구매 회원</p>
                     </li>
@@ -109,6 +110,7 @@ function MemberShip(props) {
                   </ul>
                 </li>
               </ul>
+              {/* 큰 제목 */}
               <h3 className="storesTextTitle">공통 혜택</h3>
               <ul className="storesText">
                 <li>
