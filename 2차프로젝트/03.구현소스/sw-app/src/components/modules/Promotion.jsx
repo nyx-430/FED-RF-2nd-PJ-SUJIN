@@ -56,7 +56,7 @@ function Promotion() {
                         {/* <div className="overlay"></div> */}
                       </div>
                       <h2>{v.tit}</h2>
-                      <h3>{v.price}</h3>
+                      <h3>{v.price}원</h3>
                     </Link>
                   </li>
                 ))}

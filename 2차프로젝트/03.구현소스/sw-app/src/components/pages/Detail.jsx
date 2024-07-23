@@ -50,7 +50,7 @@ function Detail() {
           <div className="desc-box">
             <div className="heading-area">
               <h2 className="sub-title">{tit}</h2>
-              <h3 className>{price}</h3>
+              <h3 className>{price}원</h3>
             </div>
             {/* 상품 설명 */}
             <div className="text-area">
@@ -96,16 +96,16 @@ function Detail() {
                   <FontAwesomeIcon icon={faMinus} />
                 </button>
               </div>
-              <div id="total-price" class="total-price">
-                <strong class="price-title">
+              <div id="total-price" className="total-price">
+                <strong className="price-title">
                   총 상품금액
-                  <span class="qty">
-                (1){" "}
-                    <strong>
-                      <em>{price}원</em>
-                    </strong>
+                  <span className="qty">
+                  (1){" "}
                   </span>
                 </strong>
+                    <strong className="total">
+                      <em>{price}원</em>
+                    </strong>
               </div>
               {/* 장바구니 버튼 */}
               <div className="btn-box2">
