@@ -34,6 +34,8 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
   const [visible, setVisible] = useState(false);
   const ref = useRef(null);
 
+  const location = useLocation();
+
   ///////////////////////////////////////////////
   ////////////////// [ 함수 ] //////////////////
   // 이동 함수
@@ -52,18 +54,13 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
 
       // 바깥 영역 클릭시 창 닫기
       if (ref.current && !ref.current.contains(e.target)) {
+        console.log("이벤트 대상:",e.target);
         setVisible(false);}
     } ////// showTab //////
   ///////////////////////////////////////////////
   
-
-  const location = useLocation();
-
   // 랜더링 구역 ////////////////////////
   useEffect(() => {
-    // 메뉴 바 클래스 visible
-    // setVisible(true);
-
     // 메뉴 버튼 클래스 on 이벤트
     document.querySelector(".menu-button").classList.remove("on");
     document.querySelector(".menu-open").classList.remove("on");
