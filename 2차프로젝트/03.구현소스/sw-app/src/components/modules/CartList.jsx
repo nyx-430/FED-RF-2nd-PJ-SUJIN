@@ -16,7 +16,7 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 // CSS
 import "../../css/cart_list.scss";
 
-function CartList(props) {
+function CartList() {
   // [ 강제 리랜더링을 위한 상태변수 ]
   const [force, setForce] = useState(false);
   // -> 불린값을 넣어놓고 강제 리랜더링이 필요한 경우
@@ -34,9 +34,7 @@ function CartList(props) {
   // console.log("데이터 수:", dataCnt);
 
   // 랜더링 실행 구역 ////////////////////////
-  useEffect(() => {
-  
-  }, [dataCnt, force]); ////////////////////////
+  useEffect(() => {}, [dataCnt, force]); ////////////////////////
 
   // 코드 리턴 구역 //////////////////
   return (
@@ -51,10 +49,41 @@ function CartList(props) {
           <tr key={i}>
             {/* 상품 이미지 */}
             <td className="cart-item-media">
-              <img
-                src={process.env.PUBLIC_URL + v.src}
-                alt="cart item"
-              />
+              {/* 상품 삭제 버튼 */}
+              <button
+                className="cfn"
+                onClick={() => {
+                  // confirm()의 "확인"클릭시 true
+                  if (
+                    window.confirm(
+                      "해당 상품을 삭제하시겠습니까?"
+                    )
+                  ) {
+                    // 1. 데이터 지우기 :
+                    selData.splice(i, 1);
+
+                    // 2. 데이터 문자화 : 변경된 원본을 문자화
+                    let res = JSON.stringify(selData);
+
+                    // 3.로컬스 "cart-data" 반영
+                    localStorage.setItem("cart-data", res);
+
+                    // 4. 카트 리스트 전역상태변수 변경
+                    myCon.setLocalsCart(res);
+
+                    // 5. 데이터개수가 0이면 카트리스트
+                    // 상태변수를 false로 변경하여
+                    // 카트리스트 출력을 없앤다!
+                    if (selData.length == 0) myCon.setCartSts(false);
+
+                    // let aa = [];
+                    // aa.splice(지울순번,지울개수)
+                  } /// if ///
+                }}
+              >
+                ×
+              </button>
+              <img src={process.env.PUBLIC_URL + v.src} alt="cart item" />
             </td>
             {/* 상품 이름 */}
             <td className="cart-item-name">{v.tit}</td>
@@ -66,7 +95,12 @@ function CartList(props) {
                 <button className="increase">
                   <FontAwesomeIcon icon={faPlus} />
                 </button>
-                <input type="text" id="sum" defaultValue={v.quantity} readOnly />
+                <input
+                  type="text"
+                  id="sum"
+                  defaultValue={v.quantity}
+                  readOnly
+                />
                 <button className="decrease">
                   <FontAwesomeIcon icon={faMinus} />
                 </button>

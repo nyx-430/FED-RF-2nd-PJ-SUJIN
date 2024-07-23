@@ -46,18 +46,31 @@
       column-gap: 10px;
       row-gap: 20px;
 
-      /* 상품 이미지 */
+      /* 상품 이미지/삭제 버튼 */
       .cart-item-media {
         grid-row: 1/3;
         width: 150px;
         background-color: #ddd;
 
+        /* 상품 삭제 버튼 */
+        .cfn {
+          position: absolute;
+          font-size: 2.6rem;
+          color: #999;
+          opacity: 0;
+        }
+        
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
+      /* 이미지 호버시 삭제 버튼 */
+      .cart-item-media:hover .cfn {
+        opacity: 1;
+      }
+
       /* 상품 이름 */
       .cart-item-name {
         font-size: 2.2rem;
