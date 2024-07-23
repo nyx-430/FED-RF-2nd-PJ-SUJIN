@@ -46,7 +46,7 @@ export function SwiperApp() {
       >
         {imgArr.map((v, i) => (
           <SwiperSlide key={i}>
-            <img src={"./images/promotion/" + v + ".jpg"} alt="list image" />
+            <img src={process.env.PUBLIC_URL + "/images/promotion/" + v + ".jpg"} alt="list image" />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -1,15 +1,15 @@
 /// SW19 하단 영역 - FooterArea.jsx ///
 
-// 하단영역 CSS 불러오기
+// CSS
 import "../../css/footer_area.scss";
 
 export default function FooterArea() {
-  //// 코드 리턴구역 //////////////
+  //// 코드 리턴 구역 //////////////
   return (
     <footer id="footer-page">
       <div className="inbox">
         <div className="footer-box">
-          <img className="footer-logo" src="./images/logo_w.png" alt="logo" />
+          <img className="footer-logo" src={process.env.PUBLIC_URL + "/images/logo_w.png"} alt="logo" />
           <ul>
             <li>
               <a

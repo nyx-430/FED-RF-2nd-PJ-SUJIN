@@ -1,4 +1,4 @@
-/// 배너 데이터 ///
+/// SW19 배너 관련 데이터 - shopBan, collBan ///
 
 // 대표 컬렉션 상품 데이터
 const collBan = {
