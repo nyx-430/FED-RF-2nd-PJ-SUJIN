@@ -61,7 +61,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
     document.querySelector(".menu-open").classList.remove("on");
   }, [location]); ////////////////////////
 
-  // 검색 관련 함수들 /////////////
+  // 검색 관련 함수들 //////////////////////
   // 검색창에 엔터키 누르면 검색 함수 호출
   const enterKey = (e) => {
     // console.log(e.key,e.keyCode);
@@ -81,7 +81,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
         goSearch(txt);
       } /// if ///
     } /// if ///
-  }; ///////// enterKey /////////
+  }; ////// enterKey //////
 
   // 3. 검색 페이지로 검색어와 함께 이동하기 함수
   const goSearch = (txt) => {
@@ -90,7 +90,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
     // 라우터 이동 함수로 이동하기
     // 네비게이트 메서드("라우터 주소",{state:{보낼 객체}})
     goNav("/search", { state: { keyword: txt } });
-  }; ///////// goSearch /////////
+  }; ////// goSearch //////
 
   // 코드 리턴 구역 ////////////////////////
   return (

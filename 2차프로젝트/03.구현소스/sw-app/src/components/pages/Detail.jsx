@@ -185,7 +185,6 @@ function Detail() {
                     myCon.setCartSts(true);
 
                     alert("장바구니에 상품이 추가되었습니다.");
-                    // window.location.href = "/cart";
                   }} ////// onClick //////
                 >
                   장바구니

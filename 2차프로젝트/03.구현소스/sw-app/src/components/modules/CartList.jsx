@@ -34,7 +34,9 @@ function CartList() {
   // console.log("데이터 수:", dataCnt);
 
   // 랜더링 실행 구역 ////////////////////////
-  useEffect(() => {}, [dataCnt, force]); ////////////////////////
+  useEffect(() => {
+    
+  }, [dataCnt, force]); ////////////////////////
 
   // 코드 리턴 구역 //////////////////
   return (

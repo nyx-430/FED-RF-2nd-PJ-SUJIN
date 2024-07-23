@@ -124,15 +124,13 @@ export default function Layout() {
         loginSts={loginSts}
         logoutFn={logoutFn}
         goPage={goPage}
-        localsCart={localsCart}
-        cartSts={cartSts}
       />
       {/* 2.메인영역 */}
       <MainArea />
       {/* 3.하단영역 */}
       <FooterArea />
       {/* 카트리스트 : 카트 상태값 true 출력 */}
-      {cartSts && <CartList />}
+      {/* {cartSts && <CartList />} */}
     </dCon.Provider>
   );
 } /////////// Layout ///////////
