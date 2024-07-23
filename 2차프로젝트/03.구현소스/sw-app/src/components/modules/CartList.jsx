@@ -72,10 +72,10 @@ function CartList(props) {
                 </button>
               </div>
             </td>
+            <span></span>
           </tr>
         ))}
       </tbody>
-      <hr />
       {/* 총합 계산 + 구매 버튼 */}
       <div className="cart-footer">
         {/* 상품 수량 증감 버튼 */}

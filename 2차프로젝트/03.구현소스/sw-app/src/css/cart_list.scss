@@ -26,11 +26,13 @@
     font-size: 3rem;
   }
 
+  /* 구분선 */
   hr {
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #ddd;
   }
+
   /* 장바구니 리스트 */
   .cart-list {
     display: flex;
@@ -58,15 +60,14 @@
       }
       /* 상품 이름 */
       .cart-item-name {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: 600;
         width: auto;
         grid-column: 2 / 4;
       }
       /* 상품 가격 */
       .cart-item-price {
-        font-size: 1.5rem;
-        padding-top: 10px;
+        font-size: 2rem;
       }
       /* 상품 수량 */
       .cart-item-quantity {
@@ -84,11 +85,11 @@
           }
 
           .increase {
-            font-size: 15px;
+            font-size: 20px;
             padding: 5px;
           }
           .decrease {
-            font-size: 15px;
+            font-size: 20px;
             padding: 5px;
           }
         }

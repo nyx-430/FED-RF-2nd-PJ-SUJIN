@@ -8,6 +8,9 @@ import { pmData } from "../data/promotion_data";
 // 스와이프
 import { SwiperApp } from "../../plugin/SwiperApp";
 
+// 콤마 추가 함수
+import { addComma } from "../func/common_fn";
+
 // CSS
 import "../../css/promotion.scss";
 
@@ -56,7 +59,7 @@ function Promotion() {
                         {/* <div className="overlay"></div> */}
                       </div>
                       <h2>{v.tit}</h2>
-                      <h3>{v.price}원</h3>
+                      <h3>{addComma(v.price)}원</h3>
                     </Link>
                   </li>
                 ))}
