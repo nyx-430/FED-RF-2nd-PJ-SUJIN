@@ -41,6 +41,7 @@ function Collection({ catName }) {
     setCatArr(collBanAttr.current[collNum.current]);
   };
 
+  // 코드 리턴 구역 ///////////////////
   return (
     <section id="collection-page" className="page">
       <div className="inbox">
