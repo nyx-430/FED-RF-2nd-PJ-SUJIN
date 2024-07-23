@@ -31,7 +31,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
   // 3. logoutFn - 로그아웃 함수
 
   // 메뉴 바 클래스 visible 상태관리변수
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
 
   // 이동 함수
   const goNav = useNavigate();
@@ -54,7 +54,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
   // 랜더링 구역 ////////////////////////
   useEffect(() => {
     // 메뉴 바 클래스 visible
-    setVisible(true);
+    // setVisible(true);
 
     // 메뉴 버튼 클래스 on
     document.querySelector(".menu-button").classList.remove("on");
@@ -96,7 +96,8 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
   return (
     <>
       <header id="gnb">
-        <div className={`menu ${visible ? "visible" : ""}`}>
+        {/* <div className={`menu ${visible ? "visible" : ""}`}> */}
+        <div className="menu">
           <div className="lines">
             <a href="/">
               <span id="logo" className="line">
