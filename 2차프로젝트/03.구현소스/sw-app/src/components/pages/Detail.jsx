@@ -1,10 +1,10 @@
 /// SW19 상품 상세 페이지 - Detail.jsx ///
 import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { pCon } from "../modules/pCon";
+import { dCon } from "../modules/dCon";
 
 // 제이쿼리
-// import $ from "jquery";
+import $ from "jquery";
 
 // 콤마 추가 함수
 import { addComma } from "../func/common_fn";
@@ -19,7 +19,7 @@ import "../../css/shop.scss";
 
 function Detail() {
   // 컨텍스트
-  const myCon = useContext(pCon);
+  const myCon = useContext(dCon);
 
   const loc = useLocation();
   const tit = loc.state.tit ? loc.state.tit : "";
@@ -35,22 +35,6 @@ function Detail() {
   // 수량, 총합계 상태관리변수
   const [quantity, setQuantity] = useState(1);
   const [totalPrice, setTotalPrice] = useState(parseFloat(price));
-
-  // 로컬스 카트 존재여부변수
-  let cartTemp = false;
-
-  // 로컬스 카트 데이터 상태변수
-  const [localsCart, setLocalsCart] = useState(
-    localStorage.getItem("cart-data")
-  );
-
-  if (localsCart) {
-    let cartCnt = JSON.parse(localsCart).length;
-    if (cartCnt > 0) cartTemp = true;
-  } /// 카트 존재여부 if ///
-
-  // 카트 리스트 사용 여부 상태관리변수
-  const [cartSts, setCartSts] = useState(cartTemp);
 
   // 랜더링 실행 구역 ////////////////////////
   useEffect(() => {
@@ -169,18 +153,35 @@ function Detail() {
                     let locals = localStorage.getItem("cart-data");
                     locals = JSON.parse(locals);
 
+                    // idx값만 모아서 다른 배열 만들기
+                    let newLocals = locals.map((v) => v.tit);
+                    console.log("idx 새배열:", newLocals);
+
+                    // 인클루드 비교
+                    let retSts = newLocals.includes(tit);
+
+                    console.log("중복 상태:", retSts);
+
+                    if (retSts) {
+                      alert("이미 선택하신 상품입니다.");
+                      return;
+                    } /// if ///
+
+                    // 4.로컬스에 객체 데이터 추가하기
                     locals.push({
                       tit: tit,
                       src: src,
                       price: price,
-                      quantity: quantity,
+                      quantity: $("#sum").val()
                     });
 
                     // 로컬스에 문자화하여 입력
                     localStorage.setItem("cart-data", JSON.stringify(locals));
+
                     // 로컬스 카트 데이터 상태값 변경
                     localStorage.getItem("cart-data");
-                    // 카트리스트 생성 상태값 변경!
+
+                    // 카트리스트 생성 상태값 변경
                     myCon.setCartSts(true);
 
                     alert("장바구니에 상품이 추가되었습니다.");

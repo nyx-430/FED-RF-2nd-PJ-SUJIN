@@ -1,6 +1,12 @@
 /// SW19 카트 리스트 - CartList.jsx ///
-import React, { useContext } from "react";
-import { pCon } from "./pCon";
+import React, { useContext, useEffect, useState } from "react";
+import { dCon } from "./dCon";
+
+// 제이쿼리
+import $ from "jquery";
+
+// 콤마 추가 함수
+import { addComma } from "../func/common_fn";
 
 // 폰트어썸
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,13 +16,28 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 // CSS
 import "../../css/cart_list.scss";
 
-function CartList({ tit, src, price, quantity }) {
+function CartList(props) {
+  // 강제 리랜더링을 위한 상태변수
+  const [force, setForce] = useState(false);
+  // -> 불린값을 넣어놓고 강제 리랜더링이 필요한 경우
+  // setForce(!force) -> 기존 불린값을 반대로 넣어준다!
+
   // 컨텍스트
-  const myCon = useContext(pCon);
+  const myCon = useContext(dCon);
 
   // 로컬스 데이터 가져오기
-  // const selData = JSON.parse(myCon.locals);
-  // console.log("로컬스 데이터:", selData);
+  const selData = JSON.parse(myCon.localsCart);
+  console.log("로컬스 데이터:", selData);
+
+  // 전체 데이터 개수
+  // const dataCnt = selData.length;
+  // console.log("데이터 수:", dataCnt);
+
+
+  // 랜더링 실행 구역 ////////////////////////
+  useEffect(()=>{
+
+  },[]); ////////////////////////
 
   // 코드 리턴 구역 //////////////////
   return (
@@ -42,7 +63,7 @@ function CartList({ tit, src, price, quantity }) {
               <button className="increase">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
-              <input type="text" id="sum" value={quantity} readOnly />
+              <input type="text" id="sum" defaultValue="1" readOnly />
               <button className="decrease">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
@@ -58,7 +79,7 @@ function CartList({ tit, src, price, quantity }) {
           <div id="total-price" className="total-price">
             <strong className="price-title">
               총 상품금액
-              <span className="qty">({quantity})</span>
+              <span className="qty">(1)</span>
             </strong>
             <strong className="total">
               <em>원</em>
