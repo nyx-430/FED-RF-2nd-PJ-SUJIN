@@ -1,6 +1,5 @@
 /// SW19 카트 리스트 - CartList.jsx ///
-import React, { useContext } from "react";
-import { pCon } from "./pCon";
+import React from "react";
 
 // 폰트어썸
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,53 +10,62 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import "../../css/cart_list.scss";
 
 function CartList(props) {
-  // 컨텍스트
-  const myCon = useContext(pCon);
 
   return (
     <>
-        <div className="tab-title">
-          <h1>CART</h1>
-        </div>
-        <hr />
-        {/* 장바구니 리스트 */}
-        <tbody className="cart-list">
-          <tr>
-            {/* 상품 이미지 */}
-            <td className="cart-item-media">
-              <img src={process.env.PUBLIC_URL +"/images/shop/6am/p_6am.png"} alt="item" />
-            </td>
-            {/* 상품 이름 */}
-            <td className="cart-item-name">Item Name</td>
-            {/* 상품 가격 */}
-            <td className="cart-item-price">원</td>
-            {/* 상품 수량 - 증감 버튼 */}
-            <td className="cart-item-quantity">
-              <div className="btn-box">
-                <button className="increase">
-                  <FontAwesomeIcon icon={faPlus} />
-                </button>
-                <input type="number" value={1} />
-                <button className="decrease">
-                  <FontAwesomeIcon icon={faMinus} />
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-        <hr />
-        {/* 총합 계산 + 구매 버튼 */}
-        <div className="cart-footer">
-          <div className="total-box">
-            <div className="total-price">
-              <p>Total</p>
-              <p>원</p>
-            </div>
+      <div className="tab-title">
+        <h1>CART</h1>
+      </div>
+      <hr />
+      {/* 장바구니 리스트 */}
+      <tbody className="cart-list">
+        <tr>
+          {/* 상품 이미지 */}
+          <td className="cart-item-media">
+            <img
+              src={process.env.PUBLIC_URL + "/images/shop/6am/p_6am.png"}
+              alt="item"
+            />
+          </td>
+          {/* 상품 이름 */}
+          <td className="cart-item-name">Item Name</td>
+          {/* 상품 가격 */}
+          <td className="cart-item-price">원</td>
+          {/* 상품 수량 - 증감 버튼 */}
+          <td className="cart-item-quantity">
             <div className="btn-box">
-              <button className="buy-btn">구매하기</button>
+              <button className="increase">
+                <FontAwesomeIcon icon={faPlus} />
+              </button>
+              <input type="text" id="sum" defaultValue="1" readOnly />
+              <button className="decrease">
+                <FontAwesomeIcon icon={faMinus} />
+              </button>
             </div>
+          </td>
+        </tr>
+      </tbody>
+      <hr />
+      {/* 총합 계산 + 구매 버튼 */}
+      <div className="cart-footer">
+        {/* 상품 수량 증감 버튼 */}
+        <div className="item-quantity">
+          
+          <div id="total-price" className="total-price">
+            <strong className="price-title">
+              총 상품금액
+              <span className="qty">(1)</span>
+            </strong>
+            <strong className="total">
+              <em>원</em>
+            </strong>
+          </div>
+          {/* 장바구니 버튼 */}
+          <div className="btn-box2">
+            <button className="buy-btn">구매하기</button>
           </div>
         </div>
+      </div>
 
       {/* 사이드 메뉴 - 장바구니(로그인x) */}
       {/* <aside className="shopping-tab">
