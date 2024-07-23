@@ -1,5 +1,6 @@
 /// SW19 카트 리스트 - CartList.jsx ///
-import React from "react";
+import React, { useContext } from "react";
+import { pCon } from "./pCon";
 
 // 폰트어썸
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,8 +10,15 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 // CSS
 import "../../css/cart_list.scss";
 
-function CartList(props) {
+function CartList({ tit, src, price, quantity }) {
+  // 컨텍스트
+  const myCon = useContext(pCon);
 
+  // 로컬스 데이터 가져오기
+  // const selData = JSON.parse(myCon.locals);
+  // console.log("로컬스 데이터:", selData);
+
+  // 코드 리턴 구역 //////////////////
   return (
     <>
       <div className="tab-title">
@@ -22,10 +30,7 @@ function CartList(props) {
         <tr>
           {/* 상품 이미지 */}
           <td className="cart-item-media">
-            <img
-              src={process.env.PUBLIC_URL + "/images/shop/6am/p_6am.png"}
-              alt="item"
-            />
+            <img src={process.env.PUBLIC_URL + "/images/shop/6am/p_6am.png"} alt="cart item" />
           </td>
           {/* 상품 이름 */}
           <td className="cart-item-name">Item Name</td>
@@ -37,7 +42,7 @@ function CartList(props) {
               <button className="increase">
                 <FontAwesomeIcon icon={faPlus} />
               </button>
-              <input type="text" id="sum" defaultValue="1" readOnly />
+              <input type="text" id="sum" value={quantity} readOnly />
               <button className="decrease">
                 <FontAwesomeIcon icon={faMinus} />
               </button>
@@ -50,11 +55,10 @@ function CartList(props) {
       <div className="cart-footer">
         {/* 상품 수량 증감 버튼 */}
         <div className="item-quantity">
-          
           <div id="total-price" className="total-price">
             <strong className="price-title">
               총 상품금액
-              <span className="qty">(1)</span>
+              <span className="qty">({quantity})</span>
             </strong>
             <strong className="total">
               <em>원</em>

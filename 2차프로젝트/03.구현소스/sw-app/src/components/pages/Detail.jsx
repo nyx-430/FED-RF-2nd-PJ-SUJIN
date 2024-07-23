@@ -1,9 +1,10 @@
 /// SW19 상품 상세 페이지 - Detail.jsx ///
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { pCon } from "../modules/pCon";
 
 // 제이쿼리
-import $ from "jquery";
+// import $ from "jquery";
 
 // 콤마 추가 함수
 import { addComma } from "../func/common_fn";
@@ -17,8 +18,10 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import "../../css/shop.scss";
 
 function Detail() {
+  // 컨텍스트
+  const myCon = useContext(pCon);
+
   const loc = useLocation();
-  // console.log(loc.state);
   const tit = loc.state.tit ? loc.state.tit : "";
   const src = loc.state.src ? loc.state.src : "";
   const detail = loc.state.detail ? loc.state.detail : "";
@@ -33,31 +36,51 @@ function Detail() {
   const [quantity, setQuantity] = useState(1);
   const [totalPrice, setTotalPrice] = useState(parseFloat(price));
 
+  // 로컬스 카트 존재여부변수
+  let cartTemp = false;
+
+  // 로컬스 카트 데이터 상태변수
+  const [localsCart, setLocalsCart] = useState(
+    localStorage.getItem("cart-data")
+  );
+
+  if (localsCart) {
+    let cartCnt = JSON.parse(localsCart).length;
+    if (cartCnt > 0) cartTemp = true;
+  } /// 카트 존재여부 if ///
+
+  // 카트 리스트 사용 여부 상태관리변수
+  const [cartSts, setCartSts] = useState(cartTemp);
+
   // 랜더링 실행 구역 ////////////////////////
   useEffect(() => {
     // 로딩시 상단 이동
     window.scrollTo(0, 0);
-  },[]); ////////////////////////
+  }, []); ////////////////////////
 
-  useEffect(()=>{
+  useEffect(() => {
     // 수량, 총합계 반영
     setTotalPrice(parseFloat(price) * quantity);
-  },[price, quantity]); ////////////////////////
+  }, [price, quantity]); ////////////////////////
 
+  ///////////////////////////////////////////////
+  ////////////////// [ 함수 ] //////////////////
+  // 수량 증가 함수
   const plusFn = () => {
-    setQuantity(prevQuantity => prevQuantity + 1);
+    setQuantity((prevQuantity) => prevQuantity + 1);
   }; ////// plusFn //////
-
+  // 수량 감소 함수
   const minusFn = () => {
     if (quantity > 1) {
-      setQuantity(prevQuantity => prevQuantity - 1);
+      setQuantity((prevQuantity) => prevQuantity - 1);
     }
   }; ////// minusFn //////
 
-  // 뒤로 가기 버튼 함수
+  // 뒤로가기 버튼 함수
   const goBack = () => {
     window.history.back();
-  } ////// goBack //////
+  }; ////// goBack //////
+  ///////////////////////////////////////////////
 
   // 코드 리턴 구역 ////////////////////////
   return (
@@ -114,17 +137,11 @@ function Detail() {
             {/* 상품 수량 증감 버튼 */}
             <div className="item-quantity">
               <div className="btn-box1">
-                <button 
-                className="increase"
-                onClick={plusFn}
-                >
+                <button className="increase" onClick={plusFn}>
                   <FontAwesomeIcon icon={faPlus} />
                 </button>
                 <input type="text" id="sum" value={quantity} readOnly />
-                <button 
-                className="decrease"
-                onClick={minusFn}
-                >
+                <button className="decrease" onClick={minusFn}>
                   <FontAwesomeIcon icon={faMinus} />
                 </button>
               </div>
@@ -140,7 +157,38 @@ function Detail() {
               {/* 장바구니 버튼 */}
               <div className="btn-box2">
                 <button className="buy-btn">구매하기</button>
-                <button className="cart-btn">장바구니</button>
+                <button
+                  className="cart-btn"
+                  onClick={() => {
+                    // 1. 로컬스 카트 데이터 넣기
+                    if (!localStorage.getItem("cart-data")) {
+                      localStorage.setItem("cart-data", "[]");
+                    } /// if ///
+
+                    // 2. 로컬스 읽어와서 파싱하기
+                    let locals = localStorage.getItem("cart-data");
+                    locals = JSON.parse(locals);
+
+                    locals.push({
+                      tit: tit,
+                      src: src,
+                      price: price,
+                      quantity: quantity,
+                    });
+
+                    // 로컬스에 문자화하여 입력
+                    localStorage.setItem("cart-data", JSON.stringify(locals));
+                    // 로컬스 카트 데이터 상태값 변경
+                    localStorage.getItem("cart-data");
+                    // 카트리스트 생성 상태값 변경!
+                    myCon.setCartSts(true);
+
+                    alert("장바구니에 상품이 추가되었습니다.");
+                    // window.location.href = "/cart";
+                  }} ////// onClick //////
+                >
+                  장바구니
+                </button>
               </div>
             </div>
           </div>

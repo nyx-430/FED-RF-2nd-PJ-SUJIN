@@ -8,11 +8,11 @@ import Main from "./components/pages/Main";
 import Story from "./components/pages/Story";
 import Shop from "./components/pages/Shop";
 import MemberShip from "./components/pages/MemberShip";
-import Board from "./components/pages/Board";
 import Detail from "./components/pages/Detail";
 import SearchPage from "./components/pages/SearchPage";
 import Login from "./components/pages/Login";
 import Member from "./components/pages/Member";
+import CartList from "./components/modules/CartList";
 
 // 전체 공통 CSS
 import "../src/css/index.scss";
@@ -37,11 +37,11 @@ export default function MainComponent() {
             <Route key={i} path={`/shop/${v}`} element={<Shop />} />
           ))}
           <Route path="/membership" element={<MemberShip />} />
-          <Route path="/board" element={<Board />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/member" element={<Member />} />
+          <Route path="/cart" element={<CartList />} />
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}
       </Routes>
