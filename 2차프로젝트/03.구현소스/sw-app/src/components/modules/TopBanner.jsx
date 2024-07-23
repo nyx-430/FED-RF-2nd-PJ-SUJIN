@@ -12,7 +12,7 @@ function TopBanner() {
   return (
     <section id="top-banner">
       <div className="cont-box">
-        <img src="/images/shop/banner/Wimbledon Park.jpg" alt="ban" />
+        <img src={process.env.PUBLIC_URL + "/images/shop/banner/Wimbledon Park.jpg"} alt="ban" />
       </div>
     </section>
   );
