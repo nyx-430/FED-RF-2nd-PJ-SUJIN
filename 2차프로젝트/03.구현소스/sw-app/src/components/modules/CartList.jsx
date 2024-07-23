@@ -17,7 +17,7 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import "../../css/cart_list.scss";
 
 function CartList(props) {
-  // 강제 리랜더링을 위한 상태변수
+  // [ 강제 리랜더링을 위한 상태변수 ]
   const [force, setForce] = useState(false);
   // -> 불린값을 넣어놓고 강제 리랜더링이 필요한 경우
   // setForce(!force) -> 기존 불린값을 반대로 넣어준다!
@@ -27,17 +27,16 @@ function CartList(props) {
 
   // 로컬스 데이터 가져오기
   const selData = JSON.parse(myCon.localsCart);
-  console.log("로컬스 데이터:", selData);
+  // console.log("로컬스 데이터:", selData);
 
   // 전체 데이터 개수
-  // const dataCnt = selData.length;
+  const dataCnt = selData.length;
   // console.log("데이터 수:", dataCnt);
 
-
   // 랜더링 실행 구역 ////////////////////////
-  useEffect(()=>{
-
-  },[]); ////////////////////////
+  useEffect(() => {
+  
+  }, [dataCnt, force]); ////////////////////////
 
   // 코드 리턴 구역 //////////////////
   return (
@@ -48,28 +47,33 @@ function CartList(props) {
       <hr />
       {/* 장바구니 리스트 */}
       <tbody className="cart-list">
-        <tr>
-          {/* 상품 이미지 */}
-          <td className="cart-item-media">
-            <img src={process.env.PUBLIC_URL + "/images/shop/6am/p_6am.png"} alt="cart item" />
-          </td>
-          {/* 상품 이름 */}
-          <td className="cart-item-name">Item Name</td>
-          {/* 상품 가격 */}
-          <td className="cart-item-price">원</td>
-          {/* 상품 수량 - 증감 버튼 */}
-          <td className="cart-item-quantity">
-            <div className="btn-box">
-              <button className="increase">
-                <FontAwesomeIcon icon={faPlus} />
-              </button>
-              <input type="text" id="sum" defaultValue="1" readOnly />
-              <button className="decrease">
-                <FontAwesomeIcon icon={faMinus} />
-              </button>
-            </div>
-          </td>
-        </tr>
+        {selData.map((v, i) => (
+          <tr key={i}>
+            {/* 상품 이미지 */}
+            <td className="cart-item-media">
+              <img
+                src={process.env.PUBLIC_URL + v.src}
+                alt="cart item"
+              />
+            </td>
+            {/* 상품 이름 */}
+            <td className="cart-item-name">{v.tit}</td>
+            {/* 상품 가격 */}
+            <td className="cart-item-price">{addComma(v.price)}원</td>
+            {/* 상품 수량 - 증감 버튼 */}
+            <td className="cart-item-quantity">
+              <div className="btn-box">
+                <button className="increase">
+                  <FontAwesomeIcon icon={faPlus} />
+                </button>
+                <input type="text" id="sum" defaultValue={v.quantity} readOnly />
+                <button className="decrease">
+                  <FontAwesomeIcon icon={faMinus} />
+                </button>
+              </div>
+            </td>
+          </tr>
+        ))}
       </tbody>
       <hr />
       {/* 총합 계산 + 구매 버튼 */}

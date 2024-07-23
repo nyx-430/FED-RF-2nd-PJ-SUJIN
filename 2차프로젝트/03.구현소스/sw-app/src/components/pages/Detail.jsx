@@ -163,7 +163,7 @@ function Detail() {
                     console.log("중복 상태:", retSts);
 
                     if (retSts) {
-                      alert("이미 선택하신 상품입니다.");
+                      alert("이미 선택된 상품입니다.");
                       return;
                     } /// if ///
 
@@ -172,7 +172,7 @@ function Detail() {
                       tit: tit,
                       src: src,
                       price: price,
-                      quantity: $("#sum").val()
+                      quantity: $("#sum").val(),
                     });
 
                     // 로컬스에 문자화하여 입력
