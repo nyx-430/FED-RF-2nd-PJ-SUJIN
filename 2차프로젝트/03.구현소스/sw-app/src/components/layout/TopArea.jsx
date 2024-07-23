@@ -1,6 +1,6 @@
 /// SW19 상단 영역 - TopArea.jsx ///
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // 메모이제이션
 import { memo } from "react";
@@ -30,9 +30,12 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
   // 2. loginSts - 로그인 상태 변수
   // 3. logoutFn - 로그아웃 함수
 
-  // 메뉴 바 클래스 visible 상태관리변수
-  // const [visible, setVisible] = useState(false);
+  // 쇼핑탭 버튼 클래스 on 상태관리변수
+  const [visible, setVisible] = useState(false);
+  const ref = useRef(null);
 
+  ///////////////////////////////////////////////
+  ////////////////// [ 함수 ] //////////////////
   // 이동 함수
   const goNav = useNavigate();
 
@@ -43,10 +46,15 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
   }; ////// addOn //////
 
     // 쇼핑탭 버튼 클래스 on 함수
-    const showTab = () => {
+    const showTab = (e) => {
       document.querySelector(".cart").classList.toggle("on");
       document.querySelector(".shopping-tab").classList.toggle("on");
+
+      // 바깥 영역 클릭시 창 닫기
+      if (ref.current && !ref.current.contains(e.target)) {
+        setVisible(false);}
     } ////// showTab //////
+  ///////////////////////////////////////////////
   
 
   const location = useLocation();
@@ -56,9 +64,15 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
     // 메뉴 바 클래스 visible
     // setVisible(true);
 
-    // 메뉴 버튼 클래스 on
+    // 메뉴 버튼 클래스 on 이벤트
     document.querySelector(".menu-button").classList.remove("on");
     document.querySelector(".menu-open").classList.remove("on");
+
+    // 쇼핑탭 버튼 이벤트
+    document.addEventListener('mousedown', showTab);
+    return () => {
+      document.removeEventListener('mousedown', showTab);
+    };
   }, [location]); ////////////////////////
 
   // 검색 관련 함수들 //////////////////////
@@ -135,7 +149,8 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
                 </li>
                 {/* 장바구니 */}
                 <li className="menu-buttom cart"
-                onClick={showTab}
+                onClick={()=>{setVisible(true)}}
+                // onClick={showTab}
                 style={{cursor: "pointer"}}
                 >
                   <FontAwesomeIcon icon={faBagShopping} />
@@ -197,7 +212,10 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
           </ul>
         </aside>
         {/* 사이드 메뉴 - 쇼핑탭 */}
-        <aside className="shopping-tab">
+        <aside 
+        ref={ref}
+        className={`shopping-tab ${visible ? "on" : ""}`}
+        >
           <CartList />
         </aside>
       </header>
