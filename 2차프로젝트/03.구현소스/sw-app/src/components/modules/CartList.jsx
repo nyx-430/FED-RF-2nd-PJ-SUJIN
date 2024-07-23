@@ -16,7 +16,7 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 // CSS
 import "../../css/cart_list.scss";
 
-function CartList() {
+function CartList({ quantity, totalPrice, plusFn, minusFn }) {
   // [ 강제 리랜더링을 위한 상태변수 ]
   const [force, setForce] = useState(false);
   // -> 불린값을 넣어놓고 강제 리랜더링이 필요한 경우
@@ -33,9 +33,24 @@ function CartList() {
   const dataCnt = selData.length;
   // console.log("데이터 수:", dataCnt);
 
+  // 총합계 함수 /////////////
+  const totalFn = () => {
+    let result = 0;
+
+    $(".cart-item-price").each((idx, ele) => {
+      console.log("값:", $(ele).val());
+
+      // 숫자로 변환 후 기존값에 더하기
+      result += Number($(ele).val());
+    });
+
+    // 호출한 곳에 합계 리턴
+    return result;
+  }; ////// totalFn //////
+
   // 랜더링 실행 구역 ////////////////////////
   useEffect(() => {
-    
+    $(".total").text(addComma(totalFn()));
   }, [dataCnt, force]); ////////////////////////
 
   // 코드 리턴 구역 //////////////////
@@ -56,11 +71,7 @@ function CartList() {
                 className="cfn"
                 onClick={() => {
                   // confirm()의 "확인"클릭시 true
-                  if (
-                    window.confirm(
-                      "해당 상품을 삭제하시겠습니까?"
-                    )
-                  ) {
+                  if (window.confirm("해당 상품을 삭제하시겠습니까?")) {
                     // 1. 데이터 지우기 :
                     selData.splice(i, 1);
 
@@ -94,7 +105,7 @@ function CartList() {
             {/* 상품 수량 - 증감 버튼 */}
             <td className="cart-item-quantity">
               <div className="btn-box">
-                <button className="increase">
+                <button className="increase" onClick={plusFn}>
                   <FontAwesomeIcon icon={faPlus} />
                 </button>
                 <input
@@ -103,7 +114,7 @@ function CartList() {
                   defaultValue={v.quantity}
                   readOnly
                 />
-                <button className="decrease">
+                <button className="decrease" onClick={minusFn}>
                   <FontAwesomeIcon icon={faMinus} />
                 </button>
               </div>
@@ -119,7 +130,7 @@ function CartList() {
           <div id="total-price" className="total-price">
             <strong className="price-title">
               총 상품금액
-              <span className="qty">(1)</span>
+              <span className="qty">({quantity})</span>
             </strong>
             <strong className="total">
               <em>원</em>
