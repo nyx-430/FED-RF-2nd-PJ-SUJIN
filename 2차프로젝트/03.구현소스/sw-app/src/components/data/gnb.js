@@ -43,8 +43,8 @@ export const menu = [
     txt: "MEMBER SHIP",
     link: "/membership",
   },
-  {
-    txt: "Q&A",
-    link: "/board",
-  },
+  // {
+  //   txt: "Q&A",
+  //   link: "/board",
+  // },
 ];

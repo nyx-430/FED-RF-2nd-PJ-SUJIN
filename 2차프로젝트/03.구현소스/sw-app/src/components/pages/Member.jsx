@@ -1,5 +1,5 @@
 /// 회원가입 페이지 컴포넌트 - Member.jsx ///
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 // 로컬스토리지 생성 JS
@@ -15,6 +15,11 @@ import "../../css/member.scss";
 import AddressInput from "../modules/AddressInput";
 
 function Member() {
+  // 화면 랜더링 실행 구역 //////////
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }); /////////////////////////
+
   // 라우터 이동 네비게이트
   const goNav = useNavigate();
   // goNav(라이터주소,state변수)
@@ -321,7 +326,8 @@ function Member() {
 
       // 7. 회원가입 환영메시지 + 로그인 페이지 이동
       // 버튼 텍스트에 환영메시지
-      document.querySelector(".login-join-btn").innerText = "Thank you for joining us!";
+      document.querySelector(".login-join-btn").innerText =
+        "Thank you for joining us!";
       // 1초 후 페이지 이동 : 라우터 Navigate로 이동
       setTimeout(() => {
         goNav("/login");
@@ -522,9 +528,9 @@ function Member() {
             </li>
             <li>
               혹시 SW19 회원이신가요?
-              <Link to="/login"
-              style={{fontWeight: "600", fontSize: "17px"}}
-              >로그인</Link>
+              <Link to="/login" style={{ fontWeight: "600", fontSize: "17px" }}>
+                로그인
+              </Link>
             </li>
           </ul>
         </form>
