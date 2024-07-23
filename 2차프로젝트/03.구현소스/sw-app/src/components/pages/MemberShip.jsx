@@ -18,7 +18,7 @@ function MemberShip(props) {
         <div className="inbox">
           <div className="boxInner">
               <div className="thumb">
-                <img src={process.env.PUBLIC_URL + "/images/membership.jpeg"} alt="membership" />
+                <img src={process.env.PUBLIC_URL + "/images/membership.jpg"} alt="membership" />
               </div>
               <div className="desc-box">
                 <h3>

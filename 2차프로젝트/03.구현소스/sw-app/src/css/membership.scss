@@ -20,11 +20,9 @@
         margin: 0 -13px;
 
         .thumb {
-          overflow: hidden;
-
-          img {
-            margin: 0;
-            padding: 0;
+            overflow: hidden;
+            
+            img {
             width: 100%;
             object-fit: cover;
           }
