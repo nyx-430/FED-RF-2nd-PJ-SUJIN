@@ -129,7 +129,7 @@ export default function Layout() {
       <MainArea />
       {/* 3.하단영역 */}
       <FooterArea />
-      {/* 카트리스트 : 카트 상태값 true 출력 */}
+      {/* 카트 리스트 : 카트 상태값 true 출력 */}
       {/* {cartSts && <CartList />} */}
     </dCon.Provider>
   );

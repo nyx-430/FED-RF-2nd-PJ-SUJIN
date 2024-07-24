@@ -30,7 +30,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
   // 2. loginSts - 로그인 상태 변수
   // 3. logoutFn - 로그아웃 함수
 
-  // 쇼핑탭 버튼 클래스 on 상태관리변수
+  // 쇼핑탭 버튼 클래스 on 상태관리변수 -> 수정 필요
   // const [visible, setVisible] = useState(false);
   // const ref = useRef(null);
 
@@ -52,7 +52,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
       document.querySelector(".cart").classList.toggle("on");
       document.querySelector(".shopping-tab").classList.toggle("on");
 
-      // 바깥 영역 클릭시 창 닫기
+      // 바깥 영역 클릭시 창 닫기 -> 수정 필요
       // if (ref.current && !ref.current.contains(e.target)) {
       //   console.log("이벤트 대상:",e.target);
       //   setVisible(false);}
