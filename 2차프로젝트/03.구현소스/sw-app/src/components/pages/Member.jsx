@@ -147,7 +147,7 @@ function Member() {
     } /// if ///
     // 3-2. 에러일 때 : 유효성 검사 에러
     else {
-      console.log("에러~!");
+      console.log("에러");
       // 에러 메시지 업데이트
       setIdMsg(msgId[0]);
       // 아이디 에러상태 업데이트(true)
@@ -305,7 +305,7 @@ function Member() {
       // 최대수를 위한 배열값 뽑기 (idx항목)
       let temp = memData.map((v) => v.idx);
       // 다음 번호는 항상 최대수+1이다!
-      console.log("다음번호:", Math.max(...temp) + 1);
+      // console.log("다음번호:", Math.max(...temp) + 1);
 
       // 4. 새로운 데이터 구성하기
       let newData = {
@@ -337,8 +337,8 @@ function Member() {
     } /// if ///
     // 3. 불통과시
     else {
-      console.log($(".msg").eq(0).text());
-      alert("Change your input!");
+      // console.log($(".msg").eq(0).text());
+      alert("입력값을 확인해 주세요.");
     } /// else ///
   }; /////////// onSubmit 함수 //////////
 

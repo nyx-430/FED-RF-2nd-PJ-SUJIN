@@ -129,7 +129,7 @@ const AddressInput = ({ changeAddr }) => {
         {/* 주소 직접 작성 뒷부분(상세 주소) */}
         <input
           className="addr2"
-          placeholder="나머지 주소(선택 입력 가능)"
+          placeholder="나머지 주소"
           style={{ width: "100%" }}
           onChange={changeAddr}
           onBlur={changeAddr}

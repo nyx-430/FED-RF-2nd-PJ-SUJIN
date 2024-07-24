@@ -110,7 +110,7 @@ export default function Layout() {
     document.querySelector(".cart").classList.toggle("on");
     let tg = document.querySelector(".shopping-tab");
     if(tg) tg.classList.toggle("on");
-    else alert("장바구니가 비었습니다~!");
+    else alert("장바구니가 비었습니다.");
 
   } ////// showTab //////
 
