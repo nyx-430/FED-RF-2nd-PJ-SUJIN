@@ -26,7 +26,7 @@ function CartList({ quantity, totalPrice, plusFn, minusFn }) {
   const myCon = useContext(dCon);
 
   // 로컬스 데이터 가져오기
-  const selData = JSON.parse(myCon.localsCart);
+  const selData = JSON.parse(localStorage.getItem("cart-data"));
   // console.log("로컬스 데이터:", selData);
 
   // 전체 데이터 개수

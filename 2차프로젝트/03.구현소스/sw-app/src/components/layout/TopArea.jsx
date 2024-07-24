@@ -11,8 +11,6 @@ import $ from "jquery";
 // GNB 데이터
 import { menu } from "../data/gnb";
 
-// 카트 리스트 모듈
-import CartList from "../modules/CartList";
 
 // 폰트어썸
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,7 +22,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 // 헤더 탑메뉴 CSS
 import "../../css/top_area.scss";
 
-export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
+export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage, showTab }) => {
   // 전달값
   // 1. loginMsg - 로그인 메시지 변수
   // 2. loginSts - 로그인 상태 변수
@@ -47,16 +45,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
     document.querySelector(".menu-open").classList.toggle("on");
   }; ////// addOn //////
 
-    // 쇼핑탭 버튼 클래스 on 함수
-    const showTab = () => {
-      document.querySelector(".cart").classList.toggle("on");
-      document.querySelector(".shopping-tab").classList.toggle("on");
-
-      // 바깥 영역 클릭시 창 닫기 -> 수정 필요
-      // if (ref.current && !ref.current.contains(e.target)) {
-      //   console.log("이벤트 대상:",e.target);
-      //   setVisible(false);}
-    } ////// showTab //////
+    
   ///////////////////////////////////////////////
   
   // 랜더링 구역 ////////////////////////
@@ -212,9 +201,7 @@ export const TopArea = memo(({ loginMsg, loginSts, logoutFn, goPage }) => {
         ref={ref}
         className={`shopping-tab ${visible ? "on" : ""}`}
         > */}
-        <aside className="shopping-tab">
-          <CartList />
-        </aside>
+        
       </header>
     </>
   );

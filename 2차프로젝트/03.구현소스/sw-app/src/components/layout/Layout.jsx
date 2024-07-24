@@ -13,6 +13,7 @@ import "jquery.cookie";
 import { TopArea } from "./TopArea";
 import MainArea from "./MainArea";
 import FooterArea from "./FooterArea";
+// 카트 리스트 모듈
 import CartList from "../modules/CartList";
 
 export default function Layout() {
@@ -98,7 +99,20 @@ export default function Layout() {
     } /// if ///
 
     $.cookie("aa", "bb", { expires: 2 });
+
+    $("html,body").animate({scrollTop: "0px"},500);
   }, []); ////////////////////////
+
+
+  // 쇼핑탭 버튼 클래스 on 함수
+  const showTab = () => {
+    console.log("나 쇼탭이야~!");
+    document.querySelector(".cart").classList.toggle("on");
+    let tg = document.querySelector(".shopping-tab");
+    if(tg) tg.classList.toggle("on");
+    else alert("장바구니가 비었습니다~!");
+
+  } ////// showTab //////
 
   // 코드 리턴 구역 /////////////////
   return (
@@ -115,7 +129,7 @@ export default function Layout() {
         localsCart,
         setLocalsCart,
         cartSts,
-        setCartSts
+        setCartSts,
       }}
     >
       {/* 1.상단영역 */}
@@ -124,13 +138,18 @@ export default function Layout() {
         loginSts={loginSts}
         logoutFn={logoutFn}
         goPage={goPage}
+        showTab={showTab}
       />
       {/* 2.메인영역 */}
       <MainArea />
       {/* 3.하단영역 */}
       <FooterArea />
       {/* 카트 리스트 : 카트 상태값 true 출력 */}
-      {/* {cartSts && <CartList />} */}
+      {cartSts && (
+        <aside className="shopping-tab scbar">
+          <CartList />
+        </aside>
+      )}
     </dCon.Provider>
   );
 } /////////// Layout ///////////

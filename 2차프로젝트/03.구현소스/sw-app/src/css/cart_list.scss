@@ -1,24 +1,24 @@
 /* 카트 리스트 CSS - cart_list.scss */
 
 /**************** 오픈 사이드 메뉴 - 장바구니 ****************/
-.shopping-tab {
+.shopping-tab {  
   position: fixed;
-  width: 0;
+  top: 0;
+  right: -29vw;
+  width: 29vw;
   height: 100vh;
-  right: 90px;
-  padding: 0;
+  padding: 20px;
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 0 1px 5px -1px #888;
   border-radius: 3% 0 0 3%;
-  transition: width 0.3s;
-  overflow: hidden;
+  transition: right 0.3s;
+  overflow: auto;
   z-index: 999;
   
   /* 사이드 메뉴 클래스 on */
   &.on {
-    width: 29vw;
-    padding: 20px;
+    right: 90px;
   }
   
   /* 쇼핑탭 타이틀 */
