@@ -38,7 +38,7 @@ function CartList({ quantity, totalPrice, plusFn, minusFn }) {
     let result = 0;
 
     $(".cart-item-price").each((idx, ele) => {
-      console.log("값:", $(ele).val());
+      // console.log("값:", $(ele).val());
 
       // 숫자로 변환 후 기존값에 더하기
       result += Number($(ele).val());
@@ -50,7 +50,7 @@ function CartList({ quantity, totalPrice, plusFn, minusFn }) {
 
   // 랜더링 실행 구역 ////////////////////////
   useEffect(() => {
-    $(".total").text(addComma(totalFn()));
+    // $(".total").text(addComma(totalFn())); -> 주석 풀면 상세 페이지 total값에도 영향을 줌
   }, [dataCnt, force]); ////////////////////////
 
   // 코드 리턴 구역 //////////////////
@@ -115,7 +115,6 @@ function CartList({ quantity, totalPrice, plusFn, minusFn }) {
                   </button>
                 </div>
               </td>
-              <span></span>
             </tr>
           ))}
         </tbody>
