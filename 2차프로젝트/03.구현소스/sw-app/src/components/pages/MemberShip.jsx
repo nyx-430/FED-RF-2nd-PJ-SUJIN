@@ -35,7 +35,7 @@ function MemberShip(props) {
     <>
       <section id="membership-page" className="page">
         <h1 className="title">MEMBERSHIP REWARD</h1>
-        <div className="inbox">
+        <div className={`inbox ${visible ? "visible" : ""}`}>
           <div className="img-box">
             <img
               src={process.env.PUBLIC_URL + "/images/membership.jpg"}
