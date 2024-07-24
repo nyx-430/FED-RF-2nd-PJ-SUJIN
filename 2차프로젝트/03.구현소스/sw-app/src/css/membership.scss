@@ -11,21 +11,9 @@
     padding: 0 15px;
     box-sizing: border-box;
 
-    .boxInner {
-      margin: 0 auto;
-      padding: 0 20px;
-      box-sizing: border-box;
-
-      .inner {
-        margin: 0 -13px;
-
-        .thumb {
-            overflow: hidden;
-            
-            img {
-            width: 100%;
-            object-fit: cover;
-          }
+        .img-box img {
+          width: 100%;
+          object-fit: cover;
         }
 
         .desc-box {
@@ -45,8 +33,7 @@
             padding: 0;
           }
         }
-      }
-    }
+
   }
 
   /* 등급별 혜택 */
