@@ -11,140 +11,137 @@
     padding: 0 15px;
     box-sizing: border-box;
 
-        .img-box img {
-          width: 100%;
-          object-fit: cover;
-        }
+    .img-box img {
+      width: 100%;
+      object-fit: cover;
+    }
 
-        .desc-box {
-          margin-top: 2rem;
+    .desc-box {
+      margin-top: 2rem;
 
-          h3 {
-            font-size: 1.6rem;
-            font-weight: normal;
-            margin: 32px 0 6px;
-            padding: 0 20px;
-            letter-spacing: -0.04em;
-          }
+      h3 {
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin: 32px 0 6px;
+        padding: 0 20px;
+        letter-spacing: -0.04em;
+      }
 
-          p {
-            font-size: 1.1rem;
-            margin: 0;
-            padding: 0;
-          }
-        }
+      p {
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+      }
+    }
 
-  }
+    /* 큰 제목 */
+    .storesTextTitle {
+      text-align: left;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 60px 0 20px;
+      padding: 0;
+      letter-spacing: -0.04em;
+    }
+    /* 내용 텍스트 */
+    .storesText {
+      padding: 0 0 0;
+      text-align: left;
+      /* 최상단 li */
+      li {
+        padding: 0 0 40px;
 
-  /* 등급별 혜택 */
-  .storesTextTitle {
-    text-align: left;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 60px 0 20px;
-    padding: 0;
-    letter-spacing: -0.04em;
-  }
+        .listTwo {
+          display: flex;
+          align-items: left;
 
-  .storesText {
-    padding: 0 0 0;
-    text-align: left;
-
-    li {
-      padding: 0 0 40px;
-
-      .listTwo {
-        display: flex;
-        align-items: center;
-
-        .hImg {
-          width: 50%;
-          padding: 0 20px 0 0;
-          box-sizing: border-box;
-
-          p {
-            font-size: 1.6rem;
-            line-height: 1.6;
-            color: #000;
-          }
-        }
-
-        .hImg {
-          li {
-            padding: 0 0 0 20px;
-
-            .empty {
-              padding: 25px 0 16px;
-              font-size: 14px;
-              line-height: 1;
-              font-weight: normal;
-              clear: both;
-            }
+          .hImg {
+            width: 50%;
+            padding: 0 20px 0 0;
+            box-sizing: border-box;
 
             p {
-              font-size: 11px;
+              font-size: 1.6rem;
               line-height: 1.6;
               color: #000;
             }
           }
+          
+            .listTwo li {
+              padding: 0 0 0 20px;
+
+              .empty {
+                padding: 25px 0 16px;
+                font-size: 14px;
+                line-height: 1;
+                font-weight: normal;
+                clear: both;
+              }
+
+              p {
+                font-size: 11px;
+                line-height: 1.6;
+                color: #000;
+              }
+            }
         }
       }
     }
-  }
 
-  .storesTextTitle {
-    text-align: left;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 60px 0 20px;
-    padding: 0;
-    letter-spacing: -0.04em;
-  }
-
-  .storesText {
-    padding: 0 0 0;
-    text-align: left;
-
-    ul {
-      margin: 0;
+    .storesTextTitle {
+      text-align: left;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 60px 0 20px;
       padding: 0;
+      letter-spacing: -0.04em;
+    }
 
-      li {
-        border-top: 1px solid #000;
-        padding: 0 0 40px;
+    .storesText {
+      padding: 0 0 0;
+      text-align: left;
 
-        .hImg {
-          width: 100%;
+      ul {
+        margin: 0;
+        padding: 0;
 
-          .small {
-            font-size: 10px;
-            margin-top: 4px;
-            line-height: 1.6;
-            color: #555;
+        li {
+          border-top: 1px solid #000;
+          padding: 0 0 40px;
+
+          .hImg {
+            width: 100%;
+
+            .small {
+              font-size: 10px;
+              margin-top: 4px;
+              line-height: 1.6;
+              color: #555;
+            }
           }
         }
       }
     }
-  }
 
-  .hFamily_PD {
-    padding: 0 0 20px;
-    text-align: left;
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin: 0;
-  }
+    .hFamily_PD {
+      padding: 0 0 20px;
+      text-align: left;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin: 0;
+    }
 
-  h3 {
-    padding: 25px 0 16px;
-    font-size: 14px;
-    line-height: 1;
-    clear: both;
-  }
+    h3 {
+      padding: 25px 0 16px;
+      font-size: 14px;
+      line-height: 1;
+      clear: both;
+    }
 
-  p {
-    font-size: 11px;
-    line-height: 1.6;
-    color: #000;
+    p {
+      font-size: 11px;
+      line-height: 1.6;
+      color: #000;
+    }
   }
 }
