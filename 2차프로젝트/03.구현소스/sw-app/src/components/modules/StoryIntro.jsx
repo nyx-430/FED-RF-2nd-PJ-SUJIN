@@ -12,10 +12,10 @@ function StoryIntro() {
   // 클래스 visible 상태관리변수
   const [visible, setVisible] = useState(false);
 
-   // 랜더링 구역 ////////////////////////
+  // 랜더링 구역 ////////////////////////
   useEffect(() => {
-      // 클래스 visible
-      setVisible(true);
+    // 클래스 visible
+    setVisible(true);
 
     const scAct = $(".scAct");
     const CRITERIA = (window.innerHeight / 3) * 2;
@@ -23,7 +23,7 @@ function StoryIntro() {
     $(window).on("scroll", () => {
       scAct.each((idx, ele) => {
         let pos = ele.getBoundingClientRect().top;
-        if(pos<CRITERIA) $(ele).addClass("on");
+        if (pos < CRITERIA) $(ele).addClass("on");
       });
     });
   }, []); ///////////// useEffect /////////////
@@ -34,7 +34,11 @@ function StoryIntro() {
       <section id="intro-page">
         <div className={`inbox ${visible ? "visible" : ""}`}>
           <div className="item-box">
-            <img className="intro-logo" src={process.env.PUBLIC_URL + "/images/logo_w.png"} alt="logo" />
+            <img
+              className="intro-logo"
+              src={process.env.PUBLIC_URL + "/images/logo_w.png"}
+              alt="logo"
+            />
             <h1 className="main-title">
               A transitional scent of the green forest of
               <br />
