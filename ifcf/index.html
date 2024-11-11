@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>The 9th International Financial Cooperation Forum</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">
+	<meta name="author" content="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/ifcf/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/ifcf/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="/ifcf/css/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="/ifcf/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="/ifcf/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="/ifcf/css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="/ifcf/css/scroll-effect.css" />
+	<link rel="stylesheet" type="text/css" href="/ifcf/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="/ifcf/css/index.css" />
+	<link rel="stylesheet" type="text/css" href="/ifcf/css/sub.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/ifcf/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+	<script src="/ifcf/js/bootstrap.min.js"></script>
+	<script src="/ifcf/js/base.js"></script>
+	<script src="/ifcf/js/paged.js"></script>
+	<script src="/ifcf/js/scrollreveal.js"></script>
+	<script src="/ifcf/js/swiper.js"></script>
+    <script src="/ifcf/js/default.js"></script>
+    <script src="/ifcf/js/scroll-effect.js"></script>
+</head>
+<body>
+    <!--wrapper-->
+    <div id="wrapper" class="is-sub">
+        <div class="sec-main-visual">
+            <div id="main-slide">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image" style="background-image:url('/ifcf/img/main1.jpg');"></div>
+                            <div class="content c">
+                                <div class="head">The 9<sup>th</sup><br/>International Financial Cooperation Forum</div>
+                                <div class="subhead">Deep Finance: shaping the Future of Global Finance</div>
+                                <div class="desc"><span>Monday, December 9, 2024</span><span>Park Ballroom, Conrad Seoul, Korea</span></div>
+                                <div class="partner">
+                                    <img src="/ifcf/img/main-visual-partner1.png" alt="Financial Services Commission Logo">
+                                    <img src="/ifcf/img/main-visual-partner2.png" alt="CIFC Logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="count c">
+                <li><b>36</b><span>DAY</span></li>
+                <li><b>14</b><span>HOUR</span></li>
+                <li><b>28</b><span>MINUTES</span></li>
+                <li><b>57</b><span>DECOND</span></li>
+            </ul>
+        
+            <script>
+                window.addEventListener('DOMContentLoaded', function() {
+                    const wid = "#main-slide";
+                    const $ele = document.querySelector(wid);
+                
+                    // Full Width Slide (Main Slide Script)
+                    let m_sw = new Swiper(wid + ' .swiper', {
+                        speed: 2500,
+                        autoplay: {		// 자동 플레이
+                            delay: 3500,
+                            disableOnInteraction: false
+                        },
+                        pagination: {
+                            el: wid + ' .pg',
+                            clickable: true
+                        },
+                        navigation: {
+                            prevEl: wid + ' .prev',
+                            nextEl: wid + ' .next'
+                        },
+                        loop: true,
+                        touchRatio: 0,
+                        watchSlidesProgress: true,
+                        effect: 'fade',
+                        on: {
+                            progress: function() {
+                                var swiper = this;
+                                for (var i = 0; i < swiper.slides.length; i++) {
+                                    var innerTranslate = swiper.slides[i].progress * swiper.width * 0.9;
+                                    var textTreanslate = swiper.slides[i].progress * swiper.width;
+                                    swiper.slides[i].querySelector('.image').style.transform = "translate3d(" + innerTranslate + "px, 0, 0) scale(1)";
+                                    //swiper.slides[i].querySelector('.c').style.transform = "translate3d(" + textTreanslate + "px, -50%, 0)";
+                                }
+                            },
+                            setTransition: function(speed) {
+                                var swiper = this;
+                                for (var i = 0; i < swiper.slides.length; i++) {
+                                    swiper.slides[i].style.transition = speed + "ms";
+                                    swiper.slides[i].querySelector(".image").style.transition = speed + "ms";
+                                    //swiper.slides[i].querySelector(".c").style.transition = speed + "ms";
+                                }
+                            },
+                        },
+                    });
+                });
+            </script>
+        </div>
+
+
+        <div class="sec sec-tiles-3topimg1 c">
+            <div class="tiles ts-squareimg-top-1">
+                <div class="tile">
+                    <a class="a" href="/ifcf/sub01/forum.html">
+                        <div class="image"><div class="img" style="background-image: url('/ifcf/img/main-sec-tiles-3topimg1-1.jpg');"></div></div>
+                        <div class="content">
+                            <div class="head">About IFCF</div>
+                            <div class="desc">Deep Finance: Shaping the Future of Global Finance</div>
+                            <div class="arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="tile">
+                    <a class="a" href="/ifcf/sub02/programs.html">
+                        <div class="image"><div class="img" style="background-image: url('/ifcf/img/main-sec-tiles-3topimg1-2.jpg');"></div></div>
+                        <div class="content">
+                            <div class="head">Program at a Glance</div>
+                            <div class="desc">Deep Finance: Shaping the Future of Global Finance</div>
+                            <div class="arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="tile">
+                    <a class="a" href="/ifcf/sub04/materials.html">
+                        <div class="image"><div class="img" style="background-image: url('/ifcf/img/main-sec-tiles-3topimg1-3.jpg');"></div></div>
+                        <div class="content">
+                            <div class="head">Presentation Materials</div>
+                            <div class="desc">Deep Finance: Shaping the Future of Global Finance</div>
+                            <div class="arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <script>
+                $(document).ready(function() {
+                    $('.sec-tiles-3topimg1 .tiles').Tiled({
+                        breakpoint: "1023:767:480",	// 반응형 분기점
+                        column: "3:3:1:1",			// 분기별 아이템 가로 배치 개수 (반응형)
+                        gap: "40:40:30:15",			// 분기별 아이템 간격
+                        imageRatio: "3:2"
+                    });
+                });
+            </script>
+        </div>    
+
+
+        <footer id="bottom" class="c">
+            <div class="info">
+                <div class="company">Secretariat of the 8th International Financial Cooperation Forum</div>
+                <ul>
+                    <li>Tel. +82-2-322-3706</li>
+                    <li>E-mail.  ifcf2024@comexplans.co.kr</li>
+                </ul>
+            </div>
+            <div class="copyright">COPYRIGHTⓒInternational Financial Cooperation Forum ALL RIGHTS RESERVED.</div>
+        </footer>
+
+        </div><!--#page-->
+
+        <div id="go-top">
+        <i class="fa-solid fa-chevron-up"></i>
+        <span>Top</span>
+        </div>
+
+    </div><!--#wrapper-->
+</body>
+</html>

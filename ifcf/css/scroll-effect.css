@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/*/////////////////////////////
+
+// scroll effect by Ninny design
+// Copyright (c) 2023 Ninny design
+// 무단사용금지
+
+//////////////////////////////*/
+
+
+:root { --scr-duration:1.3s; --scr-delay:200ms; }
+
+
+
+/* default */
+.scr-el,
+.scr-el-one,
+.scrs .scr-delay { opacity:0; transition-duration:var(--scr-el-duration) !important; --scr-el-duration:var(--scr-duration); --scr-el-delay:var(--scr-delay); }
+.scr-el.active,
+.scr-el-one.active,
+.scrs.active .scr-delay { opacity:1; }
+
+
+
+
+/* effect */
+.scr-txt { letter-spacing:5px; }
+.scr-txt.active { letter-spacing:normal; }
+
+
+.scr-fadeinup { transform:translateY(50px); }
+.scr-fadeinup.active,
+.scrs.active .scr-fadeinup:not(.src-el):not(.scr-el-one) { transform:translateY(0); }
+
+.scr-fadeindown { transform:translateY(-50px); }
+.scr-fadeindown.active,
+.scrs.active .scr-fadeindown:not(.src-el):not(.scr-el-one) { transform:translateY(0); }
+
+.scr-fadeinleft { transform:translateX(50px); }
+.scr-fadeinleft.active,
+.scrs.active .scr-fadeinleft:not(.src-el):not(.scr-el-one) { transform:translateX(0); }
+
+.scr-fadeinright { transform:translateX(-50px); }
+.scr-fadeinright.active,
+.scrs.active .scr-fadeinright:not(.src-el):not(.scr-el-one) { transform:translateX(0); }
+
+
+
+.scr-widercenter,
+.scr-widerleft,
+.scr-widerright { position:relative; }
+
+.scr-widercenter:before,
+.scr-widercenter:after { content:""; position:absolute; top:0; bottom:0; background:#fff; transition-duration:1.8s; z-index:9; }
+.scr-widercenter:before { left:0; right:50%; }
+.scr-widercenter:after { right:0; left:50%; }
+.scr-widercenter.active:before { right:100%; }
+.scr-widercenter.active:after { left:100%; }
+
+.scr-widerright:before,
+.scr-widerright:after { content:""; position:absolute; left:0; top:0; right:0; bottom:0; transition-duration:1.8s; }
+.scr-widerright:before { background:#fff; z-index:9; }
+.scr-widerright:after { z-index:10; }
+.scr-widerright.active:before,
+.scrs.active .scr-widerright:before,
+.scr-widerright.active:after,
+.scrs.active .scr-widerright:after { left:100%; }
+
+.scr-widerleft:before,
+.scr-widerleft:after { content:""; position:absolute; left:0; top:0; right:0; bottom:0; transition-duration:1.8s; }
+.scr-widerleft:before { background:#fff; z-index:9; }
+.scr-widerleft:after { z-index:10; }
+.scr-widerleft.active:before,
+.scrs.active .scr-widerleft:before,
+.scr-widerleft.active:after,
+.scrs.active .scr-widerleft:after { right:100%; }
