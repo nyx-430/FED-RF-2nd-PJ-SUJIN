@@ -1,0 +1,85 @@
+<?php include_once("../head.html"); ?>
+<?php include_once("../header.html"); ?>
+<?php include_once("../sub.html"); ?>
+
+
+<div class="wrap">
+    <div class="venue c">
+        <div class="page-tit scr-el-one scr-fadeinleft" data-title="Venue" data-count="2"></div>
+        <div class="page-sec">
+            <div class="sec1 scrs">
+                <h3 class="scr-delay scr-fadeinup">Conrad Seoul</h3>
+                <h5 class="scr-delay scr-fadeinup">About Venue Hotel</h5>
+                <p class="scr-delay scr-fadeinup">The Conrad Seoul Hotel is a 5-star hotel located in Yeongdeungpo-gu, Seoul. It is connected to IFC Mall and is within four blocks of Yeouido subway station, which connects to central Seoul. There are several tourist attractions nearby such as the 63 Building, Yeouido Han River Park, andthe National Assembly Building. The high- end business hotel provides a wide range of excellent meeting and banquet spaces spread over three floors.</p>
+                <img src="../img/venue_img_1.jpg" class="scr-delay scr-fadeinup">
+                <div class="info">
+                    <dl class="scr-delay scr-fadeinup"><dt>Tel</dt><dd>+82-2-6137-7000</dd></dl>
+                    <dl class="scr-delay scr-fadeinup"><dt>Fax</dt><dd>+82-2-6137-7001</dd></dl>
+                    <a href="https://www.conradseoul.co.kr/hub/en/main.do" target="_blank" class="scr-delay scr-fadeinup">Website <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3164.26143884034!2d126.92655499999998!3d37.525334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f3bedaef86d%3A0x870e91c402860ad2!2sConrad%20Seoul!5e0!3m2!1sen!2skr!4v1731053954755!5m2!1sen!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="scr-delay scr-fadeinup"></iframe>
+
+                <div class="info">
+                    <dl class="scr-delay scr-fadeinup"><dt>Address</dt><dd>10 Gukjegeumyung-ro Yeouido Yeongdeungpo-gu, Seoul, 07326, South Korea</dd></dl>
+                    <a href="https://www.google.com/maps/place/%EC%BD%98%EB%9E%98%EB%93%9C+%EC%84%9C%EC%9A%B8/data=!4m13!1m2!2m1!1s10+Gukjegeumyung-ro+Yeouido+Yeongdeungpo-gu,+Seoul,+07326,+South+Korea!3m9!1s0x357c9f3bedaef86d:0x870e91c402860ad2!5m2!4m1!1i2!8m2!3d37.5253357!4d126.9265542!15sCkYxMCBHdWtqZWdldW15dW5nLXJvIFllb3VpZG8gWWVvbmdkZXVuZ3BvLWd1LCBTZW91bCwgMDczMjYsIFNvdXRoIEtvcmVhWkUiQzEwIGd1a2plZ2V1bXl1bmcgcm8geWVvdWlkbyB5ZW9uZ2RldW5ncG8gZ3Ugc2VvdWwgMDczMjYgc291dGgga29yZWGSAQVob3RlbJoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSdGF6aHhVR0ZSRUFF4AEA!16s%2Fg%2F11bwn5psz4?entry=ttu" target="_blank" class="scr-delay scr-fadeinup">Google Map <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="sec2">
+                <h5 class="scr-el-one scr-fadeinup">Nearby Tourist Attractions</h5>
+                <div class="tiles ts-squareimg-top-1">
+                    <div class="tile">
+                        <div class="a">
+                            <div class="image"><div class="img" style="background-image:url('../img/tlv1.jpg');"></div></div>
+                            <div class="content">
+                                <div class="head">IFC Mall</div>
+                                <div class="desc">The IFC Mall is a large indoor mall nearest Conrad Seoul. There is a diverse range of stores that sell clothing, cosmetics, international designer brands, and more.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="a">
+                            <div class="image"><div class="img" style="background-image:url('../img/tlv3.jpg');"></div></div>
+                            <div class="content">
+                                <div class="head">The Hyundai Seoul</div>
+                                <div class="desc">The Hyundai Seoul is the largest shopping mall in Seoul, covering an area the size of 13 football fields. There are many attractive spaces like gardens and water foundations. Such elements offer visitors a chance to enjoy a unique and relaxed shopping experience.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="a">
+                            <div class="image"><div class="img" style="background-image:url('../img/tlv2.jpg');"></div></div>
+                            <div class="content">
+                                <div class="head">Yeouido Han River Park</div>
+                                <div class="desc">The Han River is the most important physical landmark in the city. It is the perfect place to picnic with Korean-style fried chicken. Also, people can rent bikes, go on a cruise, or see the night view.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="a">
+                            <div class="image"><div class="img" style="background-image:url('../img/tlv4.jpg');"></div></div>
+                            <div class="content">
+                                <div class="head">National Assembly Building</div>
+                                <div class="desc">The National Assembly Building houses Korea's legislative branch of government and it is in Yeouido. The building represents the democracy and human rights of Korea.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script>
+                    $(document).ready(function() {
+                        $('.venue .tiles').Tiled({
+                            breakpoint: "1023:767:480",	// 반응형 분기점
+                            column: "4:2:2:1",			// 분기별 아이템 가로 배치 개수 (반응형)
+                            gap: "30:30:20:15",			// 분기별 아이템 간격
+                            imageRatio: "3:2"
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<?php include_once("../tail.html"); ?>
